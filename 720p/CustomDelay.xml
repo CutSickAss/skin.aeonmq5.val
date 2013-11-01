@@ -1,0 +1,54 @@
+	<!-- Aeon MQ 5 -->
+
+	<window id="622" type="dialog">
+	<defaultcontrol>-</defaultcontrol>
+	<onload condition="SubString(skin.string(panel_seconds),1)">SetFocus(9061)</onload>
+	<onload condition="SubString(skin.string(panel_seconds),2)">SetFocus(9062)</onload>
+	<onload condition="SubString(skin.string(panel_seconds),3)">SetFocus(9063)</onload>
+	<onload condition="SubString(skin.string(panel_seconds),4)">SetFocus(9064)</onload>
+	<onload condition="SubString(skin.string(panel_seconds),5)">SetFocus(9065)</onload>
+	<controls>
+	<control type="group">
+	<include>Animation_DialogPopup</include>
+	<control type="grouplist" id="9060">
+	<posx>410</posx>
+	<posy>280</posy>
+	<width>454</width>
+	<height max="670">auto</height>
+	<itemgap>0</itemgap>
+	<onleft>Close</onleft>
+	<onright>Close</onright>
+	<control type="radiobutton" id="9061"><!-- 1s -->
+	<include>DialogContext_Button</include>
+	<label>31465</label>
+	<onclick>Skin.SetString(panel_seconds,1)</onclick>
+	<onclick>Close</onclick>
+	</control>
+	<control type="radiobutton" id="9062"><!-- 2s -->
+	<include>DialogContext_Button</include>
+	<label>31466</label>
+	<onclick>Skin.SetString(panel_seconds,2)</onclick>
+	<onclick>Close</onclick>
+	</control>
+	<control type="radiobutton" id="9063"><!-- 3s -->
+	<include>DialogContext_Button</include>
+	<label>31467</label>
+	<onclick>Skin.SetString(panel_seconds,3)</onclick>
+	<onclick>Close</onclick>
+	</control>
+	<control type="radiobutton" id="9064"><!-- 4s -->
+	<include>DialogContext_Button</include>
+	<label>31468</label>
+	<onclick>Skin.SetString(panel_seconds,4)</onclick>
+	<onclick>Close</onclick>
+	</control>
+	<control type="radiobutton" id="9065"><!-- 5s -->
+	<include>DialogContext_Button</include>
+	<label>31469</label>
+	<onclick>Skin.SetString(panel_seconds,5)</onclick>
+	<onclick>Close</onclick>
+	</control>
+	</control>
+	</control>
+	</controls>
+	</window>

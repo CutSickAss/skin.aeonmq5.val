@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<addon id="skin.aeonmq5.val" version="1.3.2j" name="Aeon MQ 5 (Val)" provider-name="MarcosQui">
+	<requires>
+	<import addon="xbmc.gui" version="4.0.0"/>
+	<import addon="script.aeonmq5.extrapack" version="1.0.1"/>
+	<import addon="script.favourites" version="4.0.4"/>
+	<import addon="script.artwork.downloader" version="12.0.11"/>
+	<import addon="script.randomandlastitems" version="2.0.3"/>
+	<import addon="script.artistslideshow" version="1.4.6"/>
+	<import addon="script.tv.show.next.aired" version="5.0.4"/>
+	<import addon="service.skin.widgets" version="0.0.19"/>
+	<import addon="script.cu.lrclyrics" version="1.0.1"/>
+	<import addon="script.videolanguage" version="0.0.6"/>
+	<import addon="script.globalsearch" version="1.1.1"/>
+	<import addon="script.xbmc.subtitles" version="3.9.14"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="0.75" debugging="false">
+	<res width="1280" height="720" aspect="16:9" default="true" folder="720p"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+	<summary lang="en">Aeon MQ 5, improved, more light and more powerful than ever.</summary>
+	<summary lang="pt_br">Aeon MQ 5, melhorada, mais leve e mais poderosa do que nunca.</summary>
+	<description lang="en">The traditional Aeon MQ reaches its fifth edition.[CR]Reformulated, very simple to use, with a new code that provides a lightweight and powerful skin.[CR]The Aeon MQ 5 incorporates new features such as REPLACE which takes the main menu's level of customization to something never seen before.[CR]Aeon MQ 5, you've never seen a skin like this.</description>
+	<description lang="pt_br">A tradicional Aeon MQ chega a sua quinta edição.[CR]Reformulada, muito simples de usar, com um código novo que proporciona uma skin leve e poderosa.[CR]A Aeon MQ 5 incorpora novos recursos como o SUBSTITUIR que leva o nível de customização do menu principal a algo nunca antes visto.[CR]Aeon MQ 5, você nunca viu uma skin assim.</description>
+	<platform>all</platform>
+	</extension>
+</addon>
