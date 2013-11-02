@@ -36,342 +36,7 @@
 	<include file="ViewsPosterLite.xml"/><!-- 528 -->
 	<constant name="FanartCrossFadeTime">350</constant>
 	
-    <include name="Startup">
-	<onload>Skin.SetString(font,font1)</onload>
-	<onload>Skin.SetString(animationwindow,zoom)</onload>
-	<onload>Skin.SetString(colortexture,graphite)</onload>
-	<onload>Skin.SetString(colorheader,red)</onload>
-	<onload>Skin.SetString(homeglass,75)</onload>
-	<onload>Skin.SetString(panelglass,75)</onload>
-	<onload>Skin.SetString(styleglass,75)</onload>
-	<onload>Skin.SetString(floorglass,85)</onload>
-	<onload>Skin.SetString(theme,coral)</onload>
-	<onload>Skin.SetString(style,graphite)</onload>
-	<onload>Skin.SetString(widemovies.art,poster)</onload>
-	<onload>Skin.SetString(widetvshows.art,poster)</onload>
-	<onload>Skin.SetString(wideconcerts.art,poster)</onload>
-	<onload>Skin.SetString(viewpanel.art,poster)</onload>
-	<onload>Skin.SetString(mfmovies_list,latest)</onload>
-	<onload>Skin.SetString(mfconcerts_list,latest)</onload>
-	<onload>Skin.SetString(mftvshows_list,latest)</onload>
-	<onload>Skin.SetString(mfmusic_list,latestalbum)</onload>
-	<onload>Skin.SetString(mfvpl1_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl2_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl3_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl4_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl5_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl6_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl7_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl8_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl9_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl10_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl11_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl12_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl13_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl14_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl15_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl16_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl17_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl18_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl19_list,latest)</onload>
-	<onload>Skin.SetString(mfvpl20_list,latest)</onload>
-	<onload>Skin.SetString(mfapl1_list,latest)</onload>
-	<onload>Skin.SetString(mfapl2_list,latest)</onload>
-	<onload>Skin.SetString(mfapl3_list,latest)</onload>
-	<onload>Skin.SetString(mfapl4_list,latest)</onload>
-	<onload>Skin.SetString(mfapl5_list,latest)</onload>
-	<onload>Skin.SetString(mfapl6_list,latest)</onload>
-	<onload>Skin.SetString(mfapl7_list,latest)</onload>
-	<onload>Skin.SetString(mfapl8_list,latest)</onload>
-	<onload>Skin.SetString(mfapl9_list,latest)</onload>
-	<onload>Skin.SetString(mfapl10_list,latest)</onload>
-	<onload>Skin.SetString(mfapl11_list,latest)</onload>
-	<onload>Skin.SetString(mfapl12_list,latest)</onload>
-	<onload>Skin.SetString(mfapl13_list,latest)</onload>
-	<onload>Skin.SetString(mfapl14_list,latest)</onload>
-	<onload>Skin.SetString(mfapl15_list,latest)</onload>
-	<onload>Skin.SetString(mfapl16_list,latest)</onload>
-	<onload>Skin.SetString(mfapl17_list,latest)</onload>
-	<onload>Skin.SetString(mfapl18_list,latest)</onload>
-	<onload>Skin.SetString(mfapl19_list,latest)</onload>
-	<onload>Skin.SetString(mfapl20_list,latest)</onload>
-	<onload>Skin.SetString(case_default,deepblue)</onload>
-	<onload>Skin.SetString(case_bluray,sky)</onload>
-	<onload>Skin.SetString(case_3dbd,orange)</onload>
-	<onload>Skin.SetString(case_webtv,red)</onload>
-	<onload>Skin.SetString(case_hdtv,violet)</onload>
-	<onload>Skin.SetString(case_dvd,grey)</onload>
-	<onload>Skin.SetString(case_set,blood)</onload>
-	<onload>Skin.SetString(case_4k,chocolate)</onload>
-	<onload>Skin.SetString(codec_default,default)</onload>
-	<onload>Skin.SetString(codec_bluray,bluray)</onload>
-	<onload>Skin.SetString(codec_3dbd,3dbd)</onload>
-	<onload>Skin.SetString(codec_webtv,webtv)</onload>
-	<onload>Skin.SetString(codec_hdtv,hdtv)</onload>
-	<onload>Skin.SetString(codec_dvd,dvd)</onload>
-	<onload>Skin.SetString(codec_set,set)</onload>
-	<onload>Skin.SetString(codec_4k,4k)</onload>
-	<onload>Skin.SetString(panel_seconds,3)</onload>
-	<onload>Skin.SetString(gamevideo_seconds,2)</onload>
-	<onload>Skin.SetString(games_video,auto)</onload>
-	<onload>Skin.SetString(moviesfanart,fanart)</onload>
-	<onload>Skin.SetString(tvshowsfanart,fanart)</onload>
-	<onload>Skin.SetString(seasonsfanart,fanart)</onload>
-	<onload>Skin.SetString(episodesfanart,fanart)</onload>
-	<onload>Skin.SetString(musicvideosfanart,fanart)</onload>
-	<onload>Skin.SetString(musicfanart,fanart)</onload>
-	<onload>Skin.SetString(programsfanart,fanart)</onload>
-	<onload>Skin.SetString(gamesfanart,fanart)</onload>
-	<onload>Skin.SetString(setsfanart,fanart)</onload>
-	<onload>Skin.SetString(videogenrefanart,genre)</onload>
-	<onload>Skin.SetString(musicgenrefanart,genre)</onload>
-	<onload>Skin.SetString(multiplexlayout,fanart)</onload>
-	<onload>Skin.SetString(showcaselayout,fanart)</onload>
-	<onload>Skin.SetString(showcasevideopanel,auto)</onload>
-	<onload>Skin.SetString(landscapexlayout,fanart)</onload>
-	<onload>Skin.SetString(multiplexvideopanel,auto)</onload>
-	<onload>Skin.SetString(glasslistvideopanel,auto)</onload>
-	<onload>Skin.SetString(showartvideopanel,auto)</onload>
-	<onload>Skin.SetString(wallvideogrid,default)</onload>
-	<onload>Skin.SetString(wallmusicgrid,default)</onload>
-	<onload>Skin.SetString(wallprograms,default)</onload>
-	<onload>Skin.SetString(wallgamesgrid,default)</onload>
-	<onload>Skin.SetString(weather_mode,7days)</onload>
-	<onload>Skin.SetString(weatherconditionbg,northamerica)</onload>
-	<onload>Skin.SetString(LyricScript_Path,script.cu.lrclyrics)</onload>
-	<onload>Skin.SetString(vis_bg,slideshowmosaicmix)</onload>
-	<onload>Skin.SetString(vis_layout,default)</onload>
-	<onload>Skin.SetString(games_link,rcb)</onload>
-	<onload>Skin.SetString(widgetsnumber,12)</onload>
-	<onload>Skin.SetBool(visanimation_panscan)</onload>
-	<onload>Skin.SetBool(darkbar)</onload>
-	<onload>Skin.SetBool(ontvtunes)</onload>
-	
-	<onload>Skin.SetString(menu1.master,movies)</onload>
-	<onload>Skin.SetString(movieswidget,true)</onload>
-	<onload>Skin.SetString(menu1.action,ActivateWindow(videos,movietitles,return))</onload>
-	<onload>Skin.SetString(menu2.master,tvshows)</onload>
-	<onload>Skin.SetString(tvshowswidget,true)</onload>
-	<onload>Skin.SetString(menu2.action,ActivateWindow(videos,tvshowtitles,return))</onload>
-	<onload>Skin.SetString(menu3.master,concerts)</onload>
-	<onload>Skin.SetString(concertswidget,true)</onload>
-	<onload>Skin.SetString(menu3.action,ActivateWindow(videos,musicvideotitles,return))</onload>
-	<onload>Skin.SetString(menu4.master,music)</onload>
-	<onload>Skin.SetString(musicwidget,true)</onload>
-	<onload>Skin.SetString(menu4.action,ActivateWindow(music))</onload>
-	<onload>Skin.SetString(menu5.master,livetv)</onload>
-	<onload>Skin.SetString(livetvwidget,true)</onload>
-	<onload>Skin.SetString(menu5.action,ActivateWindow(PVR))</onload>
-	<onload>Skin.SetString(menu6.master,favourites)</onload>
-	<onload>Skin.SetString(favouriteswidget,true)</onload>
-	<onload>Skin.SetString(menu6.action,ActivateWindow(favourites))</onload>
-	<onload>Skin.SetString(menu7.master,games)</onload>
-	<onload>Skin.SetString(gameswidget,true)</onload>
-	<onload>Skin.SetString(menu7.action,RunScript(script.games.rom.collection.browser))</onload>
-	<onload>Skin.SetString(menu8.master,programs)</onload>
-	<onload>Skin.SetString(menu8.action,ActivateWindow(programs))</onload>
-	<onload>Skin.SetString(menu9.master,pictures)</onload>
-	<onload>Skin.SetString(menu9.action,ActivateWindow(pictures))</onload>
-	<onload>Skin.SetString(menu10.master,weather)</onload>
-	<onload>Skin.SetString(weatherwidget,true)</onload>
-	<onload>Skin.SetString(menu10.action,ActivateWindow(weather))</onload>
-	<onload>Skin.SetString(menu11.master,settings)</onload>
-	<onload>Skin.SetString(settingswidget,true)</onload>
-	<onload>Skin.SetString(menu11.action,ActivateWindow(settings))</onload>
-	<onload>Skin.SetString(menu12.master,shutdown)</onload>
-	<onload>Skin.SetString(menu12.action,XBMC.ShutDown())</onload>
-	
-	<onload>Skin.SetString(menu0101.master,movierecently)</onload><!-- Filme recentes -->
-	<onload>Skin.SetString(menu0101.action,ActivateWindow(videos,recentlyaddedmovies,return))</onload>
-	<onload>Skin.SetString(menu0102.master,moviesets)</onload><!-- Filme sets -->
-	<onload>Skin.SetString(menu0102.action,ActivateWindow(videos,moviesets,return))</onload>
-	<onload>Skin.SetString(menu0103.master,moviegenres)</onload><!-- Filme generos -->
-	<onload>Skin.SetString(menu0103.action,ActivateWindow(videos,moviegenres,return))</onload>
-	<onload>Skin.SetString(menu0104.master,movieyears)</onload><!-- Filme anos -->
-	<onload>Skin.SetString(menu0104.action,ActivateWindow(videos,movieyears,return))</onload>
-	<onload>Skin.SetString(menu0105.master,movieactors)</onload><!-- Filme atores -->
-	<onload>Skin.SetString(menu0105.action,ActivateWindow(videos,movieactors,return))</onload>
-	<onload>Skin.SetString(menu0106.master,moviedirectors)</onload><!-- Filme diretores -->
-	<onload>Skin.SetString(menu0106.action,ActivateWindow(videos,moviedirectors,return))</onload>
-	<onload>Skin.SetString(menu0107.master,moviestudios)</onload><!-- Filme estudios -->
-	<onload>Skin.SetString(menu0107.action,ActivateWindow(videos,moviestudios,return))</onload>
-	<onload>Skin.SetString(menu0108.master,moviecountries)</onload><!-- Filme paises -->
-	<onload>Skin.SetString(menu0108.action,ActivateWindow(videos,moviecountries,return))</onload>
-	<onload>Skin.SetString(menu0109.master,movietags)</onload><!-- Filme tags -->
-	<onload>Skin.SetString(menu0109.action,ActivateWindow(videos,movietags,return))</onload>
-	<onload>Skin.SetString(menu0110.master,videocleanlibrary)</onload><!-- Video limpar colecao -->
-	<onload>Skin.SetString(menu0110.action,CleanLibrary(video))</onload>
-	<onload>Skin.SetString(menu0111.master,videoupdatelibrary)</onload><!-- Video atualizar colecao -->
-	<onload>Skin.SetString(menu0111.action,UpdateLibrary(video))</onload>
-	<onload>Skin.SetString(menu0112.master,videofiles)</onload><!-- Video arquivos -->
-	<onload>Skin.SetString(menu0112.action,ActivateWindow(videos,files))</onload>
-	<onload>Skin.SetString(menu0113.master,globalsearch)</onload><!-- Global search -->
-	<onload>Skin.SetString(menu0113.action,RunScript(script.globalsearch))</onload>
-	
-	<onload>Skin.SetString(menu0201.master,tvshowrecently)</onload><!-- Episodios recentes -->
-	<onload>Skin.SetString(menu0201.action,ActivateWindow(videos,recentlyaddedepisodes,return))</onload>
-	<onload>Skin.SetString(menu0202.master,tvguide)</onload><!-- Guia de TV -->
-	<onload>Skin.SetString(menu0202.action,RunScript(script.tv.show.next.aired))</onload>
-	<onload>Skin.SetString(menu0203.master,tvshowgenres)</onload><!-- Seriado generos -->
-	<onload>Skin.SetString(menu0203.action,ActivateWindow(videos,tvshowgenres,return))</onload>
-	<onload>Skin.SetString(menu0204.master,tvshowyears)</onload><!-- Seriado anos -->
-	<onload>Skin.SetString(menu0204.action,ActivateWindow(videos,tvshowyears,return))</onload>
-	<onload>Skin.SetString(menu0205.master,tvshowactors)</onload><!-- Seriado atores -->
-	<onload>Skin.SetString(menu0205.action,ActivateWindow(videos,tvshowactors,return))</onload>
-	<onload>Skin.SetString(menu0206.master,tvshowstudios)</onload><!-- Seriado estudios -->
-	<onload>Skin.SetString(menu0206.action,ActivateWindow(videos,tvshowstudios,return))</onload>
-	<onload>Skin.SetString(menu0207.master,videocleanlibrary)</onload><!-- Video limpar colecao -->
-	<onload>Skin.SetString(menu0207.action,CleanLibrary(video))</onload>
-	<onload>Skin.SetString(menu0208.master,videoupdatelibrary)</onload><!-- Video atualizar colecao -->
-	<onload>Skin.SetString(menu0208.action,UpdateLibrary(video))</onload>
-	<onload>Skin.SetString(menu0209.master,videofiles)</onload><!-- Video arquivos -->
-	<onload>Skin.SetString(menu0209.action,ActivateWindow(videos,files))</onload>
-	<onload>Skin.SetString(menu0210.master,globalsearch)</onload><!-- Global search -->
-	<onload>Skin.SetString(menu0210.action,RunScript(script.globalsearch))</onload>
-	
-	<onload>Skin.SetString(menu0301.master,concertrecently)</onload><!-- Concerto recentes -->
-	<onload>Skin.SetString(menu0301.action,ActivateWindow(videos,recentlyaddedmusicvideos,return))</onload>
-	<onload>Skin.SetString(menu0302.master,concertgenres)</onload><!-- Concerto generos -->
-	<onload>Skin.SetString(menu0302.action,ActivateWindow(videos,musicvideogenres,return))</onload>
-	<onload>Skin.SetString(menu0303.master,concertyears)</onload><!-- Concerto anos -->
-	<onload>Skin.SetString(menu0303.action,ActivateWindow(videos,musicvideoyears,return))</onload>
-	<onload>Skin.SetString(menu0304.master,concertartists)</onload><!-- Concerto artistas -->
-	<onload>Skin.SetString(menu0304.action,ActivateWindow(videos,musicvideoartists,return))</onload>
-	<onload>Skin.SetString(menu0305.master,concertalbums)</onload><!-- Concerto albuns -->
-	<onload>Skin.SetString(menu0305.action,ActivateWindow(videos,musicvideoalbums,return))</onload>
-	<onload>Skin.SetString(menu0306.master,concertdirectors)</onload><!-- Concerto diretores -->
-	<onload>Skin.SetString(menu0306.action,ActivateWindow(videos,musicvideodirectors,return))</onload>
-	<onload>Skin.SetString(menu0307.master,concertstudios)</onload><!-- Concerto estudios -->
-	<onload>Skin.SetString(menu0307.action,ActivateWindow(videos,musicvideostudios,return))</onload>
-	<onload>Skin.SetString(menu0308.master,videocleanlibrary)</onload><!-- Video limpar colecao -->
-	<onload>Skin.SetString(menu0308.action,CleanLibrary(video))</onload>
-	<onload>Skin.SetString(menu0309.master,videoupdatelibrary)</onload><!-- Video atualizar colecao -->
-	<onload>Skin.SetString(menu0309.action,UpdateLibrary(video))</onload>
-	<onload>Skin.SetString(menu0310.master,videofiles)</onload><!-- Video arquivos -->
-	<onload>Skin.SetString(menu0310.action,ActivateWindow(videos,files))</onload>
-	<onload>Skin.SetString(menu0311.master,globalsearch)</onload><!-- Global search -->
-	<onload>Skin.SetString(menu0311.action,RunScript(script.globalsearch))</onload>
-	
-	<onload>Skin.SetString(menu0501.master,livetvchannels)</onload><!-- Canais de TV -->
-	<onload>Skin.SetString(menu0501.action,ActivateWindowAndFocus(PVR, 32,0, 11,0))</onload>
-	<onload>Skin.SetString(menu0502.master,livetvepg)</onload><!-- EPG -->
-	<onload>Skin.SetString(menu0502.action,ActivateWindowAndFocus(PVR, 31,0, 10,0))</onload>
-	<onload>Skin.SetString(menu0503.master,livetvradiostations)</onload><!-- Estacoes de Radio -->
-	<onload>Skin.SetString(menu0503.action,ActivateWindowAndFocus(PVR, 33,0, 12,0))</onload>
-	<onload>Skin.SetString(menu0504.master,livetvrecords)</onload><!-- Gravacoes -->
-	<onload>Skin.SetString(menu0504.action,ActivateWindowAndFocus(PVR, 34,0, 13,0))</onload>
-	<onload>Skin.SetString(menu0505.master,livetvtimers)</onload><!-- Agendamento -->
-	<onload>Skin.SetString(menu0505.action,ActivateWindowAndFocus(PVR, 35,0, 14,0))</onload>
-	<onload>Skin.SetString(menu0506.master,livetvsettings)</onload><!-- Ajustes -->
-	<onload>Skin.SetString(menu0506.action,ActivateWindow(pvrsettings))</onload>
-	
-	<onload>Skin.SetString(menu0401.master,musicrecentlyplayed)</onload><!-- Musica recem tocada -->
-	<onload>Skin.SetString(menu0401.action,ActivateWindow(musiclibrary,recentlyplayedalbums,return))</onload>
-	<onload>Skin.SetString(menu0402.master,musicrecently)</onload><!-- Musica recentes -->
-	<onload>Skin.SetString(menu0402.action,ActivateWindow(musiclibrary,recentlyaddedalbums,return))</onload>
-	<onload>Skin.SetString(menu0403.master,musicvideoclips)</onload><!-- Musica video clipes -->
-	<onload>Skin.SetString(menu0403.action,ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[MusicPlayer.Artist],return))</onload>
-	<onload>Skin.SetString(menu0404.master,musicgenres)</onload><!-- Musica generos -->
-	<onload>Skin.SetString(menu0404.action,ActivateWindow(musiclibrary,genres,return))</onload>
-	<onload>Skin.SetString(menu0405.master,musicplaylists)</onload><!-- Musica playlists -->
-	<onload>Skin.SetString(menu0405.action,ActivateWindow(musiclibrary,playlists,return))</onload>
-	<onload>Skin.SetString(menu0406.master,musicartists)</onload><!-- Musica artistas -->
-	<onload>Skin.SetString(menu0406.action,ActivateWindow(musiclibrary,artists,return))</onload>
-	<onload>Skin.SetString(menu0407.master,musicalbums)</onload><!-- Musica albuns -->
-	<onload>Skin.SetString(menu0407.action,ActivateWindow(musiclibrary,albums,return))</onload>
-	<onload>Skin.SetString(menu0408.master,musicsongs)</onload><!-- Musica faixas -->
-	<onload>Skin.SetString(menu0408.action,ActivateWindow(musiclibrary,songs,return))</onload>
-	<onload>Skin.SetString(menu0409.master,musicfiles)</onload><!-- Musica arquivos -->
-	<onload>Skin.SetString(menu0409.action,ActivateWindow(musicfiles))</onload>
-	<onload>Skin.SetString(menu0410.master,musicpartymode)</onload><!-- Musica modo festa -->
-	<onload>Skin.SetString(menu0410.action,PlayerControl(Partymode(music)))</onload>
-	<onload>Skin.SetString(menu0411.master,musiccompilations)</onload><!-- Musica compilacoes -->
-	<onload>Skin.SetString(menu0411.action,ActivateWindow(musiclibrary,compilations,return))</onload>
-	<onload>Skin.SetString(menu0412.master,musictop100)</onload><!-- Musica top100 -->
-	<onload>Skin.SetString(menu0412.action,ActivateWindow(musiclibrary,top100,return))</onload>
-	<onload>Skin.SetString(menu0413.master,musiccleanlibrary)</onload><!-- Musica limpar colecao -->
-	<onload>Skin.SetString(menu0413.action,CleanLibrary(music))</onload>
-	<onload>Skin.SetString(menu0414.master,musicupdatelibrary)</onload><!-- Musica atualizar colecao -->
-	<onload>Skin.SetString(menu0414.action,UpdateLibrary(music))</onload>
-	<onload>Skin.SetString(menu0415.master,globalsearch)</onload><!-- Global search -->
-	<onload>Skin.SetString(menu0415.action,RunScript(script.globalsearch))</onload>
-	
-	<onload>Skin.SetString(menu1001.master,weather36hour)</onload><!-- Clima 36 horas -->
-	<onload>Skin.SetString(menu1001.action,Skin.SetString(weather_mode,36hour))</onload>
-	<onload>Skin.SetString(menu1002.master,weatherweekend)</onload><!-- Clima final de semana -->
-	<onload>Skin.SetString(menu1002.action,Skin.SetString(weather_mode,weekend))</onload>
-	<onload>Skin.SetString(menu1003.master,weather7days)</onload><!-- Clima 7 dias -->
-	<onload>Skin.SetString(menu1003.action,Skin.SetString(weather_mode,7days))</onload>
-	<onload>Skin.SetString(menu1004.master,weatheralerts)</onload><!-- Clima alertas -->
-	<onload>Skin.SetString(menu1004.action,Skin.SetString(weather_mode,alerts))</onload>
-	<onload>Skin.SetString(menu1005.master,weathersettings)</onload><!-- Clima ajustes -->
-	<onload>Skin.SetString(menu1005.action,ActivateWindow(weathersettings))</onload>
-	<onload>Skin.SetString(menu1006.master,weathersettings)</onload><!-- Clima estacoes -->
-	<onload>Skin.SetString(menu1006.action,ActivateWindow(633))</onload>
-	
-	<onload>Skin.SetString(menu1101.master,settingscustom)</onload><!-- Customizar menu -->
-	<onload>Skin.SetString(menu1101.action,ActivateWindow(6000))</onload>
-	<onload>Skin.SetString(menu1102.master,settingspresets)</onload><!-- Pre-definicoes -->
-	<onload>Skin.SetString(menu1102.action,ActivateWindow(630))</onload>
-	<onload>Skin.SetString(menu1103.master,settingsskin)</onload><!-- Ajustes da skin -->
-	<onload>Skin.SetString(menu1103.action,ActivateWindow(skinsettings))</onload>
-	<onload>Skin.SetString(menu1104.master,settingsaddons)</onload><!-- Janela Add-ons -->
-	<onload>Skin.SetString(menu1104.action,ActivateWindow(addonbrowser))</onload>
-	<onload>Skin.SetString(menu1105.master,settingsaddonsprograms)</onload><!-- Add-ons de programas -->
-	<onload>Skin.SetString(menu1105.action,ActivateWindow(programs,addons,return))</onload>
-	<onload>Skin.SetString(menu1106.master,settingsaddonsvideo)</onload><!-- Add-ons de video -->
-	<onload>Skin.SetString(menu1106.action,ActivateWindow(video,addons,return))</onload>
-	<onload>Skin.SetString(menu1107.master,settingsaddonsmusic)</onload><!-- Add-ons de musica -->
-	<onload>Skin.SetString(menu1107.action,ActivateWindow(music,addons,return))</onload>
-	<onload>Skin.SetString(menu1108.master,settingsaddonspictures)</onload><!-- Add-ons de imagem -->
-	<onload>Skin.SetString(menu1108.action,ActivateWindow(pictures,addons,return))</onload>
-	<onload>Skin.SetString(menu1109.master,settingsfilemanager)</onload><!-- Gerenciador de arquivos -->
-	<onload>Skin.SetString(menu1109.action,ActivateWindow(filemanager))</onload>
-	<onload>Skin.SetString(menu1110.master,settingssystem)</onload><!-- Info do sistema -->
-	<onload>Skin.SetString(menu1110.action,ActivateWindow(systeminfo))</onload>
-
-	<onload>Skin.SetString(menu1201.master,quit)</onload><!-- Sair -->
-	<onload>Skin.SetString(menu1201.action,Quit)</onload>
-	<onload>Skin.SetString(menu1202.master,powerdown)</onload><!-- Desligar sistema -->
-	<onload>Skin.SetString(menu1202.action,Powerdown)</onload>
-	<onload>Skin.SetString(menu1203.master,reboot)</onload><!-- Reiniciar sistema -->
-	<onload>Skin.SetString(menu1203.action,Reboot)</onload>
-	<onload>Skin.SetString(menu1204.master,suspend)</onload><!-- Suspender -->
-	<onload>Skin.SetString(menu1204.action,Suspend)</onload>
-	<onload>Skin.SetString(menu1205.master,hibernate)</onload><!-- Hibernar -->
-	<onload>Skin.SetString(menu1205.action,Hibernate)</onload>
-	<onload>Skin.SetString(menu1206.master,timer)</onload><!-- Temporizador -->
-	<onload>Skin.SetString(menu1206.action,XBMC.AlarmClock(shutdowntimer,XBMC.Powerdown()))</onload>
-	<onload>Skin.SetString(menu1207.master,canceltimer)</onload><!-- Cancelar temporizador -->
-	<onload>Skin.SetString(menu1207.action,XBMC.CancelAlarm(shutdowntimer))</onload>
-	<onload>Skin.SetString(menu1208.master,logoff))</onload><!-- Deslogar -->
-	<onload>Skin.SetString(menu1208.action,System.Logoff)</onload>
-	<onload>Skin.SetString(PLInfoPanelMovies,infopanelmanual)</onload>
-	<onload>Skin.SetString(PLInfoPanelTVShows,infopanelmanual)</onload>
-	<onload>Skin.SetString(PLInfoPanelSeasons,infopanelmanual)</onload>
-	<onload>Skin.SetString(PLInfoPanelEpisodes,infopanelmanual)</onload>
-	<onload>Skin.SetString(PLInfoPanelSets,infopanelmanual)</onload>
-	<onload>Skin.SetString(PosterLiteMovies,poster)</onload>
-	<onload>Skin.SetString(PosterLiteTVShows,poster)</onload>
-	<onload>Skin.SetString(PosterLiteSeasons,poster)</onload>
-	<onload>Skin.SetString(PosterLiteEpisodes,landscape)</onload>
-	<onload>Skin.SetString(PosterLiteSets,poster)</onload>
-	<onload>Skin.SetString(PosterLitePlusMovies,noicon)</onload>
-	<onload>Skin.SetString(PosterLitePlusTVShows,banner)</onload>
-	<onload>Skin.SetString(PosterLitePlusSeasons,banner)</onload>
-	<onload>Skin.SetString(PosterLitePlusEpisodes,banner)</onload>
-	<onload>Skin.SetString(PosterLitePlusSets,noicon)</onload>
-	<onload>Skin.SetString(PLTitleMovies,titleon)</onload>
-	<onload>Skin.SetString(PLTitleTVShows,titleon)</onload>
-	<onload>Skin.SetString(PLTitleSeasons,titleon)</onload>
-	<onload>Skin.SetString(PLTitleEpisodes,titleon)</onload>
-	<onload>Skin.SetString(PLTitleSets,titleon)</onload>
-	
-	<onload>AlarmClock(replace,ReplaceWindow(0),0:01,true)</onload>
-	<onload>Skin.SetBool(defaultsettings1)</onload>
-	</include>
-	
-	<include name="Playlists">
+ 	<include name="Playlists">
 	<onload condition="SubString(skin.string(menu1.master),vpl) + SubString(skin.string(mfvpl1_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu1.path)],menu=vpl1)</onload>
 	<onload condition="SubString(skin.string(menu1.master),vpl) + SubString(skin.string(mfvpl1_list),random)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu1.path)],menu=vpl1)</onload>
 	<onload condition="SubString(skin.string(menu1.master),vpl) + SubString(skin.string(mfvpl1_list),inprogress)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu1.path)],menu=vpl1)</onload>
@@ -474,228 +139,6 @@
 	<onload condition="SubString(skin.string(menu20.master),apl) + SubString(skin.string(mfapl20_list),random)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu20.path)],menu=apl20)</onload>
 	</include>
 	
-	<!-- ######################################################################### Seletor Recentes ou Random ######################################################################### -->
-	<include name="RecentRandomSelector">
-	<onfocus>SetFocus(5100)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),movies) + SubString(skin.string(mfmovies_list),latest)">Skin.SetString(mfmovies_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),movies) + SubString(skin.string(mfmovies_list),random)">Skin.SetString(mfmovies_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),movies) + SubString(skin.string(mfmovies_list),inprogress)">Skin.SetString(mfmovies_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),tvshows) + SubString(skin.string(mftvshows_list),latest)">Skin.SetString(mftvshows_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),tvshows) + SubString(skin.string(mftvshows_list),random)">Skin.SetString(mftvshows_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),tvshows) + SubString(skin.string(mftvshows_list),inprogress)">Skin.SetString(mftvshows_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),concerts) + SubString(skin.string(mfconcerts_list),latest)">Skin.SetString(mfconcerts_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),concerts) + SubString(skin.string(mfconcerts_list),random)">Skin.SetString(mfconcerts_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),concerts) + SubString(skin.string(mfconcerts_list),inprogress)">Skin.SetString(mfconcerts_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),music) + SubString(skin.string(mfmusic_list),latestsong)">Skin.SetString(mfmusic_list,latestalbum)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),music) + SubString(skin.string(mfmusic_list),latestalbum)">Skin.SetString(mfmusic_list,randomsong)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),music) + SubString(skin.string(mfmusic_list),randomsong)">Skin.SetString(mfmusic_list,randomalbum)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),music) + SubString(skin.string(mfmusic_list),randomalbum)">Skin.SetString(mfmusic_list,randomartist)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),music) + SubString(skin.string(mfmusic_list),randomartist)">Skin.SetString(mfmusic_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),music) + SubString(skin.string(mfmusic_list),inprogress)">Skin.SetString(mfmusic_list,latestsong)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl1) + SubString(skin.string(mfvpl1_list),latest)">Skin.SetString(mfvpl1_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl1) + SubString(skin.string(mfvpl1_list),random)">Skin.SetString(mfvpl1_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl1) + SubString(skin.string(mfvpl1_list),inprogress)">Skin.SetString(mfvpl1_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl1) + SubString(skin.string(mfvpl1_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu1.path)],menu=vpl1)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl1) + SubString(skin.string(mfvpl1_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu1.path)],menu=vpl1)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl1) + SubString(skin.string(mfvpl1_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu1.path)],menu=vpl1)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl2) + SubString(skin.string(mfvpl2_list),latest)">Skin.SetString(mfvpl2_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl2) + SubString(skin.string(mfvpl2_list),random)">Skin.SetString(mfvpl2_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl2) + SubString(skin.string(mfvpl2_list),inprogress)">Skin.SetString(mfvpl2_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl2) + SubString(skin.string(mfvpl2_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu2.path)],menu=vpl2)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl2) + SubString(skin.string(mfvpl2_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu2.path)],menu=vpl2)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl2) + SubString(skin.string(mfvpl2_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu2.path)],menu=vpl2)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl3) + SubString(skin.string(mfvpl3_list),latest)">Skin.SetString(mfvpl3_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl3) + SubString(skin.string(mfvpl3_list),random)">Skin.SetString(mfvpl3_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl3) + SubString(skin.string(mfvpl3_list),inprogress)">Skin.SetString(mfvpl3_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl3) + SubString(skin.string(mfvpl3_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu3.path)],menu=vpl3)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl3) + SubString(skin.string(mfvpl3_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu3.path)],menu=vpl3)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl3) + SubString(skin.string(mfvpl3_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu3.path)],menu=vpl3)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl4) + SubString(skin.string(mfvpl4_list),latest)">Skin.SetString(mfvpl4_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl4) + SubString(skin.string(mfvpl4_list),random)">Skin.SetString(mfvpl4_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl4) + SubString(skin.string(mfvpl4_list),inprogress)">Skin.SetString(mfvpl4_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl4) + SubString(skin.string(mfvpl4_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu4.path)],menu=vpl4)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl4) + SubString(skin.string(mfvpl4_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu4.path)],menu=vpl4)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl4) + SubString(skin.string(mfvpl4_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu4.path)],menu=vpl4)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl5) + SubString(skin.string(mfvpl5_list),latest)">Skin.SetString(mfvpl5_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl5) + SubString(skin.string(mfvpl5_list),random)">Skin.SetString(mfvpl5_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl5) + SubString(skin.string(mfvpl5_list),inprogress)">Skin.SetString(mfvpl5_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl5) + SubString(skin.string(mfvpl5_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu5.path)],menu=vpl5)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl5) + SubString(skin.string(mfvpl5_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu5.path)],menu=vpl5)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl5) + SubString(skin.string(mfvpl5_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu5.path)],menu=vpl5)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl6) + SubString(skin.string(mfvpl6_list),latest)">Skin.SetString(mfvpl6_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl6) + SubString(skin.string(mfvpl6_list),random)">Skin.SetString(mfvpl6_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl6) + SubString(skin.string(mfvpl6_list),inprogress)">Skin.SetString(mfvpl6_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl6) + SubString(skin.string(mfvpl6_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu6.path)],menu=vpl6)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl6) + SubString(skin.string(mfvpl6_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu6.path)],menu=vpl6)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl6) + SubString(skin.string(mfvpl6_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu6.path)],menu=vpl6)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl7) + SubString(skin.string(mfvpl7_list),latest)">Skin.SetString(mfvpl7_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl7) + SubString(skin.string(mfvpl7_list),random)">Skin.SetString(mfvpl7_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl7) + SubString(skin.string(mfvpl7_list),inprogress)">Skin.SetString(mfvpl7_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl7) + SubString(skin.string(mfvpl7_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu7.path)],menu=vpl7)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl7) + SubString(skin.string(mfvpl7_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu7.path)],menu=vpl7)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl7) + SubString(skin.string(mfvpl7_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu7.path)],menu=vpl7)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl8) + SubString(skin.string(mfvpl8_list),latest)">Skin.SetString(mfvpl8_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl8) + SubString(skin.string(mfvpl8_list),random)">Skin.SetString(mfvpl8_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl8) + SubString(skin.string(mfvpl8_list),inprogress)">Skin.SetString(mfvpl8_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl8) + SubString(skin.string(mfvpl8_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu8.path)],menu=vpl8)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl8) + SubString(skin.string(mfvpl8_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu8.path)],menu=vpl8)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl8) + SubString(skin.string(mfvpl8_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu8.path)],menu=vpl8)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl9) + SubString(skin.string(mfvpl9_list),latest)">Skin.SetString(mfvpl9_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl9) + SubString(skin.string(mfvpl9_list),random)">Skin.SetString(mfvpl9_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl9) + SubString(skin.string(mfvpl9_list),inprogress)">Skin.SetString(mfvpl9_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl9) + SubString(skin.string(mfvpl9_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu9.path)],menu=vpl9)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl9) + SubString(skin.string(mfvpl9_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu9.path)],menu=vpl9)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl9) + SubString(skin.string(mfvpl9_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu9.path)],menu=vpl9)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl10) + SubString(skin.string(mfvpl10_list),latest)">Skin.SetString(mfvpl10_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl10) + SubString(skin.string(mfvpl10_list),random)">Skin.SetString(mfvpl10_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl10) + SubString(skin.string(mfvpl10_list),inprogress)">Skin.SetString(mfvpl10_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl10) + SubString(skin.string(mfvpl10_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu10.path)],menu=vpl10)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl10) + SubString(skin.string(mfvpl10_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu10.path)],menu=vpl10)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl10) + SubString(skin.string(mfvpl10_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu10.path)],menu=vpl10)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl11) + SubString(skin.string(mfvpl11_list),latest)">Skin.SetString(mfvpl11_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl11) + SubString(skin.string(mfvpl11_list),random)">Skin.SetString(mfvpl11_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl11) + SubString(skin.string(mfvpl11_list),inprogress)">Skin.SetString(mfvpl11_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl11) + SubString(skin.string(mfvpl11_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu11.path)],menu=vpl11)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl11) + SubString(skin.string(mfvpl11_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu11.path)],menu=vpl11)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl11) + SubString(skin.string(mfvpl11_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu11.path)],menu=vpl11)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl12) + SubString(skin.string(mfvpl12_list),latest)">Skin.SetString(mfvpl12_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl12) + SubString(skin.string(mfvpl12_list),random)">Skin.SetString(mfvpl12_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl12) + SubString(skin.string(mfvpl12_list),inprogress)">Skin.SetString(mfvpl12_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl12) + SubString(skin.string(mfvpl12_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu12.path)],menu=vpl12)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl12) + SubString(skin.string(mfvpl12_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu12.path)],menu=vpl12)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl12) + SubString(skin.string(mfvpl12_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu12.path)],menu=vpl12)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl13) + SubString(skin.string(mfvpl13_list),latest)">Skin.SetString(mfvpl13_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl13) + SubString(skin.string(mfvpl13_list),random)">Skin.SetString(mfvpl13_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl13) + SubString(skin.string(mfvpl13_list),inprogress)">Skin.SetString(mfvpl13_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl13) + SubString(skin.string(mfvpl13_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu13.path)],menu=vpl13)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl13) + SubString(skin.string(mfvpl13_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu13.path)],menu=vpl13)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl13) + SubString(skin.string(mfvpl13_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu13.path)],menu=vpl13)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl14) + SubString(skin.string(mfvpl14_list),latest)">Skin.SetString(mfvpl14_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl14) + SubString(skin.string(mfvpl14_list),random)">Skin.SetString(mfvpl14_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl14) + SubString(skin.string(mfvpl14_list),inprogress)">Skin.SetString(mfvpl14_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl14) + SubString(skin.string(mfvpl14_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu14.path)],menu=vpl14)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl14) + SubString(skin.string(mfvpl14_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu14.path)],menu=vpl14)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl14) + SubString(skin.string(mfvpl14_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu14.path)],menu=vpl14)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl15) + SubString(skin.string(mfvpl15_list),latest)">Skin.SetString(mfvpl15_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl15) + SubString(skin.string(mfvpl15_list),random)">Skin.SetString(mfvpl15_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl15) + SubString(skin.string(mfvpl15_list),inprogress)">Skin.SetString(mfvpl15_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl15) + SubString(skin.string(mfvpl15_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu15.path)],menu=vpl15)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl15) + SubString(skin.string(mfvpl15_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu15.path)],menu=vpl15)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl15) + SubString(skin.string(mfvpl15_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu15.path)],menu=vpl15)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl16) + SubString(skin.string(mfvpl16_list),latest)">Skin.SetString(mfvpl16_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl16) + SubString(skin.string(mfvpl16_list),random)">Skin.SetString(mfvpl16_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl16) + SubString(skin.string(mfvpl16_list),inprogress)">Skin.SetString(mfvpl16_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl16) + SubString(skin.string(mfvpl16_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu16.path)],menu=vpl16)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl16) + SubString(skin.string(mfvpl16_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu16.path)],menu=vpl16)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl16) + SubString(skin.string(mfvpl16_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu16.path)],menu=vpl16)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl17) + SubString(skin.string(mfvpl17_list),latest)">Skin.SetString(mfvpl17_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl17) + SubString(skin.string(mfvpl17_list),random)">Skin.SetString(mfvpl17_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl17) + SubString(skin.string(mfvpl17_list),inprogress)">Skin.SetString(mfvpl17_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl17) + SubString(skin.string(mfvpl17_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu17.path)],menu=vpl17)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl17) + SubString(skin.string(mfvpl17_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu17.path)],menu=vpl17)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl17) + SubString(skin.string(mfvpl17_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu17.path)],menu=vpl17)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl18) + SubString(skin.string(mfvpl18_list),latest)">Skin.SetString(mfvpl18_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl18) + SubString(skin.string(mfvpl18_list),random)">Skin.SetString(mfvpl18_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl18) + SubString(skin.string(mfvpl18_list),inprogress)">Skin.SetString(mfvpl18_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl18) + SubString(skin.string(mfvpl18_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu18.path)],menu=vpl18)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl18) + SubString(skin.string(mfvpl18_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu18.path)],menu=vpl18)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl18) + SubString(skin.string(mfvpl18_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu18.path)],menu=vpl18)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl19) + SubString(skin.string(mfvpl19_list),latest)">Skin.SetString(mfvpl19_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl19) + SubString(skin.string(mfvpl19_list),random)">Skin.SetString(mfvpl19_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl19) + SubString(skin.string(mfvpl19_list),inprogress)">Skin.SetString(mfvpl19_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl19) + SubString(skin.string(mfvpl19_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu19.path)],menu=vpl19)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl19) + SubString(skin.string(mfvpl19_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu19.path)],menu=vpl19)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl19) + SubString(skin.string(mfvpl19_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu19.path)],menu=vpl19)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl20) + SubString(skin.string(mfvpl20_list),latest)">Skin.SetString(mfvpl20_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl20) + SubString(skin.string(mfvpl20_list),random)">Skin.SetString(mfvpl20_list,inprogress)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl20) + SubString(skin.string(mfvpl20_list),inprogress)">Skin.SetString(mfvpl20_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl20) + SubString(skin.string(mfvpl20_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu20.path)],menu=vpl20)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl20) + SubString(skin.string(mfvpl20_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(menu20.path)],menu=vpl20)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),vpl20) + SubString(skin.string(mfvpl20_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu20.path)],menu=vpl20)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl1) + SubString(skin.string(mfapl1_list),latest)">Skin.SetString(mfapl1_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl1) + SubString(skin.string(mfapl1_list),random)">Skin.SetString(mfapl1_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl1) + SubString(skin.string(mfapl1_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu1.path)],menu=apl1)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl1) + SubString(skin.string(mfapl1_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu1.path)],menu=apl1)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl2) + SubString(skin.string(mfapl2_list),latest)">Skin.SetString(mfapl2_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl2) + SubString(skin.string(mfapl2_list),random)">Skin.SetString(mfapl2_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl2) + SubString(skin.string(mfapl2_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu2.path)],menu=apl2)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl2) + SubString(skin.string(mfapl2_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu2.path)],menu=apl2)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl3) + SubString(skin.string(mfapl3_list),latest)">Skin.SetString(mfapl3_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl3) + SubString(skin.string(mfapl3_list),random)">Skin.SetString(mfapl3_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl3) + SubString(skin.string(mfapl3_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu3.path)],menu=apl3)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl3) + SubString(skin.string(mfapl3_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu3.path)],menu=apl3)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl4) + SubString(skin.string(mfapl4_list),latest)">Skin.SetString(mfapl4_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl4) + SubString(skin.string(mfapl4_list),random)">Skin.SetString(mfapl4_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl4) + SubString(skin.string(mfapl4_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu4.path)],menu=apl4)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl4) + SubString(skin.string(mfapl4_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu4.path)],menu=apl4)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl5) + SubString(skin.string(mfapl5_list),latest)">Skin.SetString(mfapl5_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl5) + SubString(skin.string(mfapl5_list),random)">Skin.SetString(mfapl5_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl5) + SubString(skin.string(mfapl5_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu5.path)],menu=apl5)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl5) + SubString(skin.string(mfapl5_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu5.path)],menu=apl5)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl6) + SubString(skin.string(mfapl6_list),latest)">Skin.SetString(mfapl6_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl6) + SubString(skin.string(mfapl6_list),random)">Skin.SetString(mfapl6_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl6) + SubString(skin.string(mfapl6_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu6.path)],menu=apl6)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl6) + SubString(skin.string(mfapl6_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu6.path)],menu=apl6)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl7) + SubString(skin.string(mfapl7_list),latest)">Skin.SetString(mfapl7_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl7) + SubString(skin.string(mfapl7_list),random)">Skin.SetString(mfapl7_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl7) + SubString(skin.string(mfapl7_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu7.path)],menu=apl7)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl7) + SubString(skin.string(mfapl7_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu7.path)],menu=apl7)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl8) + SubString(skin.string(mfapl8_list),latest)">Skin.SetString(mfapl8_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl8) + SubString(skin.string(mfapl8_list),random)">Skin.SetString(mfapl8_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl8) + SubString(skin.string(mfapl8_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu8.path)],menu=apl8)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl8) + SubString(skin.string(mfapl8_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu8.path)],menu=apl8)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl9) + SubString(skin.string(mfapl9_list),latest)">Skin.SetString(mfapl9_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl9) + SubString(skin.string(mfapl9_list),random)">Skin.SetString(mfapl9_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl9) + SubString(skin.string(mfapl9_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu9.path)],menu=apl9)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl9) + SubString(skin.string(mfapl9_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu9.path)],menu=apl9)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl10) + SubString(skin.string(mfapl10_list),latest)">Skin.SetString(mfapl10_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl10) + SubString(skin.string(mfapl10_list),random)">Skin.SetString(mfapl10_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl10) + SubString(skin.string(mfapl10_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu10.path)],menu=apl10)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl10) + SubString(skin.string(mfapl10_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu10.path)],menu=apl10)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl11) + SubString(skin.string(mfapl11_list),latest)">Skin.SetString(mfapl11_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl11) + SubString(skin.string(mfapl11_list),random)">Skin.SetString(mfapl11_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl11) + SubString(skin.string(mfapl11_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu11.path)],menu=apl11)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl11) + SubString(skin.string(mfapl11_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu11.path)],menu=apl11)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl12) + SubString(skin.string(mfapl12_list),latest)">Skin.SetString(mfapl12_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl12) + SubString(skin.string(mfapl12_list),random)">Skin.SetString(mfapl12_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl12) + SubString(skin.string(mfapl12_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu12.path)],menu=apl12)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl12) + SubString(skin.string(mfapl12_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu12.path)],menu=apl12)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl13) + SubString(skin.string(mfapl13_list),latest)">Skin.SetString(mfapl13_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl13) + SubString(skin.string(mfapl13_list),random)">Skin.SetString(mfapl13_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl13) + SubString(skin.string(mfapl13_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu13.path)],menu=apl13)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl13) + SubString(skin.string(mfapl13_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu13.path)],menu=apl13)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl14) + SubString(skin.string(mfapl14_list),latest)">Skin.SetString(mfapl14_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl14) + SubString(skin.string(mfapl14_list),random)">Skin.SetString(mfapl14_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl14) + SubString(skin.string(mfapl14_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu14.path)],menu=apl14)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl14) + SubString(skin.string(mfapl14_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu14.path)],menu=apl14)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl15) + SubString(skin.string(mfapl15_list),latest)">Skin.SetString(mfapl15_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl15) + SubString(skin.string(mfapl15_list),random)">Skin.SetString(mfapl15_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl15) + SubString(skin.string(mfapl15_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu15.path)],menu=apl15)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl15) + SubString(skin.string(mfapl15_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu15.path)],menu=apl15)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl16) + SubString(skin.string(mfapl16_list),latest)">Skin.SetString(mfapl16_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl16) + SubString(skin.string(mfapl16_list),random)">Skin.SetString(mfapl16_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl16) + SubString(skin.string(mfapl16_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu16.path)],menu=apl16)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl16) + SubString(skin.string(mfapl16_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu16.path)],menu=apl16)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl17) + SubString(skin.string(mfapl17_list),latest)">Skin.SetString(mfapl17_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl17) + SubString(skin.string(mfapl17_list),random)">Skin.SetString(mfapl17_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl17) + SubString(skin.string(mfapl17_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu17.path)],menu=apl17)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl17) + SubString(skin.string(mfapl17_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu17.path)],menu=apl17)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl18) + SubString(skin.string(mfapl18_list),latest)">Skin.SetString(mfapl18_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl18) + SubString(skin.string(mfapl18_list),random)">Skin.SetString(mfapl18_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl18) + SubString(skin.string(mfapl18_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu18.path)],menu=apl18)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl18) + SubString(skin.string(mfapl18_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu18.path)],menu=apl18)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl19) + SubString(skin.string(mfapl19_list),latest)">Skin.SetString(mfapl19_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl19) + SubString(skin.string(mfapl19_list),random)">Skin.SetString(mfapl19_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl19) + SubString(skin.string(mfapl19_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu19.path)],menu=apl19)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl19) + SubString(skin.string(mfapl19_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu19.path)],menu=apl19)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl20) + SubString(skin.string(mfapl20_list),latest)">Skin.SetString(mfapl20_list,random)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl20) + SubString(skin.string(mfapl20_list),random)">Skin.SetString(mfapl20_list,latest)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl20) + SubString(skin.string(mfapl20_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(menu20.path)],menu=apl20)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),apl20) + SubString(skin.string(mfapl20_list),random)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(menu20.path)],menu=apl20)</onfocus>
-	<onfocus condition="SubString(Container(9000).ListItem.Property(id),live) | SubString(Container(9000).ListItem.Property(id),tvguide)">RunScript(script.tv.show.next.aired,silent=true)</onfocus>
-	<onfocus condition="StringCompare(Container(9000).ListItem.Property(id),games)">noop</onfocus>
-	</include>
-	
 	<!-- ######################################################################### Animations ######################################################################### -->
 	<include name="Animation_Fade">
 	<animation effect="fade" time="500">WindowOpen</animation>
@@ -771,20 +214,11 @@
 	<animation effect="fade" start="100" end="15" time="200" condition="SubString(skin.string(floorglass),15)">Conditional</animation>
 	<animation effect="fade" start="100" end="5" time="200" condition="SubString(skin.string(floorglass),05)">Conditional</animation>
 	</include>
-	<include name="Animation_HomeSlideUp">
-	<animation type="WindowOpen" reversible="false" condition="Window.Previous(Startup)">
-	<effect type="slide" start="0,48" end="0,0" time="500" delay="2000" tween="cubic" easing="out"/>
-	<effect type="fade" start="0" end="100" time="500" delay="2000"/>
-	</animation>
-	<animation type="WindowOpen" reversible="false" condition="!Window.Previous(Startup)">
-	<effect type="slide" start="0,48" end="0,0" time="500" delay="1000" tween="cubic" easing="out"/>
-	<effect type="fade" start="0" end="100" time="500" delay="1000"/>
-	</animation>
-	<animation type="Visible" reversible="false">
-	<effect type="slide" start="0,48" end="0,0" time="500" delay="500" tween="cubic" easing="out"/>
-	<effect type="fade" start="0" end="100" time="500" delay="500"/>
-	</animation>
-    <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+	<include name="Animation_Widgets">
+	<animation effect="fade" start="0" end="100" time="500" delay="3000" condition="Window.Previous(Startup)">WindowOpen</animation>
+	<animation effect="fade" start="0" end="100" time="500" delay="1500" condition="!Window.Previous(Startup)">WindowOpen</animation>
+	<animation effect="fade" start="0" end="100" time="500" delay="700">Visible</animation>
+	<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 	</include>
 	<include name="Animation_HomePanel">
 	<animation effect="slide" start="0,0" end="0,250" time="300" delay="700" easing="out" tween="sine">Visible</animation>
@@ -837,16 +271,55 @@
 	</animation>
 	</include>
 	<include name="Animation_SubMenu">
+	<animation effect="slide" start="-300,0" end="0,0" time="300" tween="cubic" easing="inout" reversible="false" condition="Window.IsVisible(6000)">WindowOpen</animation>
+	<animation effect="slide" start="0,0" end="-300,0" time="300" tween="cubic" easing="inout" reversible="false" condition="Window.IsVisible(6000)">WindowClose</animation>
+	<animation effect="slide" start="0,120" end="0,33" time="300" tween="cubic" easing="inout" reversible="false" condition="Window.IsVisible(Home) + !IntegerGreaterThan(Container(9000).numitems,6)">WindowOpen</animation>
+	<animation effect="slide" start="0,120" end="0,0" time="300" tween="cubic" easing="inout" reversible="false" condition="Window.IsVisible(Home) + IntegerGreaterThan(Container(9000).numitems,6)">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="250" condition="Window.IsVisible(Home)">WindowClose</animation>
+	</include>	
+	<!--<include name="Animation_SubMenu">
 	<animation effect="slide" start="-300,0" end="0,0" time="300" tween="cubic" easing="inout" condition="Window.IsVisible(6000)">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="-300,0" time="300" tween="cubic" easing="inout" condition="Window.IsVisible(6000)">WindowClose</animation>
 	<animation effect="slide" start="0,120" end="0,33" time="300" tween="cubic" easing="inout" condition="Window.IsVisible(Home) + !IntegerGreaterThan(Container(9000).numitems,6)">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="0,120" time="300" tween="cubic" easing="inout" condition="Window.IsVisible(Home) + !IntegerGreaterThan(Container(9000).numitems,6)">WindowClose</animation>
 	<animation effect="slide" start="0,120" end="0,0" time="300" tween="cubic" easing="inout" condition="Window.IsVisible(Home) + IntegerGreaterThan(Container(9000).numitems,6)">WindowOpen</animation>
 	<animation effect="slide" start="0,0" end="0,120" time="300" tween="cubic" easing="inout" condition="Window.IsVisible(Home) + IntegerGreaterThan(Container(9000).numitems,6)">WindowClose</animation>
-	</include>
+	</include>-->
 	<include name="Animation_HiddenView">
 	<animation effect="slide" start="0,0" end="0,800" time="400" tween="cubic" easing="in" condition="Control.HasFocus(9920) | Control.IsVisible(9922) | Window.IsActive(135) | Window.IsActive(2001) | Window.IsActive(2003) | Control.HasFocus(9930) + Player.HasVideo + !Skin.HasSetting(fullscreentrailer)">Conditional</animation>
-	<animation effect="slide" end="0,40" time="500" tween="sine" easing="out" condition="Skin.HasSetting(nomediaflags) + !Control.IsVisible(57)">Conditional</animation>
+	<animation effect="slide" end="0,40" time="500" tween="sine" easing="out" condition="SubString(skin.string(mediaflags),off) + !Control.IsVisible(57)">Conditional</animation>
+	</include>
+	<include name="Animation_Timer1">
+	<timeperimage>5000</timeperimage>
+	</include>
+	<include name="Animation_Timer2">
+	<timeperimage>10000</timeperimage>
+	</include>
+	<include name="Animation_Timer3">
+	<timeperimage>30000</timeperimage>
+	</include>
+	<include name="Animation_Timer4">
+	<timeperimage>60000</timeperimage>
+	</include>
+	<include name="Animation_Timer5">
+	<timeperimage>600000</timeperimage>
+	</include>
+	<include name="Animation_Timer6">
+	<timeperimage>3600000</timeperimage>
+	</include>
+	<include name="Animation_CDart">
+	<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused + StringCompare(skin.string(cdart_seconds),2000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="!Player.Paused + StringCompare(skin.string(cdart_seconds),4000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="8000" loop="true" reversible="false" condition="!Player.Paused + StringCompare(skin.string(cdart_seconds),8000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="16000" loop="true" reversible="false" condition="!Player.Paused + StringCompare(skin.string(cdart_seconds),16000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="20000" loop="true" reversible="false" condition="!Player.Paused + StringCompare(skin.string(cdart_seconds),20000)">Conditional</animation>
+	</include>
+	<include name="Animation_ViewsCDart">
+	<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="[Player.HasVideo + !Player.Paused] + StringCompare(skin.string(cdart_seconds),2000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="[Player.HasVideo + !Player.Paused] + StringCompare(skin.string(cdart_seconds),4000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="8000" loop="true" reversible="false" condition="[Player.HasVideo + !Player.Paused] + StringCompare(skin.string(cdart_seconds),8000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="16000" loop="true" reversible="false" condition="[Player.HasVideo + !Player.Paused] + StringCompare(skin.string(cdart_seconds),16000)">Conditional</animation>
+	<animation effect="rotate" end="-360" center="auto" time="20000" loop="true" reversible="false" condition="[Player.HasVideo + !Player.Paused] + StringCompare(skin.string(cdart_seconds),20000)">Conditional</animation>
 	</include>
 	
 	<!-- ######################################################################### Fontes do menu principal ######################################################################### -->
@@ -945,8 +418,7 @@
 	<aligny>top</aligny>
 	<textcolor>$VAR[value_menucolorlabelfocus]</textcolor>
 	<scroll>true</scroll>
-	</include>
-	
+	</include>	
 
 	<!-- ######################################################################### Backgrounds / Dimensions ######################################################################### -->
 	<include name="InvisibleButton">
@@ -996,7 +468,13 @@
 	<posy>0</posy>
 	<width>1280</width>
 	<height>720</height>
-	<timeperimage>6000</timeperimage>
+	<include condition="StringCompare(skin.string(homebg_seconds),5000)">Animation_Timer1</include>
+	<include condition="StringCompare(skin.string(homebg_seconds),10000)">Animation_Timer2</include>
+	<include condition="StringCompare(skin.string(homebg_seconds),30000)">Animation_Timer3</include>
+	<include condition="StringCompare(skin.string(homebg_seconds),60000)">Animation_Timer4</include>
+	<include condition="StringCompare(skin.string(homebg_seconds),600000)">Animation_Timer5</include>
+	<include condition="StringCompare(skin.string(homebg_seconds),3600000)">Animation_Timer6</include>
+	<timeperimage>$VAR[value_homebgdelay]</timeperimage>
 	<randomize>true</randomize>
 	<include condition="Skin.HasSetting(keepaspect)">KeepAspect</include>
 	<fadetime>FanartCrossFadeTime</fadetime>
@@ -1020,6 +498,424 @@
 	<include>Animation_Fade</include>
 	<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
 	<visible>Window.IsVisible(101) | Window.IsVisible(103) | Window.IsVisible(106) | Window.IsVisible(109) | Window.IsVisible(111) | Window.IsVisible(114) | Window.IsVisible(121) | Window.IsVisible(126) | Window.IsVisible(128) | Window.IsVisible(129) | Window.IsVisible(130) | Window.IsVisible(132) | Window.IsVisible(134) | Window.IsVisible(136) | Window.IsVisible(137) | Window.IsVisible(623) | Window.IsVisible(630) | Window.IsVisible(633) | Window.IsVisible(2000) | Window.IsVisible(2008)</visible>
+	</control>
+	<include condition="!StringCompare(skin.string(defaultsettings),2)">DefaultSettings</include>
+	</include>
+	<include name="DefaultSettings">
+	<control type="image">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>1280</width>
+	<height>720</height>
+	<texture>black.png</texture>
+	<visible>!StringCompare(skin.string(defaultsettings),2)</visible>
+	</control>
+	<control type="group">
+	<animation effect="fade" time="800">Visible</animation>
+	<animation effect="fade" time="500">Hidden</animation>
+	<visible>!StringCompare(skin.string(defaultsettings),2)</visible>
+	<control type="button" id="900">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(font,font1)</onfocus>
+	<onfocus>Skin.SetString(animationwindow,zoom)</onfocus>
+	<onfocus>Skin.SetString(colortexture,graphite)</onfocus>
+	<onfocus>Skin.SetString(colorheader,red)</onfocus>
+	<onfocus>Skin.SetString(homeglass,75)</onfocus>
+	<onfocus>Skin.SetString(panelglass,75)</onfocus>
+	<onfocus>Skin.SetString(styleglass,75)</onfocus>
+	<onfocus>Skin.SetString(floorglass,85)</onfocus>
+	<onfocus>Skin.SetString(wallglass,05)</onfocus>
+	<onfocus>Skin.SetString(theme,coral)</onfocus>
+	<onfocus>Skin.SetString(style,graphite)</onfocus>
+	<onfocus>Skin.SetString(widgetsnumber,12)</onfocus>
+	<onfocus>Skin.SetString(widgetsmode,on)</onfocus>
+	<onfocus>Skin.SetString(widgets_seconds,3)</onfocus>
+	<onfocus>Skin.SetString(widemovies.art,poster)</onfocus>
+	<onfocus>Skin.SetString(widetvshows.art,poster)</onfocus>
+	<onfocus>Skin.SetString(wideconcerts.art,poster)</onfocus>
+	<onfocus>Skin.SetString(viewpanel.art,poster)</onfocus>
+	<onfocus>Skin.SetString(mfmovies_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfconcerts_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mftvshows_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfmusic_list,latestalbum)</onfocus>
+	<onfocus>Skin.SetString(mfvpl1_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl2_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl3_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl4_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl5_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl6_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl7_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl8_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl9_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl10_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl11_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl12_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl13_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl14_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl15_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl16_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl17_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl18_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl19_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfvpl20_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl1_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl2_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl3_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl4_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl5_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl6_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl7_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl8_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl9_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl10_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl11_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl12_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl13_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl14_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl15_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl16_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl17_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl18_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl19_list,latest)</onfocus>
+	<onfocus>Skin.SetString(mfapl20_list,latest)</onfocus>
+	<onfocus>Skin.SetString(case_default,deepblue)</onfocus>
+	<onfocus>Skin.SetString(case_bluray,sky)</onfocus>
+	<onfocus>Skin.SetString(case_3dbd,orange)</onfocus>
+	<onfocus>Skin.SetString(case_webtv,red)</onfocus>
+	<onfocus>Skin.SetString(case_hdtv,violet)</onfocus>
+	<onfocus>Skin.SetString(case_dvd,grey)</onfocus>
+	<onfocus>Skin.SetString(case_set,blood)</onfocus>
+	<onfocus>Skin.SetString(case_4k,chocolate)</onfocus>
+	<onfocus>Skin.SetString(codec_default,default)</onfocus>
+	<onfocus>Skin.SetString(codec_bluray,bluray)</onfocus>
+	<onfocus>Skin.SetString(codec_3dbd,3dbd)</onfocus>
+	<onfocus>Skin.SetString(codec_webtv,webtv)</onfocus>
+	<onfocus>Skin.SetString(codec_hdtv,hdtv)</onfocus>
+	<onfocus>Skin.SetString(codec_dvd,dvd)</onfocus>
+	<onfocus>Skin.SetString(codec_set,set)</onfocus>
+	<onfocus>Skin.SetString(codec_4k,4k)</onfocus>
+	<onfocus>Skin.SetString(panel_seconds,3)</onfocus>
+	<onfocus>Skin.SetString(gamevideo_seconds,2)</onfocus>
+	<onfocus>Skin.SetString(games_video,auto)</onfocus>
+	<onfocus>Skin.SetString(moviesfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(tvshowsfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(seasonsfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(episodesfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(musicvideosfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(musicfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(programsfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(gamesfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(setsfanart,fanart)</onfocus>
+	<onfocus>Skin.SetString(videogenrefanart,genre)</onfocus>
+	<onfocus>Skin.SetString(musicgenrefanart,genre)</onfocus>
+	<onfocus>Skin.SetString(multiplexlayout,fanart)</onfocus>
+	<onfocus>Skin.SetString(multiplexgameslayout,fanart)</onfocus>
+	<onfocus>Skin.SetString(showcaselayout,fanart)</onfocus>
+	<onfocus>Skin.SetString(showcasevideopanel,auto)</onfocus>
+	<onfocus>Skin.SetString(landscapexlayout,fanart)</onfocus>
+	<onfocus>Skin.SetString(multiplexvideopanel,auto)</onfocus>
+	<onfocus>Skin.SetString(multiplexgamespanel,auto)</onfocus>
+	<onfocus>Skin.SetString(glasslistvideopanel,auto)</onfocus>
+	<onfocus>Skin.SetString(showartvideopanel,auto)</onfocus>
+	<onfocus>Skin.SetString(wallvideogrid,default)</onfocus>
+	<onfocus>Skin.SetString(wallvideopanel,auto)</onfocus>
+	<onfocus>Skin.SetString(wallmusicgrid,default)</onfocus>
+	<onfocus>Skin.SetString(wallprograms,default)</onfocus>
+	<onfocus>Skin.SetString(wallgamesgrid,default)</onfocus>
+	<onfocus>Skin.SetString(weather_mode,7days)</onfocus>
+	<onfocus>Skin.SetString(weatherconditionbg,northamerica)</onfocus>
+	<onfocus>Skin.SetString(LyricScript_Path,script.cu.lrclyrics)</onfocus>
+	<onfocus>Skin.SetString(vis_bg,slideshowmosaicmix)</onfocus>
+	<onfocus>Skin.SetString(vis_layout,default)</onfocus>
+	<onfocus>Skin.SetString(games_link,rcb)</onfocus>
+	<onfocus>Skin.SetString(stylewatched,0)</onfocus>
+	<onfocus>Skin.SetString(colorwatched,nocolor)</onfocus>
+	<onfocus>Skin.SetString(videofurniture,full)</onfocus>
+	<onfocus>Skin.SetString(audiofurniture,full)</onfocus>
+	<onfocus>Skin.SetString(homebg_seconds,5000)</onfocus>
+	<onfocus>Skin.SetString(discaudio,0)</onfocus>
+	<onfocus>Skin.SetString(discvideo,0)</onfocus>
+	<onfocus>Skin.SetString(cdart_seconds,4000)</onfocus>
+	<onfocus>Skin.SetString(mediaflags,on)</onfocus>
+	<onfocus>Skin.SetBool(visanimation_panscan)</onfocus>
+	<onfocus>Skin.SetBool(darkbar)</onfocus>
+	<onfocus>Skin.SetBool(ontvtunes)</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(901),0:03,true)</onfocus>
+	</control>
+	<control type="button" id="901">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu1.master,movies)</onfocus>
+	<onfocus>Skin.SetString(movieswidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu1.action,ActivateWindow(videos,movietitles,return))</onfocus>
+	<onfocus>Skin.SetString(menu2.master,tvshows)</onfocus>
+	<onfocus>Skin.SetString(tvshowswidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu2.action,ActivateWindow(videos,tvshowtitles,return))</onfocus>
+	<onfocus>Skin.SetString(menu3.master,concerts)</onfocus>
+	<onfocus>Skin.SetString(concertswidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu3.action,ActivateWindow(videos,musicvideotitles,return))</onfocus>
+	<onfocus>Skin.SetString(menu4.master,music)</onfocus>
+	<onfocus>Skin.SetString(musicwidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu4.action,ActivateWindow(music))</onfocus>
+	<onfocus>Skin.SetString(menu5.master,livetv)</onfocus>
+	<onfocus>Skin.SetString(livetvwidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu5.action,ActivateWindow(PVR))</onfocus>
+	<onfocus>Skin.SetString(menu6.master,favourites)</onfocus>
+	<onfocus>Skin.SetString(favouriteswidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu6.action,ActivateWindow(favourites))</onfocus>
+	<onfocus>Skin.SetString(menu7.master,games)</onfocus>
+	<onfocus>Skin.SetString(gameswidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu7.action,RunScript(script.games.rom.collection.browser))</onfocus>
+	<onfocus>Skin.SetString(menu8.master,programs)</onfocus>
+	<onfocus>Skin.SetString(menu8.action,ActivateWindow(programs))</onfocus>
+	<onfocus>Skin.SetString(menu9.master,pictures)</onfocus>
+	<onfocus>Skin.SetString(menu9.action,ActivateWindow(pictures))</onfocus>
+	<onfocus>Skin.SetString(menu10.master,weather)</onfocus>
+	<onfocus>Skin.SetString(weatherwidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu10.action,ActivateWindow(weather))</onfocus>
+	<onfocus>Skin.SetString(menu11.master,settings)</onfocus>
+	<onfocus>Skin.SetString(settingswidget,true)</onfocus>
+	<onfocus>Skin.SetString(menu11.action,ActivateWindow(settings))</onfocus>
+	<onfocus>Skin.SetString(menu12.master,shutdown)</onfocus>
+	<onfocus>Skin.SetString(menu12.action,XBMC.ShutDown())</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(902),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="902">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu0101.master,movierecently)</onfocus><!-- Filme recentes -->
+	<onfocus>Skin.SetString(menu0101.action,ActivateWindow(videos,recentlyaddedmovies,return))</onfocus>
+	<onfocus>Skin.SetString(menu0102.master,moviesets)</onfocus><!-- Filme sets -->
+	<onfocus>Skin.SetString(menu0102.action,ActivateWindow(videos,moviesets,return))</onfocus>
+	<onfocus>Skin.SetString(menu0103.master,moviegenres)</onfocus><!-- Filme generos -->
+	<onfocus>Skin.SetString(menu0103.action,ActivateWindow(videos,moviegenres,return))</onfocus>
+	<onfocus>Skin.SetString(menu0104.master,movieyears)</onfocus><!-- Filme anos -->
+	<onfocus>Skin.SetString(menu0104.action,ActivateWindow(videos,movieyears,return))</onfocus>
+	<onfocus>Skin.SetString(menu0105.master,movieactors)</onfocus><!-- Filme atores -->
+	<onfocus>Skin.SetString(menu0105.action,ActivateWindow(videos,movieactors,return))</onfocus>
+	<onfocus>Skin.SetString(menu0106.master,moviedirectors)</onfocus><!-- Filme diretores -->
+	<onfocus>Skin.SetString(menu0106.action,ActivateWindow(videos,moviedirectors,return))</onfocus>
+	<onfocus>Skin.SetString(menu0107.master,moviestudios)</onfocus><!-- Filme estudios -->
+	<onfocus>Skin.SetString(menu0107.action,ActivateWindow(videos,moviestudios,return))</onfocus>
+	<onfocus>Skin.SetString(menu0108.master,moviecountries)</onfocus><!-- Filme paises -->
+	<onfocus>Skin.SetString(menu0108.action,ActivateWindow(videos,moviecountries,return))</onfocus>
+	<onfocus>Skin.SetString(menu0109.master,movietags)</onfocus><!-- Filme tags -->
+	<onfocus>Skin.SetString(menu0109.action,ActivateWindow(videos,movietags,return))</onfocus>
+	<onfocus>Skin.SetString(menu0110.master,videocleanlibrary)</onfocus><!-- Video limpar colecao -->
+	<onfocus>Skin.SetString(menu0110.action,CleanLibrary(video))</onfocus>
+	<onfocus>Skin.SetString(menu0111.master,videoupdatelibrary)</onfocus><!-- Video atualizar colecao -->
+	<onfocus>Skin.SetString(menu0111.action,UpdateLibrary(video))</onfocus>
+	<onfocus>Skin.SetString(menu0112.master,videofiles)</onfocus><!-- Video arquivos -->
+	<onfocus>Skin.SetString(menu0112.action,ActivateWindow(videos,files))</onfocus>
+	<onfocus>Skin.SetString(menu0113.master,globalsearch)</onfocus><!-- Global search -->
+	<onfocus>Skin.SetString(menu0113.action,RunScript(script.globalsearch))</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(903),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="903">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu0201.master,tvshowrecently)</onfocus><!-- Episodios recentes -->
+	<onfocus>Skin.SetString(menu0201.action,ActivateWindow(videos,recentlyaddedepisodes,return))</onfocus>
+	<onfocus>Skin.SetString(menu0202.master,tvguide)</onfocus><!-- Guia de TV -->
+	<onfocus>Skin.SetString(menu0202.action,RunScript(script.tv.show.next.aired))</onfocus>
+	<onfocus>Skin.SetString(menu0203.master,tvshowgenres)</onfocus><!-- Seriado generos -->
+	<onfocus>Skin.SetString(menu0203.action,ActivateWindow(videos,tvshowgenres,return))</onfocus>
+	<onfocus>Skin.SetString(menu0204.master,tvshowyears)</onfocus><!-- Seriado anos -->
+	<onfocus>Skin.SetString(menu0204.action,ActivateWindow(videos,tvshowyears,return))</onfocus>
+	<onfocus>Skin.SetString(menu0205.master,tvshowactors)</onfocus><!-- Seriado atores -->
+	<onfocus>Skin.SetString(menu0205.action,ActivateWindow(videos,tvshowactors,return))</onfocus>
+	<onfocus>Skin.SetString(menu0206.master,tvshowstudios)</onfocus><!-- Seriado estudios -->
+	<onfocus>Skin.SetString(menu0206.action,ActivateWindow(videos,tvshowstudios,return))</onfocus>
+	<onfocus>Skin.SetString(menu0207.master,videocleanlibrary)</onfocus><!-- Video limpar colecao -->
+	<onfocus>Skin.SetString(menu0207.action,CleanLibrary(video))</onfocus>
+	<onfocus>Skin.SetString(menu0208.master,videoupdatelibrary)</onfocus><!-- Video atualizar colecao -->
+	<onfocus>Skin.SetString(menu0208.action,UpdateLibrary(video))</onfocus>
+	<onfocus>Skin.SetString(menu0209.master,videofiles)</onfocus><!-- Video arquivos -->
+	<onfocus>Skin.SetString(menu0209.action,ActivateWindow(videos,files))</onfocus>
+	<onfocus>Skin.SetString(menu0210.master,globalsearch)</onfocus><!-- Global search -->
+	<onfocus>Skin.SetString(menu0210.action,RunScript(script.globalsearch))</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(904),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="904">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu0301.master,concertrecently)</onfocus><!-- Concerto recentes -->
+	<onfocus>Skin.SetString(menu0301.action,ActivateWindow(videos,recentlyaddedmusicvideos,return))</onfocus>
+	<onfocus>Skin.SetString(menu0302.master,concertgenres)</onfocus><!-- Concerto generos -->
+	<onfocus>Skin.SetString(menu0302.action,ActivateWindow(videos,musicvideogenres,return))</onfocus>
+	<onfocus>Skin.SetString(menu0303.master,concertyears)</onfocus><!-- Concerto anos -->
+	<onfocus>Skin.SetString(menu0303.action,ActivateWindow(videos,musicvideoyears,return))</onfocus>
+	<onfocus>Skin.SetString(menu0304.master,concertartists)</onfocus><!-- Concerto artistas -->
+	<onfocus>Skin.SetString(menu0304.action,ActivateWindow(videos,musicvideoartists,return))</onfocus>
+	<onfocus>Skin.SetString(menu0305.master,concertalbums)</onfocus><!-- Concerto albuns -->
+	<onfocus>Skin.SetString(menu0305.action,ActivateWindow(videos,musicvideoalbums,return))</onfocus>
+	<onfocus>Skin.SetString(menu0306.master,concertdirectors)</onfocus><!-- Concerto diretores -->
+	<onfocus>Skin.SetString(menu0306.action,ActivateWindow(videos,musicvideodirectors,return))</onfocus>
+	<onfocus>Skin.SetString(menu0307.master,concertstudios)</onfocus><!-- Concerto estudios -->
+	<onfocus>Skin.SetString(menu0307.action,ActivateWindow(videos,musicvideostudios,return))</onfocus>
+	<onfocus>Skin.SetString(menu0308.master,videocleanlibrary)</onfocus><!-- Video limpar colecao -->
+	<onfocus>Skin.SetString(menu0308.action,CleanLibrary(video))</onfocus>
+	<onfocus>Skin.SetString(menu0309.master,videoupdatelibrary)</onfocus><!-- Video atualizar colecao -->
+	<onfocus>Skin.SetString(menu0309.action,UpdateLibrary(video))</onfocus>
+	<onfocus>Skin.SetString(menu0310.master,videofiles)</onfocus><!-- Video arquivos -->
+	<onfocus>Skin.SetString(menu0310.action,ActivateWindow(videos,files))</onfocus>
+	<onfocus>Skin.SetString(menu0311.master,globalsearch)</onfocus><!-- Global search -->
+	<onfocus>Skin.SetString(menu0311.action,RunScript(script.globalsearch))</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(905),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="905">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu0501.master,livetvchannels)</onfocus><!-- Canais de TV -->
+	<onfocus>Skin.SetString(menu0501.action,ActivateWindowAndFocus(PVR, 32,0, 11,0))</onfocus>
+	<onfocus>Skin.SetString(menu0502.master,livetvepg)</onfocus><!-- EPG -->
+	<onfocus>Skin.SetString(menu0502.action,ActivateWindowAndFocus(PVR, 31,0, 10,0))</onfocus>
+	<onfocus>Skin.SetString(menu0503.master,livetvradiostations)</onfocus><!-- Estacoes de Radio -->
+	<onfocus>Skin.SetString(menu0503.action,ActivateWindowAndFocus(PVR, 33,0, 12,0))</onfocus>
+	<onfocus>Skin.SetString(menu0504.master,livetvrecords)</onfocus><!-- Gravacoes -->
+	<onfocus>Skin.SetString(menu0504.action,ActivateWindowAndFocus(PVR, 34,0, 13,0))</onfocus>
+	<onfocus>Skin.SetString(menu0505.master,livetvtimers)</onfocus><!-- Agendamento -->
+	<onfocus>Skin.SetString(menu0505.action,ActivateWindowAndFocus(PVR, 35,0, 14,0))</onfocus>
+	<onfocus>Skin.SetString(menu0506.master,livetvsettings)</onfocus><!-- Ajustes -->
+	<onfocus>Skin.SetString(menu0506.action,ActivateWindow(pvrsettings))</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(906),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="906">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu0401.master,musicrecentlyplayed)</onfocus><!-- Musica recem tocada -->
+	<onfocus>Skin.SetString(menu0401.action,ActivateWindow(musiclibrary,recentlyplayedalbums,return))</onfocus>
+	<onfocus>Skin.SetString(menu0402.master,musicrecently)</onfocus><!-- Musica recentes -->
+	<onfocus>Skin.SetString(menu0402.action,ActivateWindow(musiclibrary,recentlyaddedalbums,return))</onfocus>
+	<onfocus>Skin.SetString(menu0403.master,musicvideoclips)</onfocus><!-- Musica video clipes -->
+	<onfocus>Skin.SetString(menu0403.action,ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[MusicPlayer.Artist],return))</onfocus>
+	<onfocus>Skin.SetString(menu0404.master,musicgenres)</onfocus><!-- Musica generos -->
+	<onfocus>Skin.SetString(menu0404.action,ActivateWindow(musiclibrary,genres,return))</onfocus>
+	<onfocus>Skin.SetString(menu0405.master,musicplaylists)</onfocus><!-- Musica playlists -->
+	<onfocus>Skin.SetString(menu0405.action,ActivateWindow(musiclibrary,playlists,return))</onfocus>
+	<onfocus>Skin.SetString(menu0406.master,musicartists)</onfocus><!-- Musica artistas -->
+	<onfocus>Skin.SetString(menu0406.action,ActivateWindow(musiclibrary,artists,return))</onfocus>
+	<onfocus>Skin.SetString(menu0407.master,musicalbums)</onfocus><!-- Musica albuns -->
+	<onfocus>Skin.SetString(menu0407.action,ActivateWindow(musiclibrary,albums,return))</onfocus>
+	<onfocus>Skin.SetString(menu0408.master,musicsongs)</onfocus><!-- Musica faixas -->
+	<onfocus>Skin.SetString(menu0408.action,ActivateWindow(musiclibrary,songs,return))</onfocus>
+	<onfocus>Skin.SetString(menu0409.master,musicfiles)</onfocus><!-- Musica arquivos -->
+	<onfocus>Skin.SetString(menu0409.action,ActivateWindow(musicfiles))</onfocus>
+	<onfocus>Skin.SetString(menu0410.master,musicpartymode)</onfocus><!-- Musica modo festa -->
+	<onfocus>Skin.SetString(menu0410.action,PlayerControl(Partymode(music)))</onfocus>
+	<onfocus>Skin.SetString(menu0411.master,musiccompilations)</onfocus><!-- Musica compilacoes -->
+	<onfocus>Skin.SetString(menu0411.action,ActivateWindow(musiclibrary,compilations,return))</onfocus>
+	<onfocus>Skin.SetString(menu0412.master,musictop100)</onfocus><!-- Musica top100 -->
+	<onfocus>Skin.SetString(menu0412.action,ActivateWindow(musiclibrary,top100,return))</onfocus>
+	<onfocus>Skin.SetString(menu0413.master,musiccleanlibrary)</onfocus><!-- Musica limpar colecao -->
+	<onfocus>Skin.SetString(menu0413.action,CleanLibrary(music))</onfocus>
+	<onfocus>Skin.SetString(menu0414.master,musicupdatelibrary)</onfocus><!-- Musica atualizar colecao -->
+	<onfocus>Skin.SetString(menu0414.action,UpdateLibrary(music))</onfocus>
+	<onfocus>Skin.SetString(menu0415.master,globalsearch)</onfocus><!-- Global search -->
+	<onfocus>Skin.SetString(menu0415.action,RunScript(script.globalsearch))</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(907),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="907">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu1001.master,weather36hour)</onfocus><!-- Clima 36 horas -->
+	<onfocus>Skin.SetString(menu1001.action,Skin.SetString(weather_mode,36hour))</onfocus>
+	<onfocus>Skin.SetString(menu1002.master,weatherweekend)</onfocus><!-- Clima final de semana -->
+	<onfocus>Skin.SetString(menu1002.action,Skin.SetString(weather_mode,weekend))</onfocus>
+	<onfocus>Skin.SetString(menu1003.master,weather7days)</onfocus><!-- Clima 7 dias -->
+	<onfocus>Skin.SetString(menu1003.action,Skin.SetString(weather_mode,7days))</onfocus>
+	<onfocus>Skin.SetString(menu1004.master,weatheralerts)</onfocus><!-- Clima alertas -->
+	<onfocus>Skin.SetString(menu1004.action,Skin.SetString(weather_mode,alerts))</onfocus>
+	<onfocus>Skin.SetString(menu1005.master,weathersettings)</onfocus><!-- Clima ajustes -->
+	<onfocus>Skin.SetString(menu1005.action,ActivateWindow(weathersettings))</onfocus>
+	<onfocus>Skin.SetString(menu1006.master,weathersettings)</onfocus><!-- Clima estacoes -->
+	<onfocus>Skin.SetString(menu1006.action,ActivateWindow(633))</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(908),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="908">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu1101.master,settingscustom)</onfocus><!-- Customizar menu -->
+	<onfocus>Skin.SetString(menu1101.action,ActivateWindow(6000))</onfocus>
+	<onfocus>Skin.SetString(menu1102.master,settingspresets)</onfocus><!-- Pre-definicoes -->
+	<onfocus>Skin.SetString(menu1102.action,ActivateWindow(630))</onfocus>
+	<onfocus>Skin.SetString(menu1103.master,settingsskin)</onfocus><!-- Ajustes da skin -->
+	<onfocus>Skin.SetString(menu1103.action,ActivateWindow(skinsettings))</onfocus>
+	<onfocus>Skin.SetString(menu1104.master,settingsaddons)</onfocus><!-- Janela Add-ons -->
+	<onfocus>Skin.SetString(menu1104.action,ActivateWindow(addonbrowser))</onfocus>
+	<onfocus>Skin.SetString(menu1105.master,settingsaddonsprograms)</onfocus><!-- Add-ons de programas -->
+	<onfocus>Skin.SetString(menu1105.action,ActivateWindow(programs,addons,return))</onfocus>
+	<onfocus>Skin.SetString(menu1106.master,settingsaddonsvideo)</onfocus><!-- Add-ons de video -->
+	<onfocus>Skin.SetString(menu1106.action,ActivateWindow(video,addons,return))</onfocus>
+	<onfocus>Skin.SetString(menu1107.master,settingsaddonsmusic)</onfocus><!-- Add-ons de musica -->
+	<onfocus>Skin.SetString(menu1107.action,ActivateWindow(music,addons,return))</onfocus>
+	<onfocus>Skin.SetString(menu1108.master,settingsaddonspictures)</onfocus><!-- Add-ons de imagem -->
+	<onfocus>Skin.SetString(menu1108.action,ActivateWindow(pictures,addons,return))</onfocus>
+	<onfocus>Skin.SetString(menu1109.master,settingsfilemanager)</onfocus><!-- Gerenciador de arquivos -->
+	<onfocus>Skin.SetString(menu1109.action,ActivateWindow(filemanager))</onfocus>
+	<onfocus>Skin.SetString(menu1110.master,settingssystem)</onfocus><!-- Info do sistema -->
+	<onfocus>Skin.SetString(menu1110.action,ActivateWindow(systeminfo))</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(909),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="909">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>Skin.SetString(menu1201.master,quit)</onfocus><!-- Sair -->
+	<onfocus>Skin.SetString(menu1201.action,Quit)</onfocus>
+	<onfocus>Skin.SetString(menu1202.master,powerdown)</onfocus><!-- Desligar sistema -->
+	<onfocus>Skin.SetString(menu1202.action,Powerdown)</onfocus>
+	<onfocus>Skin.SetString(menu1203.master,reboot)</onfocus><!-- Reiniciar sistema -->
+	<onfocus>Skin.SetString(menu1203.action,Reboot)</onfocus>
+	<onfocus>Skin.SetString(menu1204.master,suspend)</onfocus><!-- Suspender -->
+	<onfocus>Skin.SetString(menu1204.action,Suspend)</onfocus>
+	<onfocus>Skin.SetString(menu1205.master,hibernate)</onfocus><!-- Hibernar -->
+	<onfocus>Skin.SetString(menu1205.action,Hibernate)</onfocus>
+	<onfocus>Skin.SetString(menu1206.master,timer)</onfocus><!-- Temporizador -->
+	<onfocus>Skin.SetString(menu1206.action,XBMC.AlarmClock(shutdowntimer,XBMC.Powerdown()))</onfocus>
+	<onfocus>Skin.SetString(menu1207.master,canceltimer)</onfocus><!-- Cancelar temporizador -->
+	<onfocus>Skin.SetString(menu1207.action,XBMC.CancelAlarm(shutdowntimer))</onfocus>
+	<onfocus>Skin.SetString(menu1208.master,logoff))</onfocus><!-- Deslogar -->
+	<onfocus>Skin.SetString(menu1208.action,System.Logoff)</onfocus>
+	<onfocus>AlarmClock(nextstep,SetFocus(910),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="910">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>AlarmClock(nextstep,SetFocus(911),0:02,true)</onfocus>
+	</control>
+	<control type="button" id="911">
+	<include>InvisibleButton</include>
+	<onclick>noop</onclick>
+	<onfocus>AlarmClock(replace,ReplaceWindow(0),0:01,true)</onfocus>
+	<onfocus>Skin.SetString(defaultsettings,2)</onfocus>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>1280</width>
+	<height>720</height>
+	<texture>hive_back.png</texture>
+	</control>
+	<control type="image"><!-- Skin Logo -->
+	<posx>490</posx>
+	<posy>216</posy>
+	<width>300</width>
+	<height>169</height>
+	<align>left</align>
+	<aspectratio>keep</aspectratio>
+	<texture>aeonmq5_logo.png</texture>
+	</control>
+	<control type="label">
+	<posx>100</posx>
+	<posy>390</posy>
+	<width>1080</width>
+	<height>120</height>
+	<align>center</align>
+	<textcolor>B6FFFAF0</textcolor>
+	<font>Font_21</font>
+	<label>$VAR[value_settingsstep]</label>
+	</control>
 	</control>
 	</include>
 	<include name="TrailerWindow">
@@ -1401,8 +1297,8 @@
 	<posx>0</posx>
 	<posy>0</posy>
 	<width>70</width>
-	<height>100</height>
-	<texture diffuse="thumb_poster_diffuse.png" >DefaultVideoPoster.png</texture>
+	<height>135</height>
+	<texture>widget_furniture.png</texture>
 	</include>
 	<include name="TopMenuButtonFilter">
 	<width>274</width>
@@ -1430,7 +1326,7 @@
 	<font>Font_15</font>
 	<textcolor>FFFFFAF0</textcolor>
 	</include>
-	<include name="ButtonColorDimensions">
+	<include name="ButtonColor">
 	<posx>0</posx>
 	<posy>0</posy>
 	<width>30</width>
@@ -1440,22 +1336,19 @@
 	<texturefocus>colorselector_iconfocus.png</texturefocus>
 	<animation effect="zoom" center="auto" start="90" end="140" time="600" tween="back" easing="out" reversible="false">Focus</animation>
 	</include>
-	<include name="CodecSelectorDimensions">
-	<posx>0</posx>
-	<posy>0</posy>
-	<height>60</height>
-	<width>89</width>
-	<label>-</label>
-	<align>center</align>
-	<aligny>center</aligny>
-	<aspectratio>keep</aspectratio>
-	</include>
-	<include name="CaseSelectorDimensions">
+	<include name="CaseSelector">
 	<posx>320</posx>
 	<posy>0</posy>
 	<width>190</width>
 	<height>270</height>
 	<aspectratio>stretch</aspectratio>
+	</include>
+	<include name="CaseSelectorReflect">
+	<posx>320</posx>
+	<posy>243</posy>
+	<width>190</width>
+	<height>270</height>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
 	</include>
 	<include name="Objects_KeyboardSingle">
 	<texturenofocus>darkgrey.png</texturenofocus>
@@ -1527,14 +1420,14 @@
 	<align>center</align>
 	<aligny>center</aligny>
 	<label> | </label>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>50FFFAF0</textcolor>
 	</include>
 	<include name="HomeFlagLabel">
 	<height>41</height>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	</include>
@@ -1575,10 +1468,10 @@
 	</control>
 	<control type="label">
 	<posx>40</posx>
-	<posy>2</posy>
+	<posy>-4</posy>
 	<width>370</width>
 	<height>25</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$INFO[Window(2003).Property(AudioLanguage.1)]$INFO[Window(2003).Property(AudioLanguage.2), / ]$INFO[Window(2003).Property(AudioLanguage.3), / ]$INFO[Window(2003).Property(AudioLanguage.4), / ]$INFO[Window(2003).Property(AudioLanguage.5), / ]$INFO[Window(2003).Property(AudioLanguage.6), / ]$INFO[Window(2003).Property(AudioLanguage.7), / ]$INFO[Window(2003).Property(AudioLanguage.8), / ]$INFO[Window(2003).Property(AudioLanguage.9), / ]$INFO[Window(2003).Property(AudioLanguage.10), / ]</label>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
@@ -1598,10 +1491,10 @@
 	</control>
 	<control type="label">
 	<posx>40</posx>
-	<posy>32</posy>
+	<posy>26</posy>
 	<width>370</width>
 	<height>25</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$INFO[Window(2003).Property(SubtitleLanguage.1)]$INFO[Window(2003).Property(SubtitleLanguage.2), / ]$INFO[Window(2003).Property(SubtitleLanguage.3), / ]$INFO[Window(2003).Property(SubtitleLanguage.4), / ]$INFO[Window(2003).Property(SubtitleLanguage.5), / ]$INFO[Window(2003).Property(SubtitleLanguage.6), / ]$INFO[Window(2003).Property(SubtitleLanguage.7), / ]$INFO[Window(2003).Property(SubtitleLanguage.8), / ]$INFO[Window(2003).Property(SubtitleLanguage.9), / ]$INFO[Window(2003).Property(SubtitleLanguage.10), / ]</label>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
@@ -1825,28 +1718,9 @@
 	<width>1260</width>
 	<height>3</height>
 	</include>
-	<include name="Dialogs_Label1_Vox">
-	<posx>-962</posx>
-	<posy>210</posy>
-	<width>625</width>
-	<height>38</height>
-	<font>Font_17</font>
-	<textcolor>c0FFFFFF</textcolor>
-	<align>center</align>
-	<aligny>top</aligny>
-	</include>
-	<include name="Dialogs_Label2_Vox">
-	<posx>-978</posx>
-	<posy>261</posy>
-	<width>675</width>
-	<height>154</height>
-	<font>Font_23</font>
-	<align>left</align>
-	<aligny>top</aligny>
-	</include>
 	<include name="Dialogs_Label1">
 	<posx>10</posx>
-	<posy>4</posy>
+	<posy>2</posy>
 	<width>500</width>
 	<height>35</height>
 	<align>left</align>
@@ -1856,7 +1730,7 @@
 	</include>
 	<include name="Dialogs_Label2">
 	<posx>1270</posx>
-	<posy>4</posy>
+	<posy>2</posy>
 	<width>500</width>
 	<height>35</height>
 	<align>right</align>
@@ -1866,7 +1740,7 @@
 	</include>
 	<include name="Dialogs_Label3">
 	<posx>10</posx>
-	<posy>34</posy>
+	<posy>32</posy>
 	<width>470</width>
 	<height>35</height>
 	<align>left</align>
@@ -1876,7 +1750,7 @@
 	</include>
 	<include name="Dialogs_Label4">
 	<posx>1270</posx>
-	<posy>34</posy>
+	<posy>32</posy>
 	<width>470</width>
 	<height>35</height>
 	<align>right</align>
@@ -2185,7 +2059,7 @@
 	<height>20</height>
 	<align>right</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$VAR[value_multilabel]</label>
 	<scroll>true</scroll>
@@ -2226,7 +2100,7 @@
 	<height>20</height>
 	<align>left</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>[COLOR=$VAR[value_headercolor]]$INFO[Weather.Temperature][/COLOR][COLOR=50FFFAF0] | [/COLOR]$INFO[Window(Weather).Property(Current.Condition)][COLOR=50FFFAF0] | [/COLOR][COLOR=$VAR[value_headercolor]]$INFO[System.Time][/COLOR]</label>
 	<scroll>true</scroll>
@@ -2267,7 +2141,7 @@
 	<posy>35</posy>
 	<width>260</width>
 	<height>20</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>left</align>
 	<textcolor>E4101010</textcolor>
 	<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
@@ -2320,7 +2194,7 @@
 	<posy>694</posy>
 	<width>1030</width>
 	<height>20</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<urlset>1</urlset>
 	<textcolor>FFFFFAF0</textcolor>
 	<headlinecolor>FFFFFAF0</headlinecolor>
@@ -2352,12 +2226,12 @@
 	</control>
 	<control type="rss" id="1">
 	<posx>127</posx>
-	<posy>697</posy>
+	<posy>694</posy>
 	<width>1140</width>
 	<height>20</height>
 	<urlset>1</urlset>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<headlinecolor>FFFFFAF0</headlinecolor>
 	<highlightcolor>A9736AFF</highlightcolor>
@@ -2398,10 +2272,10 @@
 	<height>70</height>
 	<align>center</align>
 	<aligny>center</aligny>
-	<texture>darkgrey.png</texture>
+	<texture>scrolllabel_back.png</texture>
 	</control>
 	<control type="label">
-	<posx>0</posx>
+	<posx>1</posx>
 	<posy>0</posy>
 	<width>70</width>
 	<height>70</height>
@@ -2409,7 +2283,7 @@
 	<aligny>center</aligny>
 	<label>$INFO[ListItem.SortLetter]</label>
 	<textcolor>FFFFFAF0</textcolor>
-	<font>Font_23</font>
+	<font>Font_32</font>
 	</control>
 	</control>
 	</include>
@@ -2422,6 +2296,7 @@
 	<height>232</height>
 	<animation effect="slide" end="340,330" time="0" condition="Control.IsVisible(50)">Conditional</animation>
 	<animation effect="slide" end="610,330" time="0" condition="Control.IsVisible(51)">Conditional</animation>
+	<animation effect="slide" end="605,550" time="0" condition="Control.IsVisible(53)">Conditional</animation>
 	<animation effect="fade" start="100" end="100" time="0">Visible</animation>
 	<animation effect="fade" start="100" end="0" time="500" delay="200">Hidden</animation>
 	<visible>!Skin.HasSetting(noscrollletters) + Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
@@ -2432,10 +2307,10 @@
 	<height>70</height>
 	<align>center</align>
 	<aligny>center</aligny>
-	<texture>darkgrey.png</texture>
+	<texture>scrolllabel_back.png</texture>
 	</control>
 	<control type="label">
-	<posx>0</posx>
+	<posx>1</posx>
 	<posy>0</posy>
 	<width>70</width>
 	<height>70</height>
@@ -2443,7 +2318,7 @@
 	<aligny>center</aligny>
 	<label>$INFO[ListItem.SortLetter]</label>
 	<textcolor>FFFFFAF0</textcolor>
-	<font>Font_23</font>
+	<font>Font_32</font>
 	</control>
 	</control>
 	</include>
@@ -2858,7 +2733,7 @@
 	<label>-</label>
 	<property name="condition">$INFO[skin.string(osd_video_furniture),disable)]</property>
 	<icon>osd_menu_furniture.png</icon>
-	<onclick condition="!Skin.HasSetting(customosd)">Skin.ToggleSetting(novideofurniture)</onclick>
+	<onclick condition="!Skin.HasSetting(customosd)">SetFocus(4205)</onclick>
 	<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_video_furniture),disable)">Skin.SetString(osd_video_furniture,disable)</onclick>
 	<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_video_furniture),disable)">Skin.Reset(osd_video_furniture,disable)</onclick>
 	<visible>[!Window.IsActive(142) + !SubString(skin.string(osd_video_furniture),disable) | Skin.HasSetting(customosd)]</visible>
@@ -3012,15 +2887,15 @@
 	</control>
 	</focusedlayout>
 	<content>
-	<!--<item id="16">
+	<item id="16">
 	<label>-</label>
 	<property name="condition">$INFO[skin.string(osd_audio_info),disable)]</property>
 	<icon>osd_menu_info.png</icon>
-	<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(135)</onclick>
+	<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(songinformation)</onclick>
 	<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_audio_info),disable)">Skin.SetString(osd_audio_info,disable)</onclick>
 	<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_audio_info),disable)">Skin.Reset(osd_audio_info,disable)</onclick>
 	<visible>[!SubString(skin.string(osd_audio_info),disable) | Skin.HasSetting(customosd)]</visible>
-	</item>-->
+	</item>
 	<item id="10"><!-- playlist -->
 	<label>-</label>
 	<property name="condition">$INFO[skin.string(osd_audio_playlist),disable)]</property>

@@ -1,3 +1,62 @@
+[B][COLOR=FFFF8C00]BUILD 1.5.1 - RELEASE DATE 11/1/2013[/COLOR][/B]
+
+Added: GlassList view - Tagline for TvShows.
+Added: Options for show/hide widgets for Settings Menu and Favourites Menu.
+Added: Widgets Modes - Always visible, manual (old clean mode) and auto.
+Added: Multiple backgrounds in Main Menu - Slide transition timer. 
+Added: Disc Art -  swing speed control.
+Added: Disc Style Selector.
+Added: Media Flags - Automatic hide mode.
+Added: WMC PVR - Support to series recording (thanks to TheImmortal)
+Added: Wall view - Information Panel.
+Added: 3DWall view - Support to episodes.
+Added: Option to hide tagline for movies and tvshows.
+Added: Main Menu Customization/Weather - preview icons, static or animated.
+Added: Music OSD - Info button.
+Added: Main Menu - Transparency level for all panels.
+Added: Media Case - Individual on/off for each view type.
+Added: Disc Art - Individual on/off for each view type.
+Added: Option to disable first widget "In Progress".
+Added: First Settings, in steps - To prevent errors in first settings on some systems.
+Added: Music Views - All views available for non-library mode.
+Improved: Font size for all information panels.
+Improved: Main Menu - Trailer in window mode.
+Improved: Panel view - Dimmer style.
+Improved: ShowArt view - Layout details.
+Changed: Widgets effect, slide to fade - to prevent skin freeze in some cases.
+Fixed: GlassList view - Missing item name during the playing,
+Fixed: RCB - Multiplex view - Aspect ratio for thumbs.
+Fixed: Video Extras script - Compatible to latest build.
+Fixed: Media Flags Bar/Transparency selector - Layout details.
+Fixed: Double items in the information panel to Albums and artists.
+
+
+[B][COLOR=FFFF8C00]BUILD 1.4.5 PRE-RC3 - RELEASE DATE 10/15/2013[/COLOR][/B]
+
+Added: Button to access Artwork Downloader script in Context Menu - Solo mode and Gui Mode.
+Added: Support to Video Extras script - access by Video Info window.
+Added: Watched Flag Selector - Including style and color selector.
+Added: ShowArt view - Support to episodes.
+Added: ShowArt view - option to fixed list.
+Added: CleartLogo and ClearArt - Support to Season level and Episodes level.
+Added: 3D Wall view - Watched Flag.
+Added: RCB - Auto instalation. 
+Added: RCB - Multiplex view.
+Added: Button to reset the default settings - Just re-apply major settings, is not a full reset.
+Added: Video Furniture - option to show full, partial or hidden mode.
+Improved: Multiplex view - Layout details.
+Changed: Banner view - Removed dimmer.
+Changed: Logo and Clearart in full screen mode to prevent missing art.
+Changed: Actors list/Albums list - now in list mode - no more in wrapped mode.
+Fixed: LandScapeX view - Missing information in panel.
+Fixed: trakt script/Context menu - layout details.
+Fixed: Showcase view/Flat mode - Uniform size of posters.
+Fixed: Weather Window - Missing buttons in top menu.
+Fixed: Missing Rating Flag in some cases. (thanks to CutSickAss) 
+Fixed: Weather Widgets - Layout details in mode Weekend or 36 hour.
+Fixed: RightList view - Overlapping in information panel.
+
+
 [B][COLOR=FFFF8C00]BUILD 1.3.2 RC2 - RELEASE DATE 10/5/2013[/COLOR][/B]
 
 Added: New Watched Flag.

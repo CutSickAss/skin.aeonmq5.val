@@ -93,13 +93,28 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # Ashok Manker <amanker@yahoo.com>, 2012-2013
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
 "Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Hindi (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/hi/)\n"
 "MIME-Version: 1.0\n"
@@ -514,7 +529,7 @@ msgid "PATH"
 msgstr ""
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
+msgid "DISC"
 msgstr ""
 
 msgctxt "#31097"
@@ -594,7 +609,7 @@ msgid "VIDEO NODE"
 msgstr ""
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
+msgid "DISC SWING SPEED"
 msgstr ""
 
 msgctxt "#31117"
@@ -889,6 +904,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr ""
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr ""
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr ""
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr ""
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr ""
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr ""
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr ""
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr ""
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr ""
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr ""
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr ""
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr ""
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr ""
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -955,8 +1038,8 @@ msgid "Page"
 msgstr ""
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "प्लेलिस्ट में लघुचित्र निर्धारित करें"
+msgid "THUMBNAIL SET"
+msgstr ""
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1078,7 +1161,7 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr ""
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
+msgid "MANAGEMENT OF WIDGETS"
 msgstr ""
 
 msgctxt "#31247"
@@ -1141,6 +1224,14 @@ msgid ""
 "path of the root.[CR][CR]The default image for AEON MQ 5 has pixels 72dpi "
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
+msgstr ""
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
 msgstr ""
 
 #. ....
@@ -2076,8 +2167,8 @@ msgid "AUDIO LANGUAGES"
 msgstr ""
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "'देखे गए' लेबल "
+msgid "WATCHED LABEL"
+msgstr ""
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2536,7 +2627,9 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "सावधान: यह प्रक्रिया अपरिवर्तनीय है!"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
 msgstr ""
 
 msgctxt "#31601"
@@ -2622,7 +2715,7 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr ""
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
+msgid "PANEL DELAY"
 msgstr ""
 
 msgctxt "#31622"
@@ -2770,16 +2863,16 @@ msgid ""
 msgstr ""
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "अनेक खबरें एवं बहुत ..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
+msgid "Finalizing Settings"
 msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "प्रस्तुति छोड़ें "
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3477,6 +3570,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr ""
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -4017,6 +4150,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr ""
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr ""
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr ""
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr ""
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr ""
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr ""
@@ -4026,7 +4175,7 @@ msgid "EPISODES AIRED TODAY"
 msgstr ""
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
 msgstr ""
 
 msgctxt "#31983"

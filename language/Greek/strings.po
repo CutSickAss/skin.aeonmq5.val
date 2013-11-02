@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # CutSickAss <cutsickass@yahoo.com>, 2013
 # CutSickAss <cutsickass@yahoo.com>, 2013
 msgid ""
@@ -100,7 +115,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 18:46+0000\n"
+"PO-Revision-Date: 2013-10-29 09:09+0000\n"
 "Last-Translator: CutSickAss <cutsickass@yahoo.com>\n"
 "Language-Team: Greek (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -515,8 +530,8 @@ msgid "PATH"
 msgstr "ΔΙΑΔΡΟΜΗ"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "ΔΙΑΓΡΑΦΗ ΔΙΑΔΡΟΜΗΣ - ΑΠΟΚΡΥΨΗ ΤΟΥ ΑΝΤΙΚ. ΣΤΟ ΚΕΝΤΡΙΚΟ ΜΕΝΟΥ"
+msgid "DISC"
+msgstr "ΔΙΣΚΟΣ"
 
 msgctxt "#31097"
 msgid "Access to collection"
@@ -595,8 +610,8 @@ msgid "VIDEO NODE"
 msgstr "ΚΟΜΒΟΣ ΒΙΝΤΕΟ"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "ΕΦΕ ΣΚΑΚΙΕΡΑΣ"
+msgid "DISC SWING SPEED"
+msgstr "ΤΑΧΥΤΗΤΑ ΠΕΡΙΣΤΡΟΦΗΣ ΔΙΣΚΟΥ"
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -890,6 +905,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr "ΕΝ ΜΕΡΕΙ"
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr "ΧΡΩΜΑ ΓΙΑ ΣΗΜΑΙΑ ΠΡΟΒΛΗΘΕΝΤΩΝ"
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr "ΠΡΟΣΑΡΜΟΓΗ ΣΗΜΑΙΑΣ ΠΡΟΒΛΗΘΕΝΤΩΝ"
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr "ΠΡΟΣΑΡΜΟΓΗ ΣΗΜΑΙΑΣ"
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr "ΘΑ ΕΜΦΑΝΙΖΕΤΑΙ Η ΕΤΙΚΕΤΑ ΠΕΡΙΕΧΟΜΕΝΟΥ 4K."
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr "ΕΠΑΝΕΦΑΡΜΟΓΗ ΡΥΘΜΙΣΕΩΝ"
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr "ΕΠΑΝΕΦΑΡΜΟΓΗ ΤΩΝ ΠΙΟ ΣΗΜΑΝΤΙΚΩΝ ΡΥΘΜΙΣΕΩΝ"
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "ΠΛΗΡΗΣ ΛΕΙΤΟΥΡΓΙΑ"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "ΜΕΡΙΚΗ ΛΕΙΤΟΥΡΓΙΑ"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "ΛΕΙΤΟΥΡΓΙΑ ΑΠΟΚΡΥΨΗΣ"
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr "ΧΡΩΜΑΤΙΚΗ ΠΑΛΕΤΤΑ ΓΙΑ ΤΗΝ ΕΤΙΚΕΤΑ ΠΡΟΒΛΗΘΕΝΤΩΝ"
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "ΧΡΟΝΟΣ ΜΕΤΑΒΑΣΗΣ ΓΙΑ ΠΟΛΛΑΠΛΕΣ ΕΙΚΟΝΕΣ"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5 ΔΕΥΤΕΡΟΛΕΠΤΑ"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10 ΔΕΥΤΕΡΟΛΕΠΤΑ"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30 ΔΕΥΤΕΡΟΛΕΠΤΑ"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1 ΛΕΠΤΟ"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10 ΛΕΠΤΑ"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1 ΩΡΑ"
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -956,8 +1039,8 @@ msgid "Page"
 msgstr "Σελίδα"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "ΟΡΙΣΜΟΣ ΜΙΚΡΟΓΡΑΦΙΑΣ ΛΙΣΤΑΣ ΑΝΑΠΑΡΑΓΩΓΗΣ"
+msgid "THUMBNAIL SET"
+msgstr "ΣΕΤ ΜΙΚΡΟΓΡΑΦΙΩΝ"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1079,8 +1162,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "ΔΙΑΤΗΡΗΣΗ ΤΗΣ ΑΝΑΛΟΓΙΑΣ ΥΠΟΒΑΘΡΟΥ"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "ΕΜΦΑΝΙΣΗ WIDGET ΓΙΑ:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr "ΔΙΑΧΕΙΡΙΣΗ ΤΩΝ WIDGET"
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1143,6 +1226,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. Δημιουργήστε έναν αρχικό φάκελο με οποιοδήποτε όνομα, για παράδειγμα MY THEME.[CR][CR]2. Μέσα σε αυτόν το φάκελο δημιουργήστε 21 φακέλους με αυτά τα ονόματα:[CR]addons, aplaylist, autumn, concerts, disc, favourites, games, livetv, movies, music, mymenu, pictures, programs, settings, shutdown, spring, summer, tvshows, vnodes, vplaylist, winter.[CR][CR]3. Τοποθετήστε μέσα σε καθένα φάκελο τις εικόνες της επιλογής σας, το ΘΕΜΑ ΜΟΥ υποστηρίζει πολλαπλά αρχεία, μπορείτε να προσθέσετε όσες εικόνες επιθυμείτε ανά φάκελο.[CR][CR]4. Αφού ετοιμαστεί το θέμα εισάγετε τη διαδρομή του αρχικού φακέλου.[CR][CR]Οι προεπιλεγμένες εικόνες του AEON MQ 5 είναι τύπου JPG, ανάλυσης 1920x1080, με 72dpi, και προτείνεται η χρήση του προγράμματος FastStone Photo Resize για υψηλής ποιότητας εικόνες με μικρό μέγεθος."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr "Αυτή η επιλογή δημιουργεί εκ νέου τις πιο σημαντικές ρυθμίσεις όπως είναι τα χρώματα, τα στοιχεία των πάνελ...[CR]Προτείνεται όταν εμφανιστεί ένα μη λειτουργικό μενού.[CR]Κατά τη χρήση αυτής της επιλογής ενδέχεται να απαιτηθούν κάποιες μικρορυθμίσεις."
 
 #. ....
 msgctxt "#31260"
@@ -2077,8 +2168,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "ΓΛΩΣΣΕΣ ΗΧΟΥ"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "ΕΤΙΚΕΤΑ 'ΠΡΟΒΛΗΘΕΝΤΩΝ'"
+msgid "WATCHED LABEL"
+msgstr "ΕΤΙΚΕΤΑ ΠΡΟΒΛΗΘΕΝΤΩΝ"
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2537,8 +2628,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "ΠΡΟΣΟΧΗ: ΑΥΤΗ Η ΔΙΑΔΙΚΑΣΙΑ ΕΙΝΑΙ ΜΗ ΑΝΑΣΤΡΕΨΙΜΗ !"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Κινηθείτε προς κάποια κατεύθυνση για ακύρωση.[CR]Πιέστε 'Επιλογή' για συνέχεια"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr "Μετακινηθείτε προς οποιαδήποτε κατεύθυνση για ακύρωση.[CR]Πιέστε Επιλογή για συνέχεια.[CR]Αυτή η επιλογή θα επαναφέρει το κέλυφος πλήρως και θα χάσετε όλες τις προσαρμογές σας."
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2623,8 +2716,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "ΕΜΦΑΝΙΣΗ ΓΛΩΣΣΑΣ ΗΧΟΥ ΚΑΙ ΣΗΜΑΙΑΣ ΥΠΟΤΙΤΛΩΝ"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "ΟΡΙΣΜΟΣ ΧΡΟΝΟΥ ΓΙΑ ΚΑΘΕ ΕΙΚΟΝΑ"
+msgid "PANEL DELAY"
+msgstr "ΚΑΘΥΣΤΕΡΗΣΗ ΠΑΝΕΛ"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2771,16 +2864,16 @@ msgid ""
 msgstr "Δεν θα ήταν τέλειο να λαμβάνατε όλα τα θέματα, υπόβαθρα, εικονίδια και λογότυπα μόνο με ένα κλικ; Μπορείτε με το Aeon MQ 5, κατεβάζοντας ένα πακέτο (ExtraPack) έχοντας πρόσβαση σε όλο το επιπλέον περιεχόμενο."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "ΠΟΛΛΕΣ ΚΑΙΝΟΤΟΜΙΕΣ ΚΑΙ ΒΕΛΤΙΩΣΕΙΣ..."
+msgid "Applying new settings..."
+msgstr "Εφαρμογή νέων ρυθμίσεων..."
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, ένα έξυπνο κέλυφος για έξυπνους ανθρώπους.[CR][CR]Απολαύστε το."
+msgid "Finalizing Settings"
+msgstr "Ολοκλήρωση Ρυθμίσεων"
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "ΠΑΡΑΛΕΙΨΗ ΠΑΡΟΥΣΙΑΣΗΣ"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -2836,7 +2929,7 @@ msgstr "ΕΠΕΞΕΡΓΑΣΙΑ ΔΕΔΟΜΕΝΩΝ"
 
 msgctxt "#31672"
 msgid "SHOW LIBRARY STATUS"
-msgstr "ΕΜΦΑΝΙΣΗ ΚΑΤΑΣΤΑΣΗ ΣΥΛΛΟΓΗΣ"
+msgstr "ΕΜΦΑΝΙΣΗ ΚΑΤΑΣΤΑΣΗΣ ΣΥΛΛΟΓΗΣ"
 
 msgctxt "#31673"
 msgid "HIDE LIBRARY STATUS"
@@ -3478,6 +3571,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "ΔΕΞΙΑ ΛΙΣΤΑ"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr "...Ορισμός γραμματοσειρών, χρωμάτων και στυλ"
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr "...Εγγραφή Αντικειμένων Κεντρικού Μενού"
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr "...Ορισμός υπομενού για ταινίες"
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr "...Ορισμός υπομενού για τηλ. σειρές"
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr "...Ορισμός υπομενού για συναυλίες"
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr "...Ορισμός υπομενού για live tv"
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr "...Ορισμός υπομενού μουσικής"
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr "...Ορισμός υπομενού για τον καιρό"
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr "...Ορισμός υπομενού για τις ρυθμίσεις"
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr "...Ορισμός υπομενού για τον τερματισμό"
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -4018,9 +4151,21 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Εικόνες σε κοκκινωπούς τόνους αναμεμειγμένους με την απόχρωση του γραφίτη.[CR]Το προεπιλεγμένο θέμα του Aeon MQ 5."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "ΕΜΦΑΝΙΣΗ ΣΛΟΓΚΑΝ"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr "ΠΡΟΣΑΡΜΟΓΗ ΠΡΟΕΠΙΛΕΓΜΕΝΟΥ ΔΙΣΚΟΥ"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "ΔΙΣΚΟΣ ΜΟΥΣΙΚΗΣ"
+
 msgctxt "#31979"
-msgid "POSTERLITE"
-msgstr "ΑΦΙΣΕΣ LITE"
+msgid "VIDEO DISC"
+msgstr "ΔΙΣΚΟΣ ΒΙΝΤΕΟ"
 
 msgctxt "#31980"
 msgid "NEXT EPISODE"
@@ -4031,8 +4176,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "ΕΠΕΙΣΟΔΙΑ ΠΟΥ ΠΑΙΖΟΥΝ ΣΗΜΕΡΑ"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "ΕΜΦΑΝΙΣΗ ΠΑΝΕΛ ΕΞΕΛΙΞΗΣ"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr "ΕΜΦΑΝΙΣΗ ΤΟΥ ΠΡΩΤΟΥ WIDGET ΟΠΩΣ ΤΟ 'ΣΕ ΕΞΕΛΙΞΗ' (ΤΑΙΝΙΕΣ, ΤΗΛ. ΣΕΙΡΕΣ ΚΑΙ ΣΥΝΑΥΛΙΕΣ)"
 
 msgctxt "#31983"
 msgid "Rating"

@@ -2,13 +2,6 @@
 
 	<includes>
 	<!--##################################################################################   VISTA BANNER - ID 52   ##################################################################################-->
-	<include name="BannerWatchedOverlay_1">
-	<posx>546</posx>
-	<posy>6</posy>
-	<width>40</width>
-	<height>40</height>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	</include>
 	<include name="ViewBanner">
 	<control type="group">
 	<animation effect="fade" time="400">VisibleChange</animation>
@@ -44,17 +37,13 @@
 	<aspectratio>keep</aspectratio>
 	</control>
 	<control type="image">
-	<include>BannerWatchedOverlay_1</include>
-	<info>ListItem.Overlay</info>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
-	</control>
-	<control type="image"><!-- Dimmer -->
-	<width>590</width>
-	<height>127</height>
-	<bordersize>8</bordersize>
-	<texture>black.png</texture>
-	<aspectratio>stretch</aspectratio>
-	<colordiffuse>70FFFFFF</colordiffuse>
+	<posx>546</posx>
+	<posy>6</posy>
+	<width>40</width>
+	<height>40</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</itemlayout>
 	<focusedlayout height="137" width="600">
@@ -81,10 +70,14 @@
 	<animation effect="zoom" center="auto" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerzoom)">Focus</animation>
 	</control>
 	<control type="image">
-	<include>BannerWatchedOverlay_1</include>
-	<info>ListItem.Overlay</info>
+	<posx>546</posx>
+	<posy>6</posy>
+	<width>40</width>
+	<height>40</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<animation effect="zoom" center="290,60" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerzoom)">Focus</animation>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</focusedlayout>
 	</control>

@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # Etharr <etharr@hacjenda.info>, 2013
 # krystianen <krystianen@gmail.com>, 2012
 # Maciek Fornalczyk <maciomanus@gmail.com>, 2012
@@ -104,8 +119,8 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
-"Last-Translator: Wanilton Campos <>\n"
+"PO-Revision-Date: 2013-10-30 09:25+0000\n"
+"Last-Translator: Etharr <etharr@hacjenda.info>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -166,7 +181,7 @@ msgstr "GRY"
 
 msgctxt "#31008"
 msgid "IMAGES"
-msgstr "ZDJĘCIA"
+msgstr "OBRAZY"
 
 msgctxt "#31009"
 msgid "WEATHER"
@@ -210,7 +225,7 @@ msgstr "WYBIERZ WTYCZKĘ WIDEO"
 
 msgctxt "#31019"
 msgid "CHOOSE AUDIO ADD-ON"
-msgstr "WYBIERZ WTYCZKĘ AUDIO"
+msgstr "WYBIERZ WTYCZKĘ MUZYKI"
 
 msgctxt "#31020"
 msgid "CHOOSE PROGRAMS ADD-ON"
@@ -235,7 +250,7 @@ msgstr "WTYCZKI WIDEO"
 
 msgctxt "#31025"
 msgid "AUDIO ADD-ONS"
-msgstr "WTYCZKI AUDIO"
+msgstr "WTYCZKI MUZYKI"
 
 msgctxt "#31026"
 msgid "IMAGE ADD-ONS"
@@ -311,7 +326,7 @@ msgstr "OSTATNIO ODTWARZANE"
 
 msgctxt "#31044"
 msgid "AUDIO ADD-ONS"
-msgstr "WTYCZKI AUDIO"
+msgstr "WTYCZKI MUZYKI"
 
 msgctxt "#31045"
 msgid "ACTORS"
@@ -519,8 +534,8 @@ msgid "PATH"
 msgstr "ŚCIEŻKA"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "USUŃ ŚCIEŻKĘ - UKRYJ ELEMENT Z MENU GŁÓWNEGO"
+msgid "DISC"
+msgstr "DYSK"
 
 msgctxt "#31097"
 msgid "Access to collection"
@@ -599,8 +614,8 @@ msgid "VIDEO NODE"
 msgstr "WĘZEŁ WIDEO"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "EFEKT SERA"
+msgid "DISC SWING SPEED"
+msgstr "PRĘDKOŚĆ OBRACANIA DYSKU"
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -884,15 +899,83 @@ msgstr "Język dźwięku"
 
 msgctxt "#31180"
 msgid "NUMBER OF VISIBLE WIDGETS"
-msgstr ""
+msgstr "LICZBA DOSTĘPNYCH WIDŻETÓW"
 
 msgctxt "#31181"
 msgid "CLICK FOR CHANGE"
-msgstr ""
+msgstr "KLIKNIJ, ABY ZMIENIĆ"
 
 msgctxt "#31182"
 msgid "PARTIAL"
-msgstr ""
+msgstr "CZĘŚCIOWE"
+
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr "KOLOR FLAGI \"OGLĄDANE\""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr "DOSTOSUJ  FLAGĘ \"OGLĄDANE\""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr "DOSTOSUJ FLAGĘ"
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr "ETYKIETA ZAWARTOŚCI 4K ZOSTANIE WYŚWIETLONA"
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr "ZASTOSUJ PONOWNIE USTAWIENIA"
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr "ZASTOSUJ PONOWNIE NAJWAŻNIEJSZE USTAWIENIA"
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "TRYB KOMPLETNY"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "TRYB CZĘŚCIOWY"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "TRYB UKRYTY"
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr "KOLOR ETYKIETY \"OGLĄDANE\""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "CZAS PRZEJŚCIA DLA WIELU OBRAZÓW"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5 SEKUND"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10 SEKUND"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30 SEKUND"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1 MINUTA"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10 MINUT"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1 GODZINA"
 
 #. ....
 msgctxt "#31200"
@@ -960,8 +1043,8 @@ msgid "Page"
 msgstr "Strona"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "MINIATURA LISTY ODTWARZANIA"
+msgid "THUMBNAIL SET"
+msgstr "MINIATURA ZBIORU"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1083,8 +1166,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "ZACHOWAJ PROPORCJE TŁA"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "POKAŻ WIDŻETY DLA:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr "ZARZĄDZANIE WIDŻETAMI"
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1147,6 +1230,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. Utwórz folder główny o dowolnej nazwie, na przykład MÓJ MOTYW.[CR][CR]2. Wewnątrz tego folderu utwórz 21 folderów o następujących nazwach:[CR]addons, aplaylist, autumn, concerts, disc, favourites, games, livetv, movies, music, mymenu, pictures, programs, settings, shutdown, spring, summer, tvshows, vnodes, vplaylist, winter[CR][CR]3. Wstaw do każdego z tych folderów wybrane przez siebie obrazy, możesz wstawić dowolną ich ilość do każdego z folderów.[CR][CR]4. Po zakończeniu tworzenia motywu, wprowadź ścieżkę do głównego folderu utworzonego motywu.[CR][CR]Domyślnie skóra AEON MQ 5 używa obrazów w formacie JPG, rozmiarze 1920x1080px i rozdzielczości 72dpi."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr "Ta funkcja odtwarza tylko najważniejsze dostosowania takiej, jak kolory, definicje paneli...[CR]\nJest rekomendowana na przykład, w przypadku menu, które nie działa poprawnie.[CR]\nUżycie tej funkcji może wymagać dodatkowych dostosowań."
 
 #. ....
 msgctxt "#31260"
@@ -1371,7 +1462,7 @@ msgstr "KONIEC O"
 
 msgctxt "#31312"
 msgid "IMAGE OPTIONS"
-msgstr "OPCJE ZDJĘCIA"
+msgstr "OPCJE OBRAZU"
 
 msgctxt "#31313"
 msgid "AUDIO OPTIONS"
@@ -1447,7 +1538,7 @@ msgstr "PODGLĄD INFORMACJI O WYKONAWCY/ALBUMIE"
 
 msgctxt "#31331"
 msgid "DISPLAY ARTIST IMAGES THUMBNAIL"
-msgstr "WYŚWIETLAJ MINIATURY ZDJĘĆ WYKONAWCÓW"
+msgstr "WYŚWIETLAJ MINIATURY WYKONAWCÓW"
 
 msgctxt "#31332"
 msgid "ITEMS IN PLAYLIST"
@@ -1702,7 +1793,7 @@ msgctxt "#31391"
 msgid ""
 "IMAGE CALIBRATION AND AUDIO SELECTION.[CR]XBMC PROVIDES MAXIMUM QUALITY FOR "
 "AUDIO AND VIDEO."
-msgstr "KALIBRACJA OBRAZU ORAZ KONFIGURACJA WYJŚCIA AUDIO.[CR]XBMC DOSTARCZA MAKSYMALNĄ JAKOŚĆ DŹWIĘKU I OBRAZU."
+msgstr "KALIBRACJA OBRAZU ORAZ KONFIGURACJA WYJŚCIA DŹWIĘKOWEGO.[CR]XBMC DOSTARCZA MAKSYMALNĄ JAKOŚĆ DŹWIĘKU I OBRAZU."
 
 msgctxt "#31392"
 msgid "DATA MANAGEMENT"
@@ -1901,7 +1992,7 @@ msgstr "POBIERZ LOGO/CLEARART"
 
 msgctxt "#31439"
 msgid "GET SOUND THEME"
-msgstr ""
+msgstr "POBIERZ TEMAT MUZYCZNY"
 
 msgctxt "#31440"
 msgid "TURN ON TV TUNES"
@@ -2081,7 +2172,7 @@ msgid "AUDIO LANGUAGES"
 msgstr "ŚCIEŻKI DŹWIĘKOWE"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
+msgid "WATCHED LABEL"
 msgstr "IKONA \"OGLĄDANE\""
 
 msgctxt "#31486"
@@ -2154,7 +2245,7 @@ msgstr "FANGRAF SEZONU"
 
 msgctxt "#31503"
 msgid "SELECT IMAGES PATH"
-msgstr "WSKAŻ ŚCIEŻKĘ OBRAZÓW"
+msgstr "WYBIERZ ŚCIEŻKĘ OBRAZÓW"
 
 msgctxt "#31504"
 msgid "CHOOSE A SINGLE IMAGE"
@@ -2294,7 +2385,7 @@ msgstr "OBRAZ TŁA - UŻYJ FANGRAFÓW KOLEKCJI"
 
 msgctxt "#31538"
 msgid "BACKGROUND IMAGE - USE DEFAULT THEME"
-msgstr "TŁO - UŻYJ DOMYŚLNEGO MOTYWU"
+msgstr "OBRAZ TŁA - UŻYJ DOMYŚLNEGO MOTYWU"
 
 msgctxt "#31539"
 msgid "BASED ON PRESENT CONDITIONS"
@@ -2302,15 +2393,15 @@ msgstr "OPARTE NA AKTUALNYCH WARUNKACH"
 
 msgctxt "#31540"
 msgid "BACKDROP IMAGE BASED ON ACTUAL CONDITIONS"
-msgstr "TŁO OPARTE NA AKTUALNYCH WARUNKACH"
+msgstr "OBRAZ TŁA BAZUJĄCY NA AKTUALNYCH WARUNKACH"
 
 msgctxt "#31541"
 msgid "BACKDROP IMAGE BASED IN SEASONS OF NORTH AMERICA"
-msgstr "TŁO OPARTE NA PORACH ROKU AMERYKI PÓŁNOCNEJ"
+msgstr "OBRAZ TŁA BAZUJĄCY NA PORACH ROKU AMERYKI PÓŁNOCNEJ"
 
 msgctxt "#31542"
 msgid "BACKDROP IMAGE BASED IN SEASONS OF SOUTH AMERICA"
-msgstr "OBRAZ TŁA OPARTY NA PORACH ROKU W AMERYCE POŁUDNIOWEJ"
+msgstr "OBRAZ TŁA BAZUJĄCY NA PORACH ROKU W AMERYCE POŁUDNIOWEJ"
 
 msgctxt "#31543"
 msgid "SHOW ANIMATED WEATHER ICONS (WEATHER MENU)"
@@ -2422,11 +2513,11 @@ msgstr "OPCJE GŁÓWNEGO MENU"
 
 msgctxt "#31570"
 msgid "SHOW ARTIST IMAGES"
-msgstr "POKAŻ ZDJĘCIA WYKONAWCY"
+msgstr "POKAŻ OBRAZY WYKONAWCY"
 
 msgctxt "#31571"
 msgid "HIDE ARTIST IMAGES"
-msgstr "UKRYJ ZDJĘCIA WYKONAWCY"
+msgstr "UKRYJ OBRAZY WYKONAWCY"
 
 msgctxt "#31572"
 msgid "FOR MUSIC, PREFER VIEW BY"
@@ -2541,8 +2632,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "UWAGA: TEN PROCES JEST NIEODWRACALNY!"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Naciśnij dowolny, aby anulować.[CR]Wciśnij Enter, aby kontynuować"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr "Użyj dowolnego kursora, aby anulować.[CR]Wciśnij Enter, aby kontynuować.[CR]Ta funkcja resetuje wszystkie ustawienia skóry do domyślnych wartości, co oznacza utratę wszelkich własnych dostosowań."
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2572,7 +2665,7 @@ msgstr "Pragniesz innego wyglądu skóry?[CR]Wybierz nowy motyw obrazów"
 
 msgctxt "#31607"
 msgid "IMAGES THEMES"
-msgstr "OBRAZY MOTYWÓW"
+msgstr "MOTYWY"
 
 msgctxt "#31608"
 msgid "ENABLE PVR FUNCTIONS"
@@ -2624,11 +2717,11 @@ msgstr "ETYKIETA ZBIORU BĘDZIE WIDOCZNA"
 
 msgctxt "#31620"
 msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
-msgstr "POKAZUJ FLAGI ŚCIEŻEK AUDIO I NAPISÓW"
+msgstr "POKAZUJ FLAGI ŚCIEŻEK DŹWIĘKOWYCH I NAPISÓW"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "USTAW CZAS DLA KAŻDEGO OBRAZU"
+msgid "PANEL DELAY"
+msgstr "OPÓŹNIENIE PANELU"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2775,16 +2868,16 @@ msgid ""
 msgstr "Czyż nie byłoby wspaniale zdobyć wszystkie motywy, tła, ikony i loga przy pomocy jednego kliknięcia?[CR]Dzięki skórze Aeon MQ 5 możesz to zrobić, pobierasz pakiet dodatków i już możesz się cieszyć dodatkową zawartością."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "AKTUALNOŚCI I WIĘCEJ..."
+msgid "Applying new settings..."
+msgstr "Stosowanie nowych ustawień..."
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, inteligentna skóra dla inteligentnych ludzi.[CR][CR]Baw się dobrze."
+msgid "Finalizing Settings"
+msgstr "Finalizowanie ustawień"
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "POMIŃ PREZENTACJE"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3114,7 +3207,7 @@ msgstr "VIS(WIDEO)"
 
 msgctxt "#31741"
 msgid "VIS(AUDIO)"
-msgstr "VIS(AUDIO)"
+msgstr "VIS(DŹWIĘK)"
 
 msgctxt "#31742"
 msgid "OPEN TRAY"
@@ -3482,6 +3575,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "LISTA PRAWOSTRONNA"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr "...Definiowanie fontów, kolorów i styli"
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr "...Zapisywanie elementów Głównego Menu"
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr "...Definiowanie podmenu dla filmów"
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr "...Definiowanie podmenu dla seriali"
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr "...Definiowanie podmenu dla koncertów"
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr "...Definiowanie podmenu dla telewizji"
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr "...Definiowanie podmenu dla muzyki"
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr "...Definiowanie podmenu dla pogody"
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr "...Definiowanie podmenu dla ustawień"
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr "...Definiowanie podmenu dla zamykania"
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -3770,7 +3903,7 @@ msgstr "NACIŚNIJ DOWOLNY KURSOR, ABY PRZERWAĆ. NACIŚNIJ ENTER, ABY WYBRAĆ Ś
 
 msgctxt "#31913"
 msgid "Clear color images for a smooth visual."
-msgstr "Wyraźne kolory dla pełnych doznań wzrokowych"
+msgstr "Wyraźne kolory dla płynnej wizualizacji."
 
 msgctxt "#31914"
 msgid "Hot color images tones for people who prefer more contrast."
@@ -3955,7 +4088,7 @@ msgstr "POJEDYNCZA MINIATURA (GÓRNE MENU)"
 
 msgctxt "#31959"
 msgid "SHOW AUDIO AND VIDEO VISUALIZATIONS AS BACKGROUND (GLOBAL)"
-msgstr "POKAŻ WIZUALIZACJE AUDIO I WIDEO JAKO TŁO (GLOBALNIE)"
+msgstr "POKAŻ WIZUALIZACJE DŹWIĘKOWE I WIDEO JAKO TŁO (GLOBALNIE)"
 
 msgctxt "#31960"
 msgid "CONTINUE LISTENING"
@@ -4022,6 +4155,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Obrazy o rdzawym odcieniu w kombinacji z grafitem.[CR] Domyślny motyw Aeon MQ 5."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "POKAŻ MOTTO"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr "DOSTOSUJ DOMYŚLNY DYSK"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "DYSK AUDIO"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "DYSK WIDEO"
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "NASTĘPNY ODCINEK"
@@ -4031,8 +4180,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "ODCINKI EMITOWANE DZISIAJ"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "POKAŻ PANEL POSTĘPU"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr "POKAZUJ JAKO PIERWSZE WIDŻETY TAKIE JAK 'W TRAKCIE' (FILMY, SERIALE I KONCERTY)"
 
 msgctxt "#31983"
 msgid "Rating"

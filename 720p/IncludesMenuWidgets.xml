@@ -15,13 +15,13 @@
 	<onup condition="Skin.HasSetting(highermainmenu)">9000</onup>
 	<orientation>vertical</orientation>
 	<pagecontrol>-</pagecontrol>
-    <include>Animation_HomeSlideUp</include>
+    <include>Animation_Widgets</include>
 	<animation effect="slide" start="0,0" end="400,0" condition="SubString(skin.string(widgetsnumber),4) + ![StringCompare(Container(9000).ListItem.Property(id),mymenu1) | StringCompare(Container(9000).ListItem.Property(id),mymenu2)]">Conditional</animation>
 	<animation effect="slide" start="0,0" end="200,0" condition="SubString(skin.string(widgetsnumber),8) + ![StringCompare(Container(9000).ListItem.Property(id),mymenu1) | StringCompare(Container(9000).ListItem.Property(id),mymenu2)]">Conditional</animation>	
 	<itemlayout width="101" height="157">
 	<control type="image"><!-- reflexo video -->
 	<posx>4</posx>
-	<posy>146</posy>
+	<posy>148</posy>
 	<width>99</width>
 	<height>140</height>
 	<texture flipy="true" fallback="DefaultPicture.png" diffuse="thumb_poster_reflect.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -49,7 +49,7 @@
 	<focusedlayout width="101" height="157">
 	<control type="image"><!-- reflexo -->
 	<posx>4</posx>
-	<posy>146</posy>
+	<posy>148</posy>
 	<width>99</width>
 	<height>140</height>
 	<texture flipy="true" fallback="DefaultPicture.png" diffuse="thumb_poster_reflect.png" background="true">$INFO[ListItem.Icon]</texture>
@@ -100,6 +100,18 @@
 	<aspectratio>keep</aspectratio>
 	<animation effect="fade" start="20" end="100" time="700" condition="true" pulse="true">Conditional</animation>
 	<visible>[SubString(Container(9000).ListItem.Property(id),live) | SubString(Container(9000).ListItem.Property(id),tvguide)]</visible>
+	</control>
+	<control type="label">
+	<posx>55</posx>
+	<posy>40</posy>
+	<width>100</width>
+	<height>30</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_20</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$INFO[ListItem.Property(Percent)]</label>
+	<scroll>true</scroll>
 	</control>
 	</focusedlayout>
 	</include>
@@ -172,7 +184,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),movie)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>SubString(Container(9000).ListItem.Property(id),movie)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -189,7 +201,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),movie) + SubString(skin.string(mfmovies_list),latest)</visible>
 	<content>
 	<item>
-	<label>[COLOR=50FFFAF0]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMovie.1.Title)]</label>
+	<label>[COLOR=$VAR[value_menucolorlabel]]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMovie.1.Title)]</label>
 	<label2>$INFO[Window(0).Property(RecommendedMovie.1.Tagline)]</label2>
 	<icon>$INFO[Window(0).Property(RecommendedMovie.1.Art(poster))]</icon>
 	<property name="Fanart">$INFO[Window(0).Property(RecommendedMovie.1.Art(fanart))]</property>
@@ -204,7 +216,7 @@
 	<property name="Percent">$INFO[Window(0).Property(RecommendedMovie.1.PercentPlayed)]</property>
 	<property name="Progress">inprogress</property>
 	<onclick>$INFO[Window(0).Property(RecommendedMovie.1.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecommendedMovie.1.Title))</visible>
+	<visible>![IsEmpty(Window(0).Property(RecommendedMovie.1.Title)) | Skin.HasSetting(noprogresswidget)]</visible>
 	</item>
 	<item>
 	<label>$INFO[Window(0).Property(RecentMovie.1.Title)]</label>
@@ -432,7 +444,7 @@
 	<onclick>Skin.SetString(custom_trailer,$INFO[Window(0).Property(RecentMovie.12.Trailer)])</onclick>
 	<onclick condition="!IsEmpty(Window(0).Property(RecentMovie.12.Trailer))">ActivateWindow(623)</onclick>
 	<onclick condition="IsEmpty(Window(0).Property(RecentMovie.12.Trailer))">$INFO[Window(0).Property(RecentMovie.12.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecentMovie.12.Title)) + IsEmpty(Window(0).Property(RecommendedMovie.1.Title)) + SubString(skin.string(widgetsnumber),12)</visible>
+	<visible>!IsEmpty(Window(0).Property(RecentMovie.12.Title)) + [IsEmpty(Window(0).Property(RecommendedMovie.1.Title)) | Skin.HasSetting(noprogresswidget)] + SubString(skin.string(widgetsnumber),12)</visible>
 	</item>
 	<item>
 	<icon>DefaultVideoPoster.png</icon>
@@ -446,7 +458,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),movie) + SubString(skin.string(mfmovies_list),random)</visible>
 	<content>
 	<item>
-	<label>[COLOR=50FFFAF0]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMovie.1.Title)]</label>
+	<label>[COLOR=$VAR[value_menucolorlabel]]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMovie.1.Title)]</label>
 	<label2>$INFO[Window(0).Property(RecommendedMovie.1.Tagline)]</label2>
 	<icon>$INFO[Window(0).Property(RecommendedMovie.1.Art(poster))]</icon>
 	<property name="Fanart">$INFO[Window(0).Property(RecommendedMovie.1.Art(fanart))]</property>
@@ -461,7 +473,7 @@
 	<property name="Percent">$INFO[Window(0).Property(RecommendedMovie.1.PercentPlayed)]</property>
 	<property name="Progress">inprogress</property>
 	<onclick>$INFO[Window(0).Property(RecommendedMovie.1.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecommendedMovie.1.Title))</visible>
+	<visible>![IsEmpty(Window(0).Property(RecommendedMovie.1.Title)) | Skin.HasSetting(noprogresswidget)]</visible>
 	</item>
 	<item>
 	<label>$INFO[Window(0).Property(RandomMovie.1.Title)]</label>
@@ -689,7 +701,7 @@
 	<onclick>Skin.SetString(custom_trailer,$INFO[Window(0).Property(RandomMovie.12.Trailer)])</onclick>
 	<onclick condition="!IsEmpty(Window(0).Property(RandomMovie.12.Trailer))">ActivateWindow(623)</onclick>
 	<onclick condition="IsEmpty(Window(0).Property(RandomMovie.12.Trailer))">$INFO[Window(0).Property(RandomMovie.12.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RandomMovie.12.Title)) + IsEmpty(Window(0).Property(RecommendedMovie.1.Title)) + SubString(skin.string(widgetsnumber),12)</visible>
+	<visible>!IsEmpty(Window(0).Property(RandomMovie.12.Title)) + [IsEmpty(Window(0).Property(RecommendedMovie.1.Title)) | Skin.HasSetting(noprogresswidget)] + SubString(skin.string(widgetsnumber),12)</visible>
 	</item>
 	<item>
 	<icon>DefaultVideoPoster.png</icon>
@@ -934,7 +946,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),tvshow)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>SubString(Container(9000).ListItem.Property(id),tvshow)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -951,7 +963,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),tvshow) + SubString(skin.string(mftvshows_list),latest)</visible>
 	<content>
 	<item>
-	<label>[COLOR=50FFFAF0]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedEpisode.1.Title)]</label>
+	<label>[COLOR=$VAR[value_menucolorlabel]]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedEpisode.1.Title)]</label>
 	<label2>$INFO[Window(0).Property(RecommendedEpisode.1.TVShowTitle)]</label2>
 	<icon>$INFO[Window(0).Property(RecommendedEpisode.1.Art(tvshow.poster))]</icon>
 	<property name="Thumbnail">$INFO[Window(0).Property(RecommendedEpisode.1.Art(thumb))]</property>
@@ -967,7 +979,7 @@
 	<property name="Percent">$INFO[Window(0).Property(RecommendedEpisode.1.PercentPlayed)]</property>
 	<property name="Progress">inprogress</property>
 	<onclick>$INFO[Window(0).Property(RecommendedEpisode.1.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecommendedEpisode.1.Title))</visible>
+	<visible>![IsEmpty(Window(0).Property(RecommendedEpisode.1.Title)) | Skin.HasSetting(noprogresswidget)]</visible>
 	</item>
 	<item>
 	<label>$INFO[Window(0).Property(RecentEpisode.1.Title)]</label>
@@ -1183,7 +1195,7 @@
 	<property name="Codec">$INFO[Window(0).Property(RecentEpisode.12.VideoCodec)]</property>
 	<property name="EpisodeNumber">$INFO[Window(0).Property(RecentEpisode.12.EpisodeNo)]</property>
 	<onclick>$INFO[Window(0).Property(RecentEpisode.12.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecentEpisode.12.Title)) + IsEmpty(Window(0).Property(RecommendedEpisode.1.Title)) + SubString(skin.string(widgetsnumber),12)</visible>
+	<visible>!IsEmpty(Window(0).Property(RecentEpisode.12.Title)) + [IsEmpty(Window(0).Property(RecommendedEpisode.1.Title)) | Skin.HasSetting(noprogresswidget)] + SubString(skin.string(widgetsnumber),12)</visible>
 	</item>
 	<item>
 	<icon>DefaultVideoPoster.png</icon>
@@ -1197,7 +1209,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),tvshow) + SubString(skin.string(mftvshows_list),random)</visible>
 	<content>
 	<item>
-	<label>[COLOR=50FFFAF0]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedEpisode.1.Title)]</label>
+	<label>[COLOR=$VAR[value_menucolorlabel]]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedEpisode.1.Title)]</label>
 	<label2>$INFO[Window(0).Property(RecommendedEpisode.1.TVShowTitle)]</label2>
 	<icon>$INFO[Window(0).Property(RecommendedEpisode.1.Art(tvshow.poster))]</icon>
 	<property name="Thumbnail">$INFO[Window(0).Property(RecommendedEpisode.1.Art(thumb))]</property>
@@ -1213,7 +1225,7 @@
 	<property name="Percent">$INFO[Window(0).Property(RecommendedEpisode.1.PercentPlayed)]</property>
 	<property name="Progress">inprogress</property>
 	<onclick>$INFO[Window(0).Property(RecommendedEpisode.1.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecommendedEpisode.1.Title))</visible>
+	<visible>![IsEmpty(Window(0).Property(RecommendedEpisode.1.Title)) | Skin.HasSetting(noprogresswidget)]</visible>
 	</item>
 	<item>
 	<label>$INFO[Window(0).Property(RandomEpisode.1.Title)]</label>
@@ -1429,7 +1441,7 @@
 	<property name="Codec">$INFO[Window(0).Property(RandomEpisode.12.VideoCodec)]</property>
 	<property name="EpisodeNumber">$INFO[Window(0).Property(RandomEpisode.12.EpisodeNo)]</property>
 	<onclick>$INFO[Window(0).Property(RandomEpisode.12.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RandomEpisode.12.Title)) + IsEmpty(Window(0).Property(RecommendedEpisode.1.Title)) + SubString(skin.string(widgetsnumber),12)</visible>
+	<visible>!IsEmpty(Window(0).Property(RandomEpisode.12.Title)) + [IsEmpty(Window(0).Property(RecommendedEpisode.1.Title)) | Skin.HasSetting(noprogresswidget)] + SubString(skin.string(widgetsnumber),12)</visible>
 	</item>
 	<item>
 	<icon>DefaultVideoPoster.png</icon>
@@ -1686,7 +1698,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),concert)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>SubString(Container(9000).ListItem.Property(id),concert)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -1703,7 +1715,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),concert) + SubString(skin.string(mfconcerts_list),latest)</visible>
 	<content>
 	<item>
-	<label>[COLOR=50FFFAF0]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMusicVideo.1.Title)]</label>
+	<label>[COLOR=$VAR[value_menucolorlabel]]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMusicVideo.1.Title)]</label>
 	<label2>$INFO[Window(0).Property(RecommendedMusicVideo.1.Artist)]</label2>
 	<icon>$INFO[Window(0).Property(RecommendedMusicVideo.1.Thumb)]</icon>
 	<property name="Fanart">$INFO[Window(0).Property(RecommendedMusicVideo.1.Art(fanart))]</property>
@@ -1715,7 +1727,7 @@
 	<property name="Codec">$INFO[Window(0).Property(RecommendedMusicVideo.1.VideoCodec)]</property>
 	<property name="Progress">inprogress</property>
 	<onclick>$INFO[Window(0).Property(RecommendedMusicVideo.1.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title))</visible>
+	<visible>![IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title)) | Skin.HasSetting(noprogresswidget)]</visible>
 	</item>
 	<item>
 	<label>$INFO[Window(0).Property(RecentMusicVideo.1.Title)]</label>
@@ -1883,7 +1895,7 @@
 	<property name="File">$INFO[Window(0).Property(RecentMusicVideo.12.File)]</property>
 	<property name="Codec">$INFO[Window(0).Property(RecentMusicVideo.12.VideoCodec)]</property>
 	<onclick>$INFO[Window(0).Property(RecentMusicVideo.12.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecentMusicVideo.12.Title)) + IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title)) + SubString(skin.string(widgetsnumber),12)</visible>
+	<visible>!IsEmpty(Window(0).Property(RecentMusicVideo.12.Title)) + [IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title)) | Skin.HasSetting(noprogresswidget)] + SubString(skin.string(widgetsnumber),12)</visible>
 	</item>
 	<item>
 	<icon>DefaultVideoPoster.png</icon>
@@ -1897,7 +1909,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),concert) + SubString(skin.string(mfconcerts_list),random)</visible>
 	<content>
 	<item>
-	<label>[COLOR=50FFFAF0]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMusicVideo.1.Title)]</label>
+	<label>[COLOR=$VAR[value_menucolorlabel]]$LOCALIZE[31665] - [/COLOR]$INFO[Window(0).Property(RecommendedMusicVideo.1.Title)]</label>
 	<label2>$INFO[Window(0).Property(RecommendedMusicVideo.1.Artist)]</label2>
 	<icon>$INFO[Window(0).Property(RecommendedMusicVideo.1.Thumb)]</icon>
 	<property name="Fanart">$INFO[Window(0).Property(RecommendedMusicVideo.1.Art(fanart))]</property>
@@ -1909,7 +1921,7 @@
 	<property name="Codec">$INFO[Window(0).Property(RecommendedMusicVideo.1.VideoCodec)]</property>
 	<property name="Progress">inprogress</property>
 	<onclick>$INFO[Window(0).Property(RecommendedMusicVideo.1.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title))</visible>
+	<visible>![IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title)) | Skin.HasSetting(noprogresswidget)]</visible>
 	</item>
 	<item>
 	<label>$INFO[Window(0).Property(RandomMusicVideo.1.Title)]</label>
@@ -2077,7 +2089,7 @@
 	<property name="File">$INFO[Window(0).Property(RandomMusicVideo.12.File)]</property>
 	<property name="Codec">$INFO[Window(0).Property(RandomMusicVideo.12.VideoCodec)]</property>
 	<onclick>$INFO[Window(0).Property(RandomMusicVideo.12.Play)]</onclick>
-	<visible>!IsEmpty(Window(0).Property(RandomMusicVideo.12.Title)) + IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title)) + SubString(skin.string(widgetsnumber),12)</visible>
+	<visible>!IsEmpty(Window(0).Property(RandomMusicVideo.12.Title)) + [IsEmpty(Window(0).Property(RecommendedMusicVideo.1.Title)) | Skin.HasSetting(noprogresswidget)] + SubString(skin.string(widgetsnumber),12)</visible>
 	</item>
 	<item>
 	<icon>DefaultVideoPoster.png</icon>
@@ -2286,7 +2298,7 @@
 	<visible>SubString(Container(9000).ListItem.Property(id),music)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>SubString(Container(9000).ListItem.Property(id),music)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -3391,8 +3403,8 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),games) + !IsEmpty(Window(0).Property(MostPlayedROM.1.Title))</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
-	<visible>StringCompare(Container(9000).ListItem.Property(id),games) </visible>
+	<include>Animation_Widgets</include>
+	<visible>StringCompare(Container(9000).ListItem.Property(id),games) + !IsEmpty(Window(0).Property(MostPlayedROM.1.Title))</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
 	<include condition="Skin.HasSetting(higherwidgets)">widgets_selectorhigher</include>
@@ -3562,7 +3574,7 @@
 	<visible>[SubString(Container(9000).ListItem.Property(id),live) | SubString(Container(9000).ListItem.Property(id),tvguide)] + !IsEmpty(Window(0).Property(NextAired.1.NextTitle))</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>[SubString(Container(9000).ListItem.Property(id),live) | SubString(Container(9000).ListItem.Property(id),tvguide)] + !IsEmpty(Window(0).Property(NextAired.1.NextTitle))</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -3836,7 +3848,7 @@
 	<animation effect="fade" start="0" end="100" time="500" delay="3000" condition="Window.Previous(Startup)">WindowOpen</animation>
 	<animation effect="slide" start="0,-350" end="0,0" time="300" delay="700" easing="out" tween="sine">Visible</animation>
 	<animation effect="slide" start="0,0" end="0,-350" time="200" easing="in" tween="sine">Hidden</animation>
-	<animation effect="slide" start="0,0" end="0,-350" time="300" easing="out" tween="sine" condition="Skin.HasSetting(homemenuclean) + !Control.HasFocus(520)">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,-380" time="300" easing="out" tween="sine" condition="[SubString(skin.string(widgetsmode),manual) | SubString(skin.string(widgetsmode),auto) + !Control.IsVisible(9931)] + !Control.HasFocus(520)">Conditional</animation>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),settings) + !Skin.HasSetting(custommode)</visible>
 	<control type="button" id="520"><!-- panel focus -->
 	<include>InvisibleButton</include>
@@ -3861,6 +3873,7 @@
 	<height>410</height>
 	<texture>details_back.png</texture>
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
+	<include>Animation_HomeGlass2</include>
 	</control>
 	<control type="image"><!-- Skin Logo -->
 	<posx>1010</posx>
@@ -3883,7 +3896,7 @@
 	<height>330</height>
 	<align>right</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>$VAR[value_headercolor]</textcolor>
 	<label>[UPPERCASE]$LOCALIZE[31443] by MarcosQui:[CR]$LOCALIZE[9]:[CR]$LOCALIZE[31748]:[CR]$LOCALIZE[31749]:[CR]$LOCALIZE[31750]:[CR]$LOCALIZE[31751]:[CR]$LOCALIZE[31691]:[CR]$LOCALIZE[243]:[CR]$LOCALIZE[13287][CR]$LOCALIZE[13284][CR]$LOCALIZE[158]:[CR]$LOCALIZE[12395]:[CR]$LOCALIZE[20089]:[CR]$LOCALIZE[150]:[CR]$LOCALIZE[13295][CR]$LOCALIZE[12390]:[/UPPERCASE]</label>
 	</control>
@@ -3894,7 +3907,7 @@
 	<height>330</height>
 	<align>left</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>[LOWERCASE]$VAR[SkinVersion][CR]$INFO[System.BuildVersion][COLOR=80FFFFFF] | [/COLOR]$INFO[System.BuildDate][CR]$VAR[value_skinstatus_theme][CR]$VAR[value_skinstatus_style][CR]$VAR[value_skinstatus_texturecolor][CR]$VAR[value_skinstatus_headercolor][CR]$VAR[value_skinstatus_homeglass][CR]$INFO[System.FPS][CR]$INFO[System.ScreenWidth]x$INFO[System.ScreenHeight] pxl[CR]$INFO[System.CpuFrequency][CR]$INFO[System.FreeMemory][CR]$INFO[System.BatteryLevel][CR]$INFO[System.FreeSpace][COLOR=80FFFFFF] | [/COLOR]$INFO[System.FreeSpacePercent][CR]$INFO[Network.IPAddress][CR]$INFO[System.InternetState][CR]$INFO[System.Uptime][/LOWERCASE]</label>
 	</control>
@@ -3908,7 +3921,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl1)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl1)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -3950,7 +3963,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl2)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl2)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -3992,7 +4005,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl3)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl3)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4034,7 +4047,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl4)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl4)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4076,7 +4089,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl5)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl5)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4118,7 +4131,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl6)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl6)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4160,7 +4173,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl7)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl7)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4202,7 +4215,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl8)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl8)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4244,7 +4257,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl9)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl9)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4286,7 +4299,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl10)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl10)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4328,7 +4341,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl11)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl11)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4370,7 +4383,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl12)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl12)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4412,7 +4425,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl13)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl13)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4454,7 +4467,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl14)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl14)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4496,7 +4509,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl15)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl15)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4538,7 +4551,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl16)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl16)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4580,7 +4593,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl17)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl17)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4622,7 +4635,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl18)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl18)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4664,7 +4677,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl19)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl19)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4706,7 +4719,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl20)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),vpl20)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -4750,7 +4763,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl1)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl1)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -5105,7 +5118,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl2)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl2)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -5460,7 +5473,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl3)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl3)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -5815,7 +5828,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl4)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl4)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -6170,7 +6183,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl5)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl5)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -6525,7 +6538,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl6)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl6)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -6880,7 +6893,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl7)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl7)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -7235,7 +7248,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl8)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl8)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -7590,7 +7603,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl9)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl9)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -7945,7 +7958,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl10)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl10)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -8300,7 +8313,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl11)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl11)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -8655,7 +8668,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl12)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl12)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -9010,7 +9023,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl13)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl13)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -9365,7 +9378,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl14)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl14)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -9720,7 +9733,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl15)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl15)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -10075,7 +10088,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl16)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl16)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -10430,7 +10443,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl17)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl17)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -10785,7 +10798,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl18)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl18)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -11140,7 +11153,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl19)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl19)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -11495,7 +11508,7 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl20)</visible>
 	</control>
 	<control type="group"><!-- Seletor de lista -->
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),apl20)</visible>
 	<control type="button" id="5100">
 	<include condition="!Skin.HasSetting(higherwidgets)">widgets_selector</include>
@@ -11855,8 +11868,7 @@
 	<font>Font_20</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather)</visible>
 	</include>
 	<include name="Widget_WeatherSubtitle7Day">
@@ -11866,10 +11878,9 @@
 	<height>25</height>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
 	</include>
 	<include name="Widget_WeatherIcon7Day">
 	<posy>100</posy>
@@ -11881,31 +11892,21 @@
 	<include name="Widget_WeatherTitleWeekend">
 	<posx>0</posx>
 	<posy>16</posy>
-	<width>200</width>
+	<width>180</width>
 	<height>25</height>
 	<align>center</align>
 	<aligny>center</aligny>
 	<font>Font_20</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather)</visible>
-	</include>
-	<include name="Widget_WeatherTempWeekend">
-	<posy>65</posy>
-	<width>96</width>
-	<height>89</height>
-	<align>center</align>
-	<aligny>center</aligny>
-	<font>Font_30</font>
-	<textcolor>FFFFFAF0</textcolor>
 	</include>
 	<include name="Widget_WeatherIconWeekend">
 	<posx>0</posx>
-	<posy>-20</posy>
-	<width>200</width>
-	<height>287</height>
+	<posy>40</posy>
+	<width>180</width>
+	<height>150</height>
 	<align>center</align>
 	<aligny>center</aligny>
 	<aspectratio>keep</aspectratio>
@@ -11920,8 +11921,7 @@
 	<font>Font_20</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather)</visible>
 	</include>
 	<include name="Widget_WeatherTemp36hour">
@@ -11931,10 +11931,9 @@
 	<height>25</height>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>$VAR[value_headercolor]</textcolor>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
 	</include>
 	<include name="Widget_WeatherPrecipitation36hour">
 	<posx>10</posx>
@@ -11943,16 +11942,15 @@
 	<height>25</height>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>$VAR[value_headercolor]</textcolor>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
 	</include>
 	<include name="Widget_WeatherIcon36hour">
 	<posx>10</posx>
-	<posy>50</posy>
+	<posy>120</posy>
 	<width>200</width>
-	<height>287</height>
+	<height>160</height>
 	<align>center</align>
 	<aligny>center</aligny>
 	<aspectratio>keep</aspectratio>
@@ -11982,7 +11980,7 @@
 	<height>20</height>
 	<align>left</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	</include>
 	<include name="Widget_WeatherTempLow">
@@ -11992,7 +11990,7 @@
 	<height>20</height>
 	<align>left</align>
 	<aligny>center</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	</include>
 	<include name="Widget_WeatherSeparator7Day">
@@ -12026,15 +12024,15 @@
 	</include>
 
 	<!-- Weather Popup -->
-	<include name="WeatherPopup">
+	<include name="mf_weather">
 	<control type="group"><!-- Default group -->
 	<posx>0</posx>
-	<posy>-50</posy>
+	<posy>-50</posy>	
 	<animation effect="fade" start="0" end="100" time="400" delay="1000" condition="!Window.Previous(Startup)">WindowOpen</animation>
 	<animation effect="fade" start="0" end="100" time="500" delay="3000" condition="Window.Previous(Startup)">WindowOpen</animation>
 	<animation effect="slide" start="0,-350" end="0,0" time="300" delay="700" easing="out" tween="sine">Visible</animation>
 	<animation effect="slide" start="0,0" end="0,-350" time="200" easing="in" tween="sine">Hidden</animation>
-	<animation effect="slide" start="0,0" end="0,-350" time="300" easing="out" tween="sine" condition="Skin.HasSetting(homemenuclean) + !Control.HasFocus(520)">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,-380" time="300" easing="out" tween="sine" condition="[SubString(skin.string(widgetsmode),manual) | SubString(skin.string(widgetsmode),auto) + !Control.IsVisible(9931)] + !Control.HasFocus(520)">Conditional</animation>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + !Skin.HasSetting(custommode)</visible>
 	<control type="button" id="520"><!-- panel focus -->
 	<include>InvisibleButton</include>
@@ -12059,6 +12057,7 @@
 	<height>385</height>
 	<texture>details_back.png</texture>
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
+	<include>Animation_HomeGlass2</include>
 	</control>
 	<control type="image"><!-- Icone -->
 	<posx>55</posx>
@@ -12101,15 +12100,13 @@
 	<control type="label"><!-- Condicao atual -->
 	<posx>55</posx>
 	<posy>110</posy>
-	<width>940</width>
+	<width>275</width>
 	<height>25</height>
 	<align>left</align>
 	<aligny>center</aligny>
 	<font>Font_19</font>
-	<scroll>false</scroll>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
-	<scrollout>false</scrollout>
 	<scroll>true</scroll>
 	</control>
 	<control type="image">
@@ -12124,27 +12121,25 @@
 	<control type="label"><!-- Sensacao termica -->
 	<posx>55</posx>
 	<posy>160</posy>
-	<width>250</width>
+	<width>130</width>
 	<height>40</height>
 	<align>left</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>$VAR[value_headercolor]</textcolor>
 	<label>$LOCALIZE[402][CR][COLOR=FFFFFAF0]$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/COLOR]</label>
-	<scrollout>false</scrollout>
 	<scroll>true</scroll>
 	</control>
 	<control type="label"><!-- Change de chuva -->
 	<posx>55</posx>
 	<posy>220</posy>
-	<width>250</width>
+	<width>130</width>
 	<height>40</height>
 	<align>left</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>$VAR[value_headercolor]</textcolor>
 	<label>$LOCALIZE[31874][CR][COLOR=FFFFFAF0]$INFO[Window(Weather).Property(Daily.1.ChancePrecipitation)][/COLOR]</label>
-	<scrollout>false</scrollout>
 	<scroll>true</scroll>
 	</control>
 	<control type="image"><!-- Maxima prevista -->
@@ -12162,10 +12157,9 @@
 	<height>20</height>
 	<align>left</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$INFO[Window(Weather).Property(Today.AvgHighTemperature)]</label>
-	<scrollout>false</scrollout>
 	<scroll>true</scroll>
 	</control>
 	<control type="image"><!-- Minima prevista -->
@@ -12183,20 +12177,19 @@
 	<height>20</height>
 	<align>left</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$INFO[Window(Weather).Property(Today.AvgLowTemperature)]</label>
-	<scrollout>false</scrollout>
 	<scroll>true</scroll>
 	</control>
 	<control type="label">
 	<posx>330</posx>
 	<posy>160</posy>
-	<width>175</width>
+	<width>130</width>
 	<height>220</height>
 	<align>right</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>$VAR[value_headercolor]</textcolor>
 	<label>$LOCALIZE[406][CR][COLOR=FFFFFAF0]$INFO[Window(Weather).Property(Current.Humidity)][/COLOR][CR]$LOCALIZE[403][CR][COLOR=FFFFFAF0]$INFO[Window(Weather).Property(Current.HeatIndex)][/COLOR][CR]$LOCALIZE[405][CR][COLOR=FFFFFAF0]$INFO[Window(Weather).Property(Current.DewPoint)][/COLOR][CR]$LOCALIZE[404][CR][COLOR=FFFFFAF0]$INFO[Window(Weather).Property(Current.Wind)][/COLOR]</label>
 	</control>
@@ -12207,10 +12200,9 @@
 	<height>220</height>
 	<align>right</align>
 	<aligny>top</aligny>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$VAR[value_seasonlabel]</label>
-	<scrollout>false</scrollout>
 	<scroll>true</scroll>
 	</control>
 	<control type="image">
@@ -12552,12 +12544,11 @@
 	</control>
 	</control>
 	<control type="image">
-	<texture>$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+	<texture>$INFO[Window(Weather).Property(Weekend.1.OutlookIcon)]</texture>
 	<include>Widget_WeatherIconWeekend</include>
 	<visible>!Skin.HasSetting(weathericons)</visible>
 	</control>
 	<control type="multiimage">
-	<width>266</width>
 	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Weekend.1.FanartCode)]</imagepath>
 	<include>Widget_WeatherIconWeekend</include>
 	<timeperimage>75</timeperimage>
@@ -12598,12 +12589,11 @@
 	</control>
 	</control>
 	<control type="image">
-	<texture>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture>
+	<texture>$INFO[Window(Weather).Property(Weekend.2.OutlookIcon)]</texture>
 	<include>Widget_WeatherIconWeekend</include>
 	<visible>!Skin.HasSetting(weathericons)</visible>
 	</control>
 	<control type="multiimage">
-	<width>266</width>
 	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Weekend.2.FanartCode)]</imagepath>
 	<include>Widget_WeatherIconWeekend</include>
 	<timeperimage>75</timeperimage>
@@ -12641,13 +12631,12 @@
 	<texture>$INFO[Window(Weather).Property(36Hour.1.OutlookIcon)]</texture>	
 	<visible>!Skin.HasSetting(weathericons)</visible>
 	</control>
-	<control type="multiimage">
-	<width>266</width>
-	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(36Hour.1.FanartCode)]</imagepath>
+	<control type="multiimage">	
 	<include>Widget_WeatherIcon36hour</include>
 	<timeperimage>75</timeperimage>
 	<randomize>false</randomize>
 	<fadetime>0</fadetime>
+	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(36Hour.1.FanartCode)]</imagepath>
 	<visible>Skin.HasSetting(weathericons)</visible>
 	</control>
 	<control type="image">
@@ -12674,13 +12663,12 @@
 	<texture>$INFO[Window(Weather).Property(36Hour.2.OutlookIcon)]</texture>	
 	<visible>!Skin.HasSetting(weathericons)</visible>
 	</control>
-	<control type="multiimage">
-	<width>266</width>
-	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(36Hour.2.FanartCode)]</imagepath>
+	<control type="multiimage">	
 	<include>Widget_WeatherIcon36hour</include>
 	<timeperimage>75</timeperimage>
 	<randomize>false</randomize>
 	<fadetime>0</fadetime>
+	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(36Hour.2.FanartCode)]</imagepath>
 	<visible>Skin.HasSetting(weathericons)</visible>
 	</control>
 	<control type="image">
@@ -12707,13 +12695,12 @@
 	<texture>$INFO[Window(Weather).Property(36Hour.3.OutlookIcon)]</texture>	
 	<visible>!Skin.HasSetting(weathericons)</visible>
 	</control>
-	<control type="multiimage">
-	<width>266</width>
-	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(36Hour.3.FanartCode)]</imagepath>
+	<control type="multiimage">	
 	<include>Widget_WeatherIcon36hour</include>
 	<timeperimage>75</timeperimage>
 	<randomize>false</randomize>
 	<fadetime>0</fadetime>
+	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(36Hour.3.FanartCode)]</imagepath>
 	<visible>Skin.HasSetting(weathericons)</visible>
 	</control>
 	</control>

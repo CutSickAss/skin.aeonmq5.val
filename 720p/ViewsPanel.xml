@@ -2,6 +2,15 @@
 
 	<includes>
 	<!--##################################################################################   VISTA PANEL - ID 62   ##################################################################################-->
+	<include name="Panel_Dimmer">
+	<posx>0</posx>
+	<posy>0</posy>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
+	<animation effect="fade" start="100" end="45" condition="true">Conditional</animation>
+	<include>Animation_Fade</include>
+	<visible>[SubString(skin.string(panel_seconds),1) + System.IdleTime(1) | SubString(skin.string(panel_seconds),2) + System.IdleTime(2) | SubString(skin.string(panel_seconds),3) + System.IdleTime(3) | SubString(skin.string(panel_seconds),4) + System.IdleTime(4) | SubString(skin.string(panel_seconds),5) + System.IdleTime(5)] + Control.HasFocus(62)</visible>
+	</include>
 	<include name="ViewPanel">
 	<control type="group"><!-- default group -->
 	<animation effect="fade" time="400">VisibleChange</animation>
@@ -28,14 +37,13 @@
 	<pagecontrol>80</pagecontrol>
 	<preloaditems>2</preloaditems>
 	<visible>!Container.Content(years)</visible>
-	<itemlayout condition="Window.IsActive(25) + Skin.HasSetting(novideomediacase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(novideomediacase) + [Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons)" width="120" height="170"><!-- POSTER SEM ESTOJO -->
+	<itemlayout condition="Window.IsActive(25) + Skin.HasSetting(nopanelvideocase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons)" width="120" height="170"><!-- POSTER SEM ESTOJO -->
 	<control type="image">
 	<posx>8</posx>
 	<posy>6</posy>
 	<width>100</width>
 	<height>141</height>
 	<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
-	<colordiffuse>FF909090</colordiffuse>
 	<aspectratio>keep</aspectratio>
 	</control>
 	<control type="image">
@@ -43,9 +51,14 @@
 	<posy>5</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>	
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>120</width>
+	<height>170</height>
 	</control>
 	</itemlayout>
 	<itemlayout condition="Container.Content(episodes)" width="240" height="180"><!-- EPISODIOS -->
@@ -64,13 +77,28 @@
 	<posy>113</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<aspectratio align="center" aligny="bottom">keep</aspectratio>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<posx>206</posx>
+	<posy>113</posy>
+	<width>25</width>
+	<height>25</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)]</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>240</width>
+	<height>180</height>
 	</control>
 	</itemlayout>
-	<itemlayout condition="Window.IsActive(25) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) + !Skin.HasSetting(novideomediacase)  | !Skin.HasSetting(novideomediacase) + [Container.Content(musicvideos) | Container.Content(sets)]" width="120" height="172"><!-- ESTOJO -->
+	<itemlayout condition="Window.IsActive(25) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) + !Skin.HasSetting(nopanelvideocase)  | !Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)]" width="120" height="172"><!-- ESTOJO -->
 	<control type="image"><!-- Poster com estojo -->
 	<posx>9</posx>
 	<posy>18</posy>
@@ -105,9 +133,14 @@
 	<posy>17</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>	
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>120</width>
+	<height>172</height>
 	</control>
 	</itemlayout>
 	<itemlayout condition="Window.IsActive(25) + [Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(noviewpanelposter)" width="120" height="120"><!-- ARTE -->
@@ -125,9 +158,9 @@
 	<posy>25</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>	
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</itemlayout>
 	<itemlayout condition="!Window.IsActive(25)" width="120" height="120">
@@ -145,12 +178,17 @@
 	<posy>5</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>	
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>120</width>
+	<height>120</height>
 	</control>
 	</itemlayout>
-	<focusedlayout condition="Window.IsActive(25) + Skin.HasSetting(novideomediacase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(novideomediacase) + [Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons)" width="120" height="170"><!-- POSTER SEM ESTOJO -->
+	<focusedlayout condition="Window.IsActive(25) + Skin.HasSetting(nopanelvideocase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons)" width="120" height="170"><!-- POSTER SEM ESTOJO -->
 	<control type="image">
 	<posx>8</posx>
 	<posy>6</posy>
@@ -168,13 +206,13 @@
 	<posy>5</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="60,60" start="80" end="100" time="400" tween="back" easing="out" />
 	<effect type="fade" start="80" end="100" time="400" />
 	</animation>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</focusedlayout>
 	<focusedlayout condition="Container.Content(episodes)" width="240" height="180"><!-- EPISODIOS -->
@@ -197,18 +235,31 @@
 	<posy>114</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<texture flipy="true">$INFO[ListItem.Overlay]</texture>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<aspectratio align="center" aligny="bottom">keep</aspectratio>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="60,60" start="80" end="100" time="400" tween="back" easing="out" />
 	<effect type="fade" start="80" end="100" time="400" />
 	</animation>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<posx>207</posx>
+	<posy>114</posy>
+	<width>25</width>
+	<height>25</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="60,60" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)]</visible>
 	</control>
 	</focusedlayout>
-	<focusedlayout condition="Window.IsActive(25) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) + !Skin.HasSetting(novideomediacase)  | !Skin.HasSetting(novideomediacase) + [Container.Content(musicvideos) | Container.Content(sets)]" width="120" height="172"><!-- ESTOJO -->
+	<focusedlayout condition="Window.IsActive(25) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) + !Skin.HasSetting(nopanelvideocase)  | !Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)]" width="120" height="172"><!-- ESTOJO -->
 	<control type="image">
 	<posx>9</posx>
 	<posy>18</posy>
@@ -254,13 +305,13 @@
 	<posy>17</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="60,60" start="80" end="100" time="400" tween="back" easing="out" />
 	<effect type="fade" start="80" end="100" time="400" />
 	</animation>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</focusedlayout>
 	<focusedlayout condition="Window.IsActive(25) + [Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(noviewpanelposter)" width="120" height="120">
@@ -281,12 +332,12 @@
 	<posy>25</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="60,60" start="80" end="100" time="400" tween="back" easing="out" />
 	<effect type="fade" start="80" end="100" time="400" />
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</animation>
 	</control>
 	</focusedlayout>
@@ -308,13 +359,13 @@
 	<posy>5</posy>
 	<width>25</width>
 	<height>25</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="60,60" start="80" end="100" time="400" tween="back" easing="out" />
 	<effect type="fade" start="80" end="100" time="400" />
 	</animation>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</focusedlayout>
 	</control>
@@ -351,19 +402,26 @@
 	<width>387</width>
 	<height>15</height>
 	<textcolor>FFFFFAF0</textcolor>
-	<label>$VAR[value_listinfofocus]</label>
-	<font>Font_17</font>
+	<label>$VAR[value_glasslistinfofocus]</label>
+	<font>Font_19</font>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
 	<visible>!StringCompare(ListItem.Label,..)</visible>
+	</control>
+	<control type="image">
+	<posx>10</posx>
+	<posy>289</posy>
+	<width>387</width>
+	<height>2</height>
+	<align>left</align>
+	<texture flipx="true">divider.png</texture>
 	</control>
 	<control type="textbox">
 	<posx>10</posx>
-	<posy>290</posy>
+	<posy>298</posy>
 	<width>387</width>
-	<height>253</height>
+	<height>263</height>
 	<label>$VAR[value_plot]</label>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	</control>
 	</control>

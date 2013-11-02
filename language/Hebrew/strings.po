@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # CaTz <catzil@gmail.com>, 2013
 # Idan Bushari <ibushari@outlook.com>, 2013
 # yakirp88 <yakirp88@gmail.com>, 2013
@@ -102,7 +117,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
 "Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -113,7 +128,7 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "Aeon MQ 5, improved, more light and more powerful than ever."
-msgstr ""
+msgstr "Aeon MQ 5, משופר, קל יותר וחזק יותר מתמיד."
 
 msgctxt "Addon Description"
 msgid ""
@@ -517,8 +532,8 @@ msgid "PATH"
 msgstr "מיקום"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "מחק מיקום - הסתר פריט בתפריט ראשי"
+msgid "DISC"
+msgstr "דיסק"
 
 msgctxt "#31097"
 msgid "Access to collection"
@@ -597,8 +612,8 @@ msgid "VIDEO NODE"
 msgstr "וידאו NODE"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "אפקט שחמט"
+msgid "DISC SWING SPEED"
+msgstr "מהירות דיסק"
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -703,7 +718,7 @@ msgstr "+ תצוגות"
 
 msgctxt "#31142"
 msgid "LOGO AS TITLE (ON TOP IF AVAILABLE)"
-msgstr ""
+msgstr "לוגו בתור כותרת (למעלה אם קיים)"
 
 msgctxt "#31143"
 msgid "SHUTDOWN OPTIONS"
@@ -731,7 +746,7 @@ msgstr "וידאו"
 
 msgctxt "#31149"
 msgid "Timer Set"
-msgstr ""
+msgstr "הגדרת טיימר"
 
 msgctxt "#31150"
 msgid ""
@@ -853,7 +868,7 @@ msgstr "אין פריטים באחסון"
 
 msgctxt "#31173"
 msgid "MOSAIC SLIDESHOW"
-msgstr ""
+msgstr "מצגת פסיפס"
 
 msgctxt "#31174"
 msgid "USE ZOOM EFFECT TO OPEN AND CLOSE WINDOWS"
@@ -874,23 +889,91 @@ msgstr "תפריט מערכת"
 
 msgctxt "#31178"
 msgid "CONTEXT MENU"
-msgstr ""
+msgstr "תפריט משני"
 
 msgctxt "#31179"
 msgid "Audio language"
-msgstr ""
+msgstr "שפת פסקול"
 
 msgctxt "#31180"
 msgid "NUMBER OF VISIBLE WIDGETS"
-msgstr ""
+msgstr "מספר הווידג'יטים המוצגים"
 
 msgctxt "#31181"
 msgid "CLICK FOR CHANGE"
-msgstr ""
+msgstr "הקש כדי לשנות"
 
 msgctxt "#31182"
 msgid "PARTIAL"
-msgstr ""
+msgstr "חלקי"
+
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr "צבע עבור דגל נצפה"
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr "התאם את פריט דגל נצפה"
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr "דגל התאמה אישית"
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr "תוצג 4K תווית תוכן"
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr "החל הגדרות שנית"
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr "החל את ההגדרות החשובות שנית"
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "מצב מלא"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "מצב חלקי"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "מצב חבוי"
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr "בורר צבעים עבור תווית נצפה"
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "זמן מעבר עבור תמונות מרובות"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5 שניות"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10 שניות"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30 שניות"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1 דקה"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10 דקות"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1 שעה"
 
 #. ....
 msgctxt "#31200"
@@ -919,7 +1002,7 @@ msgstr "מחק פריט - הסר פריט שיצרת"
 
 msgctxt "#31206"
 msgid "* Use image with dimensions 1920 x 90 pixels in PNG format"
-msgstr ""
+msgstr "* השתמש בתמונה ברזולוציה 1920 על 90 מסוג PNG"
 
 msgctxt "#31207"
 msgid "CUSTOMIZE MAIN MENU"
@@ -958,8 +1041,8 @@ msgid "Page"
 msgstr "דף"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "תמונה ממוזערת לרשימת נגינה"
+msgid "THUMBNAIL SET"
+msgstr "מארז תמונות ממוזערות"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1081,8 +1164,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "שמור על יחס הרקע"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "הצג ווידג'ט עבור:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr ""
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1106,7 +1189,7 @@ msgstr "מצב 3D"
 
 msgctxt "#31252"
 msgid "CHANGE TRANSPARENCY"
-msgstr ""
+msgstr "שנה שקיפות"
 
 #. ....
 msgctxt "#31253"
@@ -1144,6 +1227,14 @@ msgid ""
 "path of the root.[CR][CR]The default image for AEON MQ 5 has pixels 72dpi "
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
+msgstr ""
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
 msgstr ""
 
 #. ....
@@ -1899,7 +1990,7 @@ msgstr "קבל LOGO/CLEARART"
 
 msgctxt "#31439"
 msgid "GET SOUND THEME"
-msgstr ""
+msgstr "קבל פסקול מעטפת"
 
 msgctxt "#31440"
 msgid "TURN ON TV TUNES"
@@ -2079,8 +2170,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "שפות אודיו"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "תווית 'נצפו'"
+msgid "WATCHED LABEL"
+msgstr "תווית נצפו"
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2539,8 +2630,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "זהירות: תהליך זה בלתי הפיך!"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "זוז לכל כיוון כדי לבטל.[CR]הקש על אנטר כדי להמשיך"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr ""
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2625,8 +2718,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "הצג אייקוני שפת אודיו וכתוביות"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "הגדר שעה לכל תמונה"
+msgid "PANEL DELAY"
+msgstr "פאנל השהייה"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2773,16 +2866,16 @@ msgid ""
 msgstr ""
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "ועוד הרבה דברים חדשים..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ5 סקין חכם לאנשים חכמים. [CR][CR] תהנה."
+msgid "Finalizing Settings"
+msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "דלג על המצגת"
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -2958,19 +3051,19 @@ msgstr "קבל גרפיקה"
 
 msgctxt "#31703"
 msgid "STARRING"
-msgstr "מככב"
+msgstr "בכיכוב"
 
 msgctxt "#31704"
 msgid "International relationships and assistance"
-msgstr ""
+msgstr "מערכות יחסים וסיוע בינלאומיים"
 
 msgctxt "#31705"
 msgid "Translators"
-msgstr ""
+msgstr "מתרגמים"
 
 msgctxt "#31706"
 msgid "Translation and support coordinator"
-msgstr ""
+msgstr "רכזי תרגום ותמיכה"
 
 msgctxt "#31707"
 msgid ""
@@ -2980,7 +3073,7 @@ msgstr ""
 
 msgctxt "#31708"
 msgid "Special thanks"
-msgstr ""
+msgstr "תודות מיוחדות"
 
 msgctxt "#31709"
 msgid "ALWAYS VISIBLE"
@@ -3480,6 +3573,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "RIGHT LIST"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -3627,7 +3760,7 @@ msgstr "עונה"
 
 msgctxt "#31876"
 msgid "SEASON"
-msgstr ""
+msgstr "עונה"
 
 #. ....
 msgctxt "#31880"
@@ -3885,7 +4018,7 @@ msgstr "הגבלה"
 
 msgctxt "#31942"
 msgid "Metadata"
-msgstr ""
+msgstr "מטהדאטה"
 
 msgctxt "#31943"
 msgid "SHOW ONLY CDART AND COVER"
@@ -3937,7 +4070,7 @@ msgstr "פילמוגרפיה"
 
 msgctxt "#31955"
 msgid "In library"
-msgstr ""
+msgstr "בספריה"
 
 msgctxt "#31956"
 msgid "DISC MENU"
@@ -4020,6 +4153,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "תמונות בגוונים אדומים משולבים עם גווני גרפיט. [CR] ערכת נושא ברירת מחדל של Aeon MQ5"
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "הצג סלוגן"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr "התאם דיסק ברירת מחדל"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "דיסק אודיו"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "דיסק וידאו"
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "פרק הבא"
@@ -4029,8 +4178,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "פרקים ששודרו היום"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "הצג פאנל התקדמות"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr ""
 
 msgctxt "#31983"
 msgid "Rating"

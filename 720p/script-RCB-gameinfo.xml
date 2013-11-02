@@ -46,7 +46,7 @@
 	<posy>50</posy>
 	<width>1100</width>
 	<height>25</height>
-	<font>Font_19</font>
+	<font>Font_21</font>
 	<label>$INFO[ListItem.Tagline]</label>
 	<textcolor>90FFFFFF</textcolor>
 	<scroll>true</scroll>
@@ -260,7 +260,7 @@
 	<width>635</width>
 	<height>175</height>
 	<align>justify</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$INFO[ListItem.Property(plot)]</label>
 	<textcolor>FFFFFAF0</textcolor>
 	<autoscroll delay="15000" time="5000" repeat="15000">!Skin.HasSetting(noinfoplotscroll)</autoscroll>
@@ -421,7 +421,7 @@
 	<align>center</align>
 	<aligny>center</aligny>
 	<label>$INFO[Container(151).ListItem.Label]</label>
-	<font>Font_23</font>
+	<font>Font_24</font>
 	<textcolor>FF101010</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
@@ -598,7 +598,7 @@
 	<width>640</width>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_15</font>
+	<font>Font_18</font>
 	<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 	<textcolor>80FFFAF0</textcolor>
 	</control>
@@ -626,7 +626,7 @@
 	<width>640</width>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_15</font>
+	<font>Font_18</font>
 	<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 	<textcolor>FF101010</textcolor>
 	<visible>Control.Hasfocus(3001)</visible>
@@ -638,7 +638,7 @@
 	<width>640</width>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_15</font>
+	<font>Font_18</font>
 	<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 	<textcolor>80FFFAF0</textcolor>
 	<visible>!Control.Hasfocus(3001)</visible>
@@ -716,7 +716,7 @@
 	<align>center</align>
 	<aligny>center</aligny>
 	<label>$INFO[Container(151).ListItem.Label]</label>
-	<font>Font_23</font>
+	<font>Font_24</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>

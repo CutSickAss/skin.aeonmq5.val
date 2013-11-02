@@ -8,7 +8,7 @@
 	<animation effect="slide" time="400" start="0,-250" end="0,0" easing="inout" tween="cubic">Visible</animation>
 	<animation effect="slide" time="400" start="0,0" end="0,-250" easing="inout" tween="cubic">WindowClose</animation>
 	<animation effect="slide" time="400" start="0,0" end="0,-250" easing="inout" tween="cubic">Hidden</animation>
-	<visible>![Skin.HasSetting(novideofurniture) | Skin.HasSetting(novideofurnituretemp) | Window.IsActive(PVRGuideOSD) | Window.IsActive(PVRChannelsOSD)]</visible>
+	<visible>![Skin.HasSetting(novideofurniture) | Skin.HasSetting(novideofurnituretemp) | Window.IsActive(pvrosdguide) | Window.IsActive(pvrosdchannels)]</visible>
 	<control type="image">
 	<posx>0</posx>
 	<posy>0</posy>
@@ -69,7 +69,7 @@
 	<animation effect="slide" time="400" start="0,800" end="0,0" easing="out" tween="cubic">Visible</animation>
 	<animation effect="slide" time="400" start="0,0" end="0,800" easing="in" tween="cubic">WindowClose</animation>
 	<animation effect="slide" time="400" start="0,0" end="0,800" easing="in" tween="cubic">Hidden</animation>
-	<visible>![Skin.HasSetting(novideofurnituretemp) | Window.IsActive(PVRGuideOSD) | Window.IsActive(PVRChannelsOSD)]</visible>
+	<visible>![Skin.HasSetting(novideofurnituretemp) | Window.IsActive(pvrosdguide) | Window.IsActive(pvrosdchannels)]</visible>
 	<control type="image">
 	<posx>0</posx>
 	<posy>550</posy>
@@ -159,7 +159,7 @@
 	<animation effect="slide" time="400" start="0,0" end="0,800" easing="in" tween="cubic">Hidden</animation>	
 	<animation effect="slide" start="0,0" end="0,-25" time="300" tween="cubic" easing="out" condition="Player.Forwarding | Player.Rewinding">Conditional</animation>
 	<animation effect="slide" start="0,0" end="0,-67" time="400" tween="cubic" easing="inout" condition="Window.IsActive(videoosd)">Conditional</animation>
-	<visible>![Skin.HasSetting(novideofurnituretemp) | Window.IsActive(PVRGuideOSD) | Window.IsActive(PVRChannelsOSD)]</visible>
+	<visible>![Skin.HasSetting(novideofurnituretemp) | Window.IsActive(pvrosdguide) | Window.IsActive(pvrosdchannels)]</visible>
 	<control type="image"><!-- Barra de flags -->
 	<posx>220</posx>
 	<posy>682</posy>
@@ -198,61 +198,13 @@
 	<texture>$INFO[VideoPlayer.AudioChannels,flags/audiochannels/,ch.png]</texture>
 	</control>
 	</control>
-	<control type="image" id="2000"><!-- Logo e Clearart -->
+	<control type="image"><!-- Logo e Clearart -->
 	<posx>1080</posx>
-	<posy>108</posy>
+	<posy>73</posy>
 	<width>180</width>
 	<height>340</height>
 	<aspectratio aligny="bottom">keep</aspectratio>
 	<texture background="true">$VAR[value_art]</texture>
-	</control>
-	<control type="image" id="2001"><!-- Logo e Clearart -->
-	<posx>1080</posx>
-	<posy>108</posy>
-	<width>180</width>
-	<height>340</height>
-	<aspectratio aligny="bottom">keep</aspectratio>
-	<texture background="true">$VAR[value_art1]</texture>
-	</control>
-	<control type="image" id="2002"><!-- Logo e Clearart -->
-	<posx>1080</posx>
-	<posy>108</posy>
-	<width>180</width>
-	<height>340</height>
-	<aspectratio aligny="bottom">keep</aspectratio>
-	<texture background="true">$VAR[value_art2]</texture>
-	</control>
-	<control type="image" id="2003"><!-- Logo e Clearart -->
-	<posx>1080</posx>
-	<posy>108</posy>
-	<width>180</width>
-	<height>340</height>
-	<aspectratio aligny="bottom">keep</aspectratio>
-	<texture background="true">$VAR[value_art3]</texture>
-	</control>
-	<control type="image" id="2004"><!-- Logo e Clearart -->
-	<posx>1080</posx>
-	<posy>108</posy>
-	<width>180</width>
-	<height>340</height>
-	<aspectratio aligny="bottom">keep</aspectratio>
-	<texture background="true">$VAR[value_art4]</texture>
-	</control>
-	<control type="image" id="2005"><!-- Logo e Clearart -->
-	<posx>1080</posx>
-	<posy>108</posy>
-	<width>180</width>
-	<height>340</height>
-	<aspectratio aligny="bottom">keep</aspectratio>
-	<texture background="true">$VAR[value_art5]</texture>
-	</control>
-	<control type="image" id="2006"><!-- Logo e Clearart -->
-	<posx>1080</posx>
-	<posy>108</posy>
-	<width>180</width>
-	<height>340</height>
-	<aspectratio aligny="bottom">keep</aspectratio>
-	<texture background="true">$VAR[value_art6]</texture>
 	</control>
 	<control type="image"><!-- Fundo -->
 	<posx>0</posx>
@@ -272,29 +224,15 @@
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	<include>Animation_DefaultGlass</include>
 	</control>
-	<control type="group"><!-- CDart -->
+	<control type="image">
+	<include>Animation_CDart</include>
+	<posx>20</posx>
+	<posy>360</posy>
+	<width>180</width>
+	<height>180</height>
+	<texture diffuse="cdart_diffuse.png" background="true">$VAR[value_videodisc]</texture>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
 	<visible>!IsEmpty(Player.Art(discart))</visible>
-	<control type="image">
-	<posx>20</posx>
-	<posy>360</posy>
-	<width>180</width>
-	<height>180</height>
-	<aligny>center</aligny>
-	<texture>cdart.png</texture>
-	<aspectratio align="center">keep</aspectratio>
-	<animation effect="rotate" end="-360" center="auto" time="10000" loop="true" reversible="false" condition="Player.HasVideo">Conditional</animation>
-	</control>
-	<control type="image">
-	<posx>20</posx>
-	<posy>360</posy>
-	<width>180</width>
-	<height>180</height>
-	<aligny>center</aligny>
-	<fadetime>FanartCrossFadeTime</fadetime>
-	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Player.Art(discart)]</texture>
-	<aspectratio align="center">keep</aspectratio>
-	<animation effect="rotate" end="-360" center="auto" time="10000" loop="true" reversible="false" condition="Player.HasVideo">Conditional</animation>
-	</control>
 	</control>
 	<control type="image">
 	<posx>8</posx>
@@ -315,7 +253,7 @@
 	</control>
 	<control type="label"><!-- Titulo enredo -->
 	<posx>220</posx>
-	<posy>450</posy>
+	<posy>447</posy>
 	<width>300</width>
 	<height>25</height>
 	<align>left</align>
@@ -328,7 +266,7 @@
 	<posy>480</posy>
 	<width>620</width>
 	<height>180</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$INFO[VideoPlayer.Plot]</label>
 	<textcolor>FFFFFAF0</textcolor>
 	<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
@@ -337,7 +275,7 @@
 	<visible>!VideoPlayer.Content(LiveTV)</visible>
 	<control type="label"><!-- Titulo elenco -->
 	<posx>880</posx>
-	<posy>450</posy>
+	<posy>447</posy>
 	<width>300</width>
 	<height>25</height>
 	<align>left</align>
@@ -350,7 +288,7 @@
 	<posy>480</posy>
 	<width>380</width>
 	<height>230</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$INFO[VideoPlayer.CastAndRole]</label>
 	<textcolor>FFFFFAF0</textcolor>
 	<autoscroll delay="20000" time="4000" repeat="15000">true</autoscroll>
@@ -422,7 +360,7 @@
 	<font>Font_100</font>
 	<label>31737</label>
 	<textcolor>80FFFAF0</textcolor>
-	<visible>Player.Paused + ![Skin.HasSetting(nopausedlabel) | Skin.HasSetting(novideofurnituretemp) | Window.IsActive(PVRGuideOSD) | Window.IsActive(PVRChannelsOSD)]</visible>
+	<visible>Player.Paused + ![Skin.HasSetting(nopausedlabel) | Skin.HasSetting(novideofurnituretemp) | Window.IsActive(pvrosdguide) | Window.IsActive(pvrosdchannels)]</visible>
 	<animation type="Visible">
 	<effect type="slide" start="0,-600" end="0,0" time="600" tween="cubic" easing="out" />
 	<effect type="fade" start="0" end="100" time="600" />

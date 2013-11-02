@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # passer <passer_66@yahoo.co.uk>, 2013
 # passer <passer_66@yahoo.co.uk>, 2012-2013
 # Wanilton Campos <>, 2012
@@ -101,7 +116,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
 "Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Icelandic (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/is/)\n"
 "MIME-Version: 1.0\n"
@@ -516,12 +531,12 @@ msgid "PATH"
 msgstr "SLÓÐ"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "EYÐA SLÓÐ - FELA HLUT Í AÐALVALMYND"
+msgid "DISC"
+msgstr ""
 
 msgctxt "#31097"
 msgid "Access to collection"
-msgstr "Aðgengi að safni"
+msgstr ""
 
 msgctxt "#31098"
 msgid "Seasons and episodes"
@@ -596,8 +611,8 @@ msgid "VIDEO NODE"
 msgstr "MYNDEFNIS HAMUR"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "SKÁK ÁHRIF"
+msgid "DISC SWING SPEED"
+msgstr ""
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -891,6 +906,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr ""
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr ""
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr ""
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr ""
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr ""
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr ""
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr ""
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr ""
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr ""
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr ""
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr ""
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr ""
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr ""
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -957,8 +1040,8 @@ msgid "Page"
 msgstr "Síða"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "SMÁMYND STILLA SPILUNARLISTA"
+msgid "THUMBNAIL SET"
+msgstr ""
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1080,8 +1163,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "HALDA BAKGRUNNS HLUTFALLI"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "SÝNA GRÆJUR FYRIR:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr ""
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1144,6 +1227,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. Búa til möppu í rót með hvað nafni sem er, til dæmis MITT ÞEMA.[CR][CR]2.Búðu til 16 möppur í möppunni í rót með þessum nöfnum:[CR]addons, autumn, concerts, custom, games, LiveTV, movies, music, MyMenu, pictures, settings, spring, summer, tvshows, videos, winter.[CR][CR]3. Settu mynd að eigin vali í hverja möppu, MITT ÞEMA styður margar skrár, þú getur haft eins margar ljósmyndir og þú vilt í hverri möppu.[CR][CR]4. Þegar þemað er tilbúið sláðu þá inn slóð rótarinnar.[CR][CR]Sjálfgefin ljósmynd fyrir Aeon MQ 5 er 72dpi 1920x1080 JPG format og mæli ég með FastStone Photo Resize til að búa til gæðamyndir i lítilli stærð."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr ""
 
 #. ....
 msgctxt "#31260"
@@ -2078,8 +2169,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "TUNGUMÁL HLJÓÐS"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "'BÚIÐ AÐ  HORFA Á' TÁKN"
+msgid "WATCHED LABEL"
+msgstr ""
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2538,8 +2629,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "AÐVÖRUN:ÞESSI VINNSLA ER ÓAFTURKRÆF !"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "FÆRA til að hætta við, ýttu á Enter til að halda áfram"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr ""
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2624,8 +2717,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "SÝNA TUNGUMÁL HLJÓÐS OG TEXTA FÁNA"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "STILLA TÍMA FYRIR HVERJA LJÓSMYND"
+msgid "PANEL DELAY"
+msgstr ""
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2772,16 +2865,16 @@ msgid ""
 msgstr "Væri það ekki frábært að geta náð í öll þemu, bakgrunn og tákn með einum smelli? [CR]Með Aeon MQ 5, er það hægt, þú niðurhalar einum pakka og hefur aðgang að auka innihaldi."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "MARGAR FRÉTTIR OG MEIRA..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MA 5, snjallt útlit fyrir snjallt fólk.[CR][CR]Njótið."
+msgid "Finalizing Settings"
+msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "SLEPPA KYNNINGU"
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3479,6 +3572,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "HÆGRI LISTI"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -4019,6 +4152,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Ljósmyndir í rauðum tóni í blandi við grafít tón.[CR]Sjálfgefið útlit Aeon MQ 5."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr ""
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr ""
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr ""
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr ""
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "NÆSTI ÞÁTTUR"
@@ -4028,8 +4177,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "ÞÆTTIR Í SÝNDIR Í DAG"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "SÝNA Í VINNSLU SLÁ"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr ""
 
 msgctxt "#31983"
 msgid "Rating"

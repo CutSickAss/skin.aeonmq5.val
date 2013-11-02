@@ -77,11 +77,78 @@
 	<width>630</width>
 	<height>90</height>
 	<label>$VAR[value_menuhelp]</label>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>justify</align>
 	<aligny>top</aligny>
 	<textcolor>FFFFFAF0</textcolor>
 	<autoscroll delay="10000" time="3000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	</control>
+	<control type="grouplist">
+	<posx>450</posx>
+	<posy>610</posy>
+	<width>630</width>
+	<height>90</height>
+	<orientation>horizontal</orientation>
+	<itemgap>0</itemgap>
+	<scrolltime>-</scrolltime>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	<visible>!Skin.HasSetting(weathericons) + [Control.HasFocus(129) | Control.HasFocus(130) | Control.HasFocus(131)]</visible>
+	<control type="image"><!-- Icone do clima 1 -->
+	<width>180</width>
+	<height>90</height>
+	<aspectratio align="top">keep</aspectratio>
+	<texture background="true">$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture>
+	</control>
+	<control type="image"><!-- Icone do clima 2 -->
+	<width>180</width>
+	<height>90</height>
+	<aspectratio align="top">keep</aspectratio>
+	<texture background="true">$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture>
+	</control>
+	<control type="image"><!-- Icone do clima 3 -->
+	<width>180</width>
+	<height>90</height>
+	<aspectratio align="top">keep</aspectratio>
+	<texture background="true">$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture>
+	</control>
+	</control>
+	<control type="grouplist">
+	<posx>450</posx>
+	<posy>610</posy>
+	<width>630</width>
+	<height>90</height>
+	<orientation>horizontal</orientation>
+	<itemgap>0</itemgap>
+	<scrolltime>-</scrolltime>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	<visible>Skin.HasSetting(weathericons) + [Control.HasFocus(129) | Control.HasFocus(130) | Control.HasFocus(131)]</visible>
+	<control type="multiimage"><!-- Icone animado 1 -->
+	<width>180</width>
+	<height>90</height>
+	<aspectratio align="top">keep</aspectratio>
+	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.1.FanartCode)]</imagepath>
+	<timeperimage>175</timeperimage>
+	<randomize>false</randomize>
+	<fadetime>0</fadetime>
+	</control>
+	<control type="multiimage"><!-- Icone animado 2 -->
+	<width>180</width>
+	<height>90</height>
+	<aspectratio align="top">keep</aspectratio>
+	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.4.FanartCode)]</imagepath>
+	<timeperimage>175</timeperimage>
+	<randomize>false</randomize>
+	<fadetime>0</fadetime>
+	</control>
+	<control type="multiimage"><!-- Icone animado 3 -->
+	<width>180</width>
+	<height>90</height>
+	<aspectratio align="top">keep</aspectratio>
+	<imagepath>$VAR[value_weathericons]$INFO[Window(Weather).Property(Daily.7.FanartCode)]</imagepath>
+	<timeperimage>175</timeperimage>
+	<randomize>false</randomize>
+	<fadetime>0</fadetime>
+	</control>
 	</control>
 	<control type="group">
 	<animation effect="slide" start="0,0" end="0,160" condition="Control.HasFocus(452)">Conditional</animation>
@@ -328,7 +395,7 @@
 	<posy>4</posy>
 	<width>186</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31426</label>
 	<scroll>true</scroll>
@@ -348,7 +415,7 @@
 	<posy>4</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31427</label>
 	<scroll>true</scroll>
@@ -368,7 +435,7 @@
 	<posy>4</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31080</label>
 	<scroll>true</scroll>
@@ -388,7 +455,7 @@
 	<posy>4</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31085</label>
 	<scroll>true</scroll>
@@ -423,7 +490,7 @@
 	<posy>9</posy>
 	<width>130</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31081</label>
 	<scroll>true</scroll>
@@ -443,7 +510,7 @@
 	<posy>9</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$LOCALIZE[342]</label>
 	<scroll>true</scroll>
@@ -463,7 +530,7 @@
 	<posy>9</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$LOCALIZE[20343]</label>
 	<scroll>true</scroll>
@@ -483,7 +550,7 @@
 	<posy>9</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31086</label>
 	<scroll>true</scroll>
@@ -503,7 +570,7 @@
 	<posy>9</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$LOCALIZE[2]</label>
 	<scroll>true</scroll>
@@ -523,7 +590,7 @@
 	<posy>9</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31146</label>
 	<scroll>true</scroll>
@@ -543,7 +610,7 @@
 	<posy>33</posy>
 	<width>130</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31147</label>
 	<scroll>true</scroll>
@@ -563,7 +630,7 @@
 	<posy>33</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>$LOCALIZE[8]</label>
 	<scroll>true</scroll>
@@ -583,7 +650,7 @@
 	<posy>33</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31445</label>
 	<scroll>true</scroll>
@@ -603,7 +670,7 @@
 	<posy>33</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31145</label>
 	<scroll>true</scroll>
@@ -623,7 +690,7 @@
 	<posy>33</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31148</label>
 	<scroll>true</scroll>

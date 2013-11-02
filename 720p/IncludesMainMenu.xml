@@ -486,27 +486,6 @@
 	<include>Animation_Fade</include>
 	</control>
 	</include>	
-	<include name="emptybutton_v">
-	<posx>0</posx>
-	<posy>105</posy>
-	<width>299</width>
-	<height>33</height>
-	<onleft>Close</onleft>
-	<align>right</align>
-	<aligny>center</aligny>
-	<font>Font_15</font>
-	<label>31014</label>
-	<textoffsetx>20</textoffsetx>
-	<texture>settings_button.png</texture>
-	<texturefocus>settings_button.png</texturefocus>
-	<texturenofocus>-</texturenofocus>
-	<textcolor>FF101010</textcolor>
-	<focusedcolor>FFFFFAF0</focusedcolor>
-	<selectedcolor>FFFFFAF0</selectedcolor>
-	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
-	<include>Animation_DefaultGlass</include>
-	<pulseonselect>no</pulseonselect>
-	</include>
 	
 	<!-- ######################################################################### MENU ######################################################################### -->
 	<include name="Menu_Content">

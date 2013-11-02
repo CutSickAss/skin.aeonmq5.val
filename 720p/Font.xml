@@ -36,6 +36,7 @@
 	<name>Font_19</name><!-- nao usar uppercase -->
 	<filename>aeon_common.ttf</filename>
 	<size>19</size>
+	<linespacing>0.8</linespacing>
 	</font>
 	<font>
 	<name>Font_20</name>
@@ -46,7 +47,6 @@
 	<name>Font_20A</name><!-- nao usar uppercase -->
 	<filename>aeon_common.ttf</filename>
 	<size>20</size>
-	<linespacing>1.2</linespacing>
 	</font>
 	<font>
 	<name>Font_20B</name><!-- Mpaa -->
@@ -87,6 +87,7 @@
 	<name>Font_27</name><!-- nao usar uppercase -->
 	<filename>aeon_common.ttf</filename>
 	<size>26</size>
+	<linespacing>0.85</linespacing>
 	</font>
 	<font>
 	<name>Font_30</name><!-- nao usar uppercase -->
@@ -237,6 +238,7 @@
 	<name>Font_19</name><!-- nao usar uppercase -->
 	<filename>aeon_common.ttf</filename>
 	<size>21</size>
+	<linespacing>0.8</linespacing>
 	<aspect>1.20</aspect>
 	</font>
 	<font>
@@ -299,7 +301,7 @@
 	<filename>aeon_common.ttf</filename>
 	<size>28</size>
 	<aspect>1.20</aspect>
-	<linespacing>0.90</linespacing>
+	<linespacing>0.85</linespacing>
 	</font>
 	<font>
 	<name>Font_30</name><!-- nao usar uppercase -->

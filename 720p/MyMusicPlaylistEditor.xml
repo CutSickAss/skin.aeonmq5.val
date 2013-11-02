@@ -6,7 +6,7 @@
 	<controls>
 	<control type="image"><!-- Single Fanart -->
 	<include>WindowBG</include>
-	<texture background="true">$VAR[value_defaultaudiofanart]</texture>
+	<texture background="true">$VAR[value_defaultmusicfanart]</texture>
 	</control>
 	<control type="group"><!-- default group -->
 	<include>Animation_Window</include>
@@ -65,7 +65,7 @@
 	<posy>463</posy>
 	<width>337</width>
 	<height>175</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>[COLOR=$VAR[value_headercolor]]$LOCALIZE[556]: [/COLOR]$INFO[Container(50).ListItem.Title][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[557]: [/COLOR]$INFO[Container(50).ListItem.Artist][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[558]: [/COLOR]$INFO[Container(50).ListItem.Album][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[555]: [/COLOR]$INFO[Container(50).ListItem.Duration][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[554]: [/COLOR]$INFO[Container(50).ListItem.TrackNumber][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[515]: [/COLOR]$INFO[Container(50).ListItem.Genre]</label>
 	</control>
 	<control type="textbox">
@@ -73,7 +73,7 @@
 	<posy>463</posy>
 	<width>337</width>
 	<height>175</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>[COLOR=$VAR[value_headercolor]]$LOCALIZE[556]: [/COLOR]$INFO[Container(100).ListItem.Title][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[557]: [/COLOR]$INFO[Container(100).ListItem.Artist][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[558]: [/COLOR]$INFO[Container(100).ListItem.Album][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[555]: [/COLOR]$INFO[Container(100).ListItem.Duration][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[554]: [/COLOR]$INFO[Container(100).ListItem.TrackNumber][CR][COLOR=$VAR[value_headercolor]]$LOCALIZE[515]: [/COLOR]$INFO[Container(100).ListItem.Genre]</label>
 	</control>
 	</control>

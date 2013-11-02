@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # shaolin <shaolin@rhythmaning.org>, 2013
 # lolsamsam <kakouton@gmail.com>, 2012
 # shaolin <shaolin@rhythmaning.org>, 2013
@@ -101,7 +116,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
 "Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -112,7 +127,7 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "Aeon MQ 5, improved, more light and more powerful than ever."
-msgstr ""
+msgstr "Aeon MQ 5。更に優れた、更に軽く、更にパワフル。"
 
 msgctxt "Addon Description"
 msgid ""
@@ -360,7 +375,7 @@ msgstr "タイマーをキャンセル"
 
 msgctxt "#31057"
 msgid "SHUTDOWN"
-msgstr ""
+msgstr "シャットダウン"
 
 msgctxt "#31058"
 msgid "TURN OFF"
@@ -396,7 +411,7 @@ msgstr "予告編"
 
 msgctxt "#31066"
 msgid "CINEMA EX"
-msgstr ""
+msgstr "シネマEX"
 
 msgctxt "#31067"
 msgid "TV GUIDE"
@@ -436,15 +451,15 @@ msgstr "マイメニュー"
 
 msgctxt "#31076"
 msgid "SHOW DETAILS PANEL"
-msgstr ""
+msgstr "詳細パネルを表示"
 
 msgctxt "#31077"
 msgid "LIBRARY STATUS"
-msgstr ""
+msgstr "ライブラリの状態"
 
 msgctxt "#31078"
 msgid "WEATHER AND TIME"
-msgstr ""
+msgstr "天気と時刻"
 
 msgctxt "#31079"
 msgid "CLICK TO MOVE"
@@ -452,7 +467,7 @@ msgstr ""
 
 msgctxt "#31080"
 msgid "Item not used"
-msgstr ""
+msgstr "使われていないアイテム"
 
 msgctxt "#31081"
 msgid "Item addition"
@@ -488,7 +503,7 @@ msgstr "ゲーム"
 
 msgctxt "#31089"
 msgid "Year"
-msgstr ""
+msgstr "年"
 
 #. ....
 msgctxt "#31090"
@@ -516,8 +531,8 @@ msgid "PATH"
 msgstr "パス"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr ""
+msgid "DISC"
+msgstr "ディスク"
 
 msgctxt "#31097"
 msgid "Access to collection"
@@ -529,11 +544,11 @@ msgstr "シーズンとエピソード"
 
 msgctxt "#31099"
 msgid "Music videos"
-msgstr ""
+msgstr "ミュージックビデオ"
 
 msgctxt "#31100"
 msgid "Albums and tracks"
-msgstr ""
+msgstr "アルバムとトラック"
 
 msgctxt "#31101"
 msgid "Watch tv"
@@ -553,11 +568,11 @@ msgstr "今後10日の予報"
 
 msgctxt "#31105"
 msgid "My favourites items"
-msgstr ""
+msgstr "お気に入りのアイテム"
 
 msgctxt "#31106"
 msgid "Favourite item"
-msgstr ""
+msgstr "大好きなアイテム"
 
 msgctxt "#31107"
 msgid "Playlist"
@@ -577,7 +592,7 @@ msgstr "CD, DVD, Bluray"
 
 msgctxt "#31111"
 msgid "DISC ART (IF AVAILABLE)"
-msgstr ""
+msgstr "ディスクアート (もしあれば)"
 
 msgctxt "#31112"
 msgid "PLOT ALWAYS VISIBLE"
@@ -596,7 +611,7 @@ msgid "VIDEO NODE"
 msgstr ""
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
+msgid "DISC SWING SPEED"
 msgstr ""
 
 msgctxt "#31117"
@@ -609,15 +624,15 @@ msgstr ""
 
 msgctxt "#31119"
 msgid "LAYOUT STYLE 1"
-msgstr ""
+msgstr "レイアウトスタイル1"
 
 msgctxt "#31120"
 msgid "LAYOUT STYLE 2"
-msgstr ""
+msgstr "レイアウトスタイル2"
 
 msgctxt "#31121"
 msgid "LAYOUT STYLE - KARAOKE"
-msgstr ""
+msgstr "レイアウトスタイル - カラオケ"
 
 msgctxt "#31122"
 msgid "BACKGROUND SET BY USER"
@@ -669,23 +684,23 @@ msgstr ""
 
 msgctxt "#31134"
 msgid "VIEW OPTIONS"
-msgstr ""
+msgstr "ビューオプション"
 
 msgctxt "#31135"
 msgid "CHANGE VIEW"
-msgstr ""
+msgstr "ビューを変更"
 
 msgctxt "#31136"
 msgid "FONTS"
-msgstr ""
+msgstr "フォント"
 
 msgctxt "#31137"
 msgid "FONTS SELECTOR"
-msgstr ""
+msgstr "フォントセレクター"
 
 msgctxt "#31138"
 msgid "STYLE"
-msgstr ""
+msgstr "スタイル"
 
 msgctxt "#31139"
 msgid "BROWSE FOR PREVIEW"
@@ -706,15 +721,15 @@ msgstr ""
 
 msgctxt "#31143"
 msgid "SHUTDOWN OPTIONS"
-msgstr ""
+msgstr "シャットダウンオプション"
 
 msgctxt "#31144"
 msgid "SHUTDOWN"
-msgstr ""
+msgstr "シャットダウン"
 
 msgctxt "#31145"
 msgid "Shutdown"
-msgstr ""
+msgstr "シャットダウン"
 
 msgctxt "#31146"
 msgid "Live tv"
@@ -726,7 +741,7 @@ msgstr ""
 
 msgctxt "#31148"
 msgid "Video"
-msgstr ""
+msgstr "ビデオ"
 
 msgctxt "#31149"
 msgid "Timer Set"
@@ -786,7 +801,7 @@ msgstr "言語の設定"
 
 msgctxt "#31158"
 msgid "REPLACE THIS MENU WITH ..."
-msgstr ""
+msgstr "このメニューを置き換える..."
 
 msgctxt "#31159"
 msgid "CLONING SUB-MENU FROM ..."
@@ -810,27 +825,27 @@ msgstr ""
 
 msgctxt "#31164"
 msgid "PROPERTIES"
-msgstr ""
+msgstr "プロパティ"
 
 msgctxt "#31165"
 msgid "MAIN MENU PRESETS"
-msgstr ""
+msgstr "メインメニュープリセット"
 
 msgctxt "#31166"
 msgid "CREATE PRESET"
-msgstr ""
+msgstr "プリセットを作成"
 
 msgctxt "#31167"
 msgid "APPLY NEW PRESET"
-msgstr ""
+msgstr "新規プリセットを適用"
 
 msgctxt "#31168"
 msgid "NO PRESETS AVAILABLE"
-msgstr ""
+msgstr "プリセットがありません"
 
 msgctxt "#31169"
 msgid "PRESETS"
-msgstr ""
+msgstr "プリセット"
 
 msgctxt "#31170"
 msgid ""
@@ -869,15 +884,15 @@ msgstr ""
 
 msgctxt "#31177"
 msgid "SYSTEM MENU"
-msgstr ""
+msgstr "システムメニュー"
 
 msgctxt "#31178"
 msgid "CONTEXT MENU"
-msgstr ""
+msgstr "コンテキストメニュー"
 
 msgctxt "#31179"
 msgid "Audio language"
-msgstr ""
+msgstr "オーディオ言語"
 
 msgctxt "#31180"
 msgid "NUMBER OF VISIBLE WIDGETS"
@@ -890,6 +905,74 @@ msgstr ""
 msgctxt "#31182"
 msgid "PARTIAL"
 msgstr ""
+
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr ""
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr ""
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr ""
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr ""
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr ""
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr ""
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5秒"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10秒"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30秒"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1分"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10分"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1時間"
 
 #. ....
 msgctxt "#31200"
@@ -957,8 +1040,8 @@ msgid "Page"
 msgstr "ページ"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "サムネイルセットプレイリスト"
+msgid "THUMBNAIL SET"
+msgstr ""
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1018,7 +1101,7 @@ msgstr "プレイリスト"
 
 msgctxt "#31231"
 msgid "CLEAN LIBRARY"
-msgstr ""
+msgstr "ライブラリをクリア"
 
 msgctxt "#31232"
 msgid ""
@@ -1080,7 +1163,7 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr ""
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
+msgid "MANAGEMENT OF WIDGETS"
 msgstr ""
 
 msgctxt "#31247"
@@ -1145,6 +1228,14 @@ msgid ""
 "Resize to obtain good quality images and low size."
 msgstr ""
 
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr ""
+
 #. ....
 msgctxt "#31260"
 msgid "FOLDER CONTAINS:"
@@ -1204,11 +1295,11 @@ msgstr "DIVX"
 
 msgctxt "#31274"
 msgid "SETS"
-msgstr ""
+msgstr "セット"
 
 msgctxt "#31275"
 msgid "4K"
-msgstr ""
+msgstr "4K"
 
 msgctxt "#31276"
 msgid "CASE FOR CONTENT"
@@ -1240,13 +1331,13 @@ msgctxt "#31282"
 msgid ""
 "IF THERE IS A 'BLURAY', 'BLU-RAY' OR 'BDRIP' TAG IN THE NAME OF THE FILE OR "
 "FOLDER, THIS CASE WILL BE USED."
-msgstr ""
+msgstr "ファイルやフォルダー名に「BLURAY」「BLU-RAY」や「BDRIP」タグがあれば、このケースが使われます。"
 
 msgctxt "#31283"
 msgid ""
 "IF THERE IS A BD '3DBD' OR '3DBD' TAG IN THE NAME OF THE FILE OR FOLDER, "
 "THIS CASE WILL BE USED."
-msgstr ""
+msgstr "ファイルやフォルダー名に「3DBD」タグがあれば、このケースが使われます。"
 
 msgctxt "#31284"
 msgid ""
@@ -2078,8 +2169,8 @@ msgid "AUDIO LANGUAGES"
 msgstr ""
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "「再生済」ラベル"
+msgid "WATCHED LABEL"
+msgstr ""
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2538,7 +2629,9 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "注意：この処理はやり直しできません！"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
 msgstr ""
 
 msgctxt "#31601"
@@ -2624,8 +2717,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr ""
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr ""
+msgid "PANEL DELAY"
+msgstr "パネルディレイ"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2772,15 +2865,15 @@ msgid ""
 msgstr ""
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
+msgid "Applying new settings..."
 msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
+msgid "Finalizing Settings"
 msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
+msgid "-"
 msgstr ""
 
 msgctxt "#31659"
@@ -3479,6 +3572,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr ""
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -3884,7 +4017,7 @@ msgstr ""
 
 msgctxt "#31942"
 msgid "Metadata"
-msgstr ""
+msgstr "メタデータ"
 
 msgctxt "#31943"
 msgid "SHOW ONLY CDART AND COVER"
@@ -3960,7 +4093,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "minutes"
-msgstr ""
+msgstr "分"
 
 msgctxt "#31962"
 msgid "NOT AVAILABLE TO VERTICAL MENU"
@@ -3995,7 +4128,7 @@ msgstr ""
 #. ....
 msgctxt "#31970"
 msgid "Aeon MQ 5 - Extrapack"
-msgstr ""
+msgstr "Aeon MQ 5 - エクストラパック"
 
 msgctxt "#31971"
 msgid "Update finished"
@@ -4019,6 +4152,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr ""
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "タグラインを表示"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr ""
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr ""
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr ""
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "次のエピソード"
@@ -4028,7 +4177,7 @@ msgid "EPISODES AIRED TODAY"
 msgstr ""
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
 msgstr ""
 
 msgctxt "#31983"

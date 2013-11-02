@@ -5,15 +5,13 @@
 	<zorder>3</zorder>
 	<coordinates>
 	<system>1</system>
-	<posx>0</posx>
-	<posy>0</posy>
 	</coordinates>
 	<include>Animation_DialogPopup</include>
 	<animation effect="slide" time="0" tween="cubic" easing="out" end="400,0" condition="Window.IsVisible(146)">Conditional</animation>
 	<controls>
 	<control type="image">
 	<posx>0</posx>
-	<posy>30</posy>
+	<posy>-20</posy>
 	<width>454</width>
 	<height>39</height>
 	<texture>gradient_focus.png</texture>
@@ -21,7 +19,7 @@
 	</control>
 	<control type="image">
 	<posx>0</posx>
-	<posy>0</posy>
+	<posy>-50</posy>
 	<width>454</width>
 	<height>39</height>
 	<texture>dialogs_context_nofocus.png</texture>
@@ -29,7 +27,7 @@
 	</control>
 	<control type="label">
 	<posx>80</posx>
-	<posy>8</posy>
+	<posy>-42</posy>
 	<width>300</width>
 	<height>40</height>
 	<align>center</align>
@@ -39,7 +37,7 @@
 	</control>
 	<control type="image" id="999"><!-- background image -->
 	<posx>0</posx>
-	<posy>0</posy>
+	<posy>-50</posy>
 	<width>456</width>
 	<height>720</height>
 	<texture>-</texture>
@@ -47,21 +45,21 @@
 	<control type="image" id="997"><!-- top image -->
 	<description>top image</description>
 	<posx>-2</posx>
-	<posy>23</posy>
+	<posy>-27</posy>
 	<width>463</width>
 	<height>27</height>
 	<texture>-</texture>
 	</control>
 	<control type="image" id="998"><!-- bottom image -->
 	<posx>-2</posx>
-	<posy>0</posy>
+	<posy>-50</posy>
 	<width>463</width>
 	<height>27</height>
 	<texture>-</texture>
 	</control>
 	<control type="grouplist" id="996">
 	<posx>0</posx>
-	<posy>50</posy>
+	<posy>0</posy>
 	<width>454</width>
 	<height max="670">auto</height>
 	<itemgap>0</itemgap>
@@ -92,6 +90,24 @@
 	<onright>Close</onright>
 	<onclick>ActivateWindow(111)</onclick>
 	<label>31243</label>
+	</control>
+	<control type="button" id="9325"><!-- ArtWork Downloader Solo Mode-->
+	<include>DialogContext_Button</include>
+	<label>$VAR[value_addon1_solo]</label>
+	<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+	<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+	<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
+	<onclick>SetFocus(51)</onclick>
+	<visible>System.HasAddon(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+	</control>
+	<control type="button" id="9326"><!-- ArtWork Downloader Gui Mode-->
+	<include>DialogContext_Button</include>
+	<label>$VAR[value_addon1_gui]</label>
+	<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+	<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+	<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
+	<onclick>SetFocus(51)</onclick>
+	<visible>System.HasAddon(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
 	</control>
 	<control type="button" id="1033">
 	<include>DialogContext_Button</include>

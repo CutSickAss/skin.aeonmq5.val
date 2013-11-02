@@ -57,7 +57,7 @@
 	<width>852</width>
 	<height>30</height>
 	<label>31140</label>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<align>center</align>
 	<aligny>center</aligny>
@@ -117,7 +117,7 @@
 	<label>31806</label>
 	<onclick>Skin.ToggleSetting(view3dwall_video)</onclick>
 	<selected>Skin.HasSetting(view3dwall_video)</selected>
-	<visible>![Container.Content(episodes) | Container.Content(sets) | Container.Content(years)]</visible>
+	<visible>![Container.Content(sets) | Container.Content(years)]</visible>
 	</control>
 	<control type="radiobutton" id="19257"><!-- GlassList --><!-- 57 -->
 	<radioposx>894</radioposx>
@@ -145,7 +145,7 @@
 	<label>31821</label>
 	<onclick>Skin.ToggleSetting(viewshowart_video)</onclick>
 	<selected>Skin.HasSetting(viewshowart_video)</selected>
-	<visible>![Container.Content(episodes) | Container.Content(sets) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
+	<visible>![Container.Content(sets) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
 	</control>
 	<control type="radiobutton" id="19261"><!-- Multiplex --><!-- 61 -->
 	<radioposx>894</radioposx>
@@ -184,7 +184,7 @@
 	</control>
 	<control type="radiobutton" id="19299"><!-- PosterLite --><!-- 528 -->
 	<radioposx>894</radioposx>
-	<label>31979</label>
+	<label>PosterLite</label>
 	<onclick>Skin.ToggleSetting(viewposterlite_video)</onclick>
 	<selected>Skin.HasSetting(viewposterlite_video)</selected>
 	<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>

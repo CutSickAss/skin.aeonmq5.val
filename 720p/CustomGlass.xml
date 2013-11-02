@@ -63,7 +63,7 @@
 	<itemgap>10</itemgap>
 	<orientation>horizontal</orientation>
 	<control type="button" id="261">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>FFFFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,100)</onfocus>
@@ -72,7 +72,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="262">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>95FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,95)</onfocus>
@@ -81,7 +81,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="263">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>85FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,85)</onfocus>
@@ -90,7 +90,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="264">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>75FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,75)</onfocus>
@@ -99,7 +99,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="265">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>65FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,65)</onfocus>
@@ -108,7 +108,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="266">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>55FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,55)</onfocus>
@@ -117,7 +117,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="267">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>45FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,45)</onfocus>
@@ -126,7 +126,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="268">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>35FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,35)</onfocus>
@@ -135,7 +135,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="269">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>25FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,25)</onfocus>
@@ -144,7 +144,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="270">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>15FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,15)</onfocus>
@@ -153,7 +153,7 @@
 	<onclick>SetFocus(9100)</onclick>
 	</control>
 	<control type="button" id="271">
-	<include>ButtonColorDimensions</include>
+	<include>ButtonColor</include>
 	<label>-</label>
 	<colordiffuse>05FFFFFF</colordiffuse>
 	<onfocus>Skin.SetString(floorglass,05)</onfocus>

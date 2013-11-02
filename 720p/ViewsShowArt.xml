@@ -6,7 +6,7 @@
 	<posx>0</posx>
 	<height>20</height>
 	<width>400</width>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<aligny>top</aligny>
 	<align>left</align>
 	<textcolor>$VAR[value_headercolor]</textcolor>
@@ -14,6 +14,114 @@
 	<textoffsety>0</textoffsety>
 	<scroll>true</scroll>
 	</include>
+	<include name="ShowArtFixedList">
+	<control type="fixedlist" id="60">
+	<include>ShowArt_Content</include>
+	</control>
+	</include>
+	<include name="ShowArtWrapList">
+	<control type="wraplist" id="60">
+	<include>ShowArt_Content</include>
+	</control>
+	</include>	
+	<include name="ShowArt_Content">
+	<viewtype label="31821">list</viewtype>
+	<posx>60</posx>
+	<posy>531</posy>
+	<width>1160</width>
+	<height>300</height>
+	<pagecontrol>80</pagecontrol>
+	<onup condition="StringCompare(skin.string(showartvideopanel),manual) + !StringCompare(ListItem.Label,..)">9960</onup>
+	<onup condition="![StringCompare(skin.string(showartvideopanel),manual) + !StringCompare(ListItem.Label,..)]">9900</onup>
+	<ondown>80</ondown>
+	<orientation>horizontal</orientation>
+	<focusposition>2</focusposition>
+	<scrolltime>400</scrolltime>
+	<preloaditems>2</preloaditems>
+	<animation effect="slide" start="0,0" end="0,-32" time="300" tween="sine" easing="out" condition="Control.HasFocus(80)">Conditional</animation>
+	<animation effect="fade" start="100" end="20" time="200" condition="Window.IsVisible(621)">Conditional</animation>
+	<visible>![Container.Content(sets) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
+	<itemlayout width="240" height="300">
+	<control type="image"><!-- reflexo -->
+	<posx>0</posx>
+	<posy>115</posy>
+	<width>180</width>
+	<height>114</height>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
+	<texture flipy="true" diffuse="thumb_reflect.png" background="true">$VAR[value_logoandclearart]</texture>
+	</control>
+	<control type="image"><!-- clearlogo e clearart -->
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>180</width>
+	<height>114</height>
+	<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	</control>
+	<control type="image">
+	<posx>152</posx>
+	<posy>85</posy>
+	<width>30</width>
+	<height>30</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<posx>152</posx>
+	<posy>85</posy>
+	<width>30</width>
+	<height>30</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)]</visible>
+	</control>
+	</itemlayout>
+	<focusedlayout width="240" height="300">
+	<control type="image"><!-- reflexo -->
+	<posx>20</posx>
+	<posy>115</posy>
+	<width>180</width>
+	<height>114</height>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
+	<texture flipy="true" diffuse="thumb_reflect.png" background="true">$VAR[value_logoandclearart]</texture>
+	<animation effect="zoom" start="100" end="125" center="100,115" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+	</control>
+	<control type="image"><!-- clearlogo e clearart -->
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>180</width>
+	<height>114</height>
+	<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation effect="zoom" start="100" end="125" center="105,115" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+	</control>
+	<control type="image">
+	<posx>172</posx>
+	<posy>85</posy>
+	<width>30</width>
+	<height>30</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation effect="zoom" start="100" end="125" center="100,115" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<posx>172</posx>
+	<posy>85</posy>
+	<width>30</width>
+	<height>30</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation effect="zoom" start="100" end="125" center="100,115" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)]</visible>
+	</control>	
+	</focusedlayout>
+	</include>	
 	<include name="ViewShowArt">
 	<control type="group"><!-- default group -->
 	<animation effect="fade" time="400">VisibleChange</animation>
@@ -28,7 +136,7 @@
 	<control type="group"><!-- painel de info -->
 	<animation effect="slide" start="0,-600" end="0,0" time="500" tween="sine" easing="out">Visible</animation>
 	<animation effect="slide" start="0,0" end="0,-600" time="500" tween="sine" easing="out">Hidden</animation>
-	<visible>[Control.HasFocus(9960) | StringCompare(skin.string(showartvideopanel),alwayson) | StringCompare(skin.string(showartvideopanel),auto) + Control.IsVisible(9921) | Control.HasFocus(9039) | ControlGroup(9040).HasFocus | Window.IsVisible(621)] + !StringCompare(ListItem.Label,..)</visible>
+	<visible>[Control.HasFocus(9960) | StringCompare(skin.string(showartvideopanel),alwayson) | StringCompare(skin.string(showartvideopanel),auto) + Control.IsVisible(9921) | Window.IsVisible(621)] + !StringCompare(ListItem.Label,..)</visible>
 	<control type="image">
 	<posx>0</posx>
 	<posy>56</posy>
@@ -41,8 +149,8 @@
 	<posx>0</posx>
 	<posy>85</posy>
 	<width>1280</width>
-	<height>485</height>
-	<texture>darkgrey.png</texture>
+	<height>530</height>
+	<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	<animation effect="fade" end="85" condition="true">Conditional</animation>
 	</control>
@@ -52,13 +160,12 @@
 	<width>2</width>
 	<height>435</height>
 	<texture>separator_v.png</texture>
-	</control>	
-	
+	</control>
 	<control type="grouplist">
 	<posx>60</posx>
 	<posy>104</posy>
 	<orientation>vertical</orientation>
-	<itemgap>00</itemgap>
+	<itemgap>0</itemgap>
 	<control type="label">
 	<include>ShowArtLabel</include>
 	<label>$VAR[value_ground11_label]: [COLOR=FFFFFAF0]$VAR[value_ground11_value][/COLOR]</label>
@@ -82,6 +189,7 @@
 	<control type="label">
 	<include>ShowArtLabel</include>
 	<label>$VAR[value_ground16_label]: [COLOR=FFFFFAF0]$VAR[value_ground16_value][/COLOR]</label>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 	</control>
 	<control type="label">
 	<include>ShowArtLabel</include>
@@ -98,10 +206,10 @@
 	</control>
 	<control type="textbox">
 	<posx>60</posx>
-	<posy>273</posy>
+	<posy>270</posy>
 	<width>400</width>
-	<height>235</height>
-	<font>Font_17</font>
+	<height>241</height>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	</control>
@@ -123,117 +231,8 @@
 	<fadetime>FanartCrossFadeTime</fadetime>
 	</control>
 	</control>
-	<control type="wraplist" id="60">
-	<viewtype label="31821">list</viewtype>
-	<posx>95</posx>
-	<posy>531</posy>
-	<width>1095</width>
-	<height>300</height>
-	<pagecontrol>80</pagecontrol>
-	<onup condition="StringCompare(skin.string(showartvideopanel),manual) + !StringCompare(ListItem.Label,..)">9960</onup>
-	<onup condition="![StringCompare(skin.string(showartvideopanel),manual) + !StringCompare(ListItem.Label,..)]">9900</onup>
-	<ondown>80</ondown>
-	<orientation>horizontal</orientation>
-	<focusposition>2</focusposition>
-	<scrolltime>400</scrolltime>
-	<preloaditems>2</preloaditems>
-	<animation effect="slide" start="0,0" end="0,-32" time="300" tween="sine" easing="out" condition="Control.HasFocus(80)">Conditional</animation>
-	<animation effect="fade" start="100" end="20" time="200" condition="Window.IsVisible(621)">Conditional</animation>
-	<visible>![Container.Content(episodes) | Container.Content(sets) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
-	<itemlayout width="219" height="300">
-	<control type="image"><!-- clearlogo e clearart -->
-	<posx>4</posx>
-	<posy>0</posy>
-	<width>204</width>
-	<height>114</height>
-	<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
-	<aspectratio align="center" aligny="bottom">keep</aspectratio>
-	</control>
-	<control type="image">
-	<posx>180</posx>
-	<posy>86</posy>
-	<width>30</width>
-	<height>30</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<aspectratio align="center" aligny="bottom">keep</aspectratio>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
-	</control>
-	<control type="label">
-	<posx>107</posx>
-	<posy>98</posy>
-	<width>185</width>
-	<height>60</height>
-	<align>center</align>
-	<label>[UPPERCASE]$LOCALIZE[31589] $INFO[ListItem.Season][/UPPERCASE]</label>
-	<font>Font_17</font>
-	<visible>Container.Content(seasons) + !IsEmpty(ListItem.Season)</visible>
-	</control>
-	<control type="label">
-	<posx>107</posx>
-	<posy>98</posy>
-	<width>185</width>
-	<height>60</height>
-	<align>center</align>
-	<label>[UPPERCASE]$LOCALIZE[31589][/UPPERCASE]</label>
-	<font>Font_17</font>
-	<visible>Container.Content(seasons) + IsEmpty(ListItem.Season)</visible>
-	</control>
-	</itemlayout>
-	<focusedlayout width="219" height="300">
-	<control type="image"><!-- clearlogo e clearart -->
-	<posx>4</posx>
-	<posy>0</posy>
-	<width>204</width>
-	<height>114</height>
-	<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
-	<aspectratio align="center" aligny="bottom">keep</aspectratio>
-	</control>
-	<control type="image">
-	<posx>180</posx>
-	<posy>86</posy>
-	<width>30</width>
-	<height>30</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<aspectratio align="center" aligny="bottom">keep</aspectratio>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
-	</control>
-	<control type="label">
-	<posx>107</posx>
-	<posy>98</posy>
-	<width>185</width>
-	<height>60</height>
-	<align>center</align>
-	<label>[UPPERCASE]$LOCALIZE[31528] $INFO[ListItem.Season].$INFO[ListItem.Episode][/UPPERCASE]</label>
-	<font>Font_17</font>
-	<animation effect="zoom" center="106,50" start="80" end="110" time="200" tween="cubic" easing="inout">Focus</animation>
-	<visible>Container.Content(episodes)</visible>
-	</control>
-	<control type="label">
-	<posx>107</posx>
-	<posy>98</posy>
-	<width>185</width>
-	<height>60</height>
-	<align>center</align>
-	<label>[UPPERCASE]$LOCALIZE[31589] $INFO[ListItem.Season][/UPPERCASE]</label>
-	<font>Font_17</font>
-	<animation effect="zoom" center="106,50" start="80" end="110" time="200" tween="cubic" easing="inout">Focus</animation>
-	<visible>Container.Content(seasons) + !IsEmpty(ListItem.Season)</visible>
-	</control>
-	<control type="label">
-	<posx>107</posx>
-	<posy>98</posy>
-	<width>185</width>
-	<height>60</height>
-	<align>center</align>
-	<label>[UPPERCASE]$LOCALIZE[31589][/UPPERCASE]</label>
-	<font>Font_17</font>
-	<animation effect="zoom" center="106,50" start="80" end="110" time="200" tween="cubic" easing="inout">Focus</animation>
-	<visible>Container.Content(seasons) + IsEmpty(ListItem.Season)</visible>
-	</control>
-	</focusedlayout>
-	</control>
+	<include condition="Skin.HasSetting(showartfixedlist)">ShowArtFixedList</include>
+	<include condition="!Skin.HasSetting(showartfixedlist)">ShowArtWrapList</include>
 	<control type="scrollbar" id="80">
 	<include>ScrollBar_Horizontal</include>
 	<posx>305</posx>
@@ -243,14 +242,6 @@
 	<ondown>9920</ondown>
 	<include>Animation_Fade</include>
 	<visible allowhiddenfocus="true">Control.IsVisible(60) + Control.HasFocus(80)</visible>
-	</control>
-	<control type="image">
-	<posx>0</posx>
-	<posy>645</posy>
-	<width>1280</width>
-	<height>30</height>
-	<texture flipy="true">shadow_h.png</texture>
-	<colordiffuse>C3FFFFFF</colordiffuse>
 	</control>
 	</control>
 	</include>

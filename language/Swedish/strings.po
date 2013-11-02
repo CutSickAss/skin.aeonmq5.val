@@ -93,17 +93,32 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # Berggren <christofer.berggren@gmail.com>, 2013
 # Johan Nenzén <johan.nanzen@gmail.com>, 2013
 # Johan Nenzén <johan.nanzen@gmail.com>, 2013
-# thedarer <r.bjornsvik@gmail.com>, 2013
-# thedarer <r.bjornsvik@gmail.com>, 2013
+# thedarer <robin@bjornsvik.se>, 2013
+# thedarer <robin@bjornsvik.se>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
 "Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -518,12 +533,12 @@ msgid "PATH"
 msgstr "SÖKVÄG"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "RADERA SÖKVÄG - GÖM OBJEKTET I HUVUDMENYN"
+msgid "DISC"
+msgstr "SKIVA"
 
 msgctxt "#31097"
 msgid "Access to collection"
-msgstr "Tillgång till samling"
+msgstr ""
 
 msgctxt "#31098"
 msgid "Seasons and episodes"
@@ -598,8 +613,8 @@ msgid "VIDEO NODE"
 msgstr "VIDEO NOD"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "SCHACK EFFECT"
+msgid "DISC SWING SPEED"
+msgstr ""
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -879,19 +894,87 @@ msgstr "Snabbmeny"
 
 msgctxt "#31179"
 msgid "Audio language"
-msgstr ""
+msgstr "Ljudspråk"
 
 msgctxt "#31180"
 msgid "NUMBER OF VISIBLE WIDGETS"
-msgstr ""
+msgstr "ANTAL SYNLIGA WIDGETS"
 
 msgctxt "#31181"
 msgid "CLICK FOR CHANGE"
-msgstr ""
+msgstr "KLICKA FÖR ATT ÄNDRA"
 
 msgctxt "#31182"
 msgid "PARTIAL"
+msgstr "OFULLSTÄNDIG"
+
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
 msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr "ANPASSA FLAGGA"
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr ""
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "KOMPLETT LÄGE"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "OFULLSTÄNDIGT LÄGE"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "GÖMT LÄGE"
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr ""
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5 SEKUNDER"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10 SEKUNDER"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30 SEKUNDER"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1 MINUT"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10 MINUTER"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1 TIMME"
 
 #. ....
 msgctxt "#31200"
@@ -959,8 +1042,8 @@ msgid "Page"
 msgstr "Sida"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "ANGE MINIATYRBILD FÖR SPELLISTA"
+msgid "THUMBNAIL SET"
+msgstr "MINIATYRBILDSSAMLING"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1082,8 +1165,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "BEHÅLL BAKGRUNDENS BILDFÖRHÅLLANDE"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "VISA WIDGETS FÖR:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr ""
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1145,6 +1228,14 @@ msgid ""
 "path of the root.[CR][CR]The default image for AEON MQ 5 has pixels 72dpi "
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
+msgstr ""
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
 msgstr ""
 
 #. ....
@@ -1900,7 +1991,7 @@ msgstr "HÄMTA LOGOTYPER/CLEARART"
 
 msgctxt "#31439"
 msgid "GET SOUND THEME"
-msgstr ""
+msgstr "HÄMTA LJUDTEMA"
 
 msgctxt "#31440"
 msgid "TURN ON TV TUNES"
@@ -2080,8 +2171,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "LJUDSPRÅK"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "'VISAD'-ETIKETT"
+msgid "WATCHED LABEL"
+msgstr ""
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2540,8 +2631,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "VARNING: ÄNDRINGEN GÅR INTE ATT ÅNGRA!"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Flytta i någon riktning för att avbryta.[CR]Tryck Enter för att fortsätta"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr ""
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2626,8 +2719,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "VISA FLAGGOR FÖR LJUD OCH UNDERTEXTER"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "STÄLL IN TID FÖR VARJE BILD"
+msgid "PANEL DELAY"
+msgstr "PANELFÖRDRÖJNING"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2774,16 +2867,16 @@ msgid ""
 msgstr ""
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "MÅNGA NYHETER OCH MER..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
+msgid "Finalizing Settings"
 msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "HOPPA ÖVER PRESENTATIONEN"
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -2967,11 +3060,11 @@ msgstr ""
 
 msgctxt "#31705"
 msgid "Translators"
-msgstr ""
+msgstr "Översättare"
 
 msgctxt "#31706"
 msgid "Translation and support coordinator"
-msgstr ""
+msgstr "Översättnings- och supportsamordnare"
 
 msgctxt "#31707"
 msgid ""
@@ -2981,7 +3074,7 @@ msgstr ""
 
 msgctxt "#31708"
 msgid "Special thanks"
-msgstr ""
+msgstr "Speciellt tack"
 
 msgctxt "#31709"
 msgid "ALWAYS VISIBLE"
@@ -3481,6 +3574,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "RIGHT LIST"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -3628,7 +3761,7 @@ msgstr "Årstid"
 
 msgctxt "#31876"
 msgid "SEASON"
-msgstr ""
+msgstr "SÄSONG"
 
 #. ....
 msgctxt "#31880"
@@ -3886,7 +4019,7 @@ msgstr "GRÄNS"
 
 msgctxt "#31942"
 msgid "Metadata"
-msgstr ""
+msgstr "Metadata"
 
 msgctxt "#31943"
 msgid "SHOW ONLY CDART AND COVER"
@@ -3938,7 +4071,7 @@ msgstr "FILMOGRAFI"
 
 msgctxt "#31955"
 msgid "In library"
-msgstr ""
+msgstr "I bibliotek"
 
 msgctxt "#31956"
 msgid "DISC MENU"
@@ -4021,6 +4154,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Bilder med röda toner kombinerat med inslag av grafit. [CR]Standardtemat i Aeon MQ 5"
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "VISA TAGLINE"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr ""
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "LJUDSKIVA"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "VIDEOSKIVA"
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "NÄSTA AVSNITT"
@@ -4030,8 +4179,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "AVSNITT SÄNDA IDAG"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "VISA FRAMSTEGSPANEL"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr ""
 
 msgctxt "#31983"
 msgid "Rating"

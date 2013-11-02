@@ -54,7 +54,7 @@
 	<posy>367</posy>
 	<width>163</width>
 	<height>241</height>
-	<texture flipy="true" diffuse="thumb_poster_reflect.png">thumb_shelf_border.png</texture>
+	<texture flipy="true" diffuse="thumb_shelf_reflect.png">thumb_shelf_border.png</texture>
 	<fadetime>200</fadetime>
 	<aspectratio>stretch</aspectratio>
 	<colordiffuse>30FFFFFF</colordiffuse>
@@ -64,7 +64,7 @@
 	<posy>368</posy>
 	<width>162</width>
 	<height>241</height>
-	<texture flipy="true" diffuse="thumb_poster_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
+	<texture flipy="true" diffuse="thumb_shelf_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 	<fadetime>200</fadetime>
 	<aspectratio>stretch</aspectratio>
 	</control>
@@ -73,7 +73,7 @@
 	<posy>131</posy>
 	<width>162</width>
 	<height>241</height>
-	<texture>thumb_poster_diffuse.png</texture>
+	<texture>thumb_shelf_diffuse.png</texture>
 	<fadetime>200</fadetime>
 	<aspectratio>stretch</aspectratio>
 	</control>
@@ -82,7 +82,7 @@
 	<posy>131</posy>
 	<width>162</width>
 	<height>241</height>
-	<texture diffuse="thumb_poster_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
+	<texture diffuse="thumb_shelf_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 	<fadetime>200</fadetime>
 	<aspectratio>stretch</aspectratio>
 	</control>
@@ -91,9 +91,9 @@
 	<posy>133</posy>
 	<width>40</width>
 	<height>40</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	</itemlayout>
@@ -128,7 +128,7 @@
 	<posy>383</posy>
 	<width>213</width>
 	<height>300</height>
-	<texture flipy="true" diffuse="thumb_poster_reflect.png">thumb_shelf_border.png</texture>
+	<texture flipy="true" diffuse="thumb_shelf_reflect.png">thumb_shelf_border.png</texture>
 	<fadetime>200</fadetime>
 	<aspectratio>stretch</aspectratio>
 	<colordiffuse>30FFFFFF</colordiffuse>
@@ -141,7 +141,7 @@
 	<posy>384</posy>
 	<width>211</width>
 	<height>300</height>
-	<texture flipy="true" diffuse="thumb_poster_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
+	<texture flipy="true" diffuse="thumb_shelf_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 	<fadetime>200</fadetime>
 	<aspectratio>stretch</aspectratio>
 	<animation type="Focus" reversible="false">
@@ -153,7 +153,7 @@
 	<posy>89</posy>
 	<width>211</width>
 	<height>300</height>
-	<texture>thumb_poster_diffuse.png</texture>
+	<texture>thumb_shelf_diffuse.png</texture>
 	<fadetime>200</fadetime>
 	<aspectratio scalediffuse="false">stretch</aspectratio>
 	<animation type="Focus" reversible="false">
@@ -165,7 +165,7 @@
 	<posy>89</posy>
 	<width>211</width>
 	<height>300</height>
-	<texture diffuse="thumb_poster_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
+	<texture diffuse="thumb_shelf_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 	<fadetime>200</fadetime>
 	<aspectratio scalediffuse="false">stretch</aspectratio>
 	<animation type="Focus" reversible="false">
@@ -177,12 +177,12 @@
 	<posy>91</posy>
 	<width>50</width>
 	<height>50</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="60,238" start="80" end="100" time="600" tween="cubic" easing="out" />
 	</animation>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	</focusedlayout>

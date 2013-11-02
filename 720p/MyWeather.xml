@@ -6,7 +6,7 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 	<control type="multiimage">
-	<include>HomeBG</include>
+	<include>WindowBG</include>
 	<imagepath background="true">$VAR[value_menutheme_weather]</imagepath>
 	</control>
 	<control type="group"><!-- default group -->

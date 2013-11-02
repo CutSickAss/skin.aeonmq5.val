@@ -3,28 +3,15 @@
 	<includes>
 	<!--##################################################################################   VISTA LANDSCAPEX - ID 64   #############################################################################-->
 	<include name="LandScapeXLabel">
-	<posx>60</posx>
-	<height>44</height>
+	<posx>0</posx>
+	<height>20</height>
 	<width>300</width>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<aligny>top</aligny>
 	<align>left</align>
 	<textcolor>$VAR[value_headercolor]</textcolor>
-	<textoffsetx>30</textoffsetx>
-	<textoffsety>2</textoffsety>
-	<onleft>64</onleft>
-	<onright>64</onright>
-	<onclick>Skin.SetString(custom_viewname,landscapex)</onclick>
-	</include>
-	<include name="LandScapeXValue">
-	<posx>60</posx>
-	<height>13</height>
-	<width>300</width>
-	<font>Font_17</font>
-	<aligny>top</aligny>
-	<align>left</align>
-	<textoffsetx>30</textoffsetx>
-	<textoffsety>21</textoffsety>
+	<textoffsetx>0</textoffsetx>
+	<textoffsety>0</textoffsety>
 	<scroll>true</scroll>
 	</include>
 	<include name="ViewLandScapeX">
@@ -53,101 +40,41 @@
 	<animation effect="fade" end="85" condition="true">Conditional</animation>
 	</control>
 	
-	<control type="group" id="9040"><!-- Painel de Info -->
-	<include>Animation_Fade</include>
-	<visible>!StringCompare(ListItem.Label,..)</visible>
-	<control type="image">
+	<control type="grouplist">
 	<posx>60</posx>
 	<posy>104</posy>
-	<width>15</width>
-	<height>44</height>
-	<texture>arrow_settings.png</texture>
-	<colordiffuse>FFFFFAF0</colordiffuse>
-	<animation effect="fade" time="200" delay="400">Visible</animation>
-	<animation effect="fade" time="200">Hidden</animation>
-	<animation effect="fade" start="20" end="80" time="700" condition="true" pulse="true">Conditional</animation>
-	<animation effect="slide" end="0,44" time="0" condition="SubString(skin.string(custom_posground),2)">Conditional</animation>
-	<animation effect="slide" end="0,88" time="0" condition="SubString(skin.string(custom_posground),3)">Conditional</animation>
-	<animation effect="slide" end="0,132" time="0" condition="SubString(skin.string(custom_posground),4)">Conditional</animation>
-	<animation effect="slide" end="0,176" time="0" condition="SubString(skin.string(custom_posground),5)">Conditional</animation>
-	<visible>Window.IsVisible(621)</visible>
-	</control>
-	<control type="button" id="9041">
+	<orientation>vertical</orientation>
+	<itemgap>10</itemgap>
+	<control type="label">
 	<include>LandScapeXLabel</include>
-	<posy>104</posy>
-	<onup>9046</onup>
-	<ondown>9042</ondown>
-	<label>$VAR[value_ground1_landscapex]</label>
-	<onclick>Skin.SetString(custom_posground,1)</onclick>
-	<onclick>SetFocus(9051)</onclick>
+	<label>$VAR[value_ground11_label]: [COLOR=FFFFFAF0]$VAR[value_ground11_value][/COLOR]</label>
 	</control>
 	<control type="label">
-	<include>LandScapeXValue</include>
-	<posy>104</posy>
-	<textcolor>$VAR[value_subground1_focus]</textcolor>
-	<label>$VAR[value_subground1_landscapex]</label>
-	</control>
-	<control type="button" id="9042">
 	<include>LandScapeXLabel</include>
-	<posy>148</posy>
-	<onup>9041</onup>
-	<ondown>9043</ondown>
-	<label>$VAR[value_ground2_landscapex]</label>
-	<onclick>Skin.SetString(custom_posground,2)</onclick>
-	<onclick>SetFocus(9052)</onclick>
+	<label>$VAR[value_ground12_label]: [COLOR=FFFFFAF0]$VAR[value_ground12_value][/COLOR]</label>
 	</control>
 	<control type="label">
-	<include>LandScapeXValue</include>
-	<posy>148</posy>
-	<textcolor>$VAR[value_subground2_focus]</textcolor>
-	<label>$VAR[value_subground2_landscapex]</label>
-	</control>
-	<control type="button" id="9043">
 	<include>LandScapeXLabel</include>
-	<posy>192</posy>
-	<onup>9042</onup>
-	<ondown>9044</ondown>
-	<label>$VAR[value_ground3_landscapex]</label>
-	<onclick>Skin.SetString(custom_posground,3)</onclick>
-	<onclick>SetFocus(9053)</onclick>
+	<label>$VAR[value_ground13_label]: [COLOR=FFFFFAF0]$VAR[value_ground13_value][/COLOR]</label>
 	</control>
 	<control type="label">
-	<include>LandScapeXValue</include>
-	<posy>192</posy>
-	<textcolor>$VAR[value_subground3_focus]</textcolor>
-	<label>$VAR[value_subground3_landscapex]</label>
-	</control>
-	<control type="button" id="9044">
 	<include>LandScapeXLabel</include>
-	<posy>236</posy>
-	<onup>9043</onup>
-	<ondown>9045</ondown>
-	<label>$VAR[value_ground4_landscapex]</label>
-	<onclick>Skin.SetString(custom_posground,4)</onclick>
-	<onclick>SetFocus(9054)</onclick>
+	<label>$VAR[value_ground14_label] [COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR]</label>
 	</control>
 	<control type="label">
-	<include>LandScapeXValue</include>
-	<posy>236</posy>
-	<textcolor>$VAR[value_subground4_focus]</textcolor>
-	<label>$VAR[value_subground4_landscapex]</label>
-	</control>
-	<control type="button" id="9045">
 	<include>LandScapeXLabel</include>
-	<posy>280</posy>
-	<onup>9044</onup>
-	<ondown>9046</ondown>
-	<label>$VAR[value_ground5_landscapex]</label>
-	<onclick>Skin.SetString(custom_posground,5)</onclick>
-	<onclick>SetFocus(9055)</onclick>
+	<label>$VAR[value_ground15_label]: [COLOR=FFFFFAF0]$VAR[value_ground15_value][/COLOR]</label>
 	</control>
 	<control type="label">
-	<include>LandScapeXValue</include>
-	<posy>280</posy>
-	<textcolor>$VAR[value_subground5_focus]</textcolor>
-	<label>$VAR[value_subground5_landscapex]</label>
+	<include>LandScapeXLabel</include>
+	<label>$VAR[value_ground16_label]: [COLOR=FFFFFAF0]$VAR[value_ground16_value][/COLOR]</label>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 	</control>
-	</control>	
+	<control type="label">
+	<include>LandScapeXLabel</include>
+	<label>$VAR[value_ground17_label]: [COLOR=FFFFFAF0]$VAR[value_ground17_value][/COLOR]</label>
+	</control>
+	</control>
 
 	<control type="image">
 	<posx>385</posx>
@@ -168,7 +95,7 @@
 	<posy>104</posy>
 	<width>360</width>
 	<height>235</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	</control>
@@ -236,27 +163,49 @@
 	<width>192</width>
 	<height>116</height>
 	<texture>landscapex_back.png</texture>
-	<colordiffuse>FF505050</colordiffuse>
+	<colordiffuse>30FFFAF0</colordiffuse>
 	<aspectratio>stretch</aspectratio>
 	<include>Animation_Fade</include>
 	</control>
 	<control type="image">
-	<posx>45</posx>
-	<width>192</width>
-	<height>124</height>
-	<bordersize>7</bordersize>
+	<posx>43</posx>
+	<posy>1</posy>
+	<width>196</width>
+	<height>122</height>
+	<bordersize>8</bordersize>
+	<texture fallback="DefaultExtraThumbs.png" background="true">$VAR[value_landscape]</texture>
+	<aspectratio>stretch</aspectratio>
+	<visible>!StringCompare(ListItem.Label,..)</visible>
+	</control>
+	<control type="image">
+	<posx>43</posx>
+	<posy>1</posy>
+	<width>196</width>
+	<height>122</height>
+	<bordersize>8</bordersize>
 	<texture fallback="DefaultExtraThumbs.png" background="true">$VAR[value_landscape]</texture>
 	<aspectratio>keep</aspectratio>
-	<colordiffuse>FF909090</colordiffuse>
+	<visible>StringCompare(ListItem.Label,..)</visible>
 	</control>
 	<control type="image">
 	<posx>202</posx>
     <posy>10</posy>
     <width>30</width>
     <height>30</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<posx>202</posx>
+    <posy>86</posy>
+    <width>30</width>
+    <height>30</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)]</visible>
 	</control>
 	</itemlayout>
 	<focusedlayout height="134" width="202">
@@ -272,7 +221,7 @@
 	<effect type="fade" start="80" end="100" time="400" />
 	</animation>
 	</control>
-	<control type="image"><!-- Background Double -->
+	<control type="image">
 	<posx>45</posx>
 	<posy>4</posy>
 	<width>192</width>
@@ -285,28 +234,58 @@
 	</animation>
 	</control>
 	<control type="image">
-	<posx>45</posx>
-	<width>192</width>
-	<height>124</height>
-	<bordersize>7</bordersize>
+	<posx>43</posx>
+	<posy>1</posy>
+	<width>196</width>
+	<height>122</height>
+	<bordersize>8</bordersize>
+	<texture fallback="DefaultExtraThumbs.png" background="true">$VAR[value_landscape]</texture>
+	<aspectratio>stretch</aspectratio>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>!StringCompare(ListItem.Label,..)</visible>
+	</control>
+	<control type="image">
+	<posx>43</posx>
+	<posy>1</posy>
+	<width>196</width>
+	<height>122</height>
+	<bordersize>8</bordersize>
 	<texture fallback="DefaultExtraThumbs.png" background="true">$VAR[value_landscape]</texture>
 	<aspectratio>keep</aspectratio>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
 	<effect type="fade" start="80" end="100" time="400" />
 	</animation>
+	<visible>StringCompare(ListItem.Label,..)</visible>
 	</control>
 	<control type="image">
 	<posx>202</posx>
     <posy>10</posy>
     <width>30</width>
     <height>30</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
 	<animation type="Focus" reversible="false">
 	<effect type="zoom" center="150,60" start="80" end="100" time="400" tween="back" easing="out" />
-	<visible>!Skin.HasSetting(nooverlays)</visible>
 	</animation>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<posx>202</posx>
+    <posy>86</posy>
+    <width>30</width>
+    <height>30</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="150,60" start="80" end="100" time="400" tween="back" easing="out" />
+	</animation>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)]</visible>
 	</control>
 	</focusedlayout>
 	</control>

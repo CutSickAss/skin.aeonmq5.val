@@ -22,7 +22,7 @@
 	<posy>4</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31426</label>
 	<scroll>true</scroll>
@@ -41,7 +41,7 @@
 	<posy>4</posy>
 	<width>250</width>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<label>31427</label>
 	<scroll>true</scroll>
@@ -144,14 +144,14 @@
 	</control>
 	<control type="label">
 	<posx>90</posx>
-	<posy>75</posy>
+	<posy>73</posy>
 	<width>1100</width>
 	<height>30</height>
 	<align>center</align>
-	<font>Font_15</font>
+	<font>Font_17</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<shadowcolor>grey</shadowcolor>
-	<label>$VAR[value_osd_timeduration]</label>
+	<label>[B]$VAR[value_osd_timeduration][/B]</label>
 	</control>
 	<control type="label"><!-- nome dos botoes -->
 	<posx>320</posx>
@@ -171,7 +171,7 @@
 	<posy>130</posy>
 	<width>300</width>
 	<height>25</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>90FFFFFF</textcolor>
 	<label>31310</label>
 	</control>
@@ -190,7 +190,7 @@
 	<width>300</width>
 	<height>25</height>
 	<align>right</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>90FFFFFF</textcolor>
 	<label>31311</label>
 	</control>

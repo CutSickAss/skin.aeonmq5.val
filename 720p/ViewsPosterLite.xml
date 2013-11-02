@@ -68,16 +68,16 @@
 	<!-- Movies and TV shows -->
 	<control type="textbox">
 	<posx>0</posx>
-	<posy>34</posy>
+	<posy>31</posy>
 	<width>881</width>
-	<height>103</height>
+	<height>105</height>
 	<font>Font_27</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll time="6000" delay="10000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	</control>
 	<control type="fadelabel">
 	<posx>0</posx>
-	<posy>12</posy>
+	<posy>10</posy>
 	<width>430</width>
 	<height>50</height>
 	<scrollout>false</scrollout>
@@ -88,7 +88,7 @@
 	</control>
 	<control type="fadelabel">
 	<posx>828r</posx>
-	<posy>12</posy>
+	<posy>10</posy>
 	<width>430</width>
 	<height>50</height>
 	<align>right</align>
@@ -270,7 +270,7 @@
 	</control>
 	</include>
 	<include name="contents528list">
-	<viewtype label="31979">list</viewtype>
+	<viewtype label="PosterLite">list</viewtype>
 	<posx>-230</posx>
 	<posy>-41</posy>
 	<width>1920</width>
@@ -425,7 +425,7 @@
 	</include>
 
 	<include name="PLPoster">
-	<animation effect="slide" time="200" start="0,0" end="0,-20" tween="cubic" easing="out" condition="!Skin.HasSetting(novideomediacase)">Conditional</animation>
+	<animation effect="slide" time="200" start="0,0" end="0,-20" tween="cubic" easing="out" condition="!Skin.HasSetting(nowidevideocase)">Conditional</animation>
 	<control type="image">
 	<width>309</width>
 	<height>455</height>
@@ -433,7 +433,7 @@
 	<aspectratio>stretch</aspectratio>
 	<texture background="true" fallback="DefaultVideoPoster.png">$VAR[value_poster]</texture>
 	<bordertexture background="true" border="-2">black.png</bordertexture>
-	<visible>Skin.HasSetting(novideomediacase)</visible>
+	<visible>Skin.HasSetting(nowidevideocase)</visible>
 	</control>
 	<control type="image">
 	<width>309</width>
@@ -441,7 +441,7 @@
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<aspectratio>stretch</aspectratio>
 	<texture background="true" fallback="DefaultVideoPoster.png">$VAR[value_poster]</texture>
-	<visible>!Skin.HasSetting(novideomediacase)</visible>
+	<visible>!Skin.HasSetting(nowidevideocase)</visible>
 	</control>
 	<control type="image">
 	<posx>-28</posx>
@@ -451,7 +451,7 @@
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<aspectratio>stretch</aspectratio>
 	<texture background="true">$VAR[value_videocase0]</texture>
-	<visible>!Skin.HasSetting(novideomediacase)</visible>
+	<visible>!Skin.HasSetting(nowidevideocase)</visible>
 	</control>
 	<control type="image">
 	<posx>102</posx>
@@ -462,18 +462,18 @@
 	<aligny>center</aligny>
 	<aspectratio>keep</aspectratio>
 	<texture background="true">$VAR[PLCodec]</texture>
-	<visible>!Skin.HasSetting(novideomediacase)</visible>
+	<visible>!Skin.HasSetting(nowidevideocase)</visible>
 	</control>
 	<control type="textbox">
 	<posx>4</posx>
-	<posy>-44</posy>
+	<posy>-45</posy>
 	<width>300</width>
-	<height>40</height>
+	<height>42</height>
 	<align>center</align>
 	<font>Font_30</font>
 	<textcolor>FFFFFFFF</textcolor>
 	<label>$VAR[PLStudio]</label>
-	<visible>[[[Container.Content(tvshows)|Container.Content(seasons)]+!SubString(ListItem.FolderPath,videodb://1/)]|Container.Content(genres)]+!Skin.HasSetting(novideomediacase)</visible>
+	<visible>[[[Container.Content(tvshows)|Container.Content(seasons)]+!SubString(ListItem.FolderPath,videodb://1/)]|Container.Content(genres)]+!Skin.HasSetting(nowidevideocase)</visible>
 	<autoscroll time="3000" delay="5000" repeat="3000">true</autoscroll>
 	</control>
 	<control type="image">

@@ -26,6 +26,7 @@
 	<disabledcolor>FF505050</disabledcolor>
 	<pulseonselect>false</pulseonselect>
 	<textoffsetx>50</textoffsetx>
+	<align>left</align>
 	<aligny>center</aligny>
 	<scroll>true</scroll>
 	</default>
@@ -39,6 +40,7 @@
 	<texturenofocus>-</texturenofocus>
 	<alttexturefocus>settings_button_focus.png</alttexturefocus>
 	<pulseonselect>false</pulseonselect>
+	<align>left</align>
 	<aligny>center</aligny>
 	<textcolor>FFFFFAF0</textcolor>
 	<focusedcolor>E4101010</focusedcolor>
@@ -63,6 +65,7 @@
 	<radioposx>930</radioposx>
 	<radioheight>65</radioheight>
 	<textoffsetx>50</textoffsetx>
+	<align>left</align>
 	<aligny>center</aligny>
 	<textureradiofocus>radiobutton_on.png</textureradiofocus>
 	<textureradionofocus>radiobutton.png</textureradionofocus>

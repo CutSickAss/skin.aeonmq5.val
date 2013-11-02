@@ -1,112 +1,178 @@
 	<!-- Aeon MQ 5 -->
-
+	
 	<window>
-	<defaultcontrol always="true">11</defaultcontrol>
+	<defaultcontrol always="true">7</defaultcontrol>
 	<coordinates>
 	<system>1</system>
-	<posx>780</posx>
-	<posy>20</posy>
 	</coordinates>
-	<include>Animation_DialogPopup</include>
 	<controls>
+	<control type="group">
+	<include>Animation_DialogPopup</include>
+	<control type="image">
+	<posx>110</posx>
+	<posy>0</posy>
+	<width>30</width>
+	<height>720</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<posx>1140</posx>
+	<posy>0</posy>
+	<width>30</width>
+	<height>720</height>
+	<texture>shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<posx>140</posx>
+	<posy>0</posy>
+	<width>1000</width>
+	<height>720</height>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
+	<include>Animation_DefaultGlass</include>
+	</control>
+	<control type="image">
+	<posx>140</posx>
+	<posy>0</posy>
+	<width>1000</width>
+	<height>80</height>
+	<texture>black.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
 	<control type="label">
-	<description>heading label</description>
-	<posx>40</posx>
-	<posy>35</posy>
-	<width>420</width>
-	<height>40</height>
+	<posx>215</posx>
+	<posy>23</posy>
+	<width>852</width>
+	<height>30</height>
+	<label>$LOCALIZE[19047]</label>
+	<font>Font_32</font>
+	<textcolor>FFFFFAF0</textcolor>
 	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_23</font>
-	<label>$LOCALIZE[19029] - $INFO[VideoPlayer.ChannelName]</label>
-	<textcolor>$VAR[value_headercolor]</textcolor>
+	<include>Animation_Fade</include>
 	</control>
-	<control type="list" id="11">
-	<posx>7.7</posx>
+	<control type="label"><!-- Nome do programa -->
+	<posx>215</posx>
 	<posy>90</posy>
-	<width>504</width>
-	<height>504</height>
-	<onleft>60</onleft>
-	<onright>Close</onright>
-	<onup>11</onup>
-	<ondown>11</ondown>
-	<viewtype label="535">list</viewtype>
-	<pagecontrol>60</pagecontrol>
-	<scrolltime>200</scrolltime>
-	<itemlayout height="56" width="390">
-	<control type="label">
-	<posx>30</posx>
-	<posy>0</posy>
-	<width>370</width>
+	<width>852</width>
 	<height>30</height>
-	<align>left</align>
+	<align>center</align>
 	<aligny>center</aligny>
-	<label>$INFO[ListItem.StartTime] [COLOR=60FFFFFF]- $INFO[ListItem.StartDate][/COLOR]</label>
-	</control>
-	<control type="label">
-	<posx>30</posx>
-	<posy>30</posy>
-	<width>370</width>
-	<height>20</height>
-	<align>left</align>
-	<aligny>center</aligny>
+	<textcolor>$VAR[value_headercolor]</textcolor>
+	<font>Font_30</font>
 	<label>$INFO[ListItem.Title]</label>
+	<scroll>true</scroll>
 	</control>
-	</itemlayout>
-	<focusedlayout height="56" width="390">
-	<control type="image">
+	<control type="group">
+	<posx>415</posx>
+	<posy>143</posy>
+	<control type="label"><!-- Hora/Data -->
 	<posx>0</posx>
 	<posy>0</posy>
-	<width>484</width>
-	<height>56</height>
-	<texture>grey.png</texture>
+	<width>652</width>
+	<height>25</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_19</font>
+	<textcolor>$VAR[value_headercolor]</textcolor>
+	<label>$LOCALIZE[142] [COLOR=FFFFFAF0]$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime] ($INFO[ListItem.StartDate])[/COLOR]</label>
+	</control>
+	<control type="label"><!-- Duracao -->
+	<description>Duration</description>
+	<posx>0</posx>
+	<posy>35</posy>
+	<width>652</width>
+	<height>25</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_19</font>
+	<textcolor>$VAR[value_headercolor]</textcolor>
+	<label>$LOCALIZE[180]: [COLOR=FFFFFAF0]$INFO[ListItem.Duration][/COLOR]</label>
+	</control>
+	<control type="label"><!-- Canal -->
+	<posx>0</posx>
+	<posy>70</posy>
+	<width>652</width>
+	<height>25</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_19</font>
+	<textcolor>$VAR[value_headercolor]</textcolor>
+	<label>$LOCALIZE[19148]: [COLOR=FFFFFAF0]$INFO[ListItem.ChannelName][/COLOR]</label>
+	</control>
+	<control type="label"><!-- Gereno -->
+	<posx>0</posx>
+	<posy>105</posy>
+	<width>652</width>
+	<height>25</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_19</font>
+	<textcolor>$VAR[value_headercolor]</textcolor>
+	<label>$LOCALIZE[135]: [COLOR=FFFFFAF0]$INFO[ListItem.Genre][/COLOR]</label>
+	</control>
+	</control>
+	<control type="image">
+	<posx>215</posx>
+	<posy>130</posy>
+	<width>825</width>
+	<height>2</height>
+	<align>left</align>
+	<texture flipx="true">divider.png</texture>
+	</control>
+	<control type="image">
+	<posx>215</posx>
+	<posy>285</posy>
+	<width>825</width>
+	<height>2</height>
+	<align>left</align>
+	<texture flipx="true">divider.png</texture>
+	</control>
+	<control type="textbox" id="400">
+	<posx>215</posx>
+	<posy>300</posy>
+	<width>852</width>
+	<height>260</height>
+	<align>justify</align>
+	<label>$INFO[ListItem.Plot]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<font>Font_19</font>
+	<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	</control>
+	
+	<control type="image">
+	<posx>140</posx>
+	<posy>600</posy>
+	<height>40</height>
+	<width>1000</width>
+	<texture>black.png</texture>
 	<colordiffuse>90FFFFFF</colordiffuse>
-	<visible>Control.Hasfocus(11)</visible>
-	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 	</control>
-	<control type="label">
-	<posx>30</posx>
-	<posy>0</posy>
-	<width>370</width>
-	<height>30</height>
-	<align>left</align>
-	<aligny>center</aligny>
-	<label>$INFO[ListItem.StartTime] [COLOR=60FFFFFF]- $INFO[ListItem.StartDate][/COLOR]</label>
-	</control>
-	<control type="label">
-	<posx>30</posx>
-	<posy>30</posy>
-	<width>370</width>
-	<height>20</height>
-	<align>left</align>
-	<aligny>center</aligny>
-	<label>$INFO[ListItem.Title]</label>
-	</control>
-	</focusedlayout>
-	</control>
-	<control type="scrollbar" id="60">
-	<width>20</width>
-	<include>ScrollBar_Vertical</include>
-	<posx>12</posx>
-	<posy>92</posy>
-	<height>503</height>
-	<onleft>11</onleft>
-	<onright>11</onright>
-	<ondown>60</ondown>
+	<control type="grouplist" id="9001">
+	<posx>140</posx>
+	<posy>600</posy>
 	<onup>60</onup>
-	<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
+	<ondown>60</ondown>
+	<orientation>horizontal</orientation>
+	<itemgap>0</itemgap>
+	<control type="button" id="7"><!-- OK -->
+	<width>333</width>
+	<include>SettingsBottomButton</include>
+	<label>186</label>
 	</control>
-	<control type="label">
-	<description>number of files/pages in list text label</description>
-	<posx>450</posx>
-	<posy>610</posy>
-	<width>500</width>
-	<height>20</height>
-	<align>right</align>
-	<aligny>center</aligny>
-	<scroll>true</scroll>
-	<textcolor>header</textcolor>
-	<label>$INFO[Container(11).NumItems] $LOCALIZE[19019] - $LOCALIZE[31432] $INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages]</label>
+	<control type="button" id="6"><!-- Gravar -->
+	<width>333</width>
+	<include>SettingsBottomButton</include>
+	<label>-</label>
+	</control>
+	<control type="button" id="5"><!-- Trocar canal -->
+	<width>333</width>
+	<include>SettingsBottomButton</include>
+	<label>19165</label>
+	</control>
+	</control>
 	</control>
 	</controls>
 	</window>

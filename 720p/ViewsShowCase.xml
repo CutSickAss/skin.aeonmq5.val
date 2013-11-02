@@ -25,22 +25,24 @@
 	<posy>8</posy>
 	<width>173</width>
 	<height>254</height>
-	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
 	</include>
 	<include name="ShowCasePosterReflect">
 	<posx>49</posx>
-	<posy>258</posy>
+	<posy>263</posy>
 	<width>173</width>
 	<height>254</height>
-	<aspectratio align="center" aligny="top">keep</aspectratio>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
 	<colordiffuse>50FFFFFF</colordiffuse>
 	</include>
 	<include name="WatchedShowCase">
-	<posx>171</posx>
-	<posy>8</posy>
-	<width>50</width>
-	<height>50</height>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<posx>189</posx>
+	<posy>6</posy>
+	<width>35</width>
+	<height>35</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>!Skin.HasSetting(nooverlays)</visible>
 	</include>
 	<include name="ShowCaseThumbReflect">
 	<posx>56</posx>
@@ -78,20 +80,14 @@
 	<height>260</height>
 	</include>
 	<include name="WatchedShowCaseCase">
-	<posx>169</posx>
+	<posx>174</posx>
 	<posy>47</posy>
-	<width>40</width>
-	<height>40</height>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<animation effect="slide" start="0,0" end="2,-11" time="800" tween="cubic" easing="inout" condition="Skin.HasSetting(flattenShowCase)">Conditional</animation>
-	</include>
-	<include name="ShowCasePosterFlat">
-	<posx>49</posx>
-	<posy>8</posy>
-	<width>173</width>
-	<height>254</height>
-	<align>center</align>
-	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<width>35</width>
+	<height>35</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<animation effect="slide" start="0,0" end="2,-11" time="800" tween="cubic" easing="inout" condition="Skin.HasSetting(flattenshowcase)">Conditional</animation>
+	<visible>!Skin.HasSetting(nooverlays)</visible>
 	</include>
 	<include name="ShowCaseCaseFlat">
 	<posx>56</posx>
@@ -134,7 +130,7 @@
 	<posx>0</posx>
 	<height>20</height>
 	<width>345</width>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<aligny>top</aligny>
 	<align>left</align>
 	<textcolor>$VAR[value_headercolor]</textcolor>
@@ -144,17 +140,17 @@
 	</include>
 	<include name="ShowCaseLabel_Extrathumbs">
 	<posx>300</posx>
-	<width>310</width>
+	<width>315</width>
 	<height>13</height>
-	<font>Font_15</font>
+	<font>Font_19</font>
 	<textcolor>$VAR[value_headercolor]</textcolor>
 	</include>
 	<include name="ShowCaseValue_Extrathumbs">
 	<posx>300</posx>
-	<width>310</width>
+	<width>315</width>
 	<height>13</height>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
@@ -188,179 +184,167 @@
 	<visible>![Container.Content(episodes) | Container.Content(years)]</visible>
 	<itemlayout height="380" width="196" condition="Window.IsActive(25) + !Container.Content(episodes) | Window.IsActive(1)">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
 	<texture flipy="true" diffuse="thumb_poster_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Poster -->
 	<include>ShowCasePoster</include>
 	<texture diffuse="thumb_poster_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(0).Overlay]</texture>
-	<visible>!Skin.HasSetting(nooverlays) + [Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>![Skin.HasSetting(novideomediacase) | Window.IsActive(1)]</visible>
+	<visible>![Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Poster reflexo -->	
 	<include>ShowCaseThumbReflectFlat</include>
 	<texture flipy="true" diffuse="thumb_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Poster + Estojo Reflexo -->
 	<include>ShowCaseThumbCaseReflectFlat</include>
 	<texture flipy="true" diffuse="thumb_box_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_videocase0]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Poster + Estojo -->
 	<include>ShowCaseCaseFlat</include>
 	<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(0).Overlay]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCaseFlat</include>
 	<texture>$VAR[value_videocase0]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Codec -->
 	<include>ShowCaseCodecFlat</include>
 	<texture>$VAR[value_videocodec0]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	</control>
 	</itemlayout>
 	<focusedlayout height="380" width="196" condition="Window.IsActive(25) + !Container.Content(episodes) | Window.IsActive(1)">
 	<control type="group">
 	<animation effect="zoom" start="100" end="110" center="135,205" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-	<animation effect="zoom" start="110" end="100" center="135,205" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(66) + [Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Window.IsActive(1)]] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">Unfocus</animation>
+	<animation effect="zoom" start="110" end="100" center="135,205" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(66) + [Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Window.IsActive(1)] | !Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenshowcasemusic)]">Unfocus</animation>
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
 	<texture flipy="true" diffuse="thumb_poster_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Poster -->
 	<include>ShowCasePoster</include>
 	<texture diffuse="thumb_poster_diffuse.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(0).Overlay]</texture>
-	<visible>!Skin.HasSetting(nooverlays) + [Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>![Skin.HasSetting(novideomediacase) | Window.IsActive(1)]</visible>
+	<visible>![Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Poster reflexo -->	
 	<include>ShowCaseThumbReflectFlat</include>
 	<texture flipy="true" diffuse="thumb_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Poster + Estojo Reflexo -->
 	<include>ShowCaseThumbCaseReflectFlat</include>
 	<texture flipy="true" diffuse="thumb_box_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_videocase0]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Poster + Estojo -->
 	<include>ShowCaseCaseFlat</include>
 	<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(0).Overlay]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + [Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCaseFlat</include>
 	<texture>$VAR[value_videocase0]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	<control type="image"><!-- Codec -->
 	<include>ShowCaseCodecFlat</include>
 	<texture>$VAR[value_videocodec0]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenShowCasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Window.IsActive(25) | Window.IsActive(1)] | Skin.HasSetting(flattenshowcasemusic) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]] + !Control.IsVisible(6000)</visible>
 	</control>
 	</control>
 	</control>
 	</focusedlayout>
-	<itemlayout height="350" width="250" condition="[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)]">
+	<itemlayout height="350" width="250" condition="[Container.Content(episodes) + Skin.HasSetting(flattenshowcase)]">
 	<control type="image">
 	<include>EpisodeShowCaseThumbDimensions</include>
 	<texture diffuse="thumb_tvmask.png" background="true">$VAR[value_poster]</texture>
 	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)] + !Control.IsVisible(970)</visible>
+	<visible>Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)]</visible>
 	</control>
 	<control type="image">
 	<include>EpisodeShowCaseThumbDimensions</include>
 	<texture diffuse="thumb_tvmask.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos)]]</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos)]]</visible>
 	</control>
 	<control type="image">
 	<include>EpisodeShowCaseThumbReflection</include>
 	<texture background="true">$VAR[value_poster]</texture>
-	<visible>Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)] + !Control.IsVisible(970)</visible>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionCD</include>
-	<visible>Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)] + !Control.IsVisible(970)</visible>
+	<visible>Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes)]</visible>
 	</control>
 	<control type="image">
 	<posx>37</posx>
 	<posy>90</posy>
 	<width>50</width>
 	<height>50</height>
-	<texture>$INFO[ListItem.Overlay]</texture>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes) | Window.IsActive(1)] + ![IsEmpty(ListItem.Overlay) | Skin.HasSetting(nooverlays)] + !Control.IsVisible(970)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes) | Window.IsActive(1)] + !Skin.HasSetting(nooverlays)</visible>
 	</control>
 	</itemlayout>
-	<focusedlayout height="350" width="250" condition="[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)]">
+	<focusedlayout height="350" width="250" condition="[Container.Content(episodes) + Skin.HasSetting(flattenshowcase)]">
 	<control type="group">
 	<animation effect="zoom" start="100" end="140" center="-35,180" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-	<animation effect="zoom" start="140" end="100" center="-35,180" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(66) + [[[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]]">Unfocus</animation>
+	<animation effect="zoom" start="140" end="100" center="-35,180" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(66) + [[[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenshowcasemusic)]]]">Unfocus</animation>
 	<control type="image">
 	<include>EpisodeShowCaseThumbDimensions</include>
 	<texture diffuse="thumb_tvmask.png" background="true">$VAR[value_poster]</texture>
 	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]] + !Control.IsVisible(970)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] | !Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenshowcasemusic)]</visible>
 	</control>
 	<control type="image">
 	<include>EpisodeShowCaseThumbDimensions</include>
 	<texture diffuse="thumb_tvmask.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos)]</visible>
+	<visible>Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos)]</visible>
 	</control>
 	<control type="image">
 	<include>EpisodeShowCaseThumbReflection</include>
 	<texture diffuse="thumb_tvmask.png" background="true">$VAR[value_poster]</texture>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]] + !Control.IsVisible(970)</visible>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionCD</include>
-	<visible>[Skin.HasSetting(flattenShowCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]] + !Control.IsVisible(970)</visible>
+	<visible>[Skin.HasSetting(flattenshowcase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] | !Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenshowcasemusic)]</visible>
 	</control>
 	<control type="image">
 	<posx>37</posx>
 	<posy>90</posy>
 	<width>50</width>
 	<height>50</height>
-	<texture>$INFO[ListItem.Overlay]</texture>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes) | Window.IsActive(1)] + ![IsEmpty(ListItem.Overlay) | Skin.HasSetting(nooverlays)] + !Control.IsVisible(970)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png) + Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(episodes) | Window.IsActive(1)] + !Skin.HasSetting(nooverlays)</visible>
 	</control>
 	</control>
 	</focusedlayout>
@@ -371,7 +355,7 @@
 	<control type="group" id="6001">
 	<posy>360</posy>
 	<camera x="640" y="540"/>
-	<visible>Container.OnNext + !StringCompare(container(66).numitems,1) + ![Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]</visible>
+	<visible>Container.OnNext + !StringCompare(container(66).numitems,1) + ![Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]</visible>
 	<animation effect="slide" end="-90,0" time="210" reversible="false">Hidden</animation>
 	<control type="group"><!-- -7 -->
 	<posx>10</posx>
@@ -417,7 +401,7 @@
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(9).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Visible</animation>
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Poster/Icon mode -->
 	<include>ShowCasePoster</include>
 	<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster9]</texture>
@@ -428,7 +412,7 @@
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) + ![Container.Content(genres) | Window.IsActive(1)]</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) + ![Container.Content(genres) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Poster/Icon mode -->
 	<include>ShowCaseCase</include>
 	<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster9]</texture>
@@ -454,7 +438,7 @@
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) + ![Container.Content(genres) | Window.IsActive(1)]</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) + ![Container.Content(genres) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Poster/Icon mode -->
 	<include>ShowCaseCase</include>
 	<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster8]</texture>
@@ -471,13 +455,13 @@
 	<animation effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Visible</animation>
 	<control type="group">
 	<control type="image"><!-- Icon mode -->
-	<include condition="[Skin.HasSetting(novideomediacase) | Window.IsActive(1)]">ShowCasePoster</include>
-	<include condition="!Skin.HasSetting(novideomediacase) + Window.IsActive(1)">ShowCaseCase</include>
+	<include condition="[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]">ShowCasePoster</include>
+	<include condition="!Skin.HasSetting(noshowcasevideocase) + Window.IsActive(1)">ShowCaseCase</include>
 	<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster7]</texture>
 	</control>
 	<control type="image"><!-- Icon reflect mode -->
-	<include condition="[Skin.HasSetting(novideomediacase) | Window.IsActive(1)]">ShowCasePosterReflect</include>
-	<include condition="!Skin.HasSetting(novideomediacase) + Window.IsActive(1)">ShowCaseThumbCaseReflect</include>
+	<include condition="[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]">ShowCasePosterReflect</include>
+	<include condition="!Skin.HasSetting(noshowcasevideocase) + Window.IsActive(1)">ShowCaseThumbCaseReflect</include>
 	<texture flipy="true" diffuse="thumb_reflect.png" fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster7]</texture>
 	</control>
 	</control>
@@ -543,7 +527,7 @@
 	<control type="group" id="6002">
 	<posy>360</posy>
 	<camera x="640" y="540"/>
-	<visible>Container.OnPrevious + !StringCompare(container(66).numitems,1) + ![Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]</visible>
+	<visible>Container.OnPrevious + !StringCompare(container(66).numitems,1) + ![Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]</visible>
 	<animation effect="slide" end="90,0" time="210" reversible="false">Hidden</animation>
 	<control type="group"><!-- 7 -->
 	<posx>1000</posx>
@@ -588,7 +572,7 @@
 	<visible>!Container.OnPrevious</visible>
 	<animation effect="fade" start="0" end="0" delay="0" time="0" reversible="false">Visible</animation>
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1)]</visible>
 	<control type="image"><!-- Icon mode -->
 	<include>ShowCasePoster</include>
 	<texture background="true">$VAR[value_poster-8]</texture>
@@ -599,7 +583,7 @@
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) + !Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) + !Window.IsActive(1)</visible>
 	<control type="image"><!-- Icon mode -->
 	<include>ShowCaseCase</include>
 	<texture background="true">$VAR[value_poster-8]</texture>
@@ -670,7 +654,7 @@
 	</control>
 	<control type="button" id="960">
 	<include>InvisibleButton</include>
-	<visible>![Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]</visible>
+	<visible>![Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]</visible>
 	<animation effect="fade" start="100" end="0" time="800">Hidden</animation>
 	</control>
 	<control type="group" id="6000">
@@ -683,7 +667,7 @@
 	<posx>10</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(-6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="-90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="-90" start="0" end="55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="-685" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -693,7 +677,7 @@
 	<posx>100</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(-5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="0" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="0" start="0" end="55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="-577" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -703,7 +687,7 @@
 	<posx>190</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(-4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="90" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="90" start="0" end="55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="-469" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -713,7 +697,7 @@
 	<posx>280</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(-3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="180" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="180" start="0" end="55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="-362" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -723,7 +707,7 @@
 	<posx>370</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(-2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="270" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="270" start="0" end="55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="-256" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -733,7 +717,7 @@
 	<posx>460</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(-1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="360" start="-55" end="-55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="360" start="0" end="55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="-151" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -743,7 +727,7 @@
 	<posx>1000</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="1380" start="55" end="55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="1380" start="0" end="-55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="685" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -753,7 +737,7 @@
 	<posx>910</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="1290" start="55" end="55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="1290" start="0" end="-55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="577" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -763,7 +747,7 @@
 	<posx>820</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="1200" start="55" end="55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="1200" start="0" end="-55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="469" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -773,7 +757,7 @@
 	<posx>730</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="1110" start="55" end="55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="1110" start="0" end="-55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="362" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -783,7 +767,7 @@
 	<posx>640</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="1020" start="55" end="55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="1020" start="0" end="-55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="256" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -793,7 +777,7 @@
 	<posx>550</posx>
 	<visible>!IsEmpty(Container(66).ListItemNoWrap(1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
 	<animation effect="rotatey" center="930" start="55" end="55" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
+	<animation type="Conditional" condition="[Skin.HasSetting(flattenshowcase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)]]">
 	<effect type="rotatey" center="930" start="0" end="-55" time="800" tween="cubic" easing="inout"/>
 	<effect type="slide" start="0" end="151" time="800" tween="cubic" easing="inout"/>
 	</animation>
@@ -808,7 +792,7 @@
 	</include>
 	<include name="VideoShowCaseThumb0">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -820,11 +804,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(0).Overlay]</texture>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -840,7 +824,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(0).Overlay]</texture>
+	<visible>StringCompare(ListItem(0).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -854,7 +838,7 @@
 	</include>
 	<include name="VideoShowCaseThumb1">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -866,11 +850,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(1).Overlay]</texture>
+	<visible>StringCompare(ListItem(1).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -886,7 +870,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(1).Overlay]</texture>
+	<visible>StringCompare(ListItem(1).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -900,7 +884,7 @@
 	</include>
 	<include name="VideoShowCaseThumb2">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -912,11 +896,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(2).Overlay]</texture>
+	<visible>StringCompare(ListItem(2).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -932,7 +916,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(2).Overlay]</texture>
+	<visible>StringCompare(ListItem(2).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -946,7 +930,7 @@
 	</include>
 	<include name="VideoShowCaseThumb3">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -958,11 +942,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(3).Overlay]</texture>
+	<visible>StringCompare(ListItem(3).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -978,7 +962,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(3).Overlay]</texture>
+	<visible>StringCompare(ListItem(3).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -992,7 +976,7 @@
 	</include>
 	<include name="VideoShowCaseThumb4">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1004,11 +988,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(4).Overlay]</texture>
+	<visible>StringCompare(ListItem(4).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1024,7 +1008,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(4).Overlay]</texture>
+	<visible>StringCompare(ListItem(4).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1038,7 +1022,7 @@
 	</include>
 	<include name="VideoShowCaseThumb5">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1050,11 +1034,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(5).Overlay]</texture>
+	<visible>StringCompare(ListItem(5).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1070,7 +1054,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(5).Overlay]</texture>
+	<visible>StringCompare(ListItem(5).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1084,7 +1068,7 @@
 	</include>
 	<include name="VideoShowCaseThumb6">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1096,11 +1080,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(6).Overlay]</texture>
+	<visible>StringCompare(ListItem(6).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1116,7 +1100,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(6).Overlay]</texture>
+	<visible>StringCompare(ListItem(6).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1130,7 +1114,7 @@
 	</include>
 	<include name="VideoShowCaseThumb7">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1142,11 +1126,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(7).Overlay]</texture>
+	<visible>StringCompare(ListItem(7).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1162,7 +1146,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(7).Overlay]</texture>
+	<visible>StringCompare(ListItem(7).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1176,7 +1160,7 @@
 	</include>
 	<include name="VideoShowCaseThumb-1">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1188,11 +1172,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(-1).Overlay]</texture>
+	<visible>StringCompare(ListItem(-1).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1208,7 +1192,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(-1).Overlay]</texture>
+	<visible>StringCompare(ListItem(-1).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1222,7 +1206,7 @@
 	</include>
 	<include name="VideoShowCaseThumb-2">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1234,11 +1218,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(-2).Overlay]</texture>
+	<visible>StringCompare(ListItem(-2).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1254,7 +1238,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(-2).Overlay]</texture>
+	<visible>StringCompare(ListItem(-2).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1268,7 +1252,7 @@
 	</include>
 	<include name="VideoShowCaseThumb-3">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1280,11 +1264,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(-3).Overlay]</texture>
+	<visible>StringCompare(ListItem(-3).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1300,7 +1284,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(-3).Overlay]</texture>
+	<visible>StringCompare(ListItem(-3).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1314,7 +1298,7 @@
 	</include>
 	<include name="VideoShowCaseThumb-4">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1326,11 +1310,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(-4).Overlay]</texture>
+	<visible>StringCompare(ListItem(-4).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1346,7 +1330,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(-4).Overlay]</texture>
+	<visible>StringCompare(ListItem(-4).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1360,7 +1344,7 @@
 	</include>
 	<include name="VideoShowCaseThumb-5">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1372,11 +1356,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(-5).Overlay]</texture>
+	<visible>StringCompare(ListItem(-5).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1392,7 +1376,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(-5).Overlay]</texture>
+	<visible>StringCompare(ListItem(-5).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1406,7 +1390,7 @@
 	</include>
 	<include name="VideoShowCaseThumb-6">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1418,11 +1402,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(-6).Overlay]</texture>
+	<visible>StringCompare(ListItem(-6).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1438,7 +1422,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(-6).Overlay]</texture>
+	<visible>StringCompare(ListItem(-6).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1452,7 +1436,7 @@
 	</include>
 	<include name="VideoShowCaseThumb-7">
 	<control type="group">
-	<visible>[Skin.HasSetting(novideomediacase) | Window.IsActive(1) | Container.Content(genres)]</visible>
+	<visible>[Skin.HasSetting(noshowcasevideocase) | Window.IsActive(1) | Container.Content(genres)]</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster reflexo -->
 	<include>ShowCasePosterReflect</include>
@@ -1464,11 +1448,11 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCase</include>
-	<texture>$INFO[ListItem(-7).Overlay]</texture>
+	<visible>StringCompare(ListItem(-7).Overlay,OverlayWatched.png)</visible>
 	</control>
 	</control>
 	<control type="group">
-	<visible>!Skin.HasSetting(novideomediacase) | Container.Content(genres) | Window.IsActive(1)</visible>
+	<visible>!Skin.HasSetting(noshowcasevideocase) | Container.Content(genres) | Window.IsActive(1)</visible>
 	<include>Animation_VisibleChange</include>
 	<control type="image"><!-- Poster Reflexo -->
 	<include>ShowCaseThumbReflect</include>
@@ -1484,7 +1468,7 @@
 	</control>
 	<control type="image">
 	<include>WatchedShowCaseCase</include>
-	<texture>$INFO[ListItem(-7).Overlay]</texture>
+	<visible>StringCompare(ListItem(-7).Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Estojo -->
 	<include>ShowCaseThumbCase</include>
@@ -1510,7 +1494,7 @@
 	<control type="group"><!-- painel de info fanart layout -->
 	<animation effect="slide" start="0,-600" end="0,0" time="500" tween="sine" easing="out">Visible</animation>
 	<animation effect="slide" start="0,0" end="0,-600" time="500" tween="sine" easing="out">Hidden</animation>
-	<visible>[Control.HasFocus(9966) | StringCompare(skin.string(showcasevideopanel),alwayson) | StringCompare(skin.string(showcasevideopanel),auto) + Control.IsVisible(9921) | Control.HasFocus(9039) | ControlGroup(9040).HasFocus | Window.IsVisible(621)] + SubString(skin.string(showcaselayout),fanart) + ![StringCompare(ListItem.Label,..) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
+	<visible>[Control.HasFocus(9966) | StringCompare(skin.string(showcasevideopanel),alwayson) | StringCompare(skin.string(showcasevideopanel),auto) + Control.IsVisible(9921) | Window.IsVisible(621)] + SubString(skin.string(showcaselayout),fanart) + ![StringCompare(ListItem.Label,..) | Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
 	<control type="image">
 	<posx>0</posx>
 	<posy>56</posy>
@@ -1556,7 +1540,7 @@
 	<control type="label">
 	<include>ShowCaseLabel_Fanart</include>
 	<label>$VAR[value_ground16_label]: [COLOR=FFFFFAF0]$VAR[value_ground16_value][/COLOR]</label>
-	<visible>![Container.Content(tvshows) | Container.Content(seasons)]</visible>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 	</control>
 	<control type="label">
 	<include>ShowCaseLabel_Fanart</include>
@@ -1582,8 +1566,8 @@
 	<posx>423</posx>
 	<posy>104</posy>
 	<width>360</width>
-	<height>235</height>
-	<font>Font_17</font>
+	<height>242</height>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	</control>
@@ -1626,6 +1610,15 @@
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	<animation effect="fade" end="85" condition="true">Conditional</animation>
 	</control>
+	<control type="image"><!-- Thumb 1 fundo -->
+	<posx>15</posx>
+	<posy>85</posy>
+	<width>241</width>
+	<height>140</height>
+	<aspectratio align="left" aligny="bottom">stretch</aspectratio>
+	<texture>fanartframe.png</texture>
+	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
+	</control>
 	<control type="image"><!-- Thumb 1 -->
 	<posx>20</posx>
 	<posy>90</posy>
@@ -1634,7 +1627,16 @@
 	<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</texture>
-	<bordertexture border="-2">black.png</bordertexture>
+	<bordersize>5</bordersize>
+	</control>
+	<control type="image"><!-- Thumb 2 fundo -->
+	<posx>15</posx>
+	<posy>220</posy>
+	<width>241</width>
+	<height>140</height>
+	<aspectratio align="left" aligny="bottom">stretch</aspectratio>
+	<texture>fanartframe.png</texture>
+	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	</control>
 	<control type="image"><!-- Thumb 2 -->
 	<posx>20</posx>
@@ -1644,7 +1646,16 @@
 	<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
-	<bordertexture border="-2">black.png</bordertexture>
+	<bordersize>5</bordersize>
+	</control>
+	<control type="image"><!-- Thumb 3 fundo -->
+	<posx>1024</posx>
+	<posy>85</posy>
+	<width>241</width>
+	<height>140</height>
+	<aspectratio align="left" aligny="bottom">stretch</aspectratio>
+	<texture>fanartframe.png</texture>
+	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	</control>
 	<control type="image"><!-- Thumb 3 -->
 	<posx>1029</posx>
@@ -1654,7 +1665,16 @@
 	<aspectratio align="right" aligny="bottom">stretch</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[ListItem.Path,,extrathumbs/thumb3.jpg]</texture>
-	<bordertexture border="-2">black.png</bordertexture>
+	<bordersize>5</bordersize>
+	</control>
+	<control type="image"><!-- Thumb 4 fundo -->
+	<posx>1024</posx>
+	<posy>220</posy>
+	<width>241</width>
+	<height>140</height>
+	<aspectratio align="left" aligny="bottom">stretch</aspectratio>
+	<texture>fanartframe.png</texture>
+	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	</control>
 	<control type="image"><!-- Thumb 4 -->
 	<posx>1029</posx>
@@ -1664,7 +1684,7 @@
 	<aspectratio align="right" aligny="bottom">stretch</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[ListItem.Path,,extrathumbs/thumb4.jpg]</texture>
-	<bordertexture border="-2">black.png</bordertexture>
+	<bordersize>5</bordersize>
 	</control>
 	<control type="label">
 	<include>ShowCaseLabel_Extrathumbs</include>
@@ -1741,8 +1761,8 @@
 	<posx>665</posx>
 	<posy>104</posy>
 	<width>310</width>
-	<height>235</height>
-	<font>Font_17</font>
+	<height>242</height>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	</control>
@@ -1768,1476 +1788,5 @@
 	<visible allowhiddenfocus="true">Control.IsVisible(66) + Control.HasFocus(80)</visible>
 	</control>
 	</control>
-	</include>
-
-	<!-- Panel Info Music -->
-	<include name="ShowCaseInfoPaneMusic">
-	<control type="group">
-	<posx>0</posx>
-	<posy>26</posy>
-	<width>1280</width>
-	<height>381</height>
-	<animation effect="fade" start="0" end="100" time="400" delay="5000" condition="![SubString(skin.string(songs_info_ShowCase),on) | SubString(skin.string(albums_info_ShowCase),on) | SubString(skin.string(artists_info_ShowCase),on) | SubString(skin.string(files_info_ShowCase),on)]">WindowOpen</animation>
-	<animation effect="fade" end="0" time="200">WindowClose</animation>
-	<include>Animation_InfoPanelSlide</include>
-	<visible>Control.IsVisible(109) | Control.HasFocus(9910) | [Container.Content(songs) + SubString(skin.string(songs_info_ShowCase),on) | Container.Content(albums) + SubString(skin.string(albums_info_ShowCase),on) | Container.Content(artists) + SubString(skin.string(artists_info_ShowCase),on) | Container.Content(files) + SubString(skin.string(files_info_ShowCase),on)] + !Control.HasFocus(9920)</visible>
-	<control type="image">
-	<posx>75</posx>
-	<width>1130</width>
-	<height>590</height>
-	<texture background="true">panel_back.png</texture>
-	<include>Animation_CommonFade</include>
-	<visible>Skin.HasSetting(noShowCasethin)</visible>
-	</control>
-	<control type="image">
-	<posx>75</posx>
-	<width>1130</width>
-	<height>590</height>
-	<texture background="true">panel_tablet.png</texture>
-	</control>
-	<control type="image">
-	<posx>535</posx>
-	<posy>39</posy>
-	<width>2</width>
-	<height>322</height>
-	<texture>separator_v.png</texture>
-	</control>
-	<control type="image">
-	<posx>84</posx>
-	<posy>187</posy>
-	<width>451</width>
-	<height>2</height>
-	<texture>separator.png</texture>
-	</control>
-	<control type="image">
-	<posx>84</posx>
-	<posy>360</posy>
-	<width>1112</width>
-	<height>2</height>
-	<texture>separator.png</texture>
-	</control>
-	<control type="group"> <!--artists-->
-	<posx>100</posx>
-	<posy>40</posy>
-	<control type="group">
-	<posy>8</posy>
-	<control type="label">
-	<include>ShowCaseInfoLabel</include>
-	<label>$VAR[value_ShowCaseaudioinfo_label1]</label>
-	</control>
-	<control type="fadelabel">
-	<include>ShowCaseInfoValue</include>
-	<width>420</width>
-	<label fallback="161">$VAR[value_ShowCaseaudioinfo_value1]</label>
-	</control>
-	</control>
-	<control type="group">
-	<posy>58</posy>
-	<control type="label">
-	<include>ShowCaseInfoLabel</include>
-	<label>$VAR[value_ShowCaseaudioinfo_label2]</label>
-	</control>
-	<control type="fadelabel">
-	<include>ShowCaseInfoValue</include>
-	<width>420</width>
-	<label fallback="161">$VAR[value_ShowCaseaudioinfo_value2]</label>
-	</control>
-	</control>
-	<control type="group">
-	<posy>100</posy>
-	<control type="label">
-	<include>ShowCaseInfoLabel</include>
-	<label>$VAR[value_ShowCaseaudioinfo_label3]</label>
-	</control>
-	<control type="fadelabel">
-	<include>ShowCaseInfoValue</include>
-	<width>420</width>
-	<label fallback="161">$VAR[value_ShowCaseaudioinfo_value3]</label>
-	</control>
-	</control>
-	</control>
-	<control type="textbox">
-	<posx>100</posx>
-	<posy>200</posy>
-	<width>420</width>
-	<height>151</height>
-	<font>Font_ShowCasePlotSmall</font>
-	<label>$INFO[Container(66).ListItem.Property(Album_Description)]$INFO[Container(66).ListItem.Property(Artist_Description)]$INFO[Container(66).ListItem.Property(Artist_Description)]</label>
-	<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
-	</control>
-
-	<control type="group"><!--images-->
-	<posx>560</posx>
-	<posy>41.5</posy>
-	<control type="image">
-	<width>610</width>
-	<height>316</height>
-	<fadetime>FanartCrossFadeTime</fadetime>
-	<aspectratio>stretch</aspectratio>
-	<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-	<visible>![Skin.HasSetting(ShowCasemusicbigthumb) | Container.Content(episodes)]</visible>
-	</control>
-	<control type="image">
-	<width>610</width>
-	<height>316</height>
-	<fadetime>FanartCrossFadeTime</fadetime>
-	<aspectratio>stretch</aspectratio>
-	<texture background="true">$VAR[value_poster]</texture>
-	<visible>Skin.HasSetting(ShowCasemusicbigthumb) + Container.Content(episodes)</visible>
-	</control>
-	</control>
-	</control>
-	</include>
-
-	<!-- Cover Mask -->
-	<include name="MusicCoverMaskCD">
-	<texture diffuse="thumb_box_cdcover_mask.png" fallback="DefaultAudio.png" background="true"></texture>
-	</include>
-	<include name="MusicCoverMaskReflectionCD">
-	<texture flipy="true" diffuse="thumb_box_cdcover_mask_reflect.png" fallback="DefaultAudio.png" background="true"></texture>
-	</include>
-	<!-- CD Cover -->
-	<include name="ShowCaseMusicCoverCD">
-	<bordertexture>thumb_box_cd_shadow_light.png</bordertexture>
-	<texture background="true">thumb_box_cd_glass.png</texture>
-	<visible>!Container.Content(genres)</visible>
-	</include>
-	<include name="MusicShowCaseThumbDimensions">
-	<posx>18</posx>
-	<posy>18</posy>
-	<width>234</width>
-	<height>234</height>
-	</include>
-	<include name="MusicShowCaseThumbReflectionDimensions">
-	<posx>18</posx>
-	<posy>252</posy>
-	<width>234</width>
-	<height>234</height>
-	</include>
-	<include name="MusicCoverMaskNormal">
-	<texture diffuse="thumb_cdcover_mask.png" fallback="DefaultAudio.png" background="true"></texture>
-	</include>
-	<include name="MusicCoverMaskReflectionNormal">
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultAudio.png" background="true"></texture>
-	</include>
-	<include name="MusicCoverNormal">
-	<bordertexture border="-17">thumb_cd_shadow_light.png</bordertexture>
-	<texture background="true">thumb_cd_glass.png</texture>
-	</include>
-	<!-- Music CD -->
-	<!-- Case Dimensions -->
-	<include name="MusicShowCaseThumbDimensionsCD">
-	<posx>18</posx>
-	<posy>34</posy>
-	<width>250</width>
-	<height>228</height>
-	</include>
-	<include name="music_genre_ShowCase_image_ref_mod">
-	<posx>18</posx>
-	<posy>252</posy>
-	<width>234</width>
-	<height>234</height>
-	<colordiffuse>whiteD0</colordiffuse>
-	<visible>Container.Content(genres)</visible>
-	<visible>Window.IsActive(musiclibrary)</visible>
-	</include>
-	<include name="music_genre_ShowCase_image_mod">
-	<posx>18</posx>
-	<posy>18</posy>
-	<width>234</width>
-	<height>234</height>
-	<align>center</align>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Control.HasFocus(85) + Container.Content(genres)</visible>
-	<visible>Window.IsActive(musiclibrary)</visible>
-	</include>
-	<!-- Cover Dimensions -->
-	<include name="MusicShowCaseThumbDimensionsCDCover">
-	<posx>55</posx>
-	<posy>46</posy>
-	<width>199</width>
-	<height>199</height>
-	</include>
-	<include name="MusicShowCaseThumbReflectionDimensionsCDCover">
-	<posx>55</posx>
-	<posy>261</posy>
-	<width>199</width>
-	<height>199</height>
-	</include>
-	<include name="MusicShowCaseBlack">
-	<control type="image">
-	<visible>Window.IsActive(pictures)</visible>
-	<include>MusicShowCaseThumbDimensions</include>
-	<texture diffuse="thumb_cdcover_mask.png">DefaultPicture.png</texture>
-	</control>
-	</include>
-	<include name="MusicShowCaseBlackReflection">
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png">DefaultPicture.png</texture>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	</control>
-	</include>
-	<include name="MusicShowCaseThumbReflectionCD">
-	<posx>18</posx>
-	<posy>244</posy>
-	<width>250</width>
-	<height>228</height>
-	<colordiffuse>whiteD0</colordiffuse>
-	<bordertexture>thumb_box_cd_shadow_reflect.png</bordertexture>
-	<texture>thumb_box_cd_glass_reflect.png</texture>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	</include>
-	<!-- Music ShowCase Variables: Thumb glass overlays -->
-	<include name="MusicShowCaseGlassOverlayAngled">
-	<include>MusicShowCaseThumbDimensions</include>
-	<bordertexture border="-17">thumb_cd_shadow_light.png</bordertexture>
-	<texture>thumb_cd_glass_noedge.png</texture>
-	</include>
-	<include name="MusicShowCaseGlassOverlayAngledCD">
-	<include>MusicShowCaseThumbDimensionsCD</include>
-	<include>ShowCaseMusicCoverCD</include>
-	</include>
-	<include name="MusicShowCaseGlassOverlay">
-	<include condition="!Skin.HasSetting(audiomediacase)">MusicShowCaseThumbDimensions</include>
-	<include condition="Skin.HasSetting(audiomediacase)">MusicShowCaseThumbDimensionsCD</include>
-	<include condition="!Skin.HasSetting(audiomediacase)">MusicCoverNormal</include>
-	<include condition="Skin.HasSetting(audiomediacase)">ShowCaseMusicCoverCD</include>
-	</include>
-	<include name="ShowCaseSquare">
-	<control type="group">
-	<posy>395</posy>
-	<camera x="640" y="540"/>
-	<visible>![[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]</visible>
-	<control type="group" id="7001">
-	<visible>Container.OnNext + ![[Skin.HasSetting(flattenShowCase) + Container.Content(episodes)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]</visible>
-	<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
-	<control type="group">
-	<posx>50</posx>
-	<visible>Container.OnNext</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
-	<animation effect="rotatey" center="-50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb6Back</include>
-	</control>
-	<control type="group">
-	<posx>150</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb5Back</include>
-	</control>
-	<control type="group">
-	<posx>250</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="150" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb4Back</include>
-	</control>
-	<control type="group">
-	<posx>350</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="250" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb3Back</include>
-	</control>
-	<control type="group">
-	<posx>450</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="350" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb2Back</include>
-	</control>
-	<control type="group">
-	<posx>1060</posx>
-	<visible>!Container.OnNext</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
-	<animation effect="rotatey" center="1430" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb5</include>
-	</control>
-	<control type="group">
-	<posx>960</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1330" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb4</include>
-	</control>
-	<control type="group">
-	<posx>860</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1230" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb3</include>
-	</control>
-	<control type="group">
-	<posx>760</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1130" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb2</include>
-	</control>
-	<control type="group">
-	<posx>660</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1030" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb1</include>
-	</control>
-	<control type="group">
-	<visible>Container.OnNext</visible>
-	<animation effect="slide" end="45,0" time="250" reversible="false">Hidden</animation>
-	<control type="group">
-	<posx>560</posx>
-	<visible>Container.OnNext</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(0).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="930" start="0" end="-65" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
-	<animation effect="rotatey" center="930" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb0</include>
-	</control>
-	<control type="group">
-	<posx>505</posx>
-	<visible>Container.OnNext</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="405" start="0" end="-65" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
-	<include>MusicShowCaseFlowThumb1Back</include>
-	</control>
-	</control>
-	</control>
-	<control type="group" id="7002">
-	<visible>Container.OnPrevious</visible>
-	<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
-	<control type="group">
-	<posx>960</posx>
-	<visible>Container.OnPrevious</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(6).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
-	<animation effect="rotatey" center="1330" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb6</include>
-	</control>
-	<control type="group">
-	<posx>860</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1230" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb5</include>
-	</control>
-	<control type="group">
-	<posx>760</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1130" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb4</include>
-	</control>
-	<control type="group">
-	<posx>660</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1030" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb3</include>
-	</control>
-	<control type="group">
-	<posx>560</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="930" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb2</include>
-	</control>
-	<control type="group">
-	<posx>-50</posx>
-	<visible>!Container.OnPrevious</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
-	<animation effect="rotatey" center="-150" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb5Back</include>
-	</control>
-	<control type="group">
-	<posx>50</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="-50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb4Back</include>
-	</control>
-	<control type="group">
-	<posx>150</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb3Back</include>
-	</control>
-	<control type="group">
-	<posx>250</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="150" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb2Back</include>
-	</control>
-	<control type="group"><!-- -1 -->
-	<posx>350</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="250" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb1Back</include>
-	</control>
-	<control type="group"><!-- 0 -->
-	<visible>Container.OnPrevious</visible>
-	<animation effect="slide" end="-45,0" time="250" reversible="false">Hidden</animation>
-	<control type="group">
-	<posx>450</posx>
-	<visible>Container.OnPrevious</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(0).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="350" start="0" end="65" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
-	<animation effect="rotatey" center="350" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<include>MusicShowCaseFlowThumb0</include>
-	</control>
-	<control type="group">
-	<posx>505</posx>
-	<visible>Container.OnPrevious</visible>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="875" start="0" end="65" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
-	<include>MusicShowCaseFlowThumb1</include>
-	</control>
-	</control>
-	</control>
-	<control type="group" id="6500">
-	<animation effect="fade" time="500">WindowOpen</animation>
-	<animation effect="fade" time="200">WindowClose</animation>
-	<visible>!Control.IsVisible(7001) + !Control.IsVisible(7002) + ![[!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)] | [Container.Content(episodes) + Skin.HasSetting(flattenShowCase)]]</visible>
-	<control type="group">
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<posx>50</posx>
-	<animation effect="rotatey" center="-50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="-50" start="0" end="65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="-795" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb5Back</include>
-	</control>
-	<control type="group">
-	<posx>150</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="50" start="0" end="65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="-645" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb4Back</include>
-	</control>
-	<control type="group">
-	<posx>250</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="150" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="150" start="0" end="65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="-495" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb3Back</include>
-	</control>
-	<control type="group">
-	<posx>350</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="250" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="250" start="0" end="65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="-345" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb2Back</include>
-	</control>
-	<control type="group">
-	<posx>450</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(-1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="350" start="-65" end="-65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="350" start="0" end="65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="-195" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb1Back</include>
-	</control>
-	<control type="group">
-	<posx>960</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(5).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1330" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="1330" start="0" end="-65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="795" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb5</include>
-	</control>
-	<control type="group">
-	<posx>860</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(4).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1230" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="1230" start="0" end="-65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="645" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb4</include>
-	</control>
-	<control type="group">
-	<posx>760</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(3).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1130" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="1130" start="0" end="-65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="495" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb3</include>
-	</control>
-	<control type="group">
-	<posx>660</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(2).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="1030" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="1030" start="0" end="-65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="345" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb2</include>
-	</control>
-	<control type="group">
-	<posx>560</posx>
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(1).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<animation effect="rotatey" center="930" start="65" end="65" time="0" condition="true">Conditional</animation>
-	<animation type="Conditional" condition="[[Container.Content(episodes) + Skin.HasSetting(flattenShowCase)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">
-	<effect type="rotatey" center="930" start="0" end="-65" time="800" tween="cubic" easing="inout"/>
-	<effect type="slide" start="0" end="195" time="800" tween="cubic" easing="inout"/>
-	</animation>
-	<include>MusicShowCaseFlowThumb1</include>
-	</control>
-	<control type="group"><!--listitem(0)-->
-	<visible>!IsEmpty(Container(66).ListItemNoWrap(0).label) | !Skin.HasSetting(ShowCasefixedlist)</visible>
-	<posx>505</posx>
-	<include>MusicShowCaseFlowThumb0</include>
-	</control>
-	</control>
-	</control> 
-	<control type="button" id="970">
-	<include>InvisibleButton</include>
-	<visible>![[[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(pictures)] + Skin.HasSetting(flattenShowCasemusic)] | [Container.Content(episodes) + Skin.HasSetting(flattenShowCase)]]</visible>
-	<animation effect="fade" start="100" end="0" time="800">Hidden</animation>
-	</control>
-	</include>
-	<include name="MusicShowCaseFixedList">
-	<control type="fixedlist" id="66">
-	<include>MusicShowCase_List_Content</include>
-	</control>
-	</include>
-	<include name="MusicShowCaseWrapList">
-	<control type="wraplist" id="66">
-	<include>MusicShowCase_List_Content</include>
-	</control>
-	</include>
-	<include name="MusicShowCaseGroupVars">
-	<posx>-245</posx>
-	<posy>387</posy>
-	<width>1770</width>
-	<height>350</height>
-	</include>
-	<include name="MusicShowCase_List_Content">
-	<viewtype label="31802">list</viewtype>
-	<include>MusicShowCaseGroupVars</include>
-	<onleft>66</onleft>
-	<onright>66</onright>
-	<onup condition="Container.Content(songs) + [SubString(skin.string(songs_info_ShowCase),off) | SubString(skin.string(songs_info_ShowCase),on) | SubString(skin.string(songs_info_ShowCase),auto)]">9900</onup>
-	<onup condition="Container.Content(songs) + SubString(skin.string(songs_info_ShowCase),trigger)">9910</onup>
-	<onup condition="Container.Content(albums) + [SubString(skin.string(albums_info_ShowCase),off) | SubString(skin.string(albums_info_ShowCase),on) | SubString(skin.string(albums_info_ShowCase),auto)]">9900</onup>
-	<onup condition="Container.Content(albums) + SubString(skin.string(albums_info_ShowCase),trigger)">9910</onup>
-	<onup condition="Container.Content(artists) + [SubString(skin.string(artists_info_ShowCase),off) | SubString(skin.string(artists_info_ShowCase),on) | SubString(skin.string(artists_info_ShowCase),auto)]">9900</onup>
-	<onup condition="Container.Content(artists) + SubString(skin.string(artists_info_ShowCase),trigger)">9910</onup>
-	<onup condition="Container.Content(files) + [SubString(skin.string(files_info_ShowCase),off) | SubString(skin.string(files_info_ShowCase),on) | SubString(skin.string(files_info_ShowCase),auto)]">9900</onup>
-	<onup condition="Container.Content(files) + SubString(skin.string(files_info_ShowCase),trigger)">9910</onup>
-	<onup condition="![Container.Content(songs) | Container.Content(albums) | Container.Content(artists) | Container.Content(files)]">9900</onup>
-	<ondown>60</ondown>
-	<pagecontrol>60</pagecontrol>
-	<orientation>horizontal</orientation>
-	<scrolltime>300</scrolltime>
-	<focusposition>3</focusposition>
-	<preloaditems>2</preloaditems>
-	<scrolltime>450</scrolltime>
-	<movement>2</movement>
-	<visible>Container.Content(genres) | Container.Content(albums) | Container.Content(artists) | Window.IsActive(videofiles) | Window.IsActive(musicfiles) | Window.IsActive(musiclibrary) | Window.IsActive(programs) | Window.IsActive(scripts) | Window.IsActive(pictures)</visible>
-	<itemlayout height="350" width="250">
-	<control type="group">
-	<posy>8</posy>
-	<visible>Skin.HasSetting(flattenShowCasemusic) + !Control.IsVisible(970)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlay</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	</itemlayout>
-	<focusedlayout height="350" width="250">
-	<control type="group">
-	<posy>8</posy>
-	<visible>Skin.HasSetting(flattenShowCasemusic) + !Control.IsVisible(970)</visible>
-	<animation effect="zoom" start="100" end="120" center="135,230" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
-	<animation effect="zoom" start="120" end="100" center="135,230" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(66) + [Skin.HasSetting(flattenShowCase) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(1)] | [!Window.IsActive(videolibrary) + !Window.IsActive(videofiles) + Skin.HasSetting(flattenShowCasemusic)]]">Unfocus</animation>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlay</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	</focusedlayout>
-	</include>
-	<include name="ViewShowCaseAudio">
-	<control type="group">
-	<visible>Control.IsVisible(66)</visible>
-	<include>ShowCaseInfoPaneMusic</include>
-	<include>ShowCaseSquare</include>
-	</control>
-	<control type="group">
-	<visible>Control.IsVisible(66)</visible>
-	<include condition="Skin.HasSetting(ShowCasefixedlist)">MusicShowCaseFixedList</include>
-	<include condition="!Skin.HasSetting(ShowCasefixedlist)">MusicShowCaseWrapList</include>
-	<control type="scrollbar" id="80">
-	<include>ScrollBar_Horizontal</include>
-	<posx>305</posx>
-	<posy>670</posy>
-	<width>670</width>
-	<onup>66</onup>
-	<ondown>9920</ondown>
-	<onleft>60</onleft>
-	<onright>60</onright>
-	<visible allowhiddenfocus="true">Control.IsVisible(66) + Control.HasFocus(80)</visible>
-	</control>
-	</control>
-	</include>
-	<include name="MusicShowCaseFlowThumb0">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster0]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster0]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster0]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster0]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb1">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster1]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster1]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster1]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster1]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon1]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb2">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster2]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster2]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster2]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster2]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon2]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb3">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster3]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster3]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster3]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster3]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon3]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb4">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster4]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster4]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster4]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster4]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon4]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb5">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster5]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster5]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster5]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster5]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon5]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb6">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster6]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster6]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster6]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster6]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon6]</texture>
-	<visible>Container.Content(genres) + !Skin.HasSetting(nomoviegenrebuiltin)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb1Back">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-1]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-1]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-1]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-1]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon-1]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb2Back">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-2]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-2]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-2]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-2]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon-2]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb3Back">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-3]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-3]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-3]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-3]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon-3]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb4Back">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-4]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-4]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-4]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-4]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon-4]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb5Back">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-5]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-5]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-5]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-5]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon-5]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	</include>
-	<include name="MusicShowCaseFlowThumb6Back">
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlack</include>
-	<control type="group">
-	<visible>!Skin.HasSetting(audiomediacase)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensions</include>
-	<include>MusicCoverMaskNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-6]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngled</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensions</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionNormal</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-8]</texture>
-	</control>
-	</control>
-	<control type="group">
-	<visible>Skin.HasSetting(audiomediacase) + !Container.Content(genres)</visible>
-	<control type="image">
-	<include>MusicShowCaseThumbDimensionsCDCover</include>
-	<include>MusicCoverMaskCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-6]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay</description>
-	<include>MusicShowCaseGlassOverlayAngledCD</include>
-	</control>
-	<control type="image">
-	<include>MusicShowCaseThumbReflectionDimensionsCDCover</include>
-	<colordiffuse>whiteD0</colordiffuse>
-	<include>MusicCoverMaskReflectionCD</include>
-	<aspectratio scalediffuse="false">scale</aspectratio>
-	<animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation>
-	<visible>!Container.Content(genres)</visible>
-	<texture background="true">$VAR[value_poster-6]</texture>
-	</control>
-	<control type="image">
-	<description>Glass overlay reflection</description>
-	<include>MusicShowCaseThumbReflectionCD</include>
-	</control>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
-	<control type="image"><!-- genre reflect builtin -->
-	<include>music_genre_ShowCase_image_ref_mod</include>
-	<texture flipy="true" diffuse="thumb_cdcover_mask_reflect.png" fallback="DefaultMusicGenre.jpg">$VAR[value_musicgenre_icon-6]</texture>
-	<visible>Container.Content(genres)</visible>
-	</control>
-	<include condition="Window.IsActive(pictures)">MusicShowCaseBlackReflection</include>
 	</include>
 	</includes>

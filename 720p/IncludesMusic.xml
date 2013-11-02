@@ -48,6 +48,15 @@
 	<onup>SetFocus(51)</onup>
 	<ondown>SetFocus(51)</ondown>
 	</control>
+	<control type="image" id="9921"><!-- painel de info auto -->
+	<include>InvisibleButton</include>
+	<animation effect="fade" start="0" end="100" time="150" delay="1000" condition="SubString(skin.string(panel_seconds),1)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="2000" condition="SubString(skin.string(panel_seconds),2)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="3000" condition="SubString(skin.string(panel_seconds),3)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="4000" condition="SubString(skin.string(panel_seconds),4)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="5000" condition="SubString(skin.string(panel_seconds),5)">Visible</animation>
+	<visible>![Container.OnNext | Container.OnPrevious]</visible>
+	</control>
 	<control type="button" id="9922"><!-- refresh das vistas -->
 	<include>InvisibleButton</include>
 	<animation effect="fade" start="0" end="100" time="150" delay="3000">Hidden</animation>
@@ -93,12 +102,6 @@
     <control type="group"><!-- Grupo ocultar flags ou fanart -->
 	<posy>30</posy>
 	<include>Animation_HiddenView</include>
-
-	<control type="group">
-	<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">WindowOpen</animation>
-	<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">Visible</animation>
-	<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-	<visible>!Skin.HasSetting(nomediaflags)</visible>
 	<control type="image"><!-- Barra do rodape -->
 	<posx>0</posx>
 	<posy>510</posy>
@@ -117,15 +120,16 @@
 	<texture diffuse="shadow_mask.png">shadow_spot.png</texture>
 	<animation effect="fade" end="75" condition="true">Conditional</animation>
 	</control>
-	<control type="grouplist">
-	<posx>20</posx>
-	<posy>651</posy>
-	<orientation>horizontal</orientation>
-	<itemgap>19</itemgap>
+	<control type="group">
 	<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">WindowOpen</animation>
 	<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">Visible</animation>
-	<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-	<visible>!Skin.HasSetting(nomediaflags)</visible>
+	<animation effect="slide" start="0,0" end="0,300"  time="500" tween="sine" easing="out">Hidden</animation>
+	<visible>[SubString(skin.string(mediaflags),on) | SubString(skin.string(mediaflags),auto) + Control.IsVisible(9921)]</visible>
+	<control type="grouplist"><!-- Etiquetas -->
+	<posx>20</posx>
+	<posy>645</posy>
+	<orientation>horizontal</orientation>
+	<itemgap>25</itemgap>
 	<control type="label"><!-- Rating -->
 	<include>FlagLabel</include>
 	<label>$INFO[ListItem.Rating]</label>
@@ -154,19 +158,18 @@
 	<visible>!IsEmpty(ListItem.Year) + !IsEmpty(ListItem.Genre)</visible>
 	</control>
 	<control type="label"><!-- Genre -->
+	<posx>12</posx>
+	<posy>1.5</posy>
 	<width>300</width>
-	<height>38</height>
-	<align>left</align>
+	<height>50</height>
+	<align>center</align>
 	<aligny>center</aligny>
-	<font>Font_20</font>
-	<textoffsetx>20</textoffsetx>
-	<textoffsety>13</textoffsety>
+	<font>Font_20B</font>
+	<label>$INFO[ListItem.Genre]</label>
 	<textcolor>$VAR[value_flagscolor]</textcolor>
 	<fadetime>FanartCrossFadeTime</fadetime>
-	<label>$INFO[ListItem.Genre]</label>
-	<visible>!IsEmpty(ListItem.Genre)</visible>
 	<scroll>true</scroll>
-	<scrollout>false</scrollout>
+	</control>
 	</control>
 	</control>
 	<control type="image">
@@ -185,7 +188,6 @@
 	<include>InvisibleButton</include>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<texture>$VAR[value_musicrating]</texture>
-	</control>
 	</control>
 
 	<!-- ViewTypes -->

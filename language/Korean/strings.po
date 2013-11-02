@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # piodio, 2013
 # piodio, 2013
 # piodio, 2013
@@ -101,8 +116,8 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
-"Last-Translator: Wanilton Campos <>\n"
+"PO-Revision-Date: 2013-10-30 11:45+0000\n"
+"Last-Translator: piodio\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -112,7 +127,7 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "Aeon MQ 5, improved, more light and more powerful than ever."
-msgstr ""
+msgstr "더욱 가볍게 더욱 강력하게 개선된 Aeon MQ5."
 
 msgctxt "Addon Description"
 msgid ""
@@ -121,7 +136,7 @@ msgid ""
 "skin.[CR]The Aeon MQ 5 incorporates new features such as REPLACE it takes "
 "the level of customize the main menu to something never seen before.[CR]Aeon"
 " MQ 5, you've never seen a skin well."
-msgstr ""
+msgstr "전통의 Aeon MQ가 다섯번째 판에 이르렀습니다.[CR]가벼우면서도 강력한 기능을 제공하는 새로운 코드로 사용하기에 매우 간편하게 다시 만들어졌습니다.[CR]Aeon MQ5는 지금까지 한 번도 본적 없는 메인메뉴 바꾸기 같은 새로운 기능을 포함합니다.[CR]Seon MQ 5, 한 번도 보지 못했던 스킨입니다."
 
 msgctxt "Addon Disclaimer"
 msgid ""
@@ -360,15 +375,15 @@ msgstr "타이머 취소"
 
 msgctxt "#31057"
 msgid "SHUTDOWN"
-msgstr "시스템 종료"
+msgstr "종료"
 
 msgctxt "#31058"
 msgid "TURN OFF"
-msgstr "끔"
+msgstr "시스템 끄기"
 
 msgctxt "#31059"
 msgid "RESTART"
-msgstr "재시동"
+msgstr "시스템 재시동"
 
 msgctxt "#31060"
 msgid "SUSPEND"
@@ -440,7 +455,7 @@ msgstr "상세정보 보기"
 
 msgctxt "#31077"
 msgid "LIBRARY STATUS"
-msgstr "라이브러리 상태"
+msgstr "라이브러리 통계"
 
 msgctxt "#31078"
 msgid "WEATHER AND TIME"
@@ -516,12 +531,12 @@ msgid "PATH"
 msgstr "경로"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "경로 삭제 - 메인 메뉴에서 항목 숨김"
+msgid "DISC"
+msgstr "디스크"
 
 msgctxt "#31097"
 msgid "Access to collection"
-msgstr ""
+msgstr "컬렉션으로 가기"
 
 msgctxt "#31098"
 msgid "Seasons and episodes"
@@ -569,7 +584,7 @@ msgstr "추가기능"
 
 msgctxt "#31109"
 msgid "Shutdown"
-msgstr "시스템 종료"
+msgstr "종료"
 
 msgctxt "#31110"
 msgid "CD, DVD, Bluray"
@@ -596,8 +611,8 @@ msgid "VIDEO NODE"
 msgstr "비디오 노드"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "체스판 효과"
+msgid "DISC SWING SPEED"
+msgstr "디스크 회전 속도"
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -621,7 +636,7 @@ msgstr "레이아웃 스타일 - 노래방"
 
 msgctxt "#31122"
 msgid "BACKGROUND SET BY USER"
-msgstr "사용자 배경화면 세트"
+msgstr "사용자 배경화면 모음"
 
 msgctxt "#31123"
 msgid "SMART SUBMENU"
@@ -629,7 +644,7 @@ msgstr "스마트 하위메뉴"
 
 msgctxt "#31124"
 msgid "SHOW SMART SUBMENU"
-msgstr "스마트 하위메뉴 표시"
+msgstr "스마트 하위메뉴 보기"
 
 msgctxt "#31125"
 msgid "SHOW VIDEO IN BACKGROUND"
@@ -694,7 +709,7 @@ msgstr "미리 둘러보기"
 msgctxt "#31140"
 msgid ""
 "Activate only the views you need, this optimizes the collection loading"
-msgstr "필요한 보기 형식만 활성화 하여 컬렉션 로딩을 최적화 하세요."
+msgstr "필요한 보기 형식만 활성화하여 컬렉션 로딩을 최적화 하세요."
 
 msgctxt "#31141"
 msgid "+ views"
@@ -706,15 +721,15 @@ msgstr "제목대신 로고 사용 (가능하면 상단에)"
 
 msgctxt "#31143"
 msgid "SHUTDOWN OPTIONS"
-msgstr ""
+msgstr "종료 옵션"
 
 msgctxt "#31144"
 msgid "SHUTDOWN"
-msgstr ""
+msgstr "종료"
 
 msgctxt "#31145"
 msgid "Shutdown"
-msgstr ""
+msgstr "Shutdown"
 
 msgctxt "#31146"
 msgid "Live tv"
@@ -722,7 +737,7 @@ msgstr "TV 시청"
 
 msgctxt "#31147"
 msgid "Various"
-msgstr ""
+msgstr "기타"
 
 msgctxt "#31148"
 msgid "Video"
@@ -730,7 +745,7 @@ msgstr "비디오"
 
 msgctxt "#31149"
 msgid "Timer Set"
-msgstr ""
+msgstr "타이머 설정"
 
 msgctxt "#31150"
 msgid ""
@@ -738,7 +753,7 @@ msgid ""
 "new item that will occupy the site of the previous item. This option will "
 "always replace the item for a standard menu, title and custom background "
 "image will be lost."
-msgstr "바꾸기 기능[CR]메뉴를 재정렬하는 가장 간단한 방법은 그 자리를 대체할 새 항목을 단순히 선택하는 것입니다. 이 옵션은 항상 기본 메뉴로 바꾸며 제목과 사용자 배경화면은 삭제합니다."
+msgstr "바꾸기 기능[CR]메뉴를 재정렬하는 가장 쉬운 방법은 그 자리를 대체할 새 항목을 간단하게 선택하는 것입니다. 이 옵션은 항상 기본 상태의 메뉴로 바뀌게 되며 제목과 사용자 배경화면은 삭제됩니다."
 
 msgctxt "#31151"
 msgid ""
@@ -755,13 +770,13 @@ msgid ""
 "losing the previous customization. Instead of using the REPLACE function you"
 " can copy the menu for the storage. All the properties menu will be saved "
 "for later use. You can store up to 20 presets."
-msgstr "속성 복사 기능[CR]기존 사용자 설정을 유지한 채로 메뉴를 재정렬하는 고급 모드입니다. 바꾸기 기능을 사용하는 대신 매뉴를 저장소에 복사할 수 있습니다. 모든 메뉴 속성은 나중에 사용할 수 있게 저장됩니다. 최대 20 개의 프리셋을 보관할 수 있습니다. "
+msgstr "속성 저장 기능[CR]기존 사용자 설정을 유지한 채로 메뉴를 재정렬하는 고급 모드입니다. 바꾸기 기능을 사용하는 대신 매뉴를 저장소에 복사할 수 있습니다. 모든 메뉴 속성은 나중에 사용할 수 있게 저장됩니다. 최대 20 개의 프리셋을 보관할 수 있습니다. "
 
 msgctxt "#31153"
 msgid ""
 "FUNCTION APPLY PROPERTIES[CR]Use to relocate a preconfigured item. All the "
 "properties will be applied to the selected item"
-msgstr "속성 적용 기능[CR]미리 설정된 항목을 재배치 할 때 사용합니다. 모든 속성은 선택한 항목에 적용됩니다."
+msgstr "속성 적용 기능[CR]미리 설정된 항목을 재배치 할 때 사용합니다. 모든 속성이 선택한 항목에 적용됩니다."
 
 msgctxt "#31154"
 msgid ""
@@ -774,11 +789,11 @@ msgstr "환영합니다. Aeon MQ 5 스킨 사용자 설정입니다.[CR][CR]중�
 
 msgctxt "#31155"
 msgid "1. WANT TO SET THE LANGUAGE NOW"
-msgstr "1. 지금 언어를 설정하겠습니다"
+msgstr "1. 지금 언어를 설정합니다"
 
 msgctxt "#31156"
 msgid "2. ALREADY DEFINED THE LANGUAGE AND WISH CONTINUE"
-msgstr "2. 이미 언어를 설정하였으니 계속 진행하겠습니다"
+msgstr "2. 이미 언어를 설정하였으며 계속 진행합니다"
 
 msgctxt "#31157"
 msgid "SET LANGUAGE"
@@ -790,15 +805,15 @@ msgstr "이 메뉴를 다음 메뉴로 바꾸기..."
 
 msgctxt "#31159"
 msgid "CLONING SUB-MENU FROM ..."
-msgstr "다음에서 하위메뉴 복제 중..."
+msgstr "다음에서 하위메뉴 복제..."
 
 msgctxt "#31160"
 msgid "COPY PROPERTIES TO THE STORAGE"
-msgstr "저장소에 속성 복사"
+msgstr "저장소에 속성 저장"
 
 msgctxt "#31161"
 msgid "APPLY PROPERTIES FROM THE STORAGE"
-msgstr "저장소에서 속성 적용"
+msgstr "저장된 속성 적용"
 
 msgctxt "#31162"
 msgid "NONE - CLEAR"
@@ -822,7 +837,7 @@ msgstr "프리셋 만들기"
 
 msgctxt "#31167"
 msgid "APPLY NEW PRESET"
-msgstr "새 프리셋 적용"
+msgstr "프리셋 적용"
 
 msgctxt "#31168"
 msgid "NO PRESETS AVAILABLE"
@@ -836,7 +851,7 @@ msgctxt "#31170"
 msgid ""
 "CREATE A PRESET FUNCTION[CR]Use it to save the actual main menu. All "
 "settings will be saved. You can save up to 10 individual presets."
-msgstr "프리셋 만들기 기능[CR]실제 메인 메뉴를 저장할 때 사용합니다. 모든 설정이 저장됩니다. 최대 10 개의 프리셋을 저장할 수 있습니다."
+msgstr "프리셋 만들기 기능[CR]실제 메인 메뉴를 저장할 때 사용합니다. 모든 설정이 저장됩니다. 최대 10개의 프리셋을 저장할 수 있습니다."
 
 msgctxt "#31171"
 msgid ""
@@ -844,7 +859,7 @@ msgid ""
 "settings will be reapplied. You can also call this function on the main menu"
 " using the system menu 'S' or you can also insert that item in any menu "
 "using the Replace function."
-msgstr ""
+msgstr "프리셋 적용 기능[CR]저장된 프리셋을 적용합니다. 모든 설정이 변경됩니다. 메인 메뉴에서 시스템 메뉴인 'S'키를 사용하여 이 기능을 불러올 수 있고 을 사용할 수도 있고 바꾸기 기능을 사용하여 메뉴 항목에 넣을 수도 있습니다."
 
 msgctxt "#31172"
 msgid "NO ITEMS IN THE STORAGE"
@@ -877,19 +892,87 @@ msgstr "컨텍스트 메뉴"
 
 msgctxt "#31179"
 msgid "Audio language"
-msgstr ""
+msgstr "오디오 언어"
 
 msgctxt "#31180"
 msgid "NUMBER OF VISIBLE WIDGETS"
-msgstr ""
+msgstr "표시할 위젯 수"
 
 msgctxt "#31181"
 msgid "CLICK FOR CHANGE"
-msgstr ""
+msgstr "변경하려면 클릭"
 
 msgctxt "#31182"
 msgid "PARTIAL"
-msgstr ""
+msgstr "부분"
+
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr "시청한 항목 기호 색상"
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr "시청한 항목 기호 변경"
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr "기호 변경"
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr "4K 콘텐츠 레이블을 표시합니다."
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr "설정 다시 적용"
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr "가장 중요한 설정 다시 적용"
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "상세 모드"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "간단 모드"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "숨김 모드"
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr "시청한 항목 기호 색상"
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "복수 이미지 전환 시간"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5초"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10초"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30초"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1분"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10분"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1시간"
 
 #. ....
 msgctxt "#31200"
@@ -957,8 +1040,8 @@ msgid "Page"
 msgstr "페이지"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "재생목록 썸네일"
+msgid "THUMBNAIL SET"
+msgstr "썸네일 세트"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -998,7 +1081,7 @@ msgstr "메뉴 순서 변경"
 
 msgctxt "#31226"
 msgid "GENERAL INFORMATION"
-msgstr "기본 정보"
+msgstr "일반 정보"
 
 msgctxt "#31227"
 msgid "INFORMATIONS BAR"
@@ -1028,7 +1111,7 @@ msgstr "파일 또는 폴더 이름에 '4K' 태그가 있으면 이 케이스를
 
 msgctxt "#31233"
 msgid "Premiered"
-msgstr ""
+msgstr "첫 방송"
 
 #. ....
 msgctxt "#31234"
@@ -1080,8 +1163,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "배경 이미지 비율 유지"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "위젯 표시:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr "위젯 관리"
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1101,18 +1184,18 @@ msgstr "날짜와 날씨 표시"
 
 msgctxt "#31251"
 msgid "3D MODE"
-msgstr ""
+msgstr "3D 모드"
 
 msgctxt "#31252"
 msgid "CHANGE TRANSPARENCY"
-msgstr ""
+msgstr "투명도 조정"
 
 #. ....
 msgctxt "#31253"
 msgid ""
 "Choose a Favourite.[CR]Remember that to populate this list you must use the "
 "context menu 'C key' on an item and Add to Favourites."
-msgstr "즐겨찾기 선택.[CR]이 목록을 불러내려면 항목에서 'C'키를 눌러 컨텍스트 메뉴에서 즐겨찾기에 추가하여야 합니다."
+msgstr "즐겨찾기 선택.[CR]목록을 불러내려면 항목에서 'C'키를 눌러 컨텍스트 메뉴에서 즐겨찾기에 추가해 두어야 합니다."
 
 msgctxt "#31254"
 msgid ""
@@ -1145,6 +1228,14 @@ msgid ""
 "Resize to obtain good quality images and low size."
 msgstr "1. 임의의 이름으로 루트 폴더를 생성하세요. 예) MY THEME[CR][CR]2. 루트 폴더안에 다음의 이름으로 21개의 폴더를 만드세요:[CR]addons, aplaylist,autumn, concerts, disc, favourites, games, livetv, movies, music, mymenu, pictures, programs, settings, shutdown, spring, summer, tvshows, vnodes, vplaylist, winter.[CR][CR]3. 각 폴더안에 여러분의 이미지를 저장하세요. MY THEME은 복수 이미지를 지원하므로 각 폴더에 원하는 만큼 이미지를 포함시킬 수 있습니다.[CR][CR]4. 테마가 준비되면 루트 경로를 입력하세요.[CR][CR]AEON MQ 5의 기본 이미지는 72dpi 1920x1080 JPG 형식입니다. 저용량 고품질의 이미지를 얻으려면 FastStone Photo Resize 프로그램 사용을 추천합니다."
 
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr "색상, 패널 정의... 와 같은 가장 중요한 설정값을 다시 생성합니다.[CR]기능성 메뉴를 만들지 않은 경우에 추천합니다."
+
 #. ....
 msgctxt "#31260"
 msgid "FOLDER CONTAINS:"
@@ -1156,7 +1247,7 @@ msgstr "환경설정"
 
 msgctxt "#31262"
 msgid "CHANGE STANDARD OPTIONS"
-msgstr "표준 옵션 변경"
+msgstr "기본 옵션 변경"
 
 msgctxt "#31263"
 msgid "ENABLE AUTOMATIC UPDATE OF ADD-ONS"
@@ -1234,7 +1325,7 @@ msgstr "파일 또는 폴더에 일치하는 이름 태그가 있으면 이 케�
 
 msgctxt "#31281"
 msgid "CHOOSE A CASE AND PRESS ENTER TO CUSTOMIZE."
-msgstr "원하는대로 변경하려면 케이스를 선택하고 엔터를 누르세요."
+msgstr "변경하려면 케이스를 선택하고 엔터를 누르세요."
 
 msgctxt "#31282"
 msgid ""
@@ -1280,7 +1371,7 @@ msgstr "이 케이스에 레이블 사용 안 함"
 
 msgctxt "#31290"
 msgid "A STICKER WILL BE SHOWN IN ACCORDANCE WITH THE MEDIA CODEC."
-msgstr "미디어 코덱에 따라 스티커가 표시 됨."
+msgstr "미디어 코덱에 따라 스티커가 표시됨."
 
 msgctxt "#31291"
 msgid "BLURAY CONTENT LABEL WILL BE SHOWN."
@@ -1630,7 +1721,7 @@ msgctxt "#31377"
 msgid ""
 "A MODERN AND ELEGANT MEDIA CENTER.[CR]AEON MQ 5 IS PART OF NEW SKINS "
 "GENERATION."
-msgstr "현대적이고 품격있는 미디어 센터.[CR]AEON MQ 5 새로운 스킨 세대 중 하나입니다."
+msgstr "현대적이고 품격있는 미디어 센터.[CR]AEON MQ 5는 새로운 스킨 세대 중 하나입니다."
 
 msgctxt "#31378"
 msgid "MOVIES, TV SHOWS AND CONCERTS"
@@ -1640,7 +1731,7 @@ msgctxt "#31379"
 msgid ""
 "ADJUST YOUR SYSTEM IN ORDER TO GET THE BEST PICTURE QUALITY. [CR] SELECT "
 "COLOR OR POSITION OF SUBTITLES."
-msgstr "최상의 품질을 얻으려면 시스템을 조정하세요.[CR] 자막 위치와 색상을 선택하세요."
+msgstr "최상의 품질을 얻으려면 시스템을 조정하세요.[CR] 자막 위치와 색상을 선택합니다."
 
 msgctxt "#31380"
 msgid "XBMC LISTS AND PLAYS YOUR MUSIC"
@@ -1658,17 +1749,17 @@ msgstr "좋아하는 TV쇼를 시청하세요"
 
 msgctxt "#31383"
 msgid "LIVE TV RECEPTION.[CR]TUNE AND RECORD A TV SHOW."
-msgstr "TV 방송 수신.[CR]채널을 선택하고 TV 쇼를 녹화하세요."
+msgstr "TV 방송 수신.[CR]채널을 선택하고 TV 쇼를 녹화합니다."
 
 msgctxt "#31384"
 msgid "ORGANIZE YOUR PICTURES"
-msgstr "사진을 정리하세요"
+msgstr "사진을 정리합니다."
 
 msgctxt "#31385"
 msgid ""
 "MAKE A SLIDESHOW PRESENTATION.[CR]SHOW YOUR LIBRARY DIRECTLY FROM A HARD "
 "DISK OR FLASH DRIVE."
-msgstr "슬라이드쇼 프레젠테이션을 만들어 보세요.[CR]하드디스크 또는 플래쉬 드라이브의 라이브러리를 바로 감상하세요."
+msgstr "슬라이드쇼 프레젠테이션을 만들어 보세요.[CR]하드디스크 또는 플래쉬 드라이브의 라이브러리를 바로 감상합니다."
 
 msgctxt "#31386"
 msgid "WEATHER FORECAST"
@@ -1898,7 +1989,7 @@ msgstr "로고/클리어아트 가져오기"
 
 msgctxt "#31439"
 msgid "GET SOUND THEME"
-msgstr ""
+msgstr "사운드 테마 가져오기"
 
 msgctxt "#31440"
 msgid "TURN ON TV TUNES"
@@ -1942,7 +2033,7 @@ msgstr "설정 복원"
 
 msgctxt "#31451"
 msgid "EXPORT/IMPORT OR RESTART SETTINGS"
-msgstr "설정 가져오기/내보내기, 또는 설정 다시 시작"
+msgstr "설정 내보내기/가져오기, 설정 다시 시작"
 
 msgctxt "#31452"
 msgid "SAVE AN COPY OF SETTINGS"
@@ -1954,7 +2045,7 @@ msgstr "저장된 설정값 적용"
 
 msgctxt "#31454"
 msgid "SETTING BY SYSTEM"
-msgstr ""
+msgstr "SETTING BY SYSTEM"
 
 msgctxt "#31455"
 msgid "TRAILERS - SET SCRIPT"
@@ -1979,7 +2070,7 @@ msgstr "취소하려면 방향키를 누르세요"
 
 msgctxt "#31460"
 msgid "PLAYBACK WILL START IN"
-msgstr "다음 시간 후에 재생 시작:"
+msgstr "다음 시간 후에 재생 시작: "
 
 msgctxt "#31461"
 msgid "PLEASE WAIT"
@@ -2055,7 +2146,7 @@ msgstr "보기 변경"
 
 msgctxt "#31479"
 msgid "(DE)ACTIVATE VIEWS"
-msgstr "보기형식 사용/미사용 설정"
+msgstr "보기형식 켜기/끄기"
 
 msgctxt "#31480"
 msgid "SORT BY: ASCENDING"
@@ -2078,8 +2169,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "오디오 언어"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "'시청' 레이블"
+msgid "WATCHED LABEL"
+msgstr "시청한 항목 기호"
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2171,7 +2262,7 @@ msgstr "LANDSCAPE.JPG 사용"
 
 msgctxt "#31508"
 msgid "SHOW CLEARLOGO AND CLEARART"
-msgstr "로고와 클리어아트 표시"
+msgstr "클리어로고와 클리어아트 표시"
 
 msgctxt "#31509"
 msgid "ALTERNATIVE GENRE ICONS"
@@ -2287,7 +2378,7 @@ msgstr "그라데이션 효과"
 
 msgctxt "#31537"
 msgid "BACKGROUND IMAGE - USE COLLECTION FANARTS"
-msgstr "배경 이미지 - 팬아트 컬렉션 사용"
+msgstr "배경 이미지 - 팬아트 사용"
 
 msgctxt "#31538"
 msgid "BACKGROUND IMAGE - USE DEFAULT THEME"
@@ -2538,8 +2629,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "주의: 이 작업은 되돌릴 수 없습니다 !"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "취소하려면 방향키,[CR]진행하려면 엔터를 누르세요"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr "취소하려면 방향키를 누르세요.[CR]진행하려면 엔터를 누르세요.[CR]이 옵션은 모든 사용자 설정을 삭제하고 전체 스킨 설정을 초기화합니다."
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2624,8 +2717,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "오디오 언어와 자막 기호 표시"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "각 이미지의 시각 설정"
+msgid "PANEL DELAY"
+msgstr "패널 지연"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2772,16 +2865,16 @@ msgid ""
 msgstr "한 번의 클릭으로 모든 테마, 배경, 아이콘 및 로고를 얻는다면 굉장하지 않은가요?[CR]AEON MQ 5에서 하나의 패키지를 다운로드하면 모든 추가 콘텐츠에 액세스할 수 있습니다."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "MANY NEWS AND MORE..."
+msgid "Applying new settings..."
+msgstr "세 설정 적용..."
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, 스마트한 사람들을 위한 스마트 스킨.[CR][CR]Enjoy."
+msgid "Finalizing Settings"
+msgstr "설정 종료"
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "프레젠테이션 건너뛰기"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -2789,7 +2882,7 @@ msgstr "빌드"
 
 msgctxt "#31660"
 msgid "TO SELECT THE STYLE YOU WANT,[CR]USE THE ARROW UP OR DOWN."
-msgstr "스타일을 선택하려면,[CR]위 또는 아래 방향키를 사용하세요."
+msgstr "스타일을 선택하려면[CR]위 또는 아래 방향키를 사용하세요."
 
 msgctxt "#31661"
 msgid "SHOW 'PAUSE'"
@@ -2801,11 +2894,11 @@ msgstr "'일시정지' 숨김"
 
 msgctxt "#31663"
 msgid "HIDE PARTLY WATCHED"
-msgstr "부분적으로 시청한 것 숨김"
+msgstr "부분 시청한 것 숨김"
 
 msgctxt "#31664"
 msgid "SHOW PARTLY WATCHED"
-msgstr "부분적으로 시청한 것 보기"
+msgstr "부분 시청한 것 보기"
 
 msgctxt "#31665"
 msgid "CONTINUE WATCHING"
@@ -2813,7 +2906,7 @@ msgstr "이어서 시청하기"
 
 msgctxt "#31666"
 msgid "Partially Watched"
-msgstr "일부 시청"
+msgstr "부분 시청"
 
 msgctxt "#31667"
 msgid "MAIN MENU"
@@ -2837,7 +2930,7 @@ msgstr "데이터 편집"
 
 msgctxt "#31672"
 msgid "SHOW LIBRARY STATUS"
-msgstr "라이브러리 상태 표시"
+msgstr "라이브러리 상태 보기"
 
 msgctxt "#31673"
 msgid "HIDE LIBRARY STATUS"
@@ -2957,29 +3050,29 @@ msgstr "아트워크 가져오기"
 
 msgctxt "#31703"
 msgid "STARRING"
-msgstr "출연"
+msgstr "배역"
 
 msgctxt "#31704"
 msgid "International relationships and assistance"
-msgstr ""
+msgstr "국제 관계와 보조"
 
 msgctxt "#31705"
 msgid "Translators"
-msgstr ""
+msgstr "번역자"
 
 msgctxt "#31706"
 msgid "Translation and support coordinator"
-msgstr ""
+msgstr "번역과 지원 코디네이터"
 
 msgctxt "#31707"
 msgid ""
 "To all the people who believed in my work and collaborated in some way to "
 "make this project possible. To all of you, thank you from my heart"
-msgstr ""
+msgstr "나의 작업을 믿고 이 프로젝트가 가능하도록 다방면에서 공동작업을 한 모든 사람들에게. 여러분 진심으로 고맙습니다."
 
 msgctxt "#31708"
 msgid "Special thanks"
-msgstr ""
+msgstr "특별한 감사를 표합니다"
 
 msgctxt "#31709"
 msgid "ALWAYS VISIBLE"
@@ -3047,7 +3140,7 @@ msgstr "가사 숨김"
 
 msgctxt "#31725"
 msgid "SET SCRIPT"
-msgstr "스크립트 설정"
+msgstr "추가기능 설정"
 
 msgctxt "#31726"
 msgid "LYRICS SOURCE"
@@ -3303,7 +3396,7 @@ msgstr "개발자"
 
 msgctxt "#31789"
 msgid "MEDIA TYPE"
-msgstr "미디어 타입"
+msgstr "미디어 종류"
 
 msgctxt "#31790"
 msgid "PLAY GAME"
@@ -3479,6 +3572,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "오른쪽 목록"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr "...글꼴, 색상, 스타일 정의"
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr "...메인메뉴 항목 작성"
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr "...영화 하위메뉴 정의"
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr "...TV 쇼 하위메뉴 정의"
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr "...콘서트 하위메뉴 정의"
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr "...TV 시청 하위메뉴 정의"
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr "...음악 하위메뉴 정의"
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr "...날씨 하위메뉴 정의"
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr "...설정 하위메뉴 정의"
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr "...종료 하위메뉴 정의"
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -3506,7 +3639,7 @@ msgstr "비디오"
 
 msgctxt "#31846"
 msgid "SATELLITE AND RADAR"
-msgstr "위성 및 레이더"
+msgstr "위성과 레이더"
 
 msgctxt "#31847"
 msgid "FORECAST"
@@ -3526,27 +3659,27 @@ msgstr "날씨 예보"
 
 msgctxt "#31851"
 msgid "AVERAGE HIGH"
-msgstr "최고 온도 평균"
+msgstr "최고 온도 (평균)"
 
 msgctxt "#31852"
 msgid "AVERAGE LOW"
-msgstr "최저 온도 평균"
+msgstr "최저 온도 (평균)"
 
 msgctxt "#31853"
 msgid "RECORD HIGH"
-msgstr "최고 온도 기록"
+msgstr "최고 온도 (기록)"
 
 msgctxt "#31854"
 msgid "RECORD LOW"
-msgstr "최저 온도 기록"
+msgstr "최저 온도 (기록)"
 
 msgctxt "#31855"
 msgid "PROBABLE HIGH"
-msgstr "예상 최고"
+msgstr "예상 최고 온도"
 
 msgctxt "#31856"
 msgid "PROBABLE LOW"
-msgstr "예상 최저"
+msgstr "예상 최저 온도"
 
 msgctxt "#31857"
 msgid "DEFAULT MAP"
@@ -3626,7 +3759,7 @@ msgstr "시즌"
 
 msgctxt "#31876"
 msgid "SEASON"
-msgstr ""
+msgstr "시즌"
 
 #. ....
 msgctxt "#31880"
@@ -3755,7 +3888,7 @@ msgctxt "#31910"
 msgid ""
 "CREATE YOUR OWN THEME WITH THE IMAGES YOU WANT.[CR] PRESS ENTER TO LEARN "
 "MORE OR TO DEFINE."
-msgstr "원하는 이미지로 자신만의 테마를 만드세요.[CR] 더 알아보거나 설정을 원하면 엔터를 누르세요."
+msgstr "원하는 이미지로 자신만의 테마를 만듭니다.[CR] 더 알아보거나 설정을 원하면 엔터를 누르세요."
 
 msgctxt "#31911"
 msgid "CREATING MY THEME"
@@ -3884,7 +4017,7 @@ msgstr "제한"
 
 msgctxt "#31942"
 msgid "Metadata"
-msgstr ""
+msgstr "메타데이터"
 
 msgctxt "#31943"
 msgid "SHOW ONLY CDART AND COVER"
@@ -3936,7 +4069,7 @@ msgstr "필모그래피"
 
 msgctxt "#31955"
 msgid "In library"
-msgstr ""
+msgstr "라이브러리에 있음"
 
 msgctxt "#31956"
 msgid "DISC MENU"
@@ -3968,7 +4101,7 @@ msgstr "수직 메뉴에 사용할 수 없음"
 
 msgctxt "#31963"
 msgid "VERTICAL MENU"
-msgstr "수직 메뉴"
+msgstr "수직  메뉴"
 
 msgctxt "#31964"
 msgid "HORIZONTAL MENU"
@@ -4019,6 +4152,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "그라파이트 색조와 섞인 붉은 색조의 이미지.[CR]Aeon MQ 5 기본 테마."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "태그라인 보기"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr "기본 디스크 사용자 설정"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "오디오 디스크"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "비디오 디스크"
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "다음 에피소드"
@@ -4028,8 +4177,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "오늘 방송 에피소드"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "진행 패널 보기"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr "'시청 중' 위젯을 첫번째 위치에 표시 (영화, TV 쇼, 콘서트)"
 
 msgctxt "#31983"
 msgid "Rating"
@@ -4054,7 +4203,7 @@ msgid ""
 "Here you reapply all settings saved previously.[CR]You can also do a fresh "
 "install and apply the saved settings.[CR]This option will override all "
 "settings made currently."
-msgstr "이전에 저장한 설정값으로 다시 적용할 수 있습니다.[CR]또한 새로 설치한 후 저장된 설정값을 적용할 수도 있습니다.[CR]이 옵션은 현재의 설정값을 덮어 씁니다."
+msgstr "이전에 저장한 설정값으로 다시 적용할 수 있습니다.[CR]또한 새로 설치하고 저장된 설정값을 적용할 수도 있습니다.[CR]이 옵션은 현재의 설정값을 덮어 씁니다."
 
 msgctxt "#31989"
 msgid ""
@@ -4068,4 +4217,4 @@ msgid ""
 "Aeon MQ 5 however has a independent code and does not use any texture of "
 "Original Aeon. A big thanks to the master djh_ for creating the masterpiece "
 "that is original Aeon."
-msgstr ""
+msgstr "오리지널 Aeon 스킨과 명칭은 djh_ 의 지적자산입니다. 그러나 Aeon MQ 5은 독자적인 코드이며 오리지널 Aeon의 어떤 텍스처도 사용하지 않습니다. 명작인 오리지널 Aeon을 만든 djh_ 님에게 큰 감사를 드립니다."

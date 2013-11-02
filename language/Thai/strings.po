@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # devilshura <devilshura@gmail.com>, 2013
 # devilshura <devilshura@gmail.com>, 2013
 msgid ""
@@ -100,7 +115,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-03 12:56+0000\n"
+"PO-Revision-Date: 2013-10-31 12:29+0000\n"
 "Last-Translator: devilshura <devilshura@gmail.com>\n"
 "Language-Team: Thai (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/th/)\n"
 "MIME-Version: 1.0\n"
@@ -435,7 +450,7 @@ msgstr "เมนูของฉัน"
 
 msgctxt "#31076"
 msgid "SHOW DETAILS PANEL"
-msgstr "แสดง แผงรายละเอียด"
+msgstr "แสดง แผงข้อมูลรายละเอียด"
 
 msgctxt "#31077"
 msgid "LIBRARY STATUS"
@@ -515,8 +530,8 @@ msgid "PATH"
 msgstr "เส้นทาง"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "ลบเส้นทาง - ซ่อนรายการในเมนูหลัก"
+msgid "DISC"
+msgstr "แผ่นดิสก์"
 
 msgctxt "#31097"
 msgid "Access to collection"
@@ -595,8 +610,8 @@ msgid "VIDEO NODE"
 msgstr "หมวดย่อย วิดีโอ"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "เอฟเฟค ตาหมากรุก"
+msgid "DISC SWING SPEED"
+msgstr "ความเร็วการหมุน แผ่นดิสก์"
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -890,6 +905,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr "บางส่วน"
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr "สีของเครื่องหมายว่าดูแล้ว"
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr "ปรับแต่งรายการเครื่องหมายว่าดูแล้ว"
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr "ปรับแต่งเครื่องหมาย"
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr "ป้ายเนื้อหา 4K จะถูกแสดง."
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr "เรียกใช้ใหม่ การตั้งค่า"
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr "เรียกใช้ใหม่ การตั้งค่า ที่สำคัญ"
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "โหมด สมบูรณ์"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "โหมด บางส่วน"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "โหมด ซ่อนไว้"
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr "ชุดสีสำหรับ ป้ายดูแล้ว"
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "เวลาที่ใช้ในการเปลี่ยนภาพหลายภาพ"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5 วินาที"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10 วินาที"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30 วินาที"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1 นาที"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10 นาที"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1 ชั่วโมง"
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -956,8 +1039,8 @@ msgid "Page"
 msgstr "หน้า"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "รูปย่อ ชุดรายการเล่น"
+msgid "THUMBNAIL SET"
+msgstr "ชุด รูปย่อ"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1079,8 +1162,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "คงอัตราส่วนพื้นหลัง"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "แสดงตัวแขวนสำหรับ:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr "การจัดการ ตัวแขวน"
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1143,6 +1226,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. สร้างโฟลเดอร์หลักด้วยชื่อใดๆ, ตัวอย่าง เช่น MY THEME.[CR][CR]2. ในโฟลเดอร์หลักสร้าง 21 โฟลเดอร์ ด้วยชื่อเหล่านี้:[CR]addons, aplaylist,autumn, concerts, disc, favourites, games, livetv, movies, music, mymenu, pictures, programs, settings, shutdown, spring, summer, tvshows, vnodes, vplaylist, winter.[CR][CR]3. ใส่ภายในโฟลเดอร์เหล่านี้ด้วยภาพที่คุณเลือก, MY THEME รองรับหลายไฟล์, คุณสามารถเพิ่มได้มากเท่าที่คุณต้องการในแต่ละโฟลเดอร์.[CR][CR]4. หลังจากชุดรูปแบบเรียบร้อย ป้อนเส้นทางของโฟลเดอร์หลัก.[CR][CR]รูปภาพเริ่มต้นสำหรับ AEON MQ 5 คือ 1920x1080 พิกเซล 72dpi ในรููปแบบ JPG และเราขอแนะนำโปรแกรม FastStone Photo Resize เพื่อให้ได้รูปคุณภาพดีในขนาดไฟล์ที่เล็ก."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr "ตัวเลือกนี้จะสร้างใหม่เฉพาะการปรับแต่งที่สำคัญ อย่าง สี, คุณสมบัติของแผงข้อมูล...[CR]ขอแนะนำในกรณี เมื่อใช้เมนูที่ไม่มีฟังก์ชัน.[CR]เมื่อใช้ตัวเลือกนี้ อาจมีความจำเป็น ที่ต้องมีการปรับแต่งบางอย่าง."
 
 #. ....
 msgctxt "#31260"
@@ -1407,7 +1498,7 @@ msgstr "โหมด ข้อมูล"
 
 msgctxt "#31322"
 msgid "PANEL"
-msgstr "แผง"
+msgstr "แผงข้อมูล"
 
 msgctxt "#31323"
 msgid "STANDARD"
@@ -2018,19 +2109,19 @@ msgstr "หน่วงเวลา 5 วินาที"
 
 msgctxt "#31470"
 msgid "AUTOMATIC PANEL"
-msgstr "แผงควบคุม แบบอัตโนมัติ"
+msgstr "แผงข้อมูล แบบอัตโนมัติ"
 
 msgctxt "#31471"
 msgid "MANUAL PANEL"
-msgstr "แผงควบคุม แบบปรับเอง"
+msgstr "แผงข้อมูล แบบสั่งเอง"
 
 msgctxt "#31472"
 msgid "PANEL ALWAYS VISIBLE"
-msgstr "แผงควบคุมปรากฏเสมอ"
+msgstr "แผงข้อมูล ปรากฏเสมอ"
 
 msgctxt "#31473"
 msgid "PANEL OFF"
-msgstr "ปิดแผงควบคุม"
+msgstr "ปิดแผงข้อมูล"
 
 msgctxt "#31474"
 msgid "FANART STYLE"
@@ -2077,7 +2168,7 @@ msgid "AUDIO LANGUAGES"
 msgstr "ภาษาของเสียง"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
+msgid "WATCHED LABEL"
 msgstr "ป้าย ดูแล้ว"
 
 msgctxt "#31486"
@@ -2094,7 +2185,7 @@ msgstr "ตัวเลือก วิดีโอ"
 
 msgctxt "#31489"
 msgid "TRANSPARENT PANEL"
-msgstr "แผงควบคุม แบบโปร่งใส"
+msgstr "แผงข้อมูล โปร่งใส"
 
 msgctxt "#31490"
 msgid "SLIM LIST"
@@ -2537,8 +2628,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "ระวัง: กระบวนการนี้ย้อนกลับไม่ได้!"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "เลื่อนไปทิศทางใดๆ เพื่อยกเลิก.[CR]กด Enter เพื่อดำเนินการ"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr "เลื่อนไปทิศทางใดๆ เพื่อยกเลิก.[CR]กด Enter เพื่อดำเนินการ.[CR]ตัวเลือกนี้จะคืนค่าทั้งหมดของสกิน และคุณจะเสียการปรับแต่งทั้งหมดที่ทำไว้."
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2623,8 +2716,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "แสดงสัญลักษณ์ ภาษาเสียงและคำบรรยาย"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "ตั้งเวลาสำหรับแต่ละภาพ"
+msgid "PANEL DELAY"
+msgstr "หน่วงเวลา แผงข้อมูล"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2771,16 +2864,16 @@ msgid ""
 msgstr "จะไม่เยี่ยมไปเลยหรือ ที่จะได้รูปแบบทั้งหมด, พื้นหลัง, ไอคอน และโลโก้ ด้วยการคลิกเพียงครั้งเดียว?[CR]คุณทำได้ด้วย Aeon MQ 5, คุณจะดาวน์โหลดเพียงแพคเกจเดียว แล้วเข้าถึงทุกเนื้อหาพิเศษได้."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "หลากหลาย ข่าวและอื่น ๆ ..."
+msgid "Applying new settings..."
+msgstr "ดำเนินการใช้งาน การตั้งค่าใหม่..."
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, สกินอัจฉริยะสำหรับคนฉลาด.[CR][CR]ขอให้สนุก."
+msgid "Finalizing Settings"
+msgstr "กำลังจบการตั้งค่า"
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "ข้ามการนำเสนอ"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3433,17 +3526,17 @@ msgstr "แสดงภาพ"
 #. 571
 msgctxt "#31818"
 msgid "PANEL"
-msgstr "แผง"
+msgstr "แผงข้อมูล"
 
 #. 572
 msgctxt "#31819"
 msgid "LANDSCAPE PANEL"
-msgstr "แผง ทิวทัศน์"
+msgstr "แผงข้อมูล แนวนอน"
 
 #. 574
 msgctxt "#31820"
 msgid "LOGO PANEL"
-msgstr "แผง โลโก้"
+msgstr "แผงข้อมูล โลโก้"
 
 #. 555
 msgctxt "#31821"
@@ -3477,6 +3570,46 @@ msgstr "รายการ กระจก"
 msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "รายการด้านขวา"
+
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr "...กำลังกำหนด แบบอักษร สี และรูปแบบ"
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr "...กำลังเขียน รายการเมนูหลัก"
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับภาพยนตร์"
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับรายการทีวี"
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับคอนเสิร์ต"
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับทีวีสด"
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับเพลง"
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับสภาพอากาศ"
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับการตั้งค่า"
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr "...กำลังกำหนด เมนูย่อยสำหรับปิดระบบ"
 
 #. ....
 msgctxt "#31840"
@@ -4018,6 +4151,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "ชุดภาพในโทนสีแดงที่ผสมผสานกับโทนสีดำกราไฟท์.[CR]ชุดรูปแบบเริ่มต้นของ Aeon MQ 5."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "แสดงคำนิยามภาพยนตร์"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr "ปรับแต่ง แผ่นดิสก์ ค่าเริ่มต้น"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "แผ่นดิสก์ เสียง"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "แผ่นดิสก์ วิดีโอ"
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "ตอน ถัดไป"
@@ -4027,8 +4176,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "ตอนที่ออกอากาศในวันนี้"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "แสดงแผงข้อมูลดำเนินการ"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr "แสดงตัวแขวนอันดับแรก อย่าง 'กำลังดำเนินการ' (ภาพยนตร์, รายการทีวี และ คอนเสิร์ต)"
 
 msgctxt "#31983"
 msgid "Rating"

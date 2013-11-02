@@ -2,18 +2,11 @@
 
 	<includes>
 	<!--##################################################################################   VISTA BANNER - ID 53   ##################################################################################-->
-	<include name="BannerWatchedOverlay_2">
-	<posx>328</posx>
-	<posy>3</posy>
-	<width>27</width>
-	<height>27</height>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	</include>
 	<include name="BannerInfoLabel">
 	<posx>0</posx>
 	<height>20</height>
 	<width>285</width>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<aligny>top</aligny>
 	<align>left</align>
 	<textcolor>$VAR[value_headercolor]</textcolor>
@@ -45,7 +38,7 @@
 	<posy>102</posy>
 	<width>425</width>
 	<height>177</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<include>Animation_Fade</include>
@@ -96,6 +89,7 @@
 	<control type="label">
 	<include>BannerInfoLabel</include>
 	<label>$VAR[value_ground16_label]: [COLOR=FFFFFAF0]$VAR[value_ground16_value][/COLOR]</label>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 	</control>
 	<control type="label">
 	<include>BannerInfoLabel</include>
@@ -135,9 +129,13 @@
 	<aspectratio>keep</aspectratio>
 	</control>
 	<control type="image">
-	<include>BannerWatchedOverlay_2</include>
-	<info>ListItem.Overlay</info>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<posx>328</posx>
+	<posy>3</posy>
+	<width>27</width>
+	<height>27</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>	
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	<control type="image"><!-- Dimmer -->
 	<width>357</width>
@@ -173,10 +171,14 @@
 	<animation effect="zoom" center="auto" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerinfozoom)">Focus</animation>
 	</control>
 	<control type="image">
-	<include>BannerWatchedOverlay_2</include>
-	<info>ListItem.Overlay</info>
+	<posx>328</posx>
+	<posy>3</posy>
+	<width>27</width>
+	<height>27</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>	
 	<animation effect="zoom" center="178,40" start="90" end="110" time="600" tween="back" easing="out" reversible="false" condition="Skin.HasSetting(bannerinfozoom)">Focus</animation>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</focusedlayout>
 	</control>

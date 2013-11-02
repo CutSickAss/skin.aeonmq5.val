@@ -4635,21 +4635,21 @@
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + System.HasAddon(script.aeonmq5.extrapack)</visible>
 	<enable>Skin.HasSetting(weathericons) | SubString(skin.string(weatherconditionbg),weathercondition)</enable>
 	</control>
-	<control type="radiobutton" id="129"><!-- Icones Clima Animados -->
+	<control type="radiobutton" id="129"><!-- Icones Clima Animados --><!-- nao trocar id -->
 	<include>CustomMenuRadioButton</include>
 	<label>$VAR[value_animatedicons]</label>
 	<onclick>Skin.ToggleSetting(weathericons)</onclick>
 	<selected>Skin.HasSetting(weathericons)</selected>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather)</visible>
 	</control>
-	<control type="radiobutton" id="130"><!-- Icones Clima Externo -->
+	<control type="radiobutton" id="130"><!-- Icones Clima Externo --><!-- nao trocar id -->
 	<include>CustomMenuRadioButton</include>
 	<label>31903</label>
 	<onclick>Skin.ToggleSetting(weathericons_external)</onclick>
 	<selected>Skin.HasSetting(weathericons_external)</selected>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather) + Skin.HasSetting(weathericons)</visible>
 	</control>
-	<control type="button" id="131"><!-- Icones Clima/Pasta -->
+	<control type="button" id="131"><!-- Icones Clima/Pasta --><!-- nao trocar id -->
 	<include>CustomMenuButton</include>
 	<label>$VAR[value_weathericonsfolder]</label>
 	<onclick>Skin.ToggleSetting(weathericons_folder)</onclick>
@@ -4657,7 +4657,7 @@
 	</control>
 	<control type="button" id="132"><!-- Fundo Clima/Condicional -->
 	<include>CustomMenuButton</include>
-	<label>$VAR[value_weathercondition]</label>
+	<label>$VAR[value_weathercondition] ($LOCALIZE[31181])</label>
 	<onclick>SetFocus(4094)</onclick>
 	<visible>StringCompare(Container(9000).ListItem.Property(id),weather)</visible>
 	<enable>IsEmpty(skin.string(weather.bg))</enable>

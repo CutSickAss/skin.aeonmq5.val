@@ -59,7 +59,7 @@
 	<width>852</width>
 	<height>30</height>
 	<label>31140</label>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<align>center</align>
 	<aligny>center</aligny>
@@ -78,28 +78,24 @@
 	<label>31808</label>
 	<onclick>Skin.ToggleSetting(viewposter_music)</onclick>
 	<selected>Skin.HasSetting(viewposter_music)</selected>
-	<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
 	</control>
 	<control type="radiobutton" id="19255"><!-- Low List --><!-- 55 -->
 	<radioposx>894</radioposx>
 	<label>31807</label>
 	<onclick>Skin.ToggleSetting(viewlowlist_music)</onclick>
 	<selected>Skin.HasSetting(viewlowlist_music)</selected>
-	<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
 	</control>
 	<control type="radiobutton" id="19256"><!-- Wall --><!-- 56 -->
 	<radioposx>894</radioposx>
 	<label>31805</label>
 	<onclick>Skin.ToggleSetting(viewwall_music)</onclick>
 	<selected>Skin.HasSetting(viewwall_music)</selected>
-	<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
 	</control>
 	<control type="radiobutton" id="19258"><!-- CoverFlow --><!-- 58 -->
 	<radioposx>894</radioposx>
 	<label>31810</label>
 	<onclick>Skin.ToggleSetting(viewcoverflow_music)</onclick>
 	<selected>Skin.HasSetting(viewcoverflow_music)</selected>
-	<visible>[Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
 	</control>
 	<control type="radiobutton" id="19259"><!-- RightList --><!-- 59 -->
 	<radioposx>894</radioposx>
@@ -112,7 +108,6 @@
 	<label>31818</label>
 	<onclick>Skin.ToggleSetting(viewpanel_music)</onclick>
 	<selected>Skin.HasSetting(viewpanel_music)</selected>
-	<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
 	</control>
 	</control>
 	</control>

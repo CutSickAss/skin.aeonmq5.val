@@ -46,6 +46,15 @@
 	<onup>SetFocus(50)</onup>
 	<ondown>SetFocus(50)</ondown>
 	</control>
+	<control type="image" id="9921"><!-- painel de info auto -->
+	<include>InvisibleButton</include>
+	<animation effect="fade" start="0" end="100" time="150" delay="1000" condition="SubString(skin.string(panel_seconds),1)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="2000" condition="SubString(skin.string(panel_seconds),2)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="3000" condition="SubString(skin.string(panel_seconds),3)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="4000" condition="SubString(skin.string(panel_seconds),4)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="5000" condition="SubString(skin.string(panel_seconds),5)">Visible</animation>
+	<visible>![Container.OnNext | Container.OnPrevious]</visible>
+	</control>
 	<control type="group">
 	<animation effect="slide" time="400" start="0,-250" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
 	<animation effect="slide" time="400" start="0,-250" end="0,0" easing="inout" tween="cubic">Visible</animation>
@@ -152,8 +161,9 @@
 	<!-- ViewTypes -->
 	<include>ViewWideGames</include><!-- 50 -->
 	<include>ViewPosterGames</include><!-- 51 -->
-	<include>ViewWallGames</include><!-- 56 -->
 	<include>ViewPanelGames</include><!-- 52 -->
+	<include>ViewMultiplexGames</include><!-- 53 -->
+	<include>ViewWallGames</include><!-- 56 -->
 	</control>
 
 	<!-- Messages -->

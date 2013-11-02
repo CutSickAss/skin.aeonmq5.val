@@ -30,7 +30,7 @@
 	<posx>660</posx>
 	<height>44</height>
 	<width>600</width>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<aligny>top</aligny>
 	<align>left</align>
 	<textcolor>$VAR[value_headercolor]</textcolor>
@@ -41,7 +41,7 @@
 	<posx>660</posx>
 	<height>13</height>
 	<width>600</width>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<aligny>top</aligny>
 	<align>left</align>
 	<textoffsetx>30</textoffsetx>
@@ -54,7 +54,7 @@
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<aspectratio align="center" aligny="center">keep</aspectratio>
 	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
-	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.HasVideo + !Player.Paused">Conditional</animation>
+	<include>Animation_ViewsCDart</include>
 	</include>
 	<include name="ViewWide">
 	<control type="group"><!-- default group -->
@@ -140,7 +140,7 @@
 	<posy>-8</posy>
 	<width>85</width>
 	<height>40</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>center</align>
 	<aligny>center</aligny>
 	<include>detailcolor</include>
@@ -161,9 +161,9 @@
 	<posy>2</posy>
 	<width>80</width>
 	<height>37</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</itemlayout>
 	<focusedlayout condition="IsEmpty(Control.GetLabel(5101)) | [Window.IsActive(25) + Skin.HasSetting(slimwidevideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + Skin.HasSetting(slimwidemusic)]" height="40">
@@ -180,7 +180,7 @@
 	<posy>1</posy>
 	<width>440</width>
 	<height>40</height>
-	<font>Font_22</font>
+	<font>Font_24A</font>
 	<aligny>center</aligny>
 	<include>listcolorfocus</include>
 	<label>$INFO[ListItem.Label]</label>
@@ -190,7 +190,7 @@
 	<posy>-8</posy>
 	<width>85</width>
 	<height>40</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>center</align>
 	<aligny>center</aligny>
 	<include>detailcolorfocus</include>
@@ -211,9 +211,9 @@
 	<posy>2</posy>
 	<width>80</width>
 	<height>37</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</focusedlayout>
 	<focusedlayout condition="!IsEmpty(Control.GetLabel(5101)) + [Window.IsActive(25) + !Skin.HasSetting(slimwidevideo) | [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(slimwidemusic)]" height="63">
@@ -227,10 +227,10 @@
 	</control>
 	<control type="label">
 	<posx>45</posx>
-	<posy>0</posy>
+	<posy>2</posy>
 	<width>440</width>
 	<height>41</height>
-	<font>Font_22</font>
+	<font>Font_24A</font>
 	<aligny>center</aligny>
 	<include>listcolorfocus</include>
 	<label>$INFO[ListItem.Label]</label>
@@ -240,7 +240,7 @@
 	<posy>37</posy>
 	<width>440</width>
 	<height>16</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>left</align>
 	<aligny>center</aligny>
 	<include>subcolorfocus</include>
@@ -252,7 +252,7 @@
 	<posy>0</posy>
 	<width>85</width>
 	<height>41</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>center</align>
 	<aligny>center</aligny>
 	<include>detailcolorfocus</include>
@@ -272,9 +272,9 @@
 	<posy>13</posy>
 	<width>80</width>
 	<height>37</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</control>
 	</focusedlayout>
 	</control>
@@ -339,7 +339,7 @@
 	<visible>Control.HasFocus(562)</visible>
 	</control>
 	<control type="group"><!-- Grupo das artes -->
-	<animation effect="slide" start="0,0" end="700,0" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(562) | Control.HasFocus(9920) | Control.HasFocus(9039) | ControlGroup(9040).HasFocus | Window.IsVisible(621)">Conditional</animation>
+	<animation effect="slide" start="0,0" end="700,0" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(562) | Control.HasFocus(9920) | Window.IsVisible(621)">Conditional</animation>
 
 	<control type="group"><!-- CDART VIDEO -->
 	<animation type="WindowOpen">
@@ -355,29 +355,17 @@
 	<effect type="slide" start="0,0" end="-100,0" time="300" tween="cubic" easing="out"/>
 	<effect type="fade" start="100" end="0" time="200"/>
 	</animation>
-	<visible>![IsEmpty(ListItem.Art(discart)) | SubString(skin.string(widemovies.art),banner) | Skin.HasSetting(nodiscart) | SubString(ListItem.Path,videodb://1/7,left)] + Window.IsActive(25) + Control.IsVisible(9923)</visible>
+	<visible>![IsEmpty(ListItem.Art(discart)) | SubString(skin.string(widemovies.art),banner) | Skin.HasSetting(nowidediscart) | SubString(ListItem.Path,videodb://1/7,left)] + Window.IsActive(25) + Control.IsVisible(9923)</visible>
 	<control type="image">
 	<posx>270</posx>
 	<posy>50</posy>
 	<width>250</width>
 	<height>250</height>
-	<aligny>center</aligny>
-	<texture>cdart.png</texture>
-	<aspectratio align="center">keep</aspectratio>
-	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
-	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.HasVideo + !Player.Paused">Conditional</animation>
-	</control>
-	<control type="image">
-	<posx>270</posx>
-	<posy>50</posy>
-	<width>250</width>
-	<height>250</height>
-	<aligny>center</aligny>
-	<fadetime>FanartCrossFadeTime</fadetime>
 	<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
-	<aspectratio align="center">keep</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
 	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
-	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.HasVideo + !Player.Paused">Conditional</animation>
+	<include>Animation_ViewsCDart</include>
 	</control>
 	</control>
 	
@@ -399,31 +387,31 @@
 	<effect type="slide" start="0,0" end="100,0" time="300" tween="cubic" easing="out"/>
 	<effect type="fade" start="100" end="0" time="200"/>
 	</animation>
-	<animation effect="slide" start="0,0" end="-9,0" time="400" easing="inout" tween="cubic" condition="Skin.HasSetting(novideomediacase)">Conditional</animation>
-	<visible>![IsEmpty(Window(0).Property(Set.Movie.6.Art(discart))) | SubString(skin.string(widemovies.art),banner) | Skin.HasSetting(nodiscart)] + Window.IsActive(25) + SubString(ListItem.Path,videodb://1/7,left) + Control.IsVisible(9923)</visible>
+	<animation effect="slide" start="0,0" end="-9,0" time="400" easing="inout" tween="cubic" condition="Skin.HasSetting(nowidevideocase)">Conditional</animation>
+	<visible>![IsEmpty(Window(0).Property(Set.Movie.6.Art(discart))) | SubString(skin.string(widemovies.art),banner) | Skin.HasSetting(nowidediscart)] + Window.IsActive(25) + SubString(ListItem.Path,videodb://1/7,left) + Control.IsVisible(9923)</visible>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.6.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.6.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.6.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.7.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.7.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.7.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.8.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.8.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.8.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.9.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.9.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.9.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.10.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.10.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.10.Art(discart)))</visible>
 	</control>
 	</control>
@@ -446,31 +434,31 @@
 	<effect type="slide" start="0,0" end="-100,0" time="300" tween="cubic" easing="out"/>
 	<effect type="fade" start="100" end="0" time="200"/>
 	</animation>
-	<animation effect="slide" start="0,0" end="15,0" time="400" easing="inout" tween="cubic" condition="Skin.HasSetting(novideomediacase)">Conditional</animation>
-	<visible>![IsEmpty(Window(0).Property(Set.Movie.1.Art(discart))) | SubString(skin.string(widemovies.art),banner) | Skin.HasSetting(nodiscart)] + Window.IsActive(25) + SubString(ListItem.Path,videodb://1/7,left) + Control.IsVisible(9923)</visible>
+	<animation effect="slide" start="0,0" end="15,0" time="400" easing="inout" tween="cubic" condition="Skin.HasSetting(nowidevideocase)">Conditional</animation>
+	<visible>![IsEmpty(Window(0).Property(Set.Movie.1.Art(discart))) | SubString(skin.string(widemovies.art),banner) | Skin.HasSetting(nowidediscart)] + Window.IsActive(25) + SubString(ListItem.Path,videodb://1/7,left) + Control.IsVisible(9923)</visible>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.1.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.1.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.1.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.2.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.2.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.2.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.3.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.3.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.3.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.4.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.4.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.4.Art(discart)))</visible>
 	</control>
 	<control type="image">
 	<include>WideDisc</include>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.5.Art(discart))]</texture>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Window(0).Property(Set.Movie.5.Art(discart))]</texture>
 	<visible>!IsEmpty(Window(0).Property(Set.Movie.5.Art(discart)))</visible>
 	</control>
 	</control>
@@ -527,8 +515,8 @@
 
 	<control type="group"><!-- VIDEO SEM ESTOJO -->
 	<include>Animation_Fade</include>
-	<animation effect="slide" start="0,0" end="-45,0" time="500" delay="50" tween="cubic" easing="in" condition="!Skin.HasSetting(nodiscart) + !IsEmpty(ListItem.Art(discart)) + Control.IsVisible(9923)">Conditional</animation>
-	<visible>Skin.HasSetting(novideomediacase) + [Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | Container.Content(musicvideos)  | Container.Content(sets)] | Container.Content(tvshows) + SubString(skin.string(widetvshows.art),poster) | Container.Content(seasons) | Container.Content(genres)</visible>
+	<animation effect="slide" start="0,0" end="-45,0" time="500" delay="50" tween="cubic" easing="in" condition="!Skin.HasSetting(nowidediscart) + !IsEmpty(ListItem.Art(discart)) + Control.IsVisible(9923)">Conditional</animation>
+	<visible>Skin.HasSetting(nowidevideocase) + [Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | Container.Content(musicvideos)  | Container.Content(sets)] | Container.Content(tvshows) + SubString(skin.string(widetvshows.art),poster) | Container.Content(seasons) | Container.Content(genres)</visible>
 	<control type="image"><!-- Filmes/Fotos/Arquivos reflexo -->
 	<posx>20</posx>
 	<posy>401</posy>
@@ -553,8 +541,8 @@
 
 	<control type="group"><!-- FILMES ESTOJO -->
 	<include>Animation_Fade</include>
-	<animation effect="slide" start="0,0" end="-33,0" time="500" delay="50" tween="cubic" easing="in" condition="!Skin.HasSetting(nodiscart) + !IsEmpty(ListItem.Art(discart)) + Control.IsVisible(9923)">Conditional</animation>
-	<visible>!Skin.HasSetting(novideomediacase) + Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | !Skin.HasSetting(novideomediacase) + [Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	<animation effect="slide" start="0,0" end="-33,0" time="500" delay="50" tween="cubic" easing="in" condition="!Skin.HasSetting(nowidediscart) + !IsEmpty(ListItem.Art(discart)) + Control.IsVisible(9923)">Conditional</animation>
+	<visible>!Skin.HasSetting(nowidevideocase) + Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | !Skin.HasSetting(nowidevideocase) + [Container.Content(musicvideos) | Container.Content(sets)]</visible>
 	<control type="image"><!-- Poster reflexo -->
 	<posx>205</posx>
 	<posy>416</posy>
@@ -604,7 +592,7 @@
 
 	<control type="group"><!-- MUSICA -->
 	<include>Animation_Fade</include>
-	<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + [Skin.HasSetting(noaudiomediacase) | Container.Content(genres)]</visible>
+	<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + [Skin.HasSetting(nowideaudiocase) | Container.Content(genres)]</visible>
 	<control type="image"><!-- Musica reflexo -->
 	<posx>20</posx>
 	<posy>400</posy>
@@ -629,7 +617,7 @@
 
 	<control type="group"><!-- MUSICA ESTOJO -->
 	<include>Animation_Fade</include>
-	<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + ![Skin.HasSetting(noaudiomediacase) | Container.Content(genres)]</visible>
+	<visible>[Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + ![Skin.HasSetting(nowideaudiocase) | Container.Content(genres)]</visible>
 	<control type="image"><!-- Musica reflexo-->
 	<posx>170</posx>
 	<posy>404</posy>
@@ -670,8 +658,8 @@
 	<posx>20</posx>
 	<posy>410</posy>
 	<width>600</width>
-	<height>160</height>
-	<font>Font_17</font>
+	<height>156</height>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<include>Animation_Fade</include>
@@ -681,8 +669,8 @@
 	<posx>20</posx>
 	<posy>410</posy>
 	<width>600</width>
-	<height>235</height>
-	<font>Font_17</font>
+	<height>237</height>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<include>Animation_Fade</include>
@@ -693,7 +681,7 @@
 	<posy>293</posy>
 	<width>600</width>
 	<height>270</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<include>Animation_Fade</include>
@@ -703,8 +691,8 @@
 	<posx>20</posx>
 	<posy>293</posy>
 	<width>600</width>
-	<height>353</height>
-	<font>Font_17</font>
+	<height>348</height>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<include>Animation_Fade</include>
@@ -715,7 +703,7 @@
 	<posy>410</posy>
 	<width>600</width>
 	<height>235</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<include>Animation_Fade</include>
@@ -726,7 +714,7 @@
 	<posy>293</posy>
 	<width>600</width>
 	<height>353</height>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<include>Animation_Fade</include>
@@ -815,35 +803,39 @@
 	<posy>88</posy>
 	<label>$VAR[value_ground13_value]</label>
 	</control>
-	<control type="label"><!-- Written -->
-	<include>WideLabel</include>
-	<posy>132</posy>
-	<label>$VAR[value_ground14_label]</label>
-	</control>
 	<control type="label">
-	<include>WideValue</include>
-	<posy>132</posy>
-	<label>$VAR[value_ground14_value]</label>
-	</control>
-	<control type="label"><!-- Written -->
 	<include>WideLabel</include>
-	<posy>176</posy>
+	<posy>132</posy>
 	<label>$VAR[value_ground15_label]</label>
 	</control>
 	<control type="label">
 	<include>WideValue</include>
-	<posy>176</posy>
+	<posy>132</posy>
 	<label>$VAR[value_ground15_value]</label>
 	</control>
-	<control type="label"><!-- Written -->
+	<control type="label">
+	<include>WideLabel</include>
+	<posy>176</posy>
+	<label>$VAR[value_ground16_label]</label>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+	</control>
+	<control type="label">
+	<include>WideValue</include>
+	<posy>176</posy>
+	<label>$VAR[value_ground16_value]</label>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+	</control>
+	<control type="label">
 	<include>WideLabel</include>
 	<posy>220</posy>
-	<label>$VAR[value_ground16_label]</label>
+	<label>$VAR[value_ground14_label]</label>
+	<visible>!Container.Content(albums)</visible>
 	</control>
 	<control type="label">
 	<include>WideValue</include>
 	<posy>220</posy>
-	<label>$VAR[value_ground16_value]</label>
+	<label>$VAR[value_ground14_value]</label>
+	<visible>!Container.Content(albums)</visible>
 	</control>
 	</control>
 	<control type="scrollbar" id="80">

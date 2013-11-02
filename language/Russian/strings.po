@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # BasilK <BasilK@tut.by>, 2013
 # bostan <andrebostan@gmail.com>, 2012
 # Evgeny Grin <karlson2k@gmail.com>, 2012
@@ -108,7 +123,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 18:14+0000\n"
+"PO-Revision-Date: 2013-10-31 19:32+0000\n"
 "Last-Translator: SergeiAK <sergeiak@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -128,7 +143,7 @@ msgid ""
 "skin.[CR]The Aeon MQ 5 incorporates new features such as REPLACE it takes "
 "the level of customize the main menu to something never seen before.[CR]Aeon"
 " MQ 5, you've never seen a skin well."
-msgstr "Традиционный Aeon MQ достиг своей пятой версии.[CR]Переформулированный, очень простой в использовании, с новым кодом, который обеспечивает легкость и мощность обложки.[CR]Aeon MQ 5 включает новые функции, такие как ПЕРЕМЕЩЕНИЕ, делающие уровень персонализации главного меню не виданным ранее.[CR]Aeon MQ 5, вы не  найдете обложку лучше."
+msgstr "Традиционный Aeon MQ достиг своей пятой версии.[CR]Переформулированный, очень простой в использовании, с новым кодом, который обеспечивает легкость и мощность обложки.[CR]Aeon MQ 5 включает новые функции, такие как ПЕРЕМЕЩЕНИЕ, делающие уровень настройки главного меню не виданным ранее.[CR]Aeon MQ 5, вы не  найдете обложку лучше."
 
 msgctxt "Addon Disclaimer"
 msgid ""
@@ -523,8 +538,8 @@ msgid "PATH"
 msgstr "ПУТЬ"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "УДАЛИТЬ ПУТЬ - СПРЯТАТЬ ЭЛЕМЕНТ В ГЛАВНОМ МЕНЮ"
+msgid "DISC"
+msgstr "ДИСК"
 
 msgctxt "#31097"
 msgid "Access to collection"
@@ -603,8 +618,8 @@ msgid "VIDEO NODE"
 msgstr "ВИДЕО УЗЕЛ"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "ШАХМАТНЫЙ ЭФФЕКТ"
+msgid "DISC SWING SPEED"
+msgstr "СКОРОСТЬ ВРАЩЕНИЯ ДИСКА"
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -672,7 +687,7 @@ msgstr "ГРАФИТОВЫЙ"
 
 msgctxt "#31133"
 msgid "CUSTOMIZE INFO PANEL"
-msgstr "ПЕРСОНАЛИЗИРОВАТЬ ПАНЕЛЬ ИНФОРМАЦИИ"
+msgstr "НАСТРОИТЬ ПАНЕЛЬ ИНФОРМАЦИИ"
 
 msgctxt "#31134"
 msgid "VIEW OPTIONS"
@@ -898,6 +913,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr "ЧАСТИЧНО"
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr "ЦВЕТ МЕТКИ 'ПРОСМОТРЕНО'"
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr "НАСТРОИТЬ МЕТКУ 'ПРОСМОТРЕНО'"
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr "НАСТРОИТЬ МЕТКУ"
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr "БУДЕТ ПОКАЗАНА НАДПИСЬ 4K"
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr "ПОВТОРНО ПРИМЕНИТЬ НАСТРОЙКИ"
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr "ПОВТОРНО ПРИМЕНИТЬ НАИБОЛЕЕ ВАЖНЫЕ НАСТРОЙКИ"
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "ПОЛНЫЙ РЕЖИМ"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "ЧАСТИЧНЫЙ РЕЖИМ"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "СКРЫТЫЙ РЕЖИМ"
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr "ЦВЕТОВАЯ ПАЛИТРА ДЛЯ МЕТОК 'ПРОСМОТРЕНО'"
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "ВРЕМЯ ПЕРЕХОДА ДЛЯ МНОЖЕСТВА ИЗОБРАЖЕНИЙ"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5 СЕКУНД"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10 СЕКУНД"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30 СЕКУНД"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1 МИНУТА"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10 МИНУТ"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1 ЧАС"
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -964,8 +1047,8 @@ msgid "Page"
 msgstr "Страница"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "НАБОР ИКОНОК ПЛЕЙ-ЛИСТА"
+msgid "THUMBNAIL SET"
+msgstr "НАБОР ИКОНОК"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1087,8 +1170,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "СОХРАНЕНИЕ ФОНОВЫХ ПРОПОРЦИЙ"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "ПОКАЗЫВАТЬ ВИДЖЕТЫ ДЛЯ:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr "УПРАВЛЕНИЕ ВИДЖЕТАМИ"
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1100,7 +1183,7 @@ msgstr "CLEARLOGO"
 
 msgctxt "#31249"
 msgid "WIDGETS"
-msgstr "виджеты"
+msgstr "ВИДЖЕТЫ"
 
 msgctxt "#31250"
 msgid "SHOW DATE AND WEATHER"
@@ -1151,6 +1234,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. Создайте основную директорию с любым именем, к примеру MY THEME.[CR][CR]2. Внутри основной директории создайте 21 папку с этими названиями:[CR]addons, aplaylist,autumn, concerts, disc, favourites, games, livetv, movies, music, mymenu, pictures, programs, settings, shutdown, spring, summer, tvshows, vnodes, vplaylist, winter.[CR][CR]3. Поместите в эти папки изображения по своему выбору, MY THEME поддерживает множественные файлы, вы можете включить столько изображений в каждую папку сколько хотите.[CR][CR]4. После того, как тема будет готова, введите путь к основной директории.[CR][CR]По умолчанию изображения для AEON MQ 5 имеют разрешение 72dpi 1920x1080 пикселей в JPG формате и я советую использовать программу FastStone Photo Resize чтобы получить изображения хорошего качества и небольшого размера."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr "Эта опция воссоздает только наиболее важные настройки, такие как цвета, панели...[CR]Рекомендуется, к примеру, когда не функционирует меню.[CR]Когда используете эту опцию, некоторые настройки будут необходимы."
 
 #. ....
 msgctxt "#31260"
@@ -1627,7 +1718,7 @@ msgstr "УПРАВЛЕНИЕ ПРОФИЛЯМИ"
 
 msgctxt "#31375"
 msgid "General settings"
-msgstr "Общие параметры"
+msgstr "ОБЩИЕ ПАРАМЕТРЫ"
 
 msgctxt "#31376"
 msgid "A HIGH DEFINITION MEDIA ENVIROMENT"
@@ -1841,11 +1932,11 @@ msgstr "ОТКЛЮЧИТЬ ВСЕ ОПЦИИ"
 
 msgctxt "#31423"
 msgid "CUSTOMIZATION - OPTIONS"
-msgstr "МОДИФИКАЦИЯ - СВОЙСТВА"
+msgstr "НАСТРОЙКА - СВОЙСТВА"
 
 msgctxt "#31424"
 msgid "CUSTOMIZATION"
-msgstr "ПЕРСОНАЛИЗАЦИЯ"
+msgstr "НАСТРОЙКА"
 
 msgctxt "#31425"
 msgid "Restoring settings..."
@@ -2085,12 +2176,12 @@ msgid "AUDIO LANGUAGES"
 msgstr "ЯЗЫКИ АУДИО"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "НАДПИСЬ 'ПРОСМОТРЕНО'"
+msgid "WATCHED LABEL"
+msgstr "ЗНАЧОК 'ПРОСМОТРЕНО'"
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
-msgstr "ИСПОЛЬЗОВАТЬ MEDIA CASE"
+msgstr "ИСПОЛЬЗОВАТЬ УПАКОВКУ МЕДИА "
 
 msgctxt "#31487"
 msgid "USE STARS TO RATE"
@@ -2545,8 +2636,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "ВНИМАНИЕ: ЭТОТ ПРОЦЕСС НЕОБРАТИМ !"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Нажмите в любом направлении для отказа.[CR]Нажмите Enter для продолжения"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr "Нажмите в любом направлении для отмены.[CR]Нажмите Enter для продолжения.[CR]Эта опция полностью сбросит настройки обложки и вы потеряете все ваши настройки."
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2631,8 +2724,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "ПОКАЗЫВАТЬ МЕТКИ ЯЗЫКА АУДИО И СУБТИТРОВ"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "УСТАНОВИТЕ ВРЕМЯ ДЛЯ КАЖДОГО ИЗОБРАЖЕНИЯ"
+msgid "PANEL DELAY"
+msgstr "ЗАДЕРЖКА ДЛЯ ПАНЕЛИ"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2763,7 +2856,7 @@ msgstr "УМНЫЙ КИОСК оставляет меню доступным д�
 
 msgctxt "#31653"
 msgid "CUSTOM CASE"
-msgstr "СЛЕДУЮЩИЙ ЭПИЗОД"
+msgstr "ПОЛЬЗОВАТЕЛЬСКАЯ УПАКОВКА"
 
 msgctxt "#31654"
 msgid ""
@@ -2779,16 +2872,16 @@ msgid ""
 msgstr "Не правда было бы здорово получить все темы, фоны, иконки и логотипы за одно нажатие?[CR]С Aeon MQ 5 вы можете загрузить один пакет и получить доступ ко всему дополнительному содержимому."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "МНОГО НОВОСТЕЙ И ДР...."
+msgid "Applying new settings..."
+msgstr "Принять новые параметры"
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, умная обложка для умных людей.[CR][CR]Наслаждайтесь."
+msgid "Finalizing Settings"
+msgstr "Завершение настроек"
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "ПРОПУСТИТЬ ПРЕЗЕНТАЦИЮ"
+msgid "-"
+msgstr "-"
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3486,6 +3579,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "ПРАВЫЙ СПИСОК"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr "...Определение шрифтов, цветов и стилей"
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr "...Написание элементов Главного меню"
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr "...Определение подменю для фильмов"
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr "...Определение подменю для сериалов"
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr "...Определение подменю для концертов"
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr "...Определение подменю для онлайн-тв"
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr "...Определение подменю для музыки"
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr "...Определение подменю для погоды"
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr "...Определение подменю для настроек"
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr "...Определение подменю для выключения"
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -3698,11 +3831,11 @@ msgstr "ТЕМА ИЗОБРАЖЕНИЙ БУДУЩЕГО"
 
 msgctxt "#31895"
 msgid "COLD IMAGES THEME"
-msgstr "ТЕМА ИЗОБРАЖЕНИЙ ХОЛОДА"
+msgstr "ТЕМА ХОЛОДНЫХ ИЗОБРАЖЕНИЙ"
 
 msgctxt "#31896"
 msgid "WARM IMAGES THEME"
-msgstr "ТЕМА ИЗОБРАЖЕНИЙ ТЕПЛА"
+msgstr "ТЕМА ТЕПЛЫХ ИЗОБРАЖЕНИЙ"
 
 msgctxt "#31897"
 msgid "DARKNESS IMAGES THEME"
@@ -4026,6 +4159,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Изображения в красноватых тонах в комбинации с графитовыми тонами.[CR]Тема по умолчанию Aeon MQ 5."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "ПОКАЗАТЬ СЛОГАН"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr "НАСТРОИТЬ ДИСК ПО УМОЛЧАНИЮ"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "АУДИО ДИСК"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "ВИДЕО ДИСК"
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "СЛЕДУЮЩИЙ ЭПИЗОД"
@@ -4035,8 +4184,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "Эпизоды сегодня в эфире"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "ПОКАЗЫВАТЬ ПАНЕЛЬ ХОДА ВЫПОЛНЕНИЯ"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr "В ПЕРВУЮ ОЧЕРЕДЬ ПОКАЗЫВАТЬ ВИДЖЕТ 'ПРОИГРЫВАЕТСЯ' (ФИЛЬМЫ, СЕРИАЛЫ И КОНЦЕРТЫ)"
 
 msgctxt "#31983"
 msgid "Rating"

@@ -1,6 +1,6 @@
 	<!-- Aeon MQ 5 -->
 
-	<window type="dialog" id="134">
+	<window>
 	<defaultcontrol always="true">450</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onunload condition="!Skin.HasSetting(nofavouriteswidget)">RunScript(script.favourites)</onunload>
@@ -66,9 +66,10 @@
 	<posy>463</posy>
 	<width>310</width>
 	<height>175</height>
-	<font>Font_17</font>
-	<label>$VAR[value_videoplot]</label>
-	<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<font>Font_19</font>
+	<label>$VAR[value_plot]</label>
+	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<include>Animation_Fade</include>
 	</control>
 	</control>
 

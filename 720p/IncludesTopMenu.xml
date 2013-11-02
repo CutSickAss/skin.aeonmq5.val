@@ -219,7 +219,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
 	<posx>1</posx>
@@ -336,38 +336,97 @@
 	<itemgap>0</itemgap>
 	<focusposition>1</focusposition>
 	<scrolltime>450</scrolltime>
-	<control type="radiobutton" id="9212">
+	<!-- Wide -->	
+	<control type="radiobutton" id="9202">
 	<include>TopMenuRadioButton</include>
 	<label>31486</label>
-	<onclick>Skin.ToggleSetting(novideomediacase)</onclick>
-	<selected>!Skin.HasSetting(novideomediacase)</selected>
-	<visible>Control.IsVisible(51) + [[Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | Container.Content(musicvideos) | Container.Content(sets)] | [Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | Control.IsVisible(61) | Control.IsVisible(62) + !Skin.HasSetting(noviewpanelposter) + [Container.Content(movies) | Container.Content(tvshows)] | Control.IsVisible(65) | Control.IsVisible(66)] + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]] | [Control.IsVisible(528) + StringCompare(Control.GetLabel(528707),poster) + !Container.Content(episodes)]]</visible>
-	</control>
-	<control type="button" id="9213">
+	<onclick>Skin.ToggleSetting(nowidevideocase)</onclick>
+	<selected>!Skin.HasSetting(nowidevideocase)</selected>
+	<visible>Control.IsVisible(51) + [[Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | Container.Content(musicvideos) | Container.Content(sets)]] | [Control.IsVisible(528) + StringCompare(Control.GetLabel(528707),poster) + !Container.Content(episodes)]]</visible>
+	</control>	
+	<control type="button" id="9203">
 	<include>TopMenuButton</include>
 	<label> - $LOCALIZE[31298]</label>
 	<onclick>SetFocus(51)</onclick>
 	<onclick>Skin.SetString(customwindow,video)</onclick>
 	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
-	<visible>!Skin.HasSetting(novideomediacase) + [Control.IsVisible(51) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | [Control.IsVisible(528) + StringCompare(Control.GetLabel(528707),poster)] | Control.IsVisible(61) | Control.IsVisible(62) + !Skin.HasSetting(noviewpanelposter) + [Container.Content(movies) | Container.Content(tvshows)]  | Control.IsVisible(65) | Control.IsVisible(66)] + [Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	<visible>!Skin.HasSetting(nowidevideocase) + [Control.IsVisible(51) | [Control.IsVisible(528) + StringCompare(Control.GetLabel(528707),poster)]]+ [Container.Content(movies) + SubString(skin.string(widemovies.art),poster) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 	</control>
-	<!-- Low List -->
-	<control type="radiobutton" id="9216">
+	<control type="radiobutton" id="9204">
 	<include>TopMenuRadioButton</include>
-	<label>31112</label>
-	<onclick>Skin.ToggleSetting(lowlistplotvideo)</onclick>
-	<selected>Skin.HasSetting(lowlistplotvideo)</selected>
-	<visible>Control.IsVisible(55)</visible>
+	<label>31111</label>
+	<onclick>Skin.ToggleSetting(nowidediscart)</onclick>
+	<selected>!Skin.HasSetting(nowidediscart)</selected>
+	<visible>Control.IsVisible(51) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
 	</control>
-	<control type="radiobutton" id="9217">
+	<control type="radiobutton" id="9205">
 	<include>TopMenuRadioButton</include>
 	<label>31490</label>
-	<onclick>Skin.ToggleSetting(slimlowlistvideo)</onclick>
-	<selected>Skin.HasSetting(slimlowlistvideo)</selected>
-	<visible>Control.IsVisible(55)</visible>
+	<onclick>Skin.ToggleSetting(slimwidevideo)</onclick>
+	<selected>Skin.HasSetting(slimwidevideo)</selected>
+	<visible>Control.IsVisible(51)</visible>
 	</control>
+	<control type="radiobutton" id="9206"><!-- Filmes Poster -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31320]: $LOCALIZE[31808]</label>
+	<onclick>Skin.SetString(widemovies.art,poster)</onclick>
+	<selected>SubString(skin.string(widemovies.art),poster)</selected>
+	<visible>Control.IsVisible(51) + Container.Content(movies)</visible>
+	</control>
+	<control type="radiobutton" id="9207"><!-- Filmes Banner -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31320]: $LOCALIZE[31114]</label>
+	<onclick>Skin.SetString(widemovies.art,banner)</onclick>
+	<selected>SubString(skin.string(widemovies.art),banner)</selected>
+	<visible>Control.IsVisible(51) + Container.Content(movies)</visible>
+	</control>
+	<control type="radiobutton" id="9208"><!-- Seriados Poster -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31320]: $LOCALIZE[31808]</label>
+	<onclick>Skin.SetString(widetvshows.art,poster)</onclick>
+	<selected>SubString(skin.string(widetvshows.art),poster)</selected>
+	<visible>Control.IsVisible(51) + Container.Content(tvshows)</visible>
+	</control>
+	<control type="radiobutton" id="9209"><!-- Seriados Banner -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31320]: $LOCALIZE[31114]</label>
+	<onclick>Skin.SetString(widetvshows.art,banner)</onclick>
+	<selected>SubString(skin.string(widetvshows.art),banner)</selected>
+	<visible>Control.IsVisible(51) + Container.Content(tvshows)</visible>
+	</control>	
+	<control type="radiobutton" id="9210">
+	<include>TopMenuRadioButton</include>
+	<label>31508</label>
+	<onclick>Skin.ToggleSetting(noartwidevideo)</onclick>
+	<selected>!Skin.HasSetting(noartwidevideo)</selected>
+	<visible>Control.IsVisible(51)</visible>
+	</control>
+
+	<!-- Banner -->
+	<control type="radiobutton" id="9215">
+	<include>TopMenuRadioButton</include>
+	<label>31518</label>
+	<onclick>Skin.ToggleSetting(bannerzoom)</onclick>
+	<selected>Skin.HasSetting(bannerzoom)</selected>
+	<visible>Control.IsVisible(52)</visible>
+	</control>
+	<control type="radiobutton" id="9216">
+	<include>TopMenuRadioButton</include>
+	<label>31518</label>
+	<onclick>Skin.ToggleSetting(bannerinfozoom)</onclick>
+	<selected>Skin.HasSetting(bannerinfozoom)</selected>
+	<visible>Control.IsVisible(53)</visible>
+	</control>	
+	
 	<!-- Poster -->
-	<control type="radiobutton" id="9218">
+	<control type="radiobutton" id="9219">
+	<include>TopMenuRadioButton</include>
+	<label>31111</label>
+	<onclick>Skin.ToggleSetting(noposterdiscart)</onclick>
+	<selected>!Skin.HasSetting(noposterdiscart)</selected>
+	<visible>Control.IsVisible(54) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9220">
 	<include>TopMenuRadioButton</include>
 	<label>31493</label>
 	<onclick>Skin.ToggleSetting(posterfixedlist)</onclick>
@@ -375,8 +434,298 @@
 	<onclick>ReloadSkin</onclick>
 	<visible>Control.IsVisible(54)</visible>
 	</control>
+	<control type="radiobutton" id="9221">
+	<include>TopMenuRadioButton</include>
+	<label>31508</label>
+	<onclick>Skin.ToggleSetting(noartpostervideo)</onclick>
+	<selected>!Skin.HasSetting(noartpostervideo)</selected>
+	<visible>Control.IsVisible(54)</visible>
+	</control>
+	
+	<!-- Low List -->
+	<control type="radiobutton" id="9225">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nolowlistvideocase)</onclick>
+	<selected>!Skin.HasSetting(nolowlistvideocase)</selected>
+	<visible>Control.IsVisible(55) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="button" id="9226">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(55)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(nolowlistvideocase) + Control.IsVisible(55) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9227">
+	<include>TopMenuRadioButton</include>
+	<label>31111</label>
+	<onclick>Skin.ToggleSetting(nolowlistdiscart)</onclick>
+	<selected>!Skin.HasSetting(nolowlistdiscart)</selected>
+	<visible>Control.IsVisible(55) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9228">
+	<include>TopMenuRadioButton</include>
+	<label>31112</label>
+	<onclick>Skin.ToggleSetting(lowlistplotvideo)</onclick>
+	<selected>Skin.HasSetting(lowlistplotvideo)</selected>
+	<visible>Control.IsVisible(55)</visible>
+	</control>
+	<control type="radiobutton" id="9229">
+	<include>TopMenuRadioButton</include>
+	<label>31490</label>
+	<onclick>Skin.ToggleSetting(slimlowlistvideo)</onclick>
+	<selected>Skin.HasSetting(slimlowlistvideo)</selected>
+	<visible>Control.IsVisible(55)</visible>
+	</control>
+	<control type="radiobutton" id="9230">
+	<include>TopMenuRadioButton</include>
+	<label>31508</label>
+	<onclick>Skin.ToggleSetting(noartlowlistvideo)</onclick>
+	<selected>!Skin.HasSetting(noartlowlistvideo)</selected>
+	<visible>Control.IsVisible(55)</visible>
+	</control>
+	
+	<!-- Wall -->
+	<control type="radiobutton" id="9235">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nowallvideocase)</onclick>
+	<selected>!Skin.HasSetting(nowallvideocase)</selected>
+	<visible>Control.IsVisible(56) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="button" id="9236">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(56)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(nowallvideocase) + Control.IsVisible(56) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9237">
+	<include>TopMenuRadioButton</include>
+	<label>31111</label>
+	<onclick>Skin.ToggleSetting(nowalldiscart)</onclick>
+	<selected>!Skin.HasSetting(nowalldiscart)</selected>
+	<visible>Control.IsVisible(56) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9238">
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31511] - $LOCALIZE[31513]</label>
+	<onclick>Skin.SetString(wallvideogrid,default)</onclick>
+	<selected>SubString(skin.string(wallvideogrid),default)</selected>
+	<visible>Control.IsVisible(56)</visible>
+	</control>
+	<control type="radiobutton" id="9239">
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31511] - $LOCALIZE[31512]</label>
+	<onclick>Skin.SetString(wallvideogrid,mid)</onclick>
+	<selected>SubString(skin.string(wallvideogrid),mid)</selected>
+	<visible>Control.IsVisible(56)</visible>
+	</control>
+	<control type="radiobutton" id="9240">
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31511] - $LOCALIZE[31514]</label>
+	<onclick>Skin.SetString(wallvideogrid,big)</onclick>
+	<selected>SubString(skin.string(wallvideogrid),big)</selected>
+	<visible>Control.IsVisible(56)</visible>
+	</control>
+	<control type="radiobutton" id="9241">
+	<include>TopMenuRadioButton</include>
+	<label>31473</label>
+	<onclick>Skin.SetString(wallvideopanel,off)</onclick>
+	<selected>SubString(skin.string(wallvideopanel),off)</selected>
+	<visible>Control.IsVisible(56)</visible>
+	</control>
+	<control type="radiobutton" id="9242">
+	<include>TopMenuRadioButton</include>
+	<label>31470</label>
+	<onclick>Skin.SetString(wallvideopanel,auto)</onclick>
+	<selected>SubString(skin.string(wallvideopanel),auto)</selected>
+	<visible>Control.IsVisible(56)</visible>
+	</control>
+	<control type="button" id="9243"><!-- Seletor de delay -->
+	<include>TopMenuButton</include>
+	<label>$VAR[value_seconds]</label>
+	<onclick>ActivateWindow(622)</onclick>
+	<visible>Control.IsVisible(56) + SubString(skin.string(wallvideopanel),auto)</visible>
+	</control>
+	<control type="button" id="9244"><!-- nivel de glass -->
+	<include>TopMenuRadioButton</include>
+	<label>- $LOCALIZE[31252]</label>
+	<onclick>SetFocus(260)</onclick>
+	<onclick>ActivateWindow(636)</onclick>
+	<visible>Control.IsVisible(56) + SubString(skin.string(wallvideopanel),auto)</visible>
+	</control>
+	
+	<!-- Glass List -->
+	<control type="radiobutton" id="9250">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(noglasslistvideocase)</onclick>
+	<selected>!Skin.HasSetting(noglasslistvideocase)</selected>
+	<visible>Control.IsVisible(57) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="button" id="9251">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(57)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(noglasslistvideocase) + Control.IsVisible(57) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9252">
+	<include>TopMenuRadioButton</include>
+	<label>31111</label>
+	<onclick>Skin.ToggleSetting(noglasslistdiscart)</onclick>
+	<selected>!Skin.HasSetting(noglasslistdiscart)</selected>
+	<visible>Control.IsVisible(57) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>	
+	<control type="radiobutton" id="9253">
+	<include>TopMenuRadioButton</include>
+	<label>31490</label>
+	<onclick>Skin.ToggleSetting(slimglasslistvideo)</onclick>
+	<selected>Skin.HasSetting(slimglasslistvideo)</selected>
+	<visible>Control.IsVisible(57)</visible>
+	</control>
+	<control type="radiobutton" id="9254">
+	<include>TopMenuRadioButton</include>
+	<label>31508</label>
+	<onclick>Skin.ToggleSetting(noartglasslistvideo)</onclick>
+	<selected>!Skin.HasSetting(noartglasslistvideo)</selected>
+	<visible>Control.IsVisible(57)</visible>
+	</control>
+	<control type="radiobutton" id="9255">
+	<include>TopMenuRadioButton</include>
+	<label>31471</label>
+	<onclick>Skin.SetString(glasslistvideopanel,manual)</onclick>
+	<selected>SubString(skin.string(glasslistvideopanel),manual)</selected>
+	<visible>Control.IsVisible(57)</visible>
+	</control>
+	<control type="radiobutton" id="9256">
+	<include>TopMenuRadioButton</include>
+	<label>31472</label>
+	<onclick>Skin.SetString(glasslistvideopanel,alwayson)</onclick>
+	<selected>SubString(skin.string(glasslistvideopanel),alwayson)</selected>
+	<visible>Control.IsVisible(57)</visible>
+	</control>
+	<control type="radiobutton" id="9257">
+	<include>TopMenuRadioButton</include>
+	<label>31470</label>
+	<onclick>Skin.SetString(glasslistvideopanel,auto)</onclick>
+	<selected>SubString(skin.string(glasslistvideopanel),auto)</selected>
+	<visible>Control.IsVisible(57)</visible>
+	</control>
+	<control type="button" id="9258"><!-- Seletor de delay -->
+	<include>TopMenuButton</include>
+	<label>$VAR[value_seconds]</label>
+	<onclick>ActivateWindow(622)</onclick>
+	<visible>Control.IsVisible(57) + SubString(skin.string(glasslistvideopanel),auto)</visible>
+	</control>
+	
+	<!-- CoverFlow -->
+	<control type="radiobutton" id="9262">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nocoverflowvideocase)</onclick>
+	<selected>!Skin.HasSetting(nocoverflowvideocase)</selected>
+	<visible>Control.IsVisible(58) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="button" id="9263">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(58)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(nocoverflowvideocase) + Control.IsVisible(58) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	
+	<!-- Right List -->
+	<control type="radiobutton" id="9265">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(norightlistvideocase)</onclick>
+	<selected>!Skin.HasSetting(norightlistvideocase)</selected>
+	<visible>Control.IsVisible(59) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="button" id="9266">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(59)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(norightlistvideocase) + Control.IsVisible(57) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9267">
+	<include>TopMenuRadioButton</include>
+	<label>31111</label>
+	<onclick>Skin.ToggleSetting(norightlistdiscart)</onclick>
+	<selected>!Skin.HasSetting(norightlistdiscart)</selected>
+	<visible>Control.IsVisible(59) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>	
+	<control type="radiobutton" id="9268">
+	<include>TopMenuRadioButton</include>
+	<label>31508</label>
+	<onclick>Skin.ToggleSetting(noartrightlistvideo)</onclick>
+	<selected>!Skin.HasSetting(noartrightlistvideo)</selected>
+	<visible>Control.IsVisible(59)</visible>
+	</control>
+	
+	<!-- Showart -->
+	<control type="radiobutton" id="9270">
+	<include>TopMenuRadioButton</include>
+	<label>31493</label>
+	<onclick>Skin.ToggleSetting(showartfixedlist)</onclick>
+	<selected>Skin.HasSetting(showartfixedlist)</selected>
+	<onclick>ReloadSkin</onclick>
+	<visible>Control.IsVisible(60)</visible>
+	</control>
+	<control type="radiobutton" id="9271">
+	<include>TopMenuRadioButton</include>
+	<label>31471</label>
+	<onclick>Skin.SetString(showartvideopanel,manual)</onclick>
+	<selected>SubString(skin.string(showartvideopanel),manual)</selected>
+	<visible>Control.IsVisible(60)</visible>
+	</control>
+	<control type="radiobutton" id="9272">
+	<include>TopMenuRadioButton</include>
+	<label>31472</label>
+	<onclick>Skin.SetString(showartvideopanel,alwayson)</onclick>
+	<selected>SubString(skin.string(showartvideopanel),alwayson)</selected>
+	<visible>Control.IsVisible(60)</visible>
+	</control>
+	<control type="radiobutton" id="9273">
+	<include>TopMenuRadioButton</include>
+	<label>31470</label>
+	<onclick>Skin.SetString(showartvideopanel,auto)</onclick>
+	<selected>SubString(skin.string(showartvideopanel),auto)</selected>
+	<visible>Control.IsVisible(60)</visible>
+	</control>
+	<control type="button" id="9274"><!-- Seletor de delay -->
+	<include>TopMenuButton</include>
+	<label>$VAR[value_seconds]</label>
+	<onclick>ActivateWindow(622)</onclick>
+	<visible>Control.IsVisible(60) + SubString(skin.string(showartvideopanel),auto)</visible>
+	</control>
+	
 	<!-- Multiplex -->
-	<control type="radiobutton" id="9219">
+	<control type="radiobutton" id="9280">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nomultiplexvideocase)</onclick>
+	<selected>!Skin.HasSetting(nomultiplexvideocase)</selected>
+	<visible>Control.IsVisible(61) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="button" id="9281">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(61)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(nomultiplexvideocase) + Control.IsVisible(61) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="9282">
 	<include>TopMenuRadioButton</include>
 	<label>31493</label>
 	<onclick>Skin.ToggleSetting(multiplexfixedlist)</onclick>
@@ -384,77 +733,65 @@
 	<onclick>ReloadSkin</onclick>
 	<visible>Control.IsVisible(61)</visible>
 	</control>
-	<control type="radiobutton" id="9220">
+	<control type="radiobutton" id="9283">
 	<include>TopMenuRadioButton</include>
 	<label>31471</label>
 	<onclick>Skin.SetString(multiplexvideopanel,manual)</onclick>
 	<selected>SubString(skin.string(multiplexvideopanel),manual)</selected>
 	<visible>Control.IsVisible(61)</visible>
 	</control>
-	<control type="radiobutton" id="9221">
+	<control type="radiobutton" id="9284">
 	<include>TopMenuRadioButton</include>
 	<label>31472</label>
 	<onclick>Skin.SetString(multiplexvideopanel,alwayson)</onclick>
 	<selected>SubString(skin.string(multiplexvideopanel),alwayson)</selected>
 	<visible>Control.IsVisible(61)</visible>
 	</control>
-	<control type="radiobutton" id="9222">
+	<control type="radiobutton" id="9285">
 	<include>TopMenuRadioButton</include>
 	<label>31470</label>
 	<onclick>Skin.SetString(multiplexvideopanel,auto)</onclick>
 	<selected>SubString(skin.string(multiplexvideopanel),auto)</selected>
 	<visible>Control.IsVisible(61)</visible>
 	</control>
-	<control type="button" id="9223"><!-- Seletor de delay -->
+	<control type="button" id="9286"><!-- Seletor de delay -->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_seconds]</label>
 	<onclick>ActivateWindow(622)</onclick>
 	<visible>Control.IsVisible(61) + SubString(skin.string(multiplexvideopanel),auto)</visible>
 	</control>
-	<control type="radiobutton" id="9224">
+	<control type="radiobutton" id="9287">
 	<include>TopMenuRadioButton</include>
 	<label>31474</label>
 	<onclick>Skin.SetString(multiplexlayout,fanart)</onclick>
 	<selected>SubString(skin.string(multiplexlayout),fanart)</selected>
 	<visible>Control.IsVisible(61)</visible>
 	</control>
-	<control type="radiobutton" id="9225">
+	<control type="radiobutton" id="9288">
 	<include>TopMenuRadioButton</include>
 	<label>31477</label>
 	<onclick>Skin.SetString(multiplexlayout,extrathumbs)</onclick>
 	<selected>SubString(skin.string(multiplexlayout),extrathumbs)</selected>
 	<visible>Control.IsVisible(61)</visible>
 	</control>
-	<!-- Showart -->
-	<control type="radiobutton" id="9226">
-	<include>TopMenuRadioButton</include>
-	<label>31471</label>
-	<onclick>Skin.SetString(showartvideopanel,manual)</onclick>
-	<selected>SubString(skin.string(showartvideopanel),manual)</selected>
-	<visible>Control.IsVisible(60)</visible>
-	</control>
-	<control type="radiobutton" id="9227">
-	<include>TopMenuRadioButton</include>
-	<label>31472</label>
-	<onclick>Skin.SetString(showartvideopanel,alwayson)</onclick>
-	<selected>SubString(skin.string(showartvideopanel),alwayson)</selected>
-	<visible>Control.IsVisible(60)</visible>
-	</control>
-	<control type="radiobutton" id="9228">
-	<include>TopMenuRadioButton</include>
-	<label>31470</label>
-	<onclick>Skin.SetString(showartvideopanel,auto)</onclick>
-	<selected>SubString(skin.string(showartvideopanel),auto)</selected>
-	<visible>Control.IsVisible(60)</visible>
-	</control>
-	<control type="button" id="9229"><!-- Seletor de delay -->
-	<include>TopMenuButton</include>
-	<label>$VAR[value_seconds]</label>
-	<onclick>ActivateWindow(622)</onclick>
-	<visible>Control.IsVisible(60) + SubString(skin.string(showartvideopanel),auto)</visible>
-	</control>
+
 	<!-- Panel -->
-	<control type="togglebutton" id="9230">
+	<control type="radiobutton" id="9290">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nopanelvideocase)</onclick>
+	<selected>!Skin.HasSetting(nopanelvideocase)</selected>
+	<visible>Control.IsVisible(62) + !Skin.HasSetting(noviewpanelposter) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+	</control>
+	<control type="button" id="9291">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(62)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(nopanelvideocase) + Control.IsVisible(62) + !Skin.HasSetting(noviewpanelposter) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+	</control>
+	<control type="togglebutton" id="9292">
 	<include>TopMenuButton</include>
 	<label>$LOCALIZE[31320]: $LOCALIZE[31408]</label>
 	<altlabel>$LOCALIZE[31320]: $LOCALIZE[31317]</altlabel>
@@ -462,155 +799,55 @@
 	<selected>!Skin.HasSetting(noviewpanelposter)</selected>
 	<visible>Control.IsVisible(62) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 	</control>
-	<!-- Wide -->
-	<control type="radiobutton" id="9231">
+	
+	<!-- Sets -->
+	<control type="radiobutton" id="9295">
 	<include>TopMenuRadioButton</include>
-	<label>31490</label>
-	<onclick>Skin.ToggleSetting(slimwidevideo)</onclick>
-	<selected>Skin.HasSetting(slimwidevideo)</selected>
-	<visible>Control.IsVisible(51)</visible>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nosetsvideocase)</onclick>
+	<selected>!Skin.HasSetting(nosetsvideocase)</selected>
+	<visible>Control.IsVisible(65) + [Container.Content(movies) | Container.Content(sets)]</visible>
 	</control>
-	<control type="radiobutton" id="9232"><!-- Filmes Poster -->
-	<include>TopMenuRadioButton</include>
-	<label>$LOCALIZE[31320]: $LOCALIZE[31808]</label>
-	<onclick>Skin.SetString(widemovies.art,poster)</onclick>
-	<selected>SubString(skin.string(widemovies.art),poster)</selected>
-	<visible>Control.IsVisible(51) + Container.Content(movies)</visible>
+	<control type="button" id="9296">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(65)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(nosetsvideocase) + Control.IsVisible(65) + [Container.Content(movies) | Container.Content(sets)]</visible>
 	</control>
-	<control type="radiobutton" id="9233"><!-- Filmes Banner -->
-	<include>TopMenuRadioButton</include>
-	<label>$LOCALIZE[31320]: $LOCALIZE[31114]</label>
-	<onclick>Skin.SetString(widemovies.art,banner)</onclick>
-	<selected>SubString(skin.string(widemovies.art),banner)</selected>
-	<visible>Control.IsVisible(51) + Container.Content(movies)</visible>
-	</control>
-	<control type="radiobutton" id="9234"><!-- Seriados Poster -->
-	<include>TopMenuRadioButton</include>
-	<label>$LOCALIZE[31320]: $LOCALIZE[31808]</label>
-	<onclick>Skin.SetString(widetvshows.art,poster)</onclick>
-	<selected>SubString(skin.string(widetvshows.art),poster)</selected>
-	<visible>Control.IsVisible(51) + Container.Content(tvshows)</visible>
-	</control>
-	<control type="radiobutton" id="9235"><!-- Seriados Banner -->
-	<include>TopMenuRadioButton</include>
-	<label>$LOCALIZE[31320]: $LOCALIZE[31114]</label>
-	<onclick>Skin.SetString(widetvshows.art,banner)</onclick>
-	<selected>SubString(skin.string(widetvshows.art),banner)</selected>
-	<visible>Control.IsVisible(51) + Container.Content(tvshows)</visible>
-	</control>
-	<control type="radiobutton" id="9236">
+	<control type="radiobutton" id="9297">
 	<include>TopMenuRadioButton</include>
 	<label>31111</label>
-	<onclick>Skin.ToggleSetting(nodiscart)</onclick>
-	<selected>!Skin.HasSetting(nodiscart)</selected>
-	<visible>[Control.IsVisible(51) | Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(65) | [Control.IsVisible(528) + StringCompare(Control.GetLabel(528707),poster)]] + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	<onclick>Skin.ToggleSetting(nosetsdiscart)</onclick>
+	<selected>!Skin.HasSetting(nosetsdiscart)</selected>
+	<visible>Control.IsVisible(65) + [Container.Content(movies) | Container.Content(sets)]</visible>
 	</control>
-	<!-- Banner -->
-	<control type="radiobutton" id="9237">
-	<include>TopMenuRadioButton</include>
-	<label>31518</label>
-	<onclick>Skin.ToggleSetting(bannerzoom)</onclick>
-	<selected>Skin.HasSetting(bannerzoom)</selected>
-	<visible>Control.IsVisible(52)</visible>
-	</control>
-	<control type="radiobutton" id="9238">
-	<include>TopMenuRadioButton</include>
-	<label>31518</label>
-	<onclick>Skin.ToggleSetting(bannerinfozoom)</onclick>
-	<selected>Skin.HasSetting(bannerinfozoom)</selected>
-	<visible>Control.IsVisible(53)</visible>
-	</control>
-	<!-- Wide -->
-	<control type="radiobutton" id="9239">
-	<include>TopMenuRadioButton</include>
-	<label>31508</label>
-	<onclick>Skin.ToggleSetting(noartwidevideo)</onclick>
-	<selected>!Skin.HasSetting(noartwidevideo)</selected>
-	<visible>Control.IsVisible(51)</visible>
-	</control>
-	<!-- Glass List -->
-	<control type="radiobutton" id="9240">
-	<include>TopMenuRadioButton</include>
-	<label>31490</label>
-	<onclick>Skin.ToggleSetting(slimglasslistvideo)</onclick>
-	<selected>Skin.HasSetting(slimglasslistvideo)</selected>
-	<visible>Control.IsVisible(57)</visible>
-	</control>
-	<control type="radiobutton" id="9241">
-	<include>TopMenuRadioButton</include>
-	<label>31508</label>
-	<onclick>Skin.ToggleSetting(noartglasslistvideo)</onclick>
-	<selected>!Skin.HasSetting(noartglasslistvideo)</selected>
-	<visible>Control.IsVisible(57)</visible>
-	</control>
-	<control type="radiobutton" id="9242">
-	<include>TopMenuRadioButton</include>
-	<label>31471</label>
-	<onclick>Skin.SetString(glasslistvideopanel,manual)</onclick>
-	<selected>SubString(skin.string(glasslistvideopanel),manual)</selected>
-	<visible>Control.IsVisible(57)</visible>
-	</control>
-	<control type="radiobutton" id="9243">
-	<include>TopMenuRadioButton</include>
-	<label>31472</label>
-	<onclick>Skin.SetString(glasslistvideopanel,alwayson)</onclick>
-	<selected>SubString(skin.string(glasslistvideopanel),alwayson)</selected>
-	<visible>Control.IsVisible(57)</visible>
-	</control>
-	<control type="radiobutton" id="9244">
-	<include>TopMenuRadioButton</include>
-	<label>31470</label>
-	<onclick>Skin.SetString(glasslistvideopanel,auto)</onclick>
-	<selected>SubString(skin.string(glasslistvideopanel),auto)</selected>
-	<visible>Control.IsVisible(57)</visible>
-	</control>
-	<control type="button" id="9245"><!-- Seletor de delay -->
-	<include>TopMenuButton</include>
-	<label>$VAR[value_seconds]</label>
-	<onclick>ActivateWindow(622)</onclick>
-	<visible>Control.IsVisible(57) + SubString(skin.string(glasslistvideopanel),auto)</visible>
-	</control>
-	<!-- Low List -->
-	<control type="radiobutton" id="9250">
-	<include>TopMenuRadioButton</include>
-	<label>31508</label>
-	<onclick>Skin.ToggleSetting(noartlowlistvideo)</onclick>
-	<selected>!Skin.HasSetting(noartlowlistvideo)</selected>
-	<visible>Control.IsVisible(55)</visible>
-	</control>
-	<!-- Poster -->
-	<control type="radiobutton" id="9251">
-	<include>TopMenuRadioButton</include>
-	<label>31508</label>
-	<onclick>Skin.ToggleSetting(noartpostervideo)</onclick>
-	<selected>!Skin.HasSetting(noartpostervideo)</selected>
-	<visible>Control.IsVisible(54)</visible>
-	</control>
-	<!-- Right List -->
-	<control type="radiobutton" id="9252">
-	<include>TopMenuRadioButton</include>
-	<label>31508</label>
-	<onclick>Skin.ToggleSetting(noartrightlistvideo)</onclick>
-	<selected>!Skin.HasSetting(noartrightlistvideo)</selected>
-	<visible>Control.IsVisible(59)</visible>
-	</control>
-	<control type="togglebutton" id="9253">
-	<include>TopMenuRadioButton</include>
-	<label>31495</label>
-	<altlabel>31494</altlabel>
-	<onclick>Skin.ToggleSetting(nopreferclearart)</onclick>
-	<selected>!Skin.HasSetting(nopreferclearart)</selected>
-	<visible>Control.IsVisible(51) + !Skin.HasSetting(noartwidevideo) | Control.IsVisible(54) + !Skin.HasSetting(noartpostervideo) | Control.IsVisible(55) + !Skin.HasSetting(noartlowlistvideo) | Control.IsVisible(57) + !Skin.HasSetting(noartglasslistvideo) | Control.IsVisible(59) + !Skin.HasSetting(noartrightlistvideo) | Control.IsVisible(60) | Control.IsVisible(62) + Skin.HasSetting(noviewpanelposter) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
-	</control>
+	
 	<!-- ShowCase -->
-	<control type="radiobutton" id="9254">
+	<control type="radiobutton" id="92100">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(noshowcasevideocase)</onclick>
+	<selected>!Skin.HasSetting(noshowcasevideocase)</selected>
+	<visible>Control.IsVisible(66) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="button" id="92101">
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31298]</label>
+	<onclick>SetFocus(51)</onclick>
+	<onclick>Skin.SetString(customwindow,video)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,3 ,403,0)</onclick>
+	<visible>!Skin.HasSetting(noshowcasevideocase) + Control.IsVisible(66) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(sets)]</visible>
+	</control>
+	<control type="radiobutton" id="92102">
 	<include>TopMenuRadioButton</include>
 	<label>31492</label>
 	<onclick>Skin.ToggleSetting(flattenshowcase)</onclick>
 	<selected>!Skin.HasSetting(flattenshowcase)</selected>
 	<visible>Control.IsVisible(66)</visible>
 	</control>
-	<control type="radiobutton" id="9255">
+	<control type="radiobutton" id="92103">
 	<include>TopMenuRadioButton</include>
 	<label>31493</label>
 	<onclick>Skin.ToggleSetting(showcasefixedlist)</onclick>
@@ -618,68 +855,46 @@
 	<onclick>ActivateWindow(25)</onclick>
 	<visible>Control.IsVisible(66)</visible>
 	</control>
-	<control type="radiobutton" id="9256">
+	<control type="radiobutton" id="92104">
 	<include>TopMenuRadioButton</include>
 	<label>31471</label>
 	<onclick>Skin.SetString(showcasevideopanel,manual)</onclick>
 	<selected>SubString(skin.string(showcasevideopanel),manual)</selected>
 	<visible>Control.IsVisible(66)</visible>
 	</control>
-	<control type="radiobutton" id="9257">
+	<control type="radiobutton" id="92105">
 	<include>TopMenuRadioButton</include>
 	<label>31472</label>
 	<onclick>Skin.SetString(showcasevideopanel,alwayson)</onclick>
 	<selected>SubString(skin.string(showcasevideopanel),alwayson)</selected>
 	<visible>Control.IsVisible(66)</visible>
 	</control>
-	<control type="radiobutton" id="9258">
+	<control type="radiobutton" id="92106">
 	<include>TopMenuRadioButton</include>
 	<label>31470</label>
 	<onclick>Skin.SetString(showcasevideopanel,auto)</onclick>
 	<selected>SubString(skin.string(showcasevideopanel),auto)</selected>
 	<visible>Control.IsVisible(66)</visible>
 	</control>
-	<control type="button" id="9259"><!-- Seletor de delay -->
+	<control type="button" id="92107"><!-- Seletor de delay -->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_seconds]</label>
 	<onclick>ActivateWindow(622)</onclick>
 	<visible>Control.IsVisible(66) + SubString(skin.string(showcasevideopanel),auto)</visible>
 	</control>
-	<control type="radiobutton" id="9260">
+	<control type="radiobutton" id="92108">
 	<include>TopMenuRadioButton</include>
 	<label>31474</label>
 	<onclick>Skin.SetString(showcaselayout,fanart)</onclick>
 	<selected>SubString(skin.string(showcaselayout),fanart)</selected>
 	<visible>Control.IsVisible(66)</visible>
 	</control>
-	<control type="radiobutton" id="9261">
+	<control type="radiobutton" id="92109">
 	<include>TopMenuRadioButton</include>
 	<label>31477</label>
 	<onclick>Skin.SetString(showcaselayout,extrathumbs)</onclick>
 	<selected>SubString(skin.string(showcaselayout),extrathumbs)</selected>
 	<visible>Control.IsVisible(66)</visible>
-	</control>
-	<!-- Wall -->
-	<control type="radiobutton" id="9270">
-	<include>TopMenuRadioButton</include>
-	<label>$LOCALIZE[31511] - $LOCALIZE[31513]</label>
-	<onclick>Skin.SetString(wallvideogrid,default)</onclick>
-	<selected>SubString(skin.string(wallvideogrid),default)</selected>
-	<visible>Control.IsVisible(56)</visible>
-	</control>
-	<control type="radiobutton" id="9271">
-	<include>TopMenuRadioButton</include>
-	<label>$LOCALIZE[31511] - $LOCALIZE[31512]</label>
-	<onclick>Skin.SetString(wallvideogrid,mid)</onclick>
-	<selected>SubString(skin.string(wallvideogrid),mid)</selected>
-	<visible>Control.IsVisible(56)</visible>
-	</control>
-	<control type="radiobutton" id="9272">
-	<include>TopMenuRadioButton</include>
-	<label>$LOCALIZE[31511] - $LOCALIZE[31514]</label>
-	<onclick>Skin.SetString(wallvideogrid,big)</onclick>
-	<selected>SubString(skin.string(wallvideogrid),big)</selected>
-	<visible>Control.IsVisible(56)</visible>
 	</control>
 
 	<!-- PosterLite -->
@@ -807,14 +1022,24 @@
 	<selected>Skin.HasSetting(plepthumb)</selected>
 	<visible>Control.IsVisible(528) + Container.Content(episodes)</visible>
 	</control>
+
+	<!-- Global -->
+	<control type="togglebutton" id="92110">
+	<include>TopMenuRadioButton</include>
+	<label>31495</label>
+	<altlabel>31494</altlabel>
+	<onclick>Skin.ToggleSetting(nopreferclearart)</onclick>
+	<selected>!Skin.HasSetting(nopreferclearart)</selected>
+	<visible>Control.IsVisible(51) + !Skin.HasSetting(noartwidevideo) | Control.IsVisible(54) + !Skin.HasSetting(noartpostervideo) | Control.IsVisible(55) + !Skin.HasSetting(noartlowlistvideo) | Control.IsVisible(57) + !Skin.HasSetting(noartglasslistvideo) | Control.IsVisible(59) + !Skin.HasSetting(noartrightlistvideo) | Control.IsVisible(60) | Control.IsVisible(62) + Skin.HasSetting(noviewpanelposter) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+	</control>
 	</control>
 	
 	<control type="grouplist" id="9301"><!-- Colletion -->
-	<animation effect="slide" start="0,0" end="0,590" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9300) | ControlGroup(9301).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,710" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9300) | ControlGroup(9301).HasFocus">Conditional</animation>
 	<posx>641</posx>
-	<posy>-540</posy>
+	<posy>-660</posy>
 	<width>318</width>
-	<height>600</height>
+	<height>680</height>
 	<onup>9300</onup>
 	<ondown>9301</ondown>
 	<onleft>9200</onleft>
@@ -858,84 +1083,116 @@
 	<selected>Container.Filtered</selected>
 	<visible>Container.CanFilterAdvanced</visible>
 	</control>
-	<control type="radiobutton" id="9310">
-	<include>TopMenuRadioButton</include>
-	<label>31482</label>
-	<onclick>Skin.ToggleSetting(nomediaflags)</onclick>
-	<selected>!Skin.HasSetting(nomediaflags)</selected>
-	</control>
-	<control type="radiobutton" id="9311">
+	<control type="radiobutton" id="9302">
 	<include>TopMenuRadioButton</include>
 	<label>31620</label>
 	<onclick>Skin.ToggleSetting(nolanguageflags)</onclick>
 	<selected>!Skin.HasSetting(nolanguageflags)</selected>
 	<visible>![Control.IsVisible(528) + StringCompare(Control.GetLabel(528709),titleoff)]</visible>
 	</control>
-	<control type="radiobutton" id="9312">
+	<control type="radiobutton" id="9303">
 	<include>TopMenuRadioButton</include>
 	<label>31227</label>
 	<onclick>Skin.ToggleSetting(videoinfobar)</onclick>
 	<onclick>ReplaceWindow(25)</onclick>
 	<selected>Skin.HasSetting(videoinfobar)</selected>
 	</control>
-	<control type="radiobutton" id="9313">
+	<control type="radiobutton" id="9304">
 	<include>TopMenuRadioButton</include>
 	<label>31250</label>
 	<onclick>Skin.ToggleSetting(videodate)</onclick>
 	<onclick>ReplaceWindow(25)</onclick>
 	<selected>Skin.HasSetting(videodate)</selected>
 	</control>
-	<control type="radiobutton" id="9314">
+	<control type="radiobutton" id="9305">
 	<include>TopMenuRadioButton</include>
 	<label>31485</label>
 	<onclick>Skin.ToggleSetting(nooverlays)</onclick>
 	<selected>!Skin.HasSetting(nooverlays)</selected>
 	</control>
-	<control type="radiobutton" id="9315">
+	<control type="button" id="9306"><!-- Cor do icone assistido -->
+	<include>TopMenuButton</include>
+	<label> - $LOCALIZE[31185]</label>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,4 ,200,0)</onclick>
+	<visible>!Skin.HasSetting(nooverlays)</visible>
+	</control>	
+	<control type="radiobutton" id="9307"><!-- Etiquetas sempre visivel -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31482] - $LOCALIZE[31709]</label>
+	<onclick>Skin.SetString(mediaflags,on)</onclick>
+	<selected>SubString(skin.string(mediaflags),on)</selected>
+	</control>
+	<control type="radiobutton" id="9308"><!-- Etiquetas modo auto -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31482] - $LOCALIZE[31938]</label>
+	<onclick>Skin.SetString(mediaflags,auto)</onclick>
+	<selected>SubString(skin.string(mediaflags),auto)</selected>
+	</control>
+	<control type="radiobutton" id="9309"><!-- Etiquetas desligadas -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31482] - $LOCALIZE[31711]</label>
+	<onclick>Skin.SetString(mediaflags,off)</onclick>
+	<selected>SubString(skin.string(mediaflags),off)</selected>
+	</control>
+	<control type="radiobutton" id="9310">
+	<include>TopMenuRadioButton</include>
+	<label>31533</label>
+	<onclick>Skin.ToggleSetting(darkbar)</onclick>
+	<selected>Skin.HasSetting(darkbar)</selected>
+	</control>
+	<control type="button" id="9311">
+	<include>TopMenuRadioButton</include>
+	<label>- $LOCALIZE[31252]</label>
+	<onclick>SetFocus(260)</onclick>
+	<onclick>ActivateWindow(632)</onclick>
+	</control>
+	<control type="radiobutton" id="9312">
 	<include>TopMenuRadioButton</include>
 	<label>31535</label>
 	<onclick>Skin.ToggleSetting(noallowscroll)</onclick>
 	<selected>!Skin.HasSetting(noallowscroll)</selected>
 	</control>
-	<control type="radiobutton" id="9316">
+	<control type="radiobutton" id="9313">
 	<include>TopMenuRadioButton</include>
 	<label>31696</label>
 	<onclick>Skin.ToggleSetting(originaltitle)</onclick>
 	<selected>Skin.HasSetting(originaltitle)</selected>
 	<visible>Container.Content(movies)</visible>
 	</control>
-	<control type="radiobutton" id="9317">
+	<control type="radiobutton" id="9314">
 	<include>TopMenuRadioButton</include>
 	<label>31142</label>
 	<onclick>Skin.ToggleSetting(clearlogotitle)</onclick>
 	<selected>Skin.HasSetting(clearlogotitle)</selected>
 	</control>
-	<control type="radiobutton" id="9318">
+	<control type="radiobutton" id="9315">
+	<include>TopMenuRadioButton</include>
+	<label>31976</label>
+	<onclick>Skin.ToggleSetting(nomoviestagline)</onclick>
+	<selected>!Skin.HasSetting(nomoviestagline)</selected>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+	</control>
+	<control type="radiobutton" id="9316">
+	<include>TopMenuRadioButton</include>
+	<label>31976</label>
+	<onclick>Skin.ToggleSetting(notvshowstagline)</onclick>
+	<selected>!Skin.HasSetting(notvshowstagline)</selected>
+	<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+	</control>
+	<control type="radiobutton" id="9317">
 	<include>TopMenuRadioButton</include>
 	<label>31574</label>
 	<onclick>Skin.ToggleSetting(fullscreentrailer)</onclick>
 	<selected>Skin.HasSetting(fullscreentrailer)</selected>
 	<visible>Container.Content(movies)</visible>
 	</control>
-	<control type="radiobutton" id="9319">
+	<control type="radiobutton" id="9318">
 	<include>TopMenuRadioButton</include>
 	<label>31534</label>
 	<onclick>Skin.ToggleSetting(noscrollletters)</onclick>
 	<selected>!Skin.HasSetting(noscrollletters)</selected>
 	</control>
-	<control type="radiobutton" id="9320">
-	<include>TopMenuRadioButton</include>
-	<label>31533</label>
-	<onclick>Skin.ToggleSetting(darkbar)</onclick>
-	<selected>Skin.HasSetting(darkbar)</selected>
-	</control>
-	<control type="button" id="9321">
-	<include>TopMenuRadioButton</include>
-	<label>- $LOCALIZE[31252]</label>
-	<onclick>SetFocus(260)</onclick>
-	<onclick>ActivateWindow(632)</onclick>
-	</control>
-	<control type="button" id="9325"><!-- ArtWork Downloader Solo Mode-->
+	<control type="button" id="9319"><!-- ArtWork Downloader Solo Mode-->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_addon1_solo]</label>
 	<onclick condition="!system.hasaddon(script.artwork.downloader)">ActivateWindow(Programs,Addons,return)</onclick>
@@ -943,8 +1200,9 @@
 	<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
 	<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
 	<onclick>SetFocus(51)</onclick>
+	<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)</visible>
 	</control>
-	<control type="button" id="9326"><!-- ArtWork Downloader Gui Mode-->
+	<control type="button" id="9320"><!-- ArtWork Downloader Gui Mode-->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_addon1_gui]</label>
 	<onclick condition="!system.hasaddon(script.artwork.downloader)">ActivateWindow(Programs,Addons,return)</onclick>
@@ -952,24 +1210,27 @@
 	<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
 	<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])</onclick>
 	<onclick>SetFocus(51)</onclick>
+	<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)</visible>
 	</control>
-	<control type="button" id="9327"><!-- ArtWork Downloader - Auto Mode -->
+	<control type="button" id="9321"><!-- ArtWork Downloader - Auto Mode -->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_addon1_auto]</label>
 	<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mediatype=tvshow)</onclick>
 	<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mediatype=movie)</onclick>
 	<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mediatype=musicvideos)</onclick>
 	<onclick>SetFocus(51)</onclick>
+	<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)</visible>
 	</control>
-	<control type="button" id="9328"><!-- ArtWork Downloader - Custom Mode -->
+	<control type="button" id="9322"><!-- ArtWork Downloader - Custom Mode -->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_addon1_custom]</label>
 	<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=tvshow, dbid=$INFO[ListItem.DBID], poster, seasonposter, fanart, extrafanart, extrathumbs, clearlogo, clearart, tvthumb, seasonthumb, banner, seasonbanner, characterart)</onclick>
 	<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=custom, mediatype=movie, dbid=$INFO[ListItem.DBID], poster, fanart, extrafanart, extrathumbs, clearlogo, clearart, discart, thumb, banner)</onclick>
 	<onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=custom, dbid=$INFO[ListItem.DBID], poster, fanart, extrafanart, extrathumbs, clearlogo, clearart, discart)</onclick>
 	<onclick>SetFocus(51)</onclick>
+	<visible>Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)</visible>
 	</control>
-	<control type="radiobutton" id="9329"><!-- TV Tunes -->
+	<control type="radiobutton" id="9323"><!-- TV Tunes -->
 	<include>TopMenuRadioButton</include>
 	<label>$VAR[value_addon2]</label>
 	<onclick condition="System.HasAddon(script.tvtunes)">Skin.ToggleSetting(ontvtunes)</onclick>
@@ -1389,7 +1650,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
 	<posx>1</posx>
@@ -1504,53 +1765,25 @@
 	<itemgap>0</itemgap>
 	<focusposition>1</focusposition>
 	<scrolltime>450</scrolltime>
+	
+	<!-- Wide -->
 	<control type="radiobutton" id="9205">
 	<include>TopMenuRadioButton</include>
 	<label>31486</label>
-	<onclick>Skin.ToggleSetting(noaudiomediacase)</onclick>
-	<selected>!Skin.HasSetting(noaudiomediacase)</selected>
-	<visible>Control.IsVisible(51) | Control.IsVisible(55) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
+	<onclick>Skin.ToggleSetting(nowideaudiocase)</onclick>
+	<selected>!Skin.HasSetting(nowideaudiocase)</selected>
+	<visible>Control.IsVisible(51)</visible>
 	</control>
-	<!-- Glass List -->
-	<control type="radiobutton" id="9306">
-	<include>TopMenuRadioButton</include>
-	<label>31472</label>
-	<onclick>Skin.ToggleSetting(panelglassliston)</onclick>
-	<selected>Skin.HasSetting(panelglassliston)</selected>
-	<visible>Control.IsVisible(57)</visible>
-	</control>
-	<control type="radiobutton" id="9307">
+	<control type="radiobutton" id="9206">
 	<include>TopMenuRadioButton</include>
 	<label>31490</label>
-	<onclick>Skin.ToggleSetting(slimglasslistmusic)</onclick>
-	<selected>Skin.HasSetting(slimglasslistmusic)</selected>
-	<visible>Control.IsVisible(57)</visible>
+	<onclick>Skin.ToggleSetting(slimwidemusic)</onclick>
+	<selected>Skin.HasSetting(slimwidemusic)</selected>
+	<visible>Control.IsVisible(51)</visible>
 	</control>
-	<!-- Low List -->
-	<control type="radiobutton" id="9308">
-	<include>TopMenuRadioButton</include>
-	<label>31113</label>
-	<onclick>Skin.ToggleSetting(lowlistplotaudio)</onclick>
-	<selected>Skin.HasSetting(lowlistplotaudio)</selected>
-	<visible>Control.IsVisible(55)</visible>
-	</control>
-	<control type="radiobutton" id="9310">
-	<include>TopMenuRadioButton</include>
-	<label>31490</label>
-	<onclick>Skin.ToggleSetting(slimlowlistmusic)</onclick>
-	<selected>Skin.HasSetting(slimlowlistmusic)</selected>
-	<visible>Control.IsVisible(55)</visible>
-	</control>
-	<!-- Multiplex -->
-	<control type="radiobutton" id="9314">
-	<include>TopMenuRadioButton</include>
-	<label>31472</label>
-	<onclick>Skin.ToggleSetting(multiplexpanel_on)</onclick>
-	<selected>Skin.HasSetting(multiplexpanel_on)</selected>
-	<visible>Control.IsVisible(61)</visible>
-	</control>
+	
 	<!-- Poster -->
-	<control type="radiobutton" id="9311">
+	<control type="radiobutton" id="9210">
 	<include>TopMenuRadioButton</include>
 	<label>31493</label>
 	<onclick>Skin.ToggleSetting(posterfixedlist)</onclick>
@@ -1558,44 +1791,103 @@
 	<onclick>ReloadSkin</onclick>
 	<visible>Control.IsVisible(54)</visible>
 	</control>
-	<!-- Wide -->
-	<control type="radiobutton" id="9341">
+	
+	<!-- Low List -->
+	<control type="radiobutton" id="9215">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nolowlistaudiocase)</onclick>
+	<selected>!Skin.HasSetting(nolowlistaudiocase)</selected>
+	<visible>Control.IsVisible(55)</visible>
+	</control>	
+	<control type="radiobutton" id="9216">
+	<include>TopMenuRadioButton</include>
+	<label>31113</label>
+	<onclick>Skin.ToggleSetting(lowlistplotaudio)</onclick>
+	<selected>Skin.HasSetting(lowlistplotaudio)</selected>
+	<visible>Control.IsVisible(55)</visible>
+	</control>
+	<control type="radiobutton" id="9217">
 	<include>TopMenuRadioButton</include>
 	<label>31490</label>
-	<onclick>Skin.ToggleSetting(slimwidemusic)</onclick>
-	<selected>Skin.HasSetting(slimwidemusic)</selected>
-	<visible>Control.IsVisible(51)</visible>
+	<onclick>Skin.ToggleSetting(slimlowlistmusic)</onclick>
+	<selected>Skin.HasSetting(slimlowlistmusic)</selected>
+	<visible>Control.IsVisible(55)</visible>
 	</control>
+	
 	<!-- Wall -->
-	<control type="radiobutton" id="9270">
+	<control type="radiobutton" id="9220">
 	<include>TopMenuRadioButton</include>
 	<label>$LOCALIZE[31511] - $LOCALIZE[31513]</label>
 	<onclick>Skin.SetString(wallmusicgrid,default)</onclick>
 	<selected>SubString(skin.string(wallmusicgrid),default)</selected>
 	<visible>Control.IsVisible(56)</visible>
 	</control>
-	<control type="radiobutton" id="9271">
+	<control type="radiobutton" id="9221">
 	<include>TopMenuRadioButton</include>
 	<label>$LOCALIZE[31511] - $LOCALIZE[31512]</label>
 	<onclick>Skin.SetString(wallmusicgrid,mid)</onclick>
 	<selected>SubString(skin.string(wallmusicgrid),mid)</selected>
 	<visible>Control.IsVisible(56)</visible>
 	</control>
-	<control type="radiobutton" id="9272">
+	<control type="radiobutton" id="9222">
 	<include>TopMenuRadioButton</include>
 	<label>$LOCALIZE[31511] - $LOCALIZE[31514]</label>
 	<onclick>Skin.SetString(wallmusicgrid,big)</onclick>
 	<selected>SubString(skin.string(wallmusicgrid),big)</selected>
 	<visible>Control.IsVisible(56)</visible>
 	</control>
+	
+	<!-- Glass List -->
+	<control type="radiobutton" id="9225">
+	<include>TopMenuRadioButton</include>
+	<label>31472</label>
+	<onclick>Skin.ToggleSetting(panelglassliston)</onclick>
+	<selected>Skin.HasSetting(panelglassliston)</selected>
+	<visible>Control.IsVisible(57)</visible>
 	</control>
+	<control type="radiobutton" id="9226">
+	<include>TopMenuRadioButton</include>
+	<label>31490</label>
+	<onclick>Skin.ToggleSetting(slimglasslistmusic)</onclick>
+	<selected>Skin.HasSetting(slimglasslistmusic)</selected>
+	<visible>Control.IsVisible(57)</visible>
+	</control>
+	
+	<!-- CoverFlow -->
+	<control type="radiobutton" id="9230">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(nocoverflowaudiocase)</onclick>
+	<selected>!Skin.HasSetting(nocoverflowaudiocase)</selected>
+	<visible>Control.IsVisible(58)</visible>
+	</control>	
+	
+	<!-- RightList -->
+	<control type="radiobutton" id="9235">
+	<include>TopMenuRadioButton</include>
+	<label>31486</label>
+	<onclick>Skin.ToggleSetting(norightlistaudiocase)</onclick>
+	<selected>!Skin.HasSetting(norightlistaudiocase)</selected>
+	<visible>Control.IsVisible(59)</visible>
+	</control>	
 
+	<!-- Multiplex -->
+	<control type="radiobutton" id="9340">
+	<include>TopMenuRadioButton</include>
+	<label>31472</label>
+	<onclick>Skin.ToggleSetting(multiplexpanel_on)</onclick>
+	<selected>Skin.HasSetting(multiplexpanel_on)</selected>
+	<visible>Control.IsVisible(61)</visible>
+	</control>
+	</control>
+	
 	<control type="grouplist" id="9301"><!-- Colletion -->
-	<animation effect="slide" start="0,0" end="0,560" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9300) | ControlGroup(9301).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,710" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9300) | ControlGroup(9301).HasFocus">Conditional</animation>
 	<posx>641</posx>
-	<posy>-510</posy>
+	<posy>-660</posy>
 	<width>318</width>
-	<height>460</height>
+	<height>680</height>
 	<onup>9300</onup>
 	<ondown>9301</ondown>
 	<onleft>9200</onleft>
@@ -1604,65 +1896,76 @@
 	<focusposition>1</focusposition>
 	<scrolltime>450</scrolltime>
 	<include condition="!Window.IsActive(musicplaylist)">TopMenu_NoPlaylist</include>
-	<control type="radiobutton" id="9350">
-	<include>TopMenuRadioButton</include>
-	<label>31482</label>
-	<onclick>Skin.ToggleSetting(nomediaflags)</onclick>
-	<selected>!Skin.HasSetting(nomediaflags)</selected>
-	</control>
-	<control type="radiobutton" id="9351">
+	<control type="radiobutton" id="9354">
 	<include>TopMenuRadioButton</include>
 	<label>31227</label>
 	<onclick>Skin.ToggleSetting(musicinfobar)</onclick>
 	<onclick>ReplaceWindow(25)</onclick>
 	<selected>Skin.HasSetting(musicinfobar)</selected>
 	</control>
-	<control type="radiobutton" id="9353">
+	<control type="radiobutton" id="9355">
 	<include>TopMenuRadioButton</include>
 	<label>31250</label>
 	<onclick>Skin.ToggleSetting(musicdate)</onclick>
 	<onclick>ReplaceWindow(25)</onclick>
 	<selected>Skin.HasSetting(musicdate)</selected>
 	</control>
-	<control type="radiobutton" id="9355">
+	<control type="radiobutton" id="9356"><!-- Etiquetas sempre visivel -->
 	<include>TopMenuRadioButton</include>
-	<label>31535</label>
-	<onclick>Skin.ToggleSetting(noallowscroll)</onclick>
-	<selected>!Skin.HasSetting(noallowscroll)</selected>
+	<label>$LOCALIZE[31482] - $LOCALIZE[31709]</label>
+	<onclick>Skin.SetString(mediaflags,on)</onclick>
+	<selected>SubString(skin.string(mediaflags),on)</selected>
 	</control>
-	<control type="radiobutton" id="9356">
+	<control type="radiobutton" id="9357"><!-- Etiquetas modo auto -->
 	<include>TopMenuRadioButton</include>
-	<label>31534</label>
-	<onclick>Skin.ToggleSetting(noscrollletters)</onclick>
-	<selected>!Skin.HasSetting(noscrollletters)</selected>
+	<label>$LOCALIZE[31482] - $LOCALIZE[31938]</label>
+	<onclick>Skin.SetString(mediaflags,auto)</onclick>
+	<selected>SubString(skin.string(mediaflags),auto)</selected>
 	</control>
-	<control type="radiobutton" id="9320">
+	<control type="radiobutton" id="9358"><!-- Etiquetas desligadas -->
+	<include>TopMenuRadioButton</include>
+	<label>$LOCALIZE[31482] - $LOCALIZE[31711]</label>
+	<onclick>Skin.SetString(mediaflags,off)</onclick>
+	<selected>SubString(skin.string(mediaflags),off)</selected>
+	</control>
+	<control type="radiobutton" id="9359">
 	<include>TopMenuRadioButton</include>
 	<label>31533</label>
 	<onclick>Skin.ToggleSetting(darkbar)</onclick>
 	<selected>Skin.HasSetting(darkbar)</selected>
 	</control>
-	<control type="button" id="9321">
+	<control type="button" id="9360">
 	<include>TopMenuRadioButton</include>
 	<label>- $LOCALIZE[31252]</label>
 	<onclick>SetFocus(260)</onclick>
 	<onclick>ActivateWindow(632)</onclick>
 	</control>
-	<control type="button" id="9502"><!-- CdArt -->
+	<control type="radiobutton" id="9361">
+	<include>TopMenuRadioButton</include>
+	<label>31535</label>
+	<onclick>Skin.ToggleSetting(noallowscroll)</onclick>
+	<selected>!Skin.HasSetting(noallowscroll)</selected>
+	</control>
+	<control type="radiobutton" id="9362">
+	<include>TopMenuRadioButton</include>
+	<label>31534</label>
+	<onclick>Skin.ToggleSetting(noscrollletters)</onclick>
+	<selected>!Skin.HasSetting(noscrollletters)</selected>
+	</control>
+	<control type="button" id="9363"><!-- CdArt -->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_addon5]</label>
 	<onclick condition="!system.hasaddon(script.cdartmanager)">ActivateWindow(Programs,Addons,return)</onclick>
 	<onclick condition="system.hasaddon(script.cdartmanager)">RunScript(script.cdartmanager)</onclick>
 	<onclick>SetFocus(51)</onclick>
 	</control>
-	<control type="button" id="9416">
+	<control type="button" id="9364">
 	<include>TopMenuButton</include>
 	<label>$VAR[value_musiclogopath]</label>
-	<textcolor>$VAR[value_headercolor]</textcolor>
 	<onclick>Skin.SetPath(CustomMusicLogoPath)</onclick>
 	<visible>[Skin.HasSetting(musiclogo) | SubString(skin.string(musicfanart),extra)] + !Container.Content(Genres)</visible>
 	</control>
-	<control type="radiobutton" id="9415">
+	<control type="radiobutton" id="9365">
 	<include>TopMenuRadioButton</include>
 	<label>31557</label>
 	<onclick>Skin.ToggleSetting(musiclogo)</onclick>
@@ -1672,7 +1975,6 @@
 	<include condition="Window.IsActive(musicplaylist)">TopMenu_Playlist</include>
 	<include condition="Window.IsActive(musicplaylisteditor)">TopMenu_PlaylistEditor</include>
 	</control>
-
 
 	<control type="grouplist" id="9401"><!-- Artwork -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9400) | ControlGroup(9401).HasFocus">Conditional</animation>
@@ -1888,7 +2190,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
@@ -1961,12 +2263,12 @@
 	</control>
 	</control>
 
-	<control type="grouplist" id="9201"><!-- Media Info -->
-	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9200) | ControlGroup(9201).HasFocus">Conditional</animation>
+	<control type="grouplist" id="9201"><!-- Opcoes da Vista -->
+	<animation effect="slide" start="0,0" end="0,450" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9200) | ControlGroup(9201).HasFocus">Conditional</animation>
 	<posx>321</posx>
 	<posy>-400</posy>
 	<width>318</width>
-	<height>300</height>
+	<height>400</height>
 	<onup>9200</onup>
 	<ondown>9201</ondown>
 	<onleft>9100</onleft>
@@ -1974,16 +2276,9 @@
 	<itemgap>0</itemgap>
 	<focusposition>1</focusposition>
 	<scrolltime>450</scrolltime>
-	<control type="spincontrolex" id="3"><!-- Change location -->
-	<include>TopMenuButton</include>
-	<spinposx>-12</spinposx>
-	<spinwidth>35</spinwidth>
-	<spinheight>50</spinheight>
-	<textoffsetx>0</textoffsetx>
-	</control>
 	<control type="radiobutton" id="98"><!-- Extra Options -->
 	<include>TopMenuRadioButton</include>
-	<label>31496</label>
+	<label>31496</label>	
 	</control>
 	</control>
 
@@ -2000,8 +2295,21 @@
 	<itemgap>0</itemgap>
 	<focusposition>1</focusposition>
 	<scrolltime>450</scrolltime>
-	<control type="button" id="2"><!-- Update -->
+	<control type="button" id="2"><!-- Atualizar infos -->
 	<include>TopMenuButton</include>
+	</control>
+	<control type="spincontrolex" id="3"><!-- Alterar local -->
+	<include>TopMenuButton</include>
+	<label>35500</label>	
+	<spinposx>-12</spinposx>
+	<spinwidth>35</spinwidth>
+	<spinheight>50</spinheight>
+	<textoffsetx>0</textoffsetx>
+	</control>
+	<control type="button" id="9505">
+	<include>TopMenuButton</include>
+	<label>31873</label>
+	<onclick>ActivateWindow(weathersettings)</onclick>
 	</control>
 	</control>
 
@@ -2014,7 +2322,7 @@
 	<onup>9400</onup>
 	<ondown>9401</ondown>
 	<onleft>9300</onleft>
-	<onleft>51</onleft>
+	<onright>51</onright>
 	<itemgap>0</itemgap>
 	<focusposition>1</focusposition>
 	<scrolltime>450</scrolltime>
@@ -2023,25 +2331,6 @@
 	<label>31463</label>
 	<onclick>Skin.ToggleSetting(animation_panscan)</onclick>
 	<selected>Skin.HasSetting(animation_panscan)</selected>
-	</control>
-	</control>
-	<control type="grouplist" id="9501"><!-- Add-ons -->
-	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9500) | ControlGroup(9501).HasFocus">Conditional</animation>
-	<posx>1025</posx>
-	<posy>-300</posy>
-	<width>254</width>
-	<height>300</height>
-	<onup>9500</onup>
-	<ondown>9501</ondown>
-	<onleft>9400</onleft>
-	<onright>SetFocus(51)</onright>
-	<itemgap>0</itemgap>
-	<focusposition>1</focusposition>
-	<scrolltime>450</scrolltime>
-	<control type="button" id="9505">
-	<include>TopMenuButton</include>
-	<label>31873</label>
-	<onclick>ActivateWindow(weathersettings)</onclick>
 	</control>
 	</control>
 	
@@ -2072,7 +2361,7 @@
 	<ondown>9301</ondown>
 	<onleft>9200</onleft>
 	<onright>9400</onright>
-	<label>$LOCALIZE[31407]/$LOCALIZE[31135]</label>
+	<label>31226</label>
 	<enable>![Skin.HasSetting(kiosksmart) + !SubString(skin.string(codestep),step3)]</enable>
 	</control>
 	<control type="button" id="9400">
@@ -2114,7 +2403,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
@@ -2342,7 +2631,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
@@ -2432,7 +2721,7 @@
 	<selected>Skin.HasSetting(fullscreengamevideo)</selected>
 	<visible>SubString(skin.string(games_video),auto)</visible>
 	</control>
-	<control type="button" id="9223"><!-- Seletor de delay -->
+	<control type="button" id="9212"><!-- Seletor de delay -->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_gamevideoseconds]</label>
 	<onclick>ActivateWindow(621)</onclick>
@@ -2450,47 +2739,88 @@
 	<include>TopMenuButton</include>
 	<label>$ADDON[script.games.rom.collection.browser 50005]:</label>
 	</control>
-	<control type="button" id="9502"><!-- GameTrailers.com: Exclusive Shows -->
+	<control type="button" id="9213"><!-- GameTrailers.com: Exclusive Shows -->
 	<include>TopMenuButton</include>
 	<label>$VAR[value_addon11]</label>
 	<onclick condition="!system.hasaddon(plugin.video.gametrailers.exclusives)">ActivateWindow(Programs,Addons,return)</onclick>
 	<onclick>ActivateWindow(plugin.video.gametrailers.exclusives)</onclick>
 	<onclick>SetFocus(51)</onclick>
 	</control>
-
 	<!-- Wall -->
-	<control type="radiobutton" id="9270">
+	<control type="radiobutton" id="9214">
 	<include>TopMenuRadioButton</include>
 	<label>$LOCALIZE[31511] - $LOCALIZE[31513]</label>
 	<onclick>Skin.SetString(wallgamesgrid,default)</onclick>
 	<selected>SubString(skin.string(wallgamesgrid),default)</selected>
 	<visible>Control.IsVisible(56)</visible>
 	</control>
-	<control type="radiobutton" id="9271">
+	<control type="radiobutton" id="9215">
 	<include>TopMenuRadioButton</include>
 	<label>$LOCALIZE[31511] - $LOCALIZE[31512]</label>
 	<onclick>Skin.SetString(wallgamesgrid,mid)</onclick>
 	<selected>SubString(skin.string(wallgamesgrid),mid)</selected>
 	<visible>Control.IsVisible(56)</visible>
 	</control>
-	<control type="radiobutton" id="9272">
+	<control type="radiobutton" id="9216">
 	<include>TopMenuRadioButton</include>
 	<label>$LOCALIZE[31511] - $LOCALIZE[31514]</label>
 	<onclick>Skin.SetString(wallgamesgrid,big)</onclick>
 	<selected>SubString(skin.string(wallgamesgrid),big)</selected>
 	<visible>Control.IsVisible(56)</visible>
 	</control>	
-	<control type="radiobutton" id="9320">
+	<control type="radiobutton" id="9217">
 	<include>TopMenuRadioButton</include>
 	<label>31533</label>
 	<onclick>Skin.ToggleSetting(darkbar)</onclick>
 	<selected>Skin.HasSetting(darkbar)</selected>
 	</control>
-	<control type="button" id="9321">
+	<control type="button" id="9218">
 	<include>TopMenuRadioButton</include>
 	<label>- $LOCALIZE[31252]</label>
 	<onclick>SetFocus(260)</onclick>
 	<onclick>ActivateWindow(632)</onclick>
+	</control>
+	<!-- Multiplex -->
+	<control type="radiobutton" id="9220">
+	<include>TopMenuRadioButton</include>
+	<label>31471</label>
+	<onclick>Skin.SetString(multiplexgamespanel,manual)</onclick>
+	<selected>SubString(skin.string(multiplexgamespanel),manual)</selected>
+	<visible>Control.IsVisible(53)</visible>
+	</control>
+	<control type="radiobutton" id="9221">
+	<include>TopMenuRadioButton</include>
+	<label>31472</label>
+	<onclick>Skin.SetString(multiplexgamespanel,alwayson)</onclick>
+	<selected>SubString(skin.string(multiplexgamespanel),alwayson)</selected>
+	<visible>Control.IsVisible(53)</visible>
+	</control>
+	<control type="radiobutton" id="9222">
+	<include>TopMenuRadioButton</include>
+	<label>31470</label>
+	<onclick>Skin.SetString(multiplexgamespanel,auto)</onclick>
+	<selected>SubString(skin.string(multiplexgamespanel),auto)</selected>
+	<visible>Control.IsVisible(53)</visible>
+	</control>
+	<control type="button" id="9223"><!-- Seletor de delay -->
+	<include>TopMenuButton</include>
+	<label>$VAR[value_seconds]</label>
+	<onclick>ActivateWindow(622)</onclick>
+	<visible>Control.IsVisible(53) + SubString(skin.string(multiplexgamespanel),auto)</visible>
+	</control>
+	<control type="radiobutton" id="9224">
+	<include>TopMenuRadioButton</include>
+	<label>31474</label>
+	<onclick>Skin.SetString(multiplexgameslayout,fanart)</onclick>
+	<selected>SubString(skin.string(multiplexgameslayout),fanart)</selected>
+	<visible>Control.IsVisible(53)</visible>
+	</control>
+	<control type="radiobutton" id="9225">
+	<include>TopMenuRadioButton</include>
+	<label>31477</label>
+	<onclick>Skin.SetString(multiplexgameslayout,extrathumbs)</onclick>
+	<selected>SubString(skin.string(multiplexgameslayout),extrathumbs)</selected>
+	<visible>Control.IsVisible(53)</visible>
 	</control>
 	</control>
 
@@ -2657,7 +2987,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
 	<posx>1</posx>
@@ -2744,7 +3074,6 @@
 	<scrolltime>450</scrolltime>
 	</control>
 
-
 	<control type="grouplist" id="9301"><!-- Colletion -->
 	<animation effect="slide" start="0,0" end="0,560" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9300) | ControlGroup(9301).HasFocus">Conditional</animation>
 	<posx>641</posx>
@@ -2788,6 +3117,11 @@
 	<onclick>Skin.ToggleSetting(nodarkfloor)</onclick>
 	<selected>!Skin.HasSetting(nodarkfloor)</selected>
 	</control>
+	<control type="button" id="9335"><!-- Pictures Addons -->
+	<include>TopMenuButton</include>
+	<label>31026</label>
+	<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+	</control>
 	</control>
 
 	<control type="grouplist" id="9401"><!-- Artwork -->
@@ -2808,26 +3142,6 @@
 	<label>31463</label>
 	<onclick>Skin.ToggleSetting(animationpics_panscan)</onclick>
 	<selected>Skin.HasSetting(animationpics_panscan)</selected>
-	</control>
-	</control>
-
-	<control type="grouplist" id="9501"><!-- Add-ons -->
-	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9500) | ControlGroup(9501).HasFocus">Conditional</animation>
-	<posx>1025</posx>
-	<posy>-300</posy>
-	<width>254</width>
-	<height>300</height>
-	<onup>9500</onup>
-	<ondown>9501</ondown>
-	<onleft>9400</onleft>
-	<onright>SetFocus(51)</onright>
-	<itemgap>0</itemgap>
-	<focusposition>1</focusposition>
-	<scrolltime>450</scrolltime>
-	<control type="button" id="9502"><!-- Pictures Addons -->
-	<include>TopMenuButton</include>
-	<label>31026</label>
-	<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 	</control>
 	</control>
 	
@@ -2943,7 +3257,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>
@@ -3096,12 +3410,6 @@
 	<control type="button" id="19"><!-- Filter -->
 	<include>TopMenuButton</include>
 	<label>587</label>
-	</control>
-	<control type="button" id="9302"><!-- Customizar painel de info -->
-	<include>TopMenuButton</include>
-	<label>31133</label>
-	<onclick>SetFocus(9039)</onclick>
-	<visible>!StringCompare(ListItem.Label,..)</visible>
 	</control>
 	<control type="button" id="9502"><!-- Pictures Addons -->
 	<include>TopMenuButton</include>
@@ -3268,7 +3576,7 @@
 	<include>TopMenu_BG</include>
 	<control type="group" id="9000">
 	<posy>-100</posy>
-	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus | ControlGroup(9501).HasFocus">Conditional</animation>
+	<animation effect="slide" start="0,0" end="0,80" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus | ControlGroup(9101).HasFocus | ControlGroup(9201).HasFocus | ControlGroup(9301).HasFocus | ControlGroup(9401).HasFocus">Conditional</animation>
 
 	<control type="grouplist" id="9101"><!-- Go to -->
 	<animation effect="slide" start="0,0" end="0,350" time="600" tween="sine" easing="inout" condition="Control.HasFocus(9100) | ControlGroup(9101).HasFocus">Conditional</animation>

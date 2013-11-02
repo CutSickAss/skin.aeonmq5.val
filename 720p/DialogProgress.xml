@@ -17,7 +17,7 @@
 	<height>35</height>
 	<align>left</align>
 	<textcolor>$VAR[value_headercolor]</textcolor>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<scroll>true</scroll>
 	<label>$INFO[System.Progressbar,,%]</label>
 	</control>

@@ -8,7 +8,7 @@
 	<include>InvisibleButton</include>
 	<onclick>noop</onclick>
 	<onfocus>Skin.ResetSettings</onfocus>
-	<onfocus>AlarmClock(replace,ReplaceWindow(0),0:01,true)</onfocus>
+	<onfocus>AlarmClock(replace,ReplaceWindow(Home),0:02,true)</onfocus>
 	</control>
 	<control type="image">
 	<posx>0</posx>
@@ -31,12 +31,12 @@
 	</control>
 	<control type="label">
 	<posx>490</posx>
-	<posy>380</posy>
+	<posy>390</posy>
 	<width>300</width>
-	<height>40</height>
+	<height>80</height>
 	<align>center</align>
 	<textcolor>B6FFFAF0</textcolor>
-	<font>Font_17</font>
+	<font>Font_21</font>
 	<label>31425</label>
 	<include>Animation_Fade</include>
 	<visible>Control.HasFocus(892)</visible>

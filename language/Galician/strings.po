@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # xurxo <xguerrap@gmail.com>, 2013
 # xurxo <xguerrap@gmail.com>, 2013
 msgid ""
@@ -100,7 +115,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
 "Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Galician (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/gl/)\n"
 "MIME-Version: 1.0\n"
@@ -515,12 +530,12 @@ msgid "PATH"
 msgstr "CAMIÑO"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "ELIMINAR CAMIÑO - AGOCHAR O ELEMENTO NO MENÚ PRINCIPAL"
+msgid "DISC"
+msgstr ""
 
 msgctxt "#31097"
 msgid "Access to collection"
-msgstr "Acceso á colección"
+msgstr ""
 
 msgctxt "#31098"
 msgid "Seasons and episodes"
@@ -595,8 +610,8 @@ msgid "VIDEO NODE"
 msgstr "NODO DE VÍDEO"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "EFECTO XADREZ"
+msgid "DISC SWING SPEED"
+msgstr ""
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -890,6 +905,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr ""
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr ""
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr ""
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr ""
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr ""
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr ""
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr ""
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr ""
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr ""
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr ""
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr ""
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr ""
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr ""
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -956,8 +1039,8 @@ msgid "Page"
 msgstr "Páxina"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "ESTABELECER A MINIATURA DA LISTAXE DE REP."
+msgid "THUMBNAIL SET"
+msgstr ""
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1079,8 +1162,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "MANTER O ASPECTO DOS FONDOS"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "AMOSAR WIDGETS PARA:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr ""
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1143,6 +1226,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. Crear un cartafol raíz con calquera nome, por exemplo O MEU TEMA.[CR][CR]2. Dentro del crear 21 cartafoles con estes nomes:[CR]complementos, aplaylist, outono, concertos, disco, favoritos, xogos, tv, filmes, música, mymenu, imaxes, programas, axustes, apagar, primavera, verán, series, vnodes, vplaylist, inverno.[CR][CR]3. Copie dentro de cada un destes cartafoles as imaxes da súa escolla, O MEU TEMA soporta moitos formatos, e pode incluír tantas imaxes por cartafol como desexe.[CR][CR]4. Cando remate introduza o camiño da raíz.[CR][CR]A imaxe predefinida para AEON MQ 5 ten 72dpi píxeles e formato JPG de 1920x1080, recomendámoslle usar o programa FastStone Photo Resize para obter a mellor calidade de imaxe e un tamaño pequeño."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr ""
 
 #. ....
 msgctxt "#31260"
@@ -2077,8 +2168,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "IDIOMAS DO SON"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "ETIQUETA 'VISTO'"
+msgid "WATCHED LABEL"
+msgstr ""
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2537,8 +2628,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "COIDADO: ESTE PROCESO É IRREVERSÍBEL!"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Mover en calquera dirección para cancelar.[CR]Premer Intro para continuar"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr ""
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2623,8 +2716,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "AMOSAR AS ETIQUETAS DE SUBTÍTULO E IDIOMA DO AUDIO"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "ESTABELECER O TEMPO POR CADA IMAXE"
+msgid "PANEL DELAY"
+msgstr ""
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2771,16 +2864,16 @@ msgid ""
 msgstr "Non sería xenial obter todos os temas, fondos, iconas e logos cun só clic?[CR]Agora pode con Aeon MQ 5, descargue un único paquete con todo o contido adicional."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "MOITAS NOVAS E MÁIS..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, un tema intelixente para xente intelixente.[CR][CR]Góceo."
+msgid "Finalizing Settings"
+msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "SALTAR PRESENTACIÓN"
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3478,6 +3571,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "LISTAXE DEREITA"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -4018,6 +4151,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Mistura de imaxes en cores de tons avermellado e grafito.[CR]O tema predefinido do Aeon MQ 5."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr ""
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr ""
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr ""
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr ""
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "SEGUINTE EPISODIO"
@@ -4027,8 +4176,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "EPISODIOS EMITIDOS HOXE"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "AMOSAR PANEL DE PROGRESO"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr ""
 
 msgctxt "#31983"
 msgid "Rating"

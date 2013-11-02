@@ -38,7 +38,7 @@
 	<align>left</align>
 	<aligny>center</aligny>
 	<textcolor>FFFFFAF0</textcolor>
-	<include>Animation_HomeSlideUp</include>
+	<include>Animation_Widgets</include>
 	</control>
 	<control type="image">
 	<posx>30</posx>
@@ -54,7 +54,7 @@
 	<width>250</width>
 	<height>20</height>
 	<label>31325</label>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>left</align>
 	<textoffsetx>40</textoffsetx>
 	<onclick>ActivateWindow(5600)</onclick>
@@ -79,7 +79,7 @@
 	<width>250</width>
 	<height>20</height>
 	<label>31238</label>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<align>right</align>
 	<textoffsetx>40</textoffsetx>
 	<onclick>ActivateWindow(120)</onclick>

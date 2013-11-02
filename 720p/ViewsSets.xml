@@ -12,7 +12,7 @@
 	<width>282</width>
 	<height>13</height>
 	<align>left</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
@@ -151,7 +151,7 @@
 	<width>606</width>
 	<height>196</height>	
 	<align>justify</align>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plotmoviesets]</label>
 	<textcolor>FFFFFAF0</textcolor>
 	<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noinfoplotscroll)</autoscroll>
@@ -175,7 +175,7 @@
 	<posx>670</posx>
 	<posy>68</posy>
 	<include>Animation_Fade</include>
-	<visible>Skin.HasSetting(novideomediacase)</visible>
+	<visible>Skin.HasSetting(nosetsvideocase)</visible>
 	<control type="image"><!-- Filmes/Fotos/Arquivos -->
 	<posx>0</posx>
 	<posy>0</posy>
@@ -193,7 +193,7 @@
 	<posy>60</posy>
 	<include>Animation_Fade</include>
 	<animation effect="slide" start="0,0" end="-8,0" time="250" tween="cubic" easing="out" condition="Control.HasFocus(80)">Conditional</animation>
-	<visible>!Skin.HasSetting(novideomediacase)</visible>
+	<visible>!Skin.HasSetting(nosetsvideocase)</visible>
 	<control type="image"><!-- Poster -->
 	<posx>-3</posx>
 	<posy>45</posy>
@@ -349,7 +349,7 @@
 	<scrolltime>350</scrolltime>
 	<focusposition>3</focusposition>
 	<preloaditems>2</preloaditems>
-	<itemlayout condition="Skin.HasSetting(nodiscart)" height="220" width="182"><!-- Sem disco -->
+	<itemlayout condition="Skin.HasSetting(nosetsdiscart)" height="220" width="182"><!-- Sem disco -->
 	<control type="image">
 	<posx>0</posx>
 	<posy>186</posy>
@@ -369,17 +369,17 @@
 	<bordertexture border="-2">black.png</bordertexture>
 	</control>
 	</itemlayout>
-	<itemlayout condition="!Skin.HasSetting(nodiscart)" height="220" width="208"><!-- Com disco -->
+	<itemlayout condition="!Skin.HasSetting(nosetsdiscart)" height="220" width="208"><!-- Com disco -->
 	<control type="image">
 	<posx>57</posx>
 	<posy>10</posy>
 	<width>130</width>
-	<height>130</height>
+	<height>130</height>	
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Property(Disc)]</texture>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<aspectratio align="center" aligny="center">keep</aspectratio>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[ListItem.Property(Disc)]</texture>
 	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
-	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.HasVideo + !Player.Paused">Conditional</animation>
+	<include>Animation_ViewsCDart</include>
 	<visible>!IsEmpty(ListItem.Property(Disc))</visible>
 	</control>
 	<control type="image">
@@ -401,7 +401,7 @@
 	<bordertexture border="-2">black.png</bordertexture>
 	</control>
 	</itemlayout>
-	<focusedlayout condition="Skin.HasSetting(nodiscart)" height="220" width="182"><!-- Sem disco -->
+	<focusedlayout condition="Skin.HasSetting(nosetsdiscart)" height="220" width="182"><!-- Sem disco -->
 	<control type="image">
 	<posx>0</posx>
 	<posy>187</posy>
@@ -423,7 +423,7 @@
 	<animation effect="zoom" start="100" end="115" center="125,180" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 	</control>
 	</focusedlayout>
-	<focusedlayout condition="!Skin.HasSetting(nodiscart)" height="220" width="208"><!-- Com disco -->
+	<focusedlayout condition="!Skin.HasSetting(nosetsdiscart)" height="220" width="208"><!-- Com disco -->
 	<control type="group">
 	<animation effect="zoom" start="100" end="115" center="125,180" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 	<control type="image">
@@ -431,11 +431,11 @@
 	<posy>10</posy>
 	<width>130</width>
 	<height>130</height>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Property(Disc)]</texture>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<aspectratio align="center" aligny="center">keep</aspectratio>
-	<texture fallback="cdart.png" diffuse="cdart2_diffuse.png" background="true">$INFO[ListItem.Property(Disc)]</texture>
 	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
-	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.HasVideo + !Player.Paused">Conditional</animation>
+	<include>Animation_ViewsCDart</include>
 	<visible>!IsEmpty(ListItem.Property(Disc))</visible>
 	</control>
 	<control type="image">

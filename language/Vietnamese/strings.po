@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # dukevn <duke.junks@gmail.com>, 2012
 # tess_vn <1310aster@gmail.com>, 2013
 # tess_vn <1310aster@gmail.com>, 2013
@@ -102,7 +117,7 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
 "Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Vietnamese (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/vi/)\n"
 "MIME-Version: 1.0\n"
@@ -517,12 +532,12 @@ msgid "PATH"
 msgstr "ĐƯỜNG DẪN"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "XÓA ĐƯỜNG DẪN - ẨN MỤC NÀY TRONG THIẾT LẬP CHÍNH"
+msgid "DISC"
+msgstr ""
 
 msgctxt "#31097"
 msgid "Access to collection"
-msgstr "Truy cập vào bộ sưu tập"
+msgstr ""
 
 msgctxt "#31098"
 msgid "Seasons and episodes"
@@ -597,8 +612,8 @@ msgid "VIDEO NODE"
 msgstr "NỘI DUNG VIDEO RIÊNG BIỆT"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "HIỆU ỨNG CỜ"
+msgid "DISC SWING SPEED"
+msgstr ""
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
@@ -892,6 +907,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr ""
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr ""
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr ""
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr ""
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr ""
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr ""
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr ""
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr ""
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr ""
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr ""
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr ""
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr ""
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr ""
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -958,8 +1041,8 @@ msgid "Page"
 msgstr "Trang"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "DANH SÁCH TẬP MINH HOẠ"
+msgid "THUMBNAIL SET"
+msgstr ""
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1081,8 +1164,8 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "GIỮ NGUYÊN GIAO DIỆN HÌNH NỀN"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "HIỂN THỊ CÁC TIỆN ÍCH ĐỐI VỚI:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr ""
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1145,6 +1228,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. Tạo một thư mục gốc với bất kỳ tên nào, lấy ví dụ như CHỦ ĐỀ CỦA TÔI.[CR][CR]2. Trong thư mục gốc đó tạo 21 thư mục với các tên sau:[CR]phần nâng cấp, danh sách chơi ứng dụng, mùa thu, buổi hòa nhạc, đĩa, mục yêu thích, trò chơi, TV trực tiếp, phim, nhạc, danh mục của tôi, hình ảnh, chương trình, thiết lập, đóng, mùa xuân, mùa hè, chương trình TV, vnode, danh sách chơi video, mùa đông.[CR][CR]3. Đặt hình ảnh bạn chọn trong mỗi thư mục này, CHỦ ĐỀ CỦA TÔI hỗ trợ nhiều tập tin, bạn có thể thêm vào mỗi thư mục bao nhiêu hình ảnh tùy thích.[CR][CR]4. Sau khi chủ đề đã sẵn sàng, nhập vào đường dẫn của thư mục gốc.[CR][CR] Hình mặc định cho AEON MQ 5 có định dạng 72dpi pixel 1920x1080 JPG và tôi khuyên bạn nên dùng chương trình FastStone Photo Resize để có được hình ảnh chất lượng cao với dung lượng nhỏ."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr ""
 
 #. ....
 msgctxt "#31260"
@@ -2079,8 +2170,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "NGÔN NGỮ ÂM THANH"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "'ĐÃ XEM' NHÃN"
+msgid "WATCHED LABEL"
+msgstr ""
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2539,8 +2630,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "CẨN THẬN: QUÁ TRÌNH NÀY SẼ KHÔNG THỂ THAY ĐỔI LẠI ĐƯỢC"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Di chuyển đến bất kỳ hướng nào để hủy.[CR]Nhấn Enter để bắt đầu"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr ""
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2625,8 +2718,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "HIỂN THỊ NGÔN NGỮ ÂM THANH VÀ CỜ HIỆU PHỤ ĐỀ"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "THIẾT ĐẶT THỜI GIAN CHO TỪNG ẢNH"
+msgid "PANEL DELAY"
+msgstr ""
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2773,16 +2866,16 @@ msgid ""
 msgstr "Lấy được tất cả chủ đề, phông nền, biểu tượng và biểu trưng chỉ bằng một cú nhấp không tuyệt sao?[CR]Bạn có thể làm vậy với Aeon MQ 5, bạn tải xuống một gói duy nhất và có thể truy cập tất cả nội dung mở rộng."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "NHIỀU ĐIỀU MỚI VÀ HƠN THẾ NỮA..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, một giao diện thông minh cho người thông minh.[CR][CR]Hãy tận hường."
+msgid "Finalizing Settings"
+msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "BỎ QUA TRÌNH DIỄN"
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3480,6 +3573,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "DANH SÁCH BÊN PHẢI"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -4020,6 +4153,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Hình ảnh mang sắc màu hung đỏ kết hợp màu than.[CR] Chủ đề mặc định của Aeon MQ 5."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr ""
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr ""
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr ""
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr ""
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "TẬP TIẾP THEO"
@@ -4029,8 +4178,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "CÁC TẬP ĐƯỢC CHIẾU HÔM NAY"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "HIỂN THỊ BẢNG TIẾN TRÌNH"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr ""
 
 msgctxt "#31983"
 msgid "Rating"

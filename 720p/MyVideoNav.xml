@@ -122,21 +122,23 @@
 	<control type="group">
 	<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">WindowOpen</animation>
 	<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">Visible</animation>
-	<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-	<visible>![Skin.HasSetting(nomediaflags) | Control.IsVisible(57)]</visible>
+	<animation effect="slide" start="0,0" end="0,300"  time="500" tween="sine" easing="out">Hidden</animation>
+	<visible>!Control.IsVisible(57) + [SubString(skin.string(mediaflags),on) | SubString(skin.string(mediaflags),auto) + Control.IsVisible(9921)]</visible>
 	<control type="grouplist"><!-- Etiquetas -->
 	<posx>20</posx>
 	<posy>645</posy>
 	<orientation>horizontal</orientation>
-	<itemgap>26</itemgap>
+	<itemgap>25</itemgap>
 	<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(621)">Conditional</animation>
 	<control type="image"><!-- Mpaa -->
 	<include condition="Substring(Skin.CurrentTheme,Greek)">GreekMPAA</include>
 	<include>FlagImage</include>
 	<texture>$VAR[value_mpaa]</texture>
+	<visible>!IsEmpty(ListItem.Mpaa)</visible>
 	</control>
 	<control type="image">
 	<include>FlagSeparator</include>
+	<visible>!IsEmpty(ListItem.Mpaa)</visible>
 	</control>
 	<control type="group"><!-- Rating -->
 	<visible>!IsEmpty(ListItem.Title) + !Container.Content(seasons)</visible>
@@ -343,10 +345,10 @@
 	<control type="image">
 	<posx>0</posx>
 	<posy>0</posy>
-	<height>300</height>
+	<height>200</height>
 	<width>1280</width>
 	<texture flipy="true">shadow_mask.png</texture>
-	<colordiffuse>95000000</colordiffuse>
+	<colordiffuse>99000000</colordiffuse>
 	<visible>![Control.IsVisible(528) + [[Player.HasVideo + !VideoPlayer.IsFullscreen] | [Container.Content(episodes) + Skin.HasSetting(plepthumb)]]]</visible>
 	</control>
 	<control type="group">
@@ -379,12 +381,13 @@
 	<posy>100</posy>
 	<width>750</width>
 	<height>25</height>
-	<font>Font_19</font>
+	<font>Font_21</font>
 	<label>$INFO[ListItem.Tagline]</label>
 	<textcolor>90FFFFFF</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
+	<visible>!Skin.HasSetting(nomoviestagline)</visible>
 	</control>
 	<control type="label">
 	<posx>30</posx>
@@ -392,13 +395,13 @@
 	<width>750</width>
 	<height>25</height>
 	<font>Font_19</font>
-	<label>$INFO[Window(Home).Property(NextAired.NextNumber),$LOCALIZE[31347]: ]$INFO[Window(Home).Property(NextAired.NextTitle), | ]$INFO[Window(Home).Property(NextAired.NextDate), - ]</label>
+	<label>$VAR[value_videotvshowtag]</label>
 	<textcolor>90FFFFFF</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
-	<animation effect="slide" start="0,0" end="0,-30" condition="IsEmpty(ListItem.Tagline)">Conditional</animation>
-	<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+	<animation effect="slide" start="0,0" end="0,-30" condition="IsEmpty(ListItem.Tagline) | Skin.HasSetting(nomoviestagline)">Conditional</animation>
+	<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + ![StringCompare(ListItem.Label,..) | Skin.HasSetting(notvshowstagline)]</visible>
 	</control>
 	</control>
 	<control type="group">
@@ -431,12 +434,13 @@
 	<posy>100</posy>
 	<width>1100</width>
 	<height>25</height>
-	<font>Font_19</font>
+	<font>Font_21</font>
 	<label>$INFO[ListItem.Tagline]</label>
 	<textcolor>90FFFFFF</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
+	<visible>!Skin.HasSetting(nomoviestagline)</visible>
 	</control>
 	<control type="label">
 	<posx>30</posx>
@@ -444,13 +448,13 @@
 	<width>1100</width>
 	<height>25</height>
 	<font>Font_19</font>
-	<label>$INFO[Window(Home).Property(NextAired.NextNumber),$LOCALIZE[31347]: ]$INFO[Window(Home).Property(NextAired.NextTitle), | ]$INFO[Window(Home).Property(NextAired.NextDate), - ]</label>
+	<label>$VAR[value_videotvshowtag]</label>
 	<textcolor>90FFFFFF</textcolor>
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
-	<animation effect="slide" start="0,0" end="0,-30" condition="IsEmpty(ListItem.Tagline)">Conditional</animation>
-	<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+	<animation effect="slide" start="0,0" end="0,-30" condition="IsEmpty(ListItem.Tagline) | Skin.HasSetting(nomoviestagline)">Conditional</animation>
+	<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + ![StringCompare(ListItem.Label,..) | Skin.HasSetting(notvshowstagline)]</visible>
 	</control>
 	</control>
 	</control>

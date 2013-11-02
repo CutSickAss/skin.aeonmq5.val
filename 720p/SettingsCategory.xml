@@ -3,7 +3,7 @@
 	<window id="12">
 	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<include condition="!Skin.HasSetting(defaultsettings1)">Startup</include>
+	<onload condition="!StringCompare(skin.string(defaultsettings),2)">AlarmClock(firstfocus,SetFocus(900),0:01,true)</onload>
 	<controls>
 	<control type="multiimage">
 	<include>WindowBG</include>

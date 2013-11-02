@@ -93,6 +93,22 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Tajmahal26 <tajmahal26@gmail.com>, 2013
 # Wanilton Campos <>, 2012
 # Zoran Mitić <mitic.zoran@hotmail.com>, 2013
 msgid ""
@@ -100,8 +116,8 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-02 13:01+0000\n"
-"Last-Translator: Wanilton Campos <>\n"
+"PO-Revision-Date: 2013-10-31 21:13+0000\n"
+"Last-Translator: Tajmahal26 <tajmahal26@gmail.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/hr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -111,7 +127,7 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "Aeon MQ 5, improved, more light and more powerful than ever."
-msgstr ""
+msgstr "Aeon MQ 5, unaprijeđen, lakši i moćniji nego ikad."
 
 msgctxt "Addon Description"
 msgid ""
@@ -120,13 +136,13 @@ msgid ""
 "skin.[CR]The Aeon MQ 5 incorporates new features such as REPLACE it takes "
 "the level of customize the main menu to something never seen before.[CR]Aeon"
 " MQ 5, you've never seen a skin well."
-msgstr ""
+msgstr "Tradicionalno Aeon MQ je dostigao svoje peto izdanje.[CR]Poboljšan, vrlo jednostavan za upotrebu, koristi novi kod koji omogućuje laganu i snažnu presvlaku.[CR]Aeon MQ 5 uvodi nove mogućnosti, poput FUNKCIJE PREMJESTI čime diže razinu konfigurabilnosti na nikad viđen nivo.[CR]Nikad niste vidjeli tako dobru presvlaku poput Aeon MQ 5."
 
 msgctxt "Addon Disclaimer"
 msgid ""
 "Aeon MQ 5 Skin is a complement to let your XBMC prettier, its use is a "
 "matter of personal choice."
-msgstr ""
+msgstr "Aeon MQ 5 čini vaš XBMC ljepšim. Njegova upotreba je stvar osobnog izbora."
 
 msgctxt "#31000"
 msgid "Aeon MQ 5"
@@ -138,11 +154,11 @@ msgstr "VIDEO"
 
 msgctxt "#31002"
 msgid "MUSIC"
-msgstr "MUZIKA"
+msgstr "GLAZBA"
 
 msgctxt "#31003"
 msgid "MOVIES"
-msgstr "FILM"
+msgstr "FILMOVI"
 
 msgctxt "#31004"
 msgid "PLAY DISC"
@@ -154,7 +170,7 @@ msgstr "TV SERIJE"
 
 msgctxt "#31006"
 msgid "LIVE TV"
-msgstr "TV U ŽIVO"
+msgstr "TV UŽIVO"
 
 msgctxt "#31007"
 msgid "GAMES"
@@ -166,7 +182,7 @@ msgstr "SLIKE"
 
 msgctxt "#31009"
 msgid "WEATHER"
-msgstr "VRE. PROGNOZA"
+msgstr "VRIJEME"
 
 msgctxt "#31010"
 msgid "ADD-ONS"
@@ -174,7 +190,7 @@ msgstr "DODACI"
 
 msgctxt "#31011"
 msgid "SETTINGS"
-msgstr "PODEŠAVANJE"
+msgstr "POSTAVKE"
 
 msgctxt "#31012"
 msgid "EXIT"
@@ -202,19 +218,19 @@ msgstr "ODABERITE AUDIO LISTU IZVEDBI"
 
 msgctxt "#31018"
 msgid "CHOOSE VIDEO ADD-ON"
-msgstr "ODABERITE VIDEO DODATKE"
+msgstr "ODABERITE VIDEO DODATAK"
 
 msgctxt "#31019"
 msgid "CHOOSE AUDIO ADD-ON"
-msgstr "ODABERITE AUDIO DODATKE"
+msgstr "ODABERITE AUDIO DODATAK"
 
 msgctxt "#31020"
 msgid "CHOOSE PROGRAMS ADD-ON"
-msgstr "ODABERITE PROGRAMSKE DODATKE"
+msgstr "ODABERITE PROGRAMSKI DODATAK"
 
 msgctxt "#31021"
 msgid "CHOOSE IMAGE ADD-ON"
-msgstr "ODABERITE SLIKOVNE DODATKE"
+msgstr "ODABERITE SLIKOVNI DODATAK"
 
 msgctxt "#31022"
 msgid "CHOOSE VIDEO NODE"
@@ -222,7 +238,7 @@ msgstr "ODABERITE VIDEO ČVOR"
 
 msgctxt "#31023"
 msgid "BUTTON ACTION"
-msgstr "TIPKA AKCIJA"
+msgstr "RADNJA TIPKE"
 
 #. ...
 msgctxt "#31024"
@@ -247,7 +263,7 @@ msgstr "GODINA"
 
 msgctxt "#31029"
 msgid "SETS"
-msgstr "PODESI"
+msgstr "SETOVI"
 
 msgctxt "#31030"
 msgid "PROGRAMS"
@@ -279,11 +295,11 @@ msgstr "Godina"
 
 msgctxt "#31037"
 msgid "ARTISTS"
-msgstr "UMJETNICI"
+msgstr "IZVOĐAČI"
 
 msgctxt "#31038"
 msgid "PARTY MODE"
-msgstr "NASUMIČNI MOD"
+msgstr "PARTY NAČIN"
 
 msgctxt "#31039"
 msgid "LAST FM"
@@ -311,11 +327,11 @@ msgstr "AUDIO DODACI"
 
 msgctxt "#31045"
 msgid "ACTORS"
-msgstr "GLUMAC"
+msgstr "GLUMCI"
 
 msgctxt "#31046"
 msgid "DIRECTOR"
-msgstr "REŽISER"
+msgstr "REŽIJA"
 
 msgctxt "#31047"
 msgid "STUDIOS"
@@ -347,27 +363,27 @@ msgstr "TJEDAN"
 
 msgctxt "#31054"
 msgid "ALERTS"
-msgstr "UPOZORENJE"
+msgstr "UPOZORENJA"
 
 msgctxt "#31055"
 msgid "TIMER"
-msgstr "KRONOMETAR"
+msgstr "TAJMER"
 
 msgctxt "#31056"
 msgid "CANCEL TIMER"
-msgstr "OTKAŽI KRONOMETAR"
+msgstr "OTKAŽI TAJMER"
 
 msgctxt "#31057"
 msgid "SHUTDOWN"
-msgstr ""
+msgstr "UGASI"
 
 msgctxt "#31058"
 msgid "TURN OFF"
-msgstr "UGASI"
+msgstr "ISKLJUČI"
 
 msgctxt "#31059"
 msgid "RESTART"
-msgstr "PONOVO POKRENI"
+msgstr "PONOVNO POKRENI"
 
 msgctxt "#31060"
 msgid "SUSPEND"
@@ -375,19 +391,19 @@ msgstr "OBUSTAVI"
 
 msgctxt "#31061"
 msgid "HIBERNATE"
-msgstr "U PRIPREMI"
+msgstr "HIBERNACIJA"
 
 msgctxt "#31062"
 msgid "CHANGE USER"
-msgstr "PROMJENI KORISNIKA"
+msgstr "PROMIJENI KORISNIKA"
 
 msgctxt "#31063"
 msgid "FILES MANAGER"
-msgstr "UREDI DATOTEKE"
+msgstr "UPRAV. DATOTEKA"
 
 msgctxt "#31064"
 msgid "SYSTEM INFO"
-msgstr "SISTEM INFO"
+msgstr "INFO SUSTAVA"
 
 msgctxt "#31065"
 msgid "TRAILERS"
@@ -427,35 +443,35 @@ msgstr "AUDIO LISTA IZVEDBI"
 
 msgctxt "#31074"
 msgid "ADD-ON"
-msgstr "DODACI"
+msgstr "DODATAK"
 
 msgctxt "#31075"
 msgid "MY MENU"
-msgstr "MOJ MENI"
+msgstr "MOJ IZBORNIK"
 
 msgctxt "#31076"
 msgid "SHOW DETAILS PANEL"
-msgstr ""
+msgstr "PRIKAŽI PANEL S DETALJIMA"
 
 msgctxt "#31077"
 msgid "LIBRARY STATUS"
-msgstr ""
+msgstr "STATUS ZBIRKE"
 
 msgctxt "#31078"
 msgid "WEATHER AND TIME"
-msgstr ""
+msgstr "VRIJEME I SAT"
 
 msgctxt "#31079"
 msgid "CLICK TO MOVE"
-msgstr ""
+msgstr "KLIKNI ZA POMICANJE"
 
 msgctxt "#31080"
 msgid "Item not used"
-msgstr ""
+msgstr "Stavka se ne koristi"
 
 msgctxt "#31081"
 msgid "Item addition"
-msgstr "Stavka dodatka"
+msgstr "Dodana stavka"
 
 msgctxt "#31082"
 msgid "Item you added"
@@ -463,7 +479,7 @@ msgstr "Stavka koju ste dodali"
 
 msgctxt "#31083"
 msgid "PREVIEW"
-msgstr "PRETPREMIJERA"
+msgstr "PREGLED"
 
 msgctxt "#31084"
 msgid "CLOSE"
@@ -471,7 +487,7 @@ msgstr "ZATVORI"
 
 msgctxt "#31085"
 msgid "Virtual item"
-msgstr ""
+msgstr "Virtualna stavka"
 
 msgctxt "#31086"
 msgid "Concerts"
@@ -487,12 +503,12 @@ msgstr "Igre"
 
 msgctxt "#31089"
 msgid "Year"
-msgstr ""
+msgstr "Godina"
 
 #. ....
 msgctxt "#31090"
 msgid "DIRECTORS"
-msgstr "REŽISER"
+msgstr "REŽISERI"
 
 msgctxt "#31091"
 msgid "GENRES"
@@ -500,7 +516,7 @@ msgstr "ŽANROVI"
 
 msgctxt "#31092"
 msgid "PLAYLISTS"
-msgstr "LISTA IZVEDBI"
+msgstr "LISTE IZVEDBI"
 
 msgctxt "#31093"
 msgid "ITEMS"
@@ -508,27 +524,27 @@ msgstr "STAVKE"
 
 msgctxt "#31094"
 msgid "NO LOCAL/CANCEL"
-msgstr "NEDOSTUPNO / ODUSTANI"
+msgstr "NEMA LOKALNO/ODUSTANI"
 
 msgctxt "#31095"
 msgid "PATH"
-msgstr "PUT"
+msgstr "PUTANJA"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "IZBRIŠI PUT - SAKRIJ STAVKE U GLAVNOM IZBORNIKU"
+msgid "DISC"
+msgstr ""
 
 msgctxt "#31097"
 msgid "Access to collection"
-msgstr "Pristup kolekciji"
+msgstr ""
 
 msgctxt "#31098"
 msgid "Seasons and episodes"
-msgstr "Seazone i epizode"
+msgstr "Sezone i epizode"
 
 msgctxt "#31099"
 msgid "Music videos"
-msgstr "Spotovi"
+msgstr "Glazbeni video"
 
 msgctxt "#31100"
 msgid "Albums and tracks"
@@ -552,19 +568,19 @@ msgstr "Prognoza za do 10 DANA"
 
 msgctxt "#31105"
 msgid "My favourites items"
-msgstr "Moja najdraža stavka"
+msgstr "Moja najdraže stavke"
 
 msgctxt "#31106"
 msgid "Favourite item"
-msgstr "Najdraža Stavka"
+msgstr "Najdraža stavka"
 
 msgctxt "#31107"
 msgid "Playlist"
-msgstr "Lista Izvedbi"
+msgstr "Lista izvedbi"
 
 msgctxt "#31108"
 msgid "Add-on"
-msgstr "Dodaci"
+msgstr "Dodatak"
 
 msgctxt "#31109"
 msgid "Shutdown"
@@ -576,11 +592,11 @@ msgstr "CD, DVD, Bluray"
 
 msgctxt "#31111"
 msgid "DISC ART (IF AVAILABLE)"
-msgstr "DISK ART (AKO JE DOSTUPNO?)"
+msgstr "DISK ART (AKO JE DOSTUPNO)"
 
 msgctxt "#31112"
 msgid "PLOT ALWAYS VISIBLE"
-msgstr "GRAFIČKI PODACI UVIJEK VIDLJIVI"
+msgstr "ZAPLET UVIJEK VIDLJIV"
 
 msgctxt "#31113"
 msgid "BIOGRAPHY ALWAYS VISIBLE"
@@ -588,23 +604,23 @@ msgstr "BIOGRAFIJA UVIJEK VIDLJIVA"
 
 msgctxt "#31114"
 msgid "BANNER (IF AVAILABLE)"
-msgstr "ZASTAVE (AKO JE DOSTUPNO?)"
+msgstr "ZASTAVA (AKO JE DOSTUPNA)"
 
 msgctxt "#31115"
 msgid "VIDEO NODE"
 msgstr "VIDEO ČVOR"
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "ŠAH EFEKT"
+msgid "DISC SWING SPEED"
+msgstr ""
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
-msgstr "OBRNUTI IZBORNIK BOJA"
+msgstr "OBRNUTE BOJE IZBORNIKA"
 
 msgctxt "#31118"
 msgid "TRANSPARENCY FOR STYLES"
-msgstr "TRANSPARENTNOST ZA STIL"
+msgstr "PROZIRNOST ZA STILOVE"
 
 msgctxt "#31119"
 msgid "LAYOUT STYLE 1"
@@ -636,100 +652,100 @@ msgstr "PRIKAŽI VIDEO U POZADINI"
 
 msgctxt "#31126"
 msgid "remaining"
-msgstr ""
+msgstr "ostalo"
 
 msgctxt "#31127"
 msgid "SELECTING TRACKS"
-msgstr ""
+msgstr "ODABIR PJESAMA"
 
 msgctxt "#31128"
 msgid "Transparency preview"
-msgstr ""
+msgstr "Pregled prozirnosti"
 
 msgctxt "#31129"
 msgid "REDDISH IMAGES THEME"
-msgstr ""
+msgstr "CRVENKASTA TEMA"
 
 msgctxt "#31130"
 msgid "REDDISH"
-msgstr ""
+msgstr "CRVENKASTO"
 
 msgctxt "#31131"
 msgid "GRAPHITE STYLE"
-msgstr ""
+msgstr "GRAFITNI STIL"
 
 msgctxt "#31132"
 msgid "GRAPHITE"
-msgstr ""
+msgstr "GRAFITNO"
 
 msgctxt "#31133"
 msgid "CUSTOMIZE INFO PANEL"
-msgstr ""
+msgstr "PRILAGODI INFO PANEL"
 
 msgctxt "#31134"
 msgid "VIEW OPTIONS"
-msgstr ""
+msgstr "OPCIJE PREGLEDA"
 
 msgctxt "#31135"
 msgid "CHANGE VIEW"
-msgstr ""
+msgstr "PROMIJENITE PREGLED"
 
 msgctxt "#31136"
 msgid "FONTS"
-msgstr ""
+msgstr "FONTOVI"
 
 msgctxt "#31137"
 msgid "FONTS SELECTOR"
-msgstr ""
+msgstr "ODABIR FONTOVA"
 
 msgctxt "#31138"
 msgid "STYLE"
-msgstr ""
+msgstr "STIL"
 
 msgctxt "#31139"
 msgid "BROWSE FOR PREVIEW"
-msgstr ""
+msgstr "PRETRAŽITE ZA PREGLED"
 
 msgctxt "#31140"
 msgid ""
 "Activate only the views you need, this optimizes the collection loading"
-msgstr ""
+msgstr "Aktivirajte samo potrebne prikaze kako bi poboljšali učitavanje kolekcije"
 
 msgctxt "#31141"
 msgid "+ views"
-msgstr ""
+msgstr "+ pregledi"
 
 msgctxt "#31142"
 msgid "LOGO AS TITLE (ON TOP IF AVAILABLE)"
-msgstr ""
+msgstr "LOGO KAO NASLOV (PRI VRHU AKO JE DOSTUPNO)"
 
 msgctxt "#31143"
 msgid "SHUTDOWN OPTIONS"
-msgstr ""
+msgstr "OPCIJE GAŠENJA"
 
 msgctxt "#31144"
 msgid "SHUTDOWN"
-msgstr ""
+msgstr "GAŠENJE"
 
 msgctxt "#31145"
 msgid "Shutdown"
-msgstr ""
+msgstr "Ugasite"
 
 msgctxt "#31146"
 msgid "Live tv"
-msgstr ""
+msgstr "TV uživo"
 
 msgctxt "#31147"
 msgid "Various"
-msgstr ""
+msgstr "Razno"
 
 msgctxt "#31148"
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 msgctxt "#31149"
 msgid "Timer Set"
-msgstr ""
+msgstr "Podešavanje tajmera"
 
 msgctxt "#31150"
 msgid ""
@@ -737,7 +753,7 @@ msgid ""
 "new item that will occupy the site of the previous item. This option will "
 "always replace the item for a standard menu, title and custom background "
 "image will be lost."
-msgstr ""
+msgstr "FUNKCIJA PREMJEŠTANJA[CR]Najjednostavniji način za uređenje rasporeda u izborniku. Jednostavno odaberite stavku koja će zauzeti mjesto prethodne stavke. Ova opcija će uvijek premjestiti stavku u standardnom izborniku, naziv i vlastita pozadinska slika će biti izgubljene."
 
 msgctxt "#31151"
 msgid ""
@@ -746,7 +762,7 @@ msgid ""
 "for that use this function. Changes made to a cloned sub menu affects the "
 "Father Menu and vice versa.[CR]A menu that is using a cloned submenu will "
 "not appear in the list."
-msgstr ""
+msgstr "FUNKCIJA KLONIRANJA Podizbornika[CR]Pretpostavimo da ste napravili izbornik s Video listom izvođenja i želite u tom izborniku imati podizbornik jednak kao i Filmovi. Tada iskoristite ovu opciju. Promjene načinjene kloniranom podizborniku utječu i na izbornik u kojem se taj podizbornik nalazi i obrnuto.[CR]Izbornik koji koristi klonirani podizbornik neće se pojaviti u listi."
 
 msgctxt "#31152"
 msgid ""
@@ -754,13 +770,13 @@ msgid ""
 "losing the previous customization. Instead of using the REPLACE function you"
 " can copy the menu for the storage. All the properties menu will be saved "
 "for later use. You can store up to 20 presets."
-msgstr ""
+msgstr "FUNKCIJA SVOJSTVA KOPIRANJA[CR]Napredni način reorganizacije izbornika bez gubitaka ranijih vlastitih postavki. Umjesto upotrebe FUNKCIJE PREMJEŠTANJA možete kopirati izbornik za pohranu. Sva svojstva izbornika bit će sačuvana za naknadnu upotrebu. Možete pohraniti do 20 načina."
 
 msgctxt "#31153"
 msgid ""
 "FUNCTION APPLY PROPERTIES[CR]Use to relocate a preconfigured item. All the "
 "properties will be applied to the selected item"
-msgstr ""
+msgstr "FUNKCIJA SVOJSTVA POTVRĐIVANJA[CR]Koristi se za relociranje prekonfigurirane stavke. Sva će svojstva biti potvrđena za odabranu stavku."
 
 msgctxt "#31154"
 msgid ""
@@ -769,73 +785,73 @@ msgid ""
 "define the language we'll use in the skin.[CR][CR]If you have already set "
 "the language select option 2, otherwise choose option 1.[CR][CR]After "
 "choosing option 2 this warning does not appear again.[CR][CR]Enjoy!"
-msgstr ""
+msgstr "Dobrodošli u uređivanje Aeon MQ 5 presvlake.[CR][CR]POZORNO PROČITAJTE, OVO JE VAŽNO.[CR][CR]Prije nego napravite bilo kakve izmjene, potrebno je odabrati jezik koji ćete koristiti u presvlaki.[CR][CR]Ako ste veće odabrali jezik, odaberite opciju 2, u suprotnom opciju 1.[CR][CR]Nakon što odaberete opciju 2, ovo se upozorenje više neće pojavljivati.[CR][CR]Uživajte!"
 
 msgctxt "#31155"
 msgid "1. WANT TO SET THE LANGUAGE NOW"
-msgstr "1 . ŽELITE LI POSTAVITI JEZIK SADA"
+msgstr "1 . ŽELITE LI ODREDITI JEZIK ODMAH"
 
 msgctxt "#31156"
 msgid "2. ALREADY DEFINED THE LANGUAGE AND WISH CONTINUE"
-msgstr ""
+msgstr "2. JEZIK JE VEĆ ODREĐEN I ŽELITE NASTAVITI"
 
 msgctxt "#31157"
 msgid "SET LANGUAGE"
-msgstr "ODREDI JEZIK"
+msgstr "ODREDITE JEZIK"
 
 msgctxt "#31158"
 msgid "REPLACE THIS MENU WITH ..."
-msgstr ""
+msgstr "ZAMIJENITE OVAJ IZBORNIK SA ..."
 
 msgctxt "#31159"
 msgid "CLONING SUB-MENU FROM ..."
-msgstr ""
+msgstr "KLONIRANIM PODIZBORNIKOM IZ..."
 
 msgctxt "#31160"
 msgid "COPY PROPERTIES TO THE STORAGE"
-msgstr ""
+msgstr "SVOJSTVA KOPIRANJA ZA POHRANU"
 
 msgctxt "#31161"
 msgid "APPLY PROPERTIES FROM THE STORAGE"
-msgstr ""
+msgstr "SVOJSTVA POTVRĐIVANJA ZA POHRANU"
 
 msgctxt "#31162"
 msgid "NONE - CLEAR"
-msgstr ""
+msgstr "NIŠTA - ČISTO"
 
 msgctxt "#31163"
 msgid "NONE - KEEP ORIGINAL"
-msgstr ""
+msgstr "NIŠTA - ZADRŽI ORIGINAL"
 
 msgctxt "#31164"
 msgid "PROPERTIES"
-msgstr ""
+msgstr "SVOJSTVA"
 
 msgctxt "#31165"
 msgid "MAIN MENU PRESETS"
-msgstr ""
+msgstr "NAČINI GLAVNOG IZBORNIKA"
 
 msgctxt "#31166"
 msgid "CREATE PRESET"
-msgstr ""
+msgstr "NAPRAVITE NAČIN"
 
 msgctxt "#31167"
 msgid "APPLY NEW PRESET"
-msgstr ""
+msgstr "POTVRDITE NOVI NAČIN"
 
 msgctxt "#31168"
 msgid "NO PRESETS AVAILABLE"
-msgstr ""
+msgstr "NEMA DOSTUPNIH NAČINA"
 
 msgctxt "#31169"
 msgid "PRESETS"
-msgstr ""
+msgstr "NAČINI"
 
 msgctxt "#31170"
 msgid ""
 "CREATE A PRESET FUNCTION[CR]Use it to save the actual main menu. All "
 "settings will be saved. You can save up to 10 individual presets."
-msgstr ""
+msgstr "FUNKCIJA STVARANJA NAČINA[CR]Upotrijebite ju da bi sačuvali aktualni glavni izbornik. Sve će postavke biti sačuvane. Možete sačuvati do 10 vlastitih načina."
 
 msgctxt "#31171"
 msgid ""
@@ -843,40 +859,40 @@ msgid ""
 "settings will be reapplied. You can also call this function on the main menu"
 " using the system menu 'S' or you can also insert that item in any menu "
 "using the Replace function."
-msgstr ""
+msgstr "FUNKCIJA POTVRDE NAČINA.[CR]Upotrijebite je za izmjenu između načina. Sve postavke će biti ponovno potvrđene. Ovu funkciju možete pokrenuti i iz glavnog izbornika stiskom tipke \"S\" ili možete unijeti tu stavku u bilo koji izbornik koristeći FUNKCIJU PREMJEŠTANJA."
 
 msgctxt "#31172"
 msgid "NO ITEMS IN THE STORAGE"
-msgstr ""
+msgstr "NEMA STAVKI U POHRANI"
 
 msgctxt "#31173"
 msgid "MOSAIC SLIDESHOW"
-msgstr ""
+msgstr "MOZAIČKI SLIKOVNI NIZ"
 
 msgctxt "#31174"
 msgid "USE ZOOM EFFECT TO OPEN AND CLOSE WINDOWS"
-msgstr ""
+msgstr "KORISTITE EFEKT UVEĆANJA ZA OTVARANJE I ZATVARANJE PROZORA"
 
 msgctxt "#31175"
 msgid "USE SMOOTHER ZOOM EFFECT TO OPEN AND CLOSE WINDOWS"
-msgstr ""
+msgstr "KORISTITE GLATKIJI EFEKT UVEĆANJA ZA OTVARANJE I ZATVARANJE PROZORA"
 
 msgctxt "#31176"
 msgid ""
 "USE FADE EFFECT TO OPEN AND CLOSE WINDOWS (RECOMMENDED FOR WEAKER GPUS)"
-msgstr ""
+msgstr "KORISTITE FADE EFEKT ZA OTVARANJE I ZATVARANJE  PROZORA (PREPORUČENO ZA SLABIJE GRAF. KARTICE)"
 
 msgctxt "#31177"
 msgid "SYSTEM MENU"
-msgstr ""
+msgstr "SISTEMSKI IZBORNIK"
 
 msgctxt "#31178"
 msgid "CONTEXT MENU"
-msgstr ""
+msgstr "OPISNI IZBORNIK"
 
 msgctxt "#31179"
 msgid "Audio language"
-msgstr ""
+msgstr "Audio jezik"
 
 msgctxt "#31180"
 msgid "NUMBER OF VISIBLE WIDGETS"
@@ -888,6 +904,74 @@ msgstr ""
 
 msgctxt "#31182"
 msgid "PARTIAL"
+msgstr ""
+
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr ""
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr ""
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr ""
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr ""
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr ""
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr ""
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr ""
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr ""
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr ""
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr ""
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr ""
+
+msgctxt "#31199"
+msgid "1 HOUR"
 msgstr ""
 
 #. ....
@@ -905,35 +989,35 @@ msgstr "OPCIJE"
 
 msgctxt "#31203"
 msgid "SKIN"
-msgstr "IZGLED"
+msgstr "PRESVLAKA"
 
 msgctxt "#31204"
 msgid "UPDATE"
-msgstr "NADOGRADNJA"
+msgstr "AŽURIRANJE"
 
 msgctxt "#31205"
 msgid "DELETE ITEM - REMOVE ITEM THAT YOU CREATED"
-msgstr "IZBRIŠI STAVKU - UKLONI STAVKE KOJE STE NAPRAVILI"
+msgstr "IZBRIŠI STAVKU - UKLONITE STAVKU KOJU STE NAPRAVILI"
 
 msgctxt "#31206"
 msgid "* Use image with dimensions 1920 x 90 pixels in PNG format"
-msgstr ""
+msgstr "* Koristite sliku dimenzija 1920 x 90 piksela u PNG formatu"
 
 msgctxt "#31207"
 msgid "CUSTOMIZE MAIN MENU"
-msgstr "UREDI MOJ IZBORNIK"
+msgstr "PRILAGODITE GLAVNI IZBORNIK"
 
 msgctxt "#31208"
 msgid "PAST HERE"
-msgstr "ZALIJEPI TU "
+msgstr "ZALIJEPITE OVDJE"
 
 msgctxt "#31209"
 msgid "Item"
-msgstr "PREDMET"
+msgstr "Stavka"
 
 msgctxt "#31210"
 msgid "Items"
-msgstr "PREDMETI"
+msgstr "Stavke"
 
 msgctxt "#31211"
 msgid "RENAME"
@@ -949,31 +1033,31 @@ msgstr "OMOGUĆI"
 
 msgctxt "#31214"
 msgid "DISABLE/REORDER"
-msgstr "ONEMOGUĆI/PREUREĐENJE"
+msgstr "ONEMOGUĆI/PRESLOŽI"
 
 msgctxt "#31215"
 msgid "Page"
 msgstr "Stranica"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr "UREDI  LISTU IZVEDBI MINIJATURAMA"
+msgid "THUMBNAIL SET"
+msgstr ""
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
-msgstr "PROMJENI POZADINU - JEDNA SLIKA"
+msgstr "PROMIJENITE POZADINU - JEDNA SLIKA"
 
 msgctxt "#31218"
 msgid "CHANGE BACKDROP - MULTIPLE IMAGES"
-msgstr "PROMJENI POZADINU - VIŠE SLIKA"
+msgstr "PROMIJENITE POZADINU - VIŠE SLIKA"
 
 msgctxt "#31219"
 msgid "RESTORE DEFAULT THUMBNAIL"
-msgstr "POKRENI DRUGAČIJU MINIJATURU"
+msgstr "VRATITE ZADANU MINIJATURU"
 
 msgctxt "#31220"
 msgid "RESTORE DEFAULT BACKDROP"
-msgstr "POKRENI DRUGAČIJU POZADINU"
+msgstr "VRATITE ZADANU POZADINU"
 
 msgctxt "#31221"
 msgid "NO FAVOURITES TO SHOW"
@@ -985,7 +1069,7 @@ msgstr "KRAJ"
 
 msgctxt "#31223"
 msgid "TIP"
-msgstr "TIP"
+msgstr "SAVJET"
 
 msgctxt "#31224"
 msgid "MORE OPTIONS"
@@ -993,15 +1077,15 @@ msgstr "VIŠE OPCIJA"
 
 msgctxt "#31225"
 msgid "REORDER MENU"
-msgstr "PRESLOŽI IZBORNIK"
+msgstr "PRESLOŽITE IZBORNIK"
 
 msgctxt "#31226"
 msgid "GENERAL INFORMATION"
-msgstr "GENERALNE INFORMCIE"
+msgstr "OPĆE INFORMACIJE"
 
 msgctxt "#31227"
 msgid "INFORMATIONS BAR"
-msgstr "TABLA INFORMCIJE"
+msgstr "TRAKA S INFORMACIJAMA"
 
 msgctxt "#31228"
 msgid "SMART SUBMENU"
@@ -1017,22 +1101,22 @@ msgstr "Lista Izvedbi"
 
 msgctxt "#31231"
 msgid "CLEAN LIBRARY"
-msgstr "OČISTI KOLEKCIJU"
+msgstr "OČISTI ZBIRKU"
 
 msgctxt "#31232"
 msgid ""
 "IF THERE IS A '4K' TAG IN THE NAME OF THE FILE OR FOLDER, THIS CASE WILL BE "
 "USED."
-msgstr ""
+msgstr "POSTOJI LI '4K' SLOG U IMENU DATOTEKE ILI MAPE, KORISTITI ĆE SE OVAJ OKVIR."
 
 msgctxt "#31233"
 msgid "Premiered"
-msgstr ""
+msgstr "Premijera"
 
 #. ....
 msgctxt "#31234"
 msgid "MENU IN WRAP LIST MODE"
-msgstr "IZBORNIK U PAKETU  POPISA"
+msgstr "IZBORNIK U SLOŽENOM NAČINU POPISA"
 
 msgctxt "#31235"
 msgid "MENU IN FIXED LIST MODE"
@@ -1040,7 +1124,7 @@ msgstr "IZBORNIK U FIKSNOM NAČINU POPISA"
 
 msgctxt "#31236"
 msgid "MUSICAL NOTE"
-msgstr "GLAZBENE NOTE"
+msgstr "GLAZBENA NOTA"
 
 msgctxt "#31237"
 msgid "Done"
@@ -1052,7 +1136,7 @@ msgstr "OSD IZBORNIK"
 
 msgctxt "#31239"
 msgid "FULL MENU MODE"
-msgstr "PUNI MOD IZBORNIKA"
+msgstr "POTPUNI MOD IZBORNIKA"
 
 msgctxt "#31240"
 msgid "CLEAN MENU MODE"
@@ -1060,7 +1144,7 @@ msgstr "IZBRIŠI MOD IZBORNIKA"
 
 msgctxt "#31241"
 msgid "SELECT"
-msgstr "ODABERI"
+msgstr "ODABERITE"
 
 msgctxt "#31242"
 msgid "SHOW"
@@ -1068,7 +1152,7 @@ msgstr "PRIKAŽI "
 
 msgctxt "#31243"
 msgid "SYSTEM MENU (MENU 'S')"
-msgstr "IZBORNIK SISTEMA  (IZBORNIK 'S')"
+msgstr "SISTEMSKI IZBORNIK  (IZBORNIK 'S')"
 
 msgctxt "#31244"
 msgid "MENU 'S'"
@@ -1076,11 +1160,11 @@ msgstr "IZBORNIK 'S'"
 
 msgctxt "#31245"
 msgid "KEEP BACKGROUND'S ASPECT"
-msgstr "ZADRŽITE  ASPEKT POZADINE"
+msgstr "ZADRŽITE OMJER POZADINE"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "PRIKAŽI WJDGETE ZA:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr ""
 
 msgctxt "#31247"
 msgid "CLEARART:"
@@ -1092,7 +1176,7 @@ msgstr "CLEARLOGO"
 
 msgctxt "#31249"
 msgid "WIDGETS"
-msgstr "WIDGETS"
+msgstr "WIDGETI"
 
 msgctxt "#31250"
 msgid "SHOW DATE AND WEATHER"
@@ -1100,18 +1184,18 @@ msgstr "PRIKAŽI DATUM I VRIJEME"
 
 msgctxt "#31251"
 msgid "3D MODE"
-msgstr ""
+msgstr "3D NAČIN"
 
 msgctxt "#31252"
 msgid "CHANGE TRANSPARENCY"
-msgstr ""
+msgstr "PROMIJENITE PROZIRNOST"
 
 #. ....
 msgctxt "#31253"
 msgid ""
 "Choose a Favourite.[CR]Remember that to populate this list you must use the "
 "context menu 'C key' on an item and Add to Favourites."
-msgstr "Izaberite favorita. [CR] Zapamtite da stavke dodane na ovaj popis, morate koristiti u kontekstnom izborniku 'C' tipku za stavku  Dodati u Favorite."
+msgstr "Izaberite Favorita. [CR] Da bi dodali stavke na ovaj popis, morate koristiti opisni izbornik stiskom na tipku 'C' za stavku i Dodati u Favorite."
 
 msgctxt "#31254"
 msgid ""
@@ -1120,7 +1204,7 @@ msgid ""
 "Icons for weather.[CR]Background images based on weather "
 "conditions.[CR][CR]The complete download can take a while depending on the "
 "connection speed"
-msgstr ""
+msgstr "S EKSTRA PAKETOM imate dostupno:[CR]Teme.[CR]Tematski stilovi.[CR]Ikone za video i glazbene žanrove.[CR]Fanart za video i glazbene žanrove.[CR]Animirane ikone za vrijeme.[CR]Pozadinske slike temeljene na vremenskim prilikama.[CR][CR]Preuzimanje cijelog paketa može malo potrajati, ovisno o brzini veze."
 
 msgctxt "#31255"
 msgid "New theme has been set"
@@ -1142,6 +1226,14 @@ msgid ""
 "path of the root.[CR][CR]The default image for AEON MQ 5 has pixels 72dpi "
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
+msgstr "1. Napravite korijensku mapu bilo kojeg naziva, npr. MOJA TEMA.[CR][CR]2. Unutar te mape napravite 21 mapu s ovim imenima:[CR]addons, aplaylist, autumn, concerts, disc, favourites, games, livetv, movies, music, mymenu, pictures, programs, settings, shutdown, spring, summer, tvshows, vnodes, vplaylist, winter.[CR][CR]3. Stavite slike u svaku od ovih mapa koje ste odabrali. MOJA TEMA podržava više slika, odnosno koliko god ih želite u mapi.[CR][CR]4. Nakon što je tema spremna, unesite putanju korijenske mape.[CR][CR]Zadana veličina slike za AEON MQ 5 je veličine 72dpi 1920x1080 u JPG formatu i preporučili bi program FastStone Photo Resize za kvalitetno smanjivanje slika."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
 msgstr ""
 
 #. ....
@@ -1155,11 +1247,11 @@ msgstr "PODESI"
 
 msgctxt "#31262"
 msgid "CHANGE STANDARD OPTIONS"
-msgstr "PROMJENI  STANDARDNE OPCIJE"
+msgstr "PROMIJENITE STANDARDNE OPCIJE"
 
 msgctxt "#31263"
 msgid "ENABLE AUTOMATIC UPDATE OF ADD-ONS"
-msgstr "ODOBRI AUTOMATSKU NADOGRADNJU DODATAKA"
+msgstr "OMOGUĆITE AUTOMATSKO AŽURIRANJE DODATAKA"
 
 msgctxt "#31264"
 msgid "DISPLAY UPDATE NOTIFICATION OF ADD-ONS"
@@ -1167,7 +1259,7 @@ msgstr "PRIKAŽI DOSTUPNOST NADOGRADNJE DODATAKA"
 
 msgctxt "#31265"
 msgid "SHOW ADD-ON FANART"
-msgstr "POKAŽI DODATKE FANARTA"
+msgstr "PRIKAŽI FANART DODATAKA"
 
 msgctxt "#31266"
 msgid "BLURAY"
@@ -1203,71 +1295,71 @@ msgstr "DIVX"
 
 msgctxt "#31274"
 msgid "SETS"
-msgstr ""
+msgstr "SETOVI"
 
 msgctxt "#31275"
 msgid "4K"
-msgstr ""
+msgstr "4K"
 
 msgctxt "#31276"
 msgid "CASE FOR CONTENT"
-msgstr "OMOT ZA SADRŽAJ"
+msgstr "OKVIR ZA SADRŽAJ"
 
 msgctxt "#31277"
 msgid "STANDARD"
-msgstr "STANDARD"
+msgstr "STANDARDNO"
 
 msgctxt "#31278"
 msgid "PERSONALIZE THE BOXES FOR YOUR COLLECTION"
-msgstr "PRILAGODITE OMOTE ZA SVOJU KOLEKCIJU"
+msgstr "PRILAGODITE KUTIJE ZA SVOJU KOLEKCIJU"
 
 msgctxt "#31279"
 msgid "CHANGE COLORS OR THE MEDIA LABEL, BUILD YOUR OWN CASE."
-msgstr "PROMJENI BOJE ILI MEDIJSKU OZNAKU, KREIRAJ VLASTITE OMOTE"
+msgstr "PROMIJENITE BOJE ILI MEDIJSKU OZNAKU, STVORITE VLASTITI OKVIR."
 
 msgctxt "#31280"
 msgid ""
 "IF THERE IS A NAME TAG COMPATIBLE IN THE FILE OR FOLDER, THIS CASE WILL BE "
 "USED."
-msgstr "AKO JE  IME TAG-a ISTOVJETNO SA  DATOTEKOM ILI MAPOM, OKVIR ĆE SE KORISTITI."
+msgstr "UKOLIKO POSTOJI SLOG OZNAKE SUKLADAN U DATOTECI ILI MAPI, KORISTITI ĆE SE OVAJ OKVIR"
 
 msgctxt "#31281"
 msgid "CHOOSE A CASE AND PRESS ENTER TO CUSTOMIZE."
-msgstr "IZBERITE OKVIR I PRITISNITE ENTER ZA SPREMANJE."
+msgstr "IZABERITE OKVIR I PRITISNITE ENTER ZA UREĐIVANJE."
 
 msgctxt "#31282"
 msgid ""
 "IF THERE IS A 'BLURAY', 'BLU-RAY' OR 'BDRIP' TAG IN THE NAME OF THE FILE OR "
 "FOLDER, THIS CASE WILL BE USED."
-msgstr "AKO JE  IME TAG-a 'BLU-RAY' ILI 'BDRIP' ISTOVJETNO SA  DATOTEKOM ILI MAPOM, OKVIR ĆE SE KORISTITI."
+msgstr "POSTOJI LI 'BLURAY', 'BLU-RAY' ILI 'BDRIP'  SLOG U IMENU DATOTEKE ILI MAPE, KORISTITI ĆE SE OVAJ OKVIR."
 
 msgctxt "#31283"
 msgid ""
 "IF THERE IS A BD '3DBD' OR '3DBD' TAG IN THE NAME OF THE FILE OR FOLDER, "
 "THIS CASE WILL BE USED."
-msgstr "AKO JE  IME TAG-a BD '3DBD' ILI '3DBD' ISTOVJETNO SA  DATOTEKOM ILI MAPOM, OKVIR ĆE SE KORISTITI."
+msgstr "POSTOJI LI BD '3DBD' ILI '3DBD'  SLOG U IMENU DATOTEKE ILI MAPE, KORISTITI ĆE SE OVAJ OKVIR."
 
 msgctxt "#31284"
 msgid ""
 "IF THERE IS A 'WEB' TAG IN THE NAME OF THE FILE OR FOLDER, THIS CASE WILL BE"
 " USED."
-msgstr "AKO JE  IME TAG-a 'WEB' ISTOVJETNO SA  DATOTEKOM ILI MAPOM, OKVIR ĆE SE KORISTITI."
+msgstr "POSTOJI LI 'WEB' SLOG U IMENU DATOTEKE ILI MAPE, KORISTITI ĆE SE OVAJ OKVIR."
 
 msgctxt "#31285"
 msgid ""
 "IF THERE IS A 'HDTV' TAG IN THE NAME OF THE FILE OR FOLDER, THIS CASE WILL "
 "BE USED."
-msgstr "AKO JE  IME TAG-a 'HDTV' ISTOVJETNO SA  DATOTEKOM ILI MAPOM, OKVIR ĆE SE KORISTITI."
+msgstr "POSTOJI LI 'HDTV' SLOG U IMENU DATOTEKE ILI MAPE, KORISTITI ĆE SE OVAJ OKVIR."
 
 msgctxt "#31286"
 msgid ""
 "IF THERE IS A 'DVD' TAG IN THE NAME OF THE FILE OR FOLDER, THIS CASE WILL BE"
 " USED."
-msgstr "AKO JE  IME TAG-a 'DVD' ISTOVJETNO SA  DATOTEKOM ILI MAPOM, OKVIR ĆE SE KORISTITI."
+msgstr "POSTOJI LI 'DVD' SLOG U IMENU DATOTEKE ILI MAPE, KORISTITI ĆE SE OVAJ OKVIR."
 
 msgctxt "#31287"
 msgid "LABEL CASE"
-msgstr "OZNAKA OMOTA"
+msgstr "OZNAKA OKVIRA"
 
 msgctxt "#31288"
 msgid "NO LABEL"
@@ -1275,35 +1367,35 @@ msgstr "BEZ OZNAKE"
 
 msgctxt "#31289"
 msgid "NO LABEL WILL BE USED FOR THIS CASE."
-msgstr "UPORABA BEZ OZNAKA"
+msgstr "ZA OVAJ OKVIR SE NEĆE KORISTITI OZNAKA"
 
 msgctxt "#31290"
 msgid "A STICKER WILL BE SHOWN IN ACCORDANCE WITH THE MEDIA CODEC."
-msgstr "OZNAKA ĆE BITI PRIKAZANA U SKLADU S MEDIJA KODEKOM."
+msgstr "NALJEPNICA ĆE BITI PRIKAZANA U SKLADU S MEDIJA KODEKOM."
 
 msgctxt "#31291"
 msgid "BLURAY CONTENT LABEL WILL BE SHOWN."
-msgstr "BLURAY SADRŽAJ OZNAKA BIT ĆE PRIKAZAN."
+msgstr "PRIKAZATI ĆE SE OZNAKA BLURAY SADRŽAJA."
 
 msgctxt "#31292"
 msgid "BLURAY 3D CONTENT LABEL WILL BE SHOWN."
-msgstr "BLURAY 3D SADRŽAJ OZNAKA BIT ĆE PRIKAZAN."
+msgstr "PRIKAZATI ĆE SE OZNAKA 3D SADRŽAJA."
 
 msgctxt "#31293"
 msgid "WEBTV CONTENT LABEL WILL BE SHOWN."
-msgstr "WEBTV SADRŽAJ OZNAKA BIT ĆE PRIKAZAN."
+msgstr "PRIKAZATI ĆE SE OZNAKA WEBTV SADRŽAJA."
 
 msgctxt "#31294"
 msgid "HDTV CONTENT LABEL WILL BE SHOWN."
-msgstr "HDTV SADRŽAJ OZNAKA BIT ĆE PRIKAZAN."
+msgstr "PRIKAZATI ĆE SE OZNAKA HDTV SADRŽAJA."
 
 msgctxt "#31295"
 msgid "DVD CONTENT LABEL WILL BE SHOWN."
-msgstr "DVD SADRŽAJ OZNAKA BIT ĆE PRIKAZAN."
+msgstr "PRIKAZATI ĆE SE OZNAKA DVD SADRŽAJA."
 
 msgctxt "#31296"
 msgid "COLOR FOR THIS CASE"
-msgstr "BOJE ZA TAJ OKVIR"
+msgstr "BOJA ZA OVAJ OMOT"
 
 msgctxt "#31297"
 msgid "MEDIA CASE"
@@ -1315,11 +1407,11 @@ msgstr "UREDI OKVIR"
 
 msgctxt "#31299"
 msgid "BOOKMARK"
-msgstr "OBILJEŽIVAČ"
+msgstr "MARKER"
 
 msgctxt "#31300"
 msgid "SUBTITLES"
-msgstr "PODNASLOV"
+msgstr "TITLOVI"
 
 msgctxt "#31301"
 msgid "BACK"
@@ -1343,7 +1435,7 @@ msgstr "STOP"
 
 msgctxt "#31306"
 msgid "NEXT"
-msgstr "SLIJEDEĆI"
+msgstr "SLIJEDEĆE"
 
 msgctxt "#31307"
 msgid "OSD"
@@ -1351,7 +1443,7 @@ msgstr "OSD"
 
 msgctxt "#31308"
 msgid "PAUSED"
-msgstr "STOPIRANO"
+msgstr "PAUZIRANO"
 
 msgctxt "#31309"
 msgid "CURRENT POSITION"
@@ -1363,27 +1455,27 @@ msgstr "TRENUTNO VRIJEME"
 
 msgctxt "#31311"
 msgid "ENDS AT"
-msgstr "ZAVRŠETAK"
+msgstr "ZAVRŠAVA U"
 
 msgctxt "#31312"
 msgid "IMAGE OPTIONS"
-msgstr "OPCIJE SLIKE"
+msgstr "OPCIJE SLIKA"
 
 msgctxt "#31313"
 msgid "AUDIO OPTIONS"
-msgstr "AUDIO OPCIJE "
+msgstr "OPCIJE ZVUKA"
 
 msgctxt "#31314"
 msgid "PROGRAMS OPTIONS"
-msgstr "PROGRAMSKE OPCIJE "
+msgstr "OPCIJE PROGRAMA"
 
 msgctxt "#31315"
 msgid "RANDOM ORDER"
-msgstr "NASUMIČNE KOMANDE"
+msgstr "NASUMIČAN SLIJED"
 
 msgctxt "#31316"
 msgid "MODE"
-msgstr "MOD"
+msgstr "NAČIN"
 
 msgctxt "#31317"
 msgid "POSTER"
@@ -1391,19 +1483,19 @@ msgstr "POSTER"
 
 msgctxt "#31318"
 msgid "IMDB: STARS"
-msgstr "IMDB: STARS"
+msgstr "IMDB: ZVIJEZDE"
 
 msgctxt "#31319"
 msgid "IMDB: TEXT"
-msgstr "IMDB: TEXT"
+msgstr "IMDB: TEKST"
 
 msgctxt "#31320"
 msgid "THUMBNAIL"
-msgstr "MINIJATURAMA"
+msgstr "MINIJATURA"
 
 msgctxt "#31321"
 msgid "INFO MODE"
-msgstr "INFO MOD"
+msgstr "INFO NAČIN"
 
 msgctxt "#31322"
 msgid "PANEL"
@@ -1411,7 +1503,7 @@ msgstr "PANEL"
 
 msgctxt "#31323"
 msgid "STANDARD"
-msgstr "STANDARD"
+msgstr "STANDARDNO"
 
 msgctxt "#31324"
 msgid "AUTO INFO"
@@ -1419,35 +1511,35 @@ msgstr "AUTO INFO"
 
 msgctxt "#31325"
 msgid "NEXT TRACKS"
-msgstr ""
+msgstr "SLIJEDEĆI ZAPISI"
 
 msgctxt "#31326"
 msgid "WEATHER MENU"
-msgstr "VRE.PROGNOZA  MENI"
+msgstr "IZBORNIK VRIJEME"
 
 msgctxt "#31327"
 msgid "BACKGROUND IMAGE"
-msgstr "POZADINA"
+msgstr "POZADINSKA SLIKA"
 
 msgctxt "#31328"
 msgid "SHOW CDART"
-msgstr "PRIKAŽI  CDART"
+msgstr "PRIKAŽI CDART"
 
 msgctxt "#31329"
 msgid "VIEW ARTIST BIOGRAPHY"
-msgstr "PRIKAŽI UMJETNIKOVU BIOGRAFIJU"
+msgstr "PRIKAŽI BIOGRAFIJU IZVOĐAČA"
 
 msgctxt "#31330"
 msgid "VIEW ARTIST/ALBUM INFORMATION"
-msgstr "PRIKAZ IZVOĐAČ/ALBUM INFO"
+msgstr "PRIKAŽI IZVOĐAČ/ALBUM INFO"
 
 msgctxt "#31331"
 msgid "DISPLAY ARTIST IMAGES THUMBNAIL"
-msgstr "PRIKAZ S MINIJATURAMA IZVOĐAČA"
+msgstr "PRIKAŽI MINIJATURE IZVOĐAČA"
 
 msgctxt "#31332"
 msgid "ITEMS IN PLAYLIST"
-msgstr "STAVKE U LISTI IZVOĐAČA"
+msgstr "STAVKE U LISTI IZVOĐENJA"
 
 msgctxt "#31333"
 msgid "CHANNELS"
@@ -1455,11 +1547,11 @@ msgstr "KANALI"
 
 msgctxt "#31334"
 msgid "ROOT FOLDER COLLECTION"
-msgstr "KORIJENSKA MAPA KOLEKCIJA"
+msgstr "KOLEKCIJA KORIJENSKE MAPE"
 
 msgctxt "#31335"
 msgid "RELOAD SKIN"
-msgstr "PONOVNO UČITAJ IZGLED"
+msgstr "PONOVNO UČITAJ PRESVLAKU"
 
 msgctxt "#31336"
 msgid "PREMIERED"
@@ -1467,11 +1559,11 @@ msgstr "PREDSTAVLJEN"
 
 msgctxt "#31337"
 msgid "YEARS OF ACTIVITY"
-msgstr "GODINA DJELOVANJA"
+msgstr "GODINE DJELOVANJA"
 
 msgctxt "#31338"
 msgid "MOODS"
-msgstr "RASPOLOŽENJE"
+msgstr "RASPOLOŽENJA"
 
 msgctxt "#31339"
 msgid "TRAINING"
@@ -1479,27 +1571,27 @@ msgstr "STAŽ"
 
 msgctxt "#31340"
 msgid "TRACKS"
-msgstr "PJESME"
+msgstr "ZAPISI"
 
 msgctxt "#31341"
 msgid "GUI MODE"
-msgstr "GUI MOD"
+msgstr "GUI NAČIN"
 
 msgctxt "#31342"
 msgid "AUTO MODE"
-msgstr "AUTO MOD"
+msgstr "AUTO NAČIN"
 
 msgctxt "#31343"
 msgid "CUSTOM MODE"
-msgstr "PO NARUDŽBI MOD"
+msgstr "PRILAGOĐENI NAČIN"
 
 msgctxt "#31344"
 msgid "ADD-ON OPTIONS"
-msgstr "DODAJ OPCIJE"
+msgstr "OPCIJE DODATAKA"
 
 msgctxt "#31345"
 msgid "STYLES"
-msgstr "STIL"
+msgstr "STILOVI"
 
 msgctxt "#31346"
 msgid "NOTES"
@@ -1507,11 +1599,11 @@ msgstr "BILJEŠKE"
 
 msgctxt "#31347"
 msgid "Next Episode"
-msgstr "Sljedeća Epizoda"
+msgstr "Sljedeća epizoda"
 
 msgctxt "#31448"
 msgid "TV Shows at this day"
-msgstr "Današnje TV Emisije"
+msgstr "Današnje TV serije"
 
 msgctxt "#31349"
 msgid "CHOOSE A NAME FOR THIS FOLDER"
@@ -1519,7 +1611,7 @@ msgstr "ODABERITE IME ZA OVU MAPU"
 
 msgctxt "#31350"
 msgid "MODIFIED"
-msgstr "PREUREDI"
+msgstr "IZMIJENJENO"
 
 msgctxt "#31351"
 msgid "APPEARANCE"
@@ -1527,7 +1619,7 @@ msgstr "PRIKAZ"
 
 msgctxt "#31352"
 msgid "DISPLAY AND INTERFACE"
-msgstr ""
+msgstr "ZASLON I SUČELJE"
 
 msgctxt "#31353"
 msgid "VIDEO"
@@ -1535,15 +1627,15 @@ msgstr "VIDEO"
 
 msgctxt "#31354"
 msgid "LIBRARY AND PLAYBACK"
-msgstr "KOLEKCIJA I REPRODUCIRANJE"
+msgstr "ZBIRKA I REPRODUKCIJA"
 
 msgctxt "#31355"
 msgid "AUDIO"
-msgstr "AUDIO"
+msgstr "ZVUK"
 
 msgctxt "#31356"
 msgid "LIBRARY AND PLAYBACK"
-msgstr "KOLEKCIJA I REPRODUCIRANJE"
+msgstr "ZBIRKA I REPRODUKCIJA"
 
 msgctxt "#31357"
 msgid "TV"
@@ -1551,15 +1643,15 @@ msgstr "TV"
 
 msgctxt "#31358"
 msgid "SETTINGS AND PLAYBACK"
-msgstr "PODEŠAVANJE I REPRODUCIRANJE"
+msgstr "POSTAVKE I REPRODUKCIJA"
 
 msgctxt "#31359"
 msgid "SYSTEM"
-msgstr "SISTEM"
+msgstr "SUSTAV"
 
 msgctxt "#31360"
 msgid "CACHE AND HARDWARE"
-msgstr "MEMORIJA I SKLOPOVLJE"
+msgstr "PREDMEMORIJA I HARDVER"
 
 msgctxt "#31361"
 msgid "NETWORK"
@@ -1567,7 +1659,7 @@ msgstr "MREŽA"
 
 msgctxt "#31362"
 msgid "LOCAL AND INTERNET"
-msgstr "LOCALNO I INTERNET"
+msgstr "LOKALNO I INTERNET"
 
 msgctxt "#31363"
 msgid "ADD-ONS"
@@ -1575,7 +1667,7 @@ msgstr "DODACI"
 
 msgctxt "#31364"
 msgid "MANAGE ADD-ONS"
-msgstr "UREDI DODATKE"
+msgstr "UPRAVLJANJE DODACIMA"
 
 msgctxt "#31365"
 msgid "IMAGE"
@@ -1599,23 +1691,23 @@ msgstr "PROFIL"
 
 msgctxt "#31370"
 msgid "USER ACCOUNTS"
-msgstr "KORISNIK"
+msgstr "KORISNIČKI RAČUNI"
 
 msgctxt "#31371"
 msgid "SKIN SETTINGS"
-msgstr "PODESI IZGLED"
+msgstr "POSTAVKE PRESVLAKE"
 
 msgctxt "#31372"
 msgid "ACTIVATE LOGIN SCREEN"
-msgstr "AKTIVIRATI ZASLON ZA PRIJAVU"
+msgstr "AKTIVIRAJTE ZASLON ZA PRIJAVU"
 
 msgctxt "#31373"
 msgid "USERS"
-msgstr "KORISNIK"
+msgstr "KORISNICI"
 
 msgctxt "#31374"
 msgid "MANAGE PROFILES"
-msgstr "UREDI PROFIL"
+msgstr "UPRAVLJANJE PROFILIMA"
 
 msgctxt "#31375"
 msgid "General settings"
@@ -1623,33 +1715,33 @@ msgstr "Opće postavke"
 
 msgctxt "#31376"
 msgid "A HIGH DEFINITION MEDIA ENVIROMENT"
-msgstr "DEFINIRAJ OKOLIŠ"
+msgstr "OKOLINA MEDIJA VISOKE DEFINICIJE"
 
 msgctxt "#31377"
 msgid ""
 "A MODERN AND ELEGANT MEDIA CENTER.[CR]AEON MQ 5 IS PART OF NEW SKINS "
 "GENERATION."
-msgstr ""
+msgstr "MODERAN I ELEGANTAN MEDIA CENTAR.[CR]AEON MQ 5 JE DIO NOVE GENERACIJE PRESVLAKA."
 
 msgctxt "#31378"
 msgid "MOVIES, TV SHOWS AND CONCERTS"
-msgstr "FILM, TV ZABAVA I KONCERTI"
+msgstr "FILMOVI, TV SERIJE I KONCERTI"
 
 msgctxt "#31379"
 msgid ""
 "ADJUST YOUR SYSTEM IN ORDER TO GET THE BEST PICTURE QUALITY. [CR] SELECT "
 "COLOR OR POSITION OF SUBTITLES."
-msgstr "PODESITE VAŠ SUSTAV KAKO BI DOBILI NAJBOLJU KVALITETU SLIKE. [CR] ODABERITE BOJU ILI POLOŽAJ PODNATPISA."
+msgstr "PODESITE VAŠ SUSTAV KAKO BI DOBILI NAJBOLJU KVALITETU SLIKE. [CR] ODABERITE BOJU ILI POLOŽAJ TITLOVA."
 
 msgctxt "#31380"
 msgid "XBMC LISTS AND PLAYS YOUR MUSIC"
-msgstr "XBMC LISTA I REPRODUCIRA VAŠU MUZIKU"
+msgstr "XBMC LISTA I REPRODUCIRA VAŠU GLAZBU"
 
 msgctxt "#31381"
 msgid ""
 "ARTIST, ALBUM AND TRACKS INFORMATION.[CR]RELAX AND LISTEN TO YOUR MUSIC WITH"
 " VISUAL EFFECTS."
-msgstr "INFORMACIJE O IZVOĐAČU, ALBUM I PJESMAMA.[CR]OPUSTITE SE I SLUŠAJTE VAŠU OMILJENU MUZIKU  S VIZUALNIM EFEKTIMA."
+msgstr "INFORMACIJE O IZVOĐAČU, ALBUMU I PJESMAMA.[CR]OPUSTITE SE I SLUŠAJTE VAŠU OMILJENU GLAZBU UZ VIZUALNE EFEKTE."
 
 msgctxt "#31382"
 msgid "WATCH YOUR FAVOURITE TV SHOW"
@@ -1657,7 +1749,7 @@ msgstr "GLEDAJTE VAŠE OMILJENE TV EMISIJE"
 
 msgctxt "#31383"
 msgid "LIVE TV RECEPTION.[CR]TUNE AND RECORD A TV SHOW."
-msgstr "PRIJEM U ŽIVO TV PROGRAMA.[CR] SNIMAJ I GLEDAJ."
+msgstr "PRIJEM TV PROGRAMA UŽIVO.[CR]PRATITE I SNIMAJTE TV EMISIJE."
 
 msgctxt "#31384"
 msgid "ORGANIZE YOUR PICTURES"
@@ -1667,7 +1759,7 @@ msgctxt "#31385"
 msgid ""
 "MAKE A SLIDESHOW PRESENTATION.[CR]SHOW YOUR LIBRARY DIRECTLY FROM A HARD "
 "DISK OR FLASH DRIVE."
-msgstr "NAPRAVI PREZENTACIJU.[CR]PRIKAŽI KOLEKCIJU FOTOGRAFIJA S HARD DISK ILI USB-a."
+msgstr "NAPRAVITE PREZENTACIJU.[CR]PRIKAŽITE ZBIRKU FOTOGRAFIJA S HARD DISK ILI USB-a."
 
 msgctxt "#31386"
 msgid "WEATHER FORECAST"
@@ -1678,17 +1770,17 @@ msgid ""
 "SUNNY OR RAINY? CHOOSE THREE CITIES AND HAVE THEIR LIVE FORECAST, COURTESY "
 "OF WEATHER.COM.[CR]IN ADDITION TO THE CITIES, YOU CAN ALSO CHOOSE FROM "
 "IMPERIAL OR METRIC SYSTEM."
-msgstr "SUNCE ILI KIŠA? ODABERI TRI GRADA I IMAT ĆEŠ TRI VREMENSKE PROGNOZE S WEATHER.COM.[CR]I DODAVANJEM TRI GRADA, MOŽEŠ ODABRATI IMPERIAL ILI METRIC SISTEM."
+msgstr "SUNCE ILI KIŠA? ODABERITE TRI GRADA I IMAT ĆETE NJIHOVE VREMENSKE PROGNOZE S WEATHER.COM.[CR]PORED ODABIRA GRADOVA, MOŽETE ODABRATI I IMPERIJALNI ILI METRIČKI SISTEM MJERENJA."
 
 msgctxt "#31388"
 msgid "SUPPLEMENTS FOR XBMC"
-msgstr "DODATAK ZA XBMC"
+msgstr "DODACI ZA XBMC"
 
 msgctxt "#31389"
 msgid ""
 "GET AND MANAGE ADD-ONS TO MAKE THE MOST OUT OF XMBC.[CR]FILM AND MUSIC "
 "SCRAPERS AND PLUGINS WITH AUTOMATIC UPDATES."
-msgstr "UREDI DODATKE ZA NEVIĐENI XMBC.[CR]AŽURIRAJ DODATAK ZA FILM I MUZIKU."
+msgstr "PRIBAVITE I UREDITE DODATKE DA BI IZVUKLI NAJBOLJE IZ XMBC-A.[CR]PRIBAVLJAČI FILMSKIH I GLAZBENIH INFORMACIJA S AUTOMATSKIM AŽURIRANJEM."
 
 msgctxt "#31390"
 msgid "PLAYBACK SETTINGS"
@@ -1698,28 +1790,28 @@ msgctxt "#31391"
 msgid ""
 "IMAGE CALIBRATION AND AUDIO SELECTION.[CR]XBMC PROVIDES MAXIMUM QUALITY FOR "
 "AUDIO AND VIDEO."
-msgstr "PODESI SLIKU I ZVUK.[CR]XBMC PROPISUJE MAKSIMALNU KVALITETU ZA ZVUK I VIDEO."
+msgstr "KALIBRACIJA SLIKE I ODABIR ZVUKA.[CR]XBMC OMOGUĆUJE NAJVEĆU KVALITETU ZA ZVUK I VIDEO."
 
 msgctxt "#31392"
 msgid "DATA MANAGEMENT"
-msgstr "UPRAVLJANJE S PODACIMA"
+msgstr "UPRAVLJANJE PODACIMA"
 
 msgctxt "#31393"
 msgid ""
 "HIGH CAPACITY REMOVABLE HARD DRIVES ARE IDEAL FOR COLLECTION "
 "STORAGE.[CR]XBMC CAN MANAGE THOUSANDS OF FILES IN DIFFERENT SOURCES."
-msgstr "PRIJENOSNI DISKOVI OGROMNOG KAPACITETA SU IDEALNI ZA VAŠE KOLEKCIJE.[CR]XBMC MOŽE UPRAVLJATI TISUĆAMA PODATAKA IZ VIŠE IZVORA."
+msgstr "PRIJENOSNI DISKOVI VELIKOG KAPACITETA SU IDEALNI ZA POHRANU VAŠE KOLEKCIJE.[CR]XBMC MOŽE UPRAVLJATI TISUĆAMA DATOTEKA IZ VIŠE IZVORA."
 
 msgctxt "#31394"
 msgid "YOUR FAMILY MEMBERS WILL LOVE IT"
-msgstr "VAŠA OBITELJ ZAVOLJET ĆE GA"
+msgstr "VAŠA OBITELJ ĆE GA ZAVOLJETI."
 
 msgctxt "#31395"
 msgid ""
 "MULTIPLE USER SUPPORT WITH CUSTOM LOGINS ALLOWING YOU TO KEEP YOUR "
 "CONFIGURATIONS.[CR]RSS FEEDS, VISUALS AND LIBRARIES OPTIONS CAN BE USED "
 "SEPARATELY."
-msgstr "VIŠE KORISNIČKA PODRŠKA S PRILAGOĐENOM PRIJAVOM,OMOGUĆUJE VAM DA ZADRŽITE SVOJE POSTAVKE.[CR]RSS, FEDDS, SLIKE I KNJIŽNICE  MOGU SE KORISTITI ZASEBNO."
+msgstr "PODRŠKA ZA VIŠE KORISNIKA S PRILAGOĐENOM PRIJAVOM, OMOGUĆUJE VAM DA ZADRŽITE SVOJE POSTAVKE.[CR]RSS, PRIKAZ I ZBIRKE  MOGU SE KORISTITI ZASEBNO."
 
 msgctxt "#31396"
 msgid "IMPROVE YOUR EXPERIENCE WITH THE AEON MQ 5 SKIN"
@@ -2077,8 +2169,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "AUDIO JEZIK"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "'PRATI' NALJEPNICE"
+msgid "WATCHED LABEL"
+msgstr ""
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2537,8 +2629,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "OPREZNO: OVAJ PROCES JE NEPOVRATAN !"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Pomicanje u bilo kojem smjeru otkazati.[CR]Pritisnite Unos za nastavak"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr ""
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2623,8 +2717,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "PRIKAŽI AUDIO JEZIK I ZASTAVE PODNASLOVA"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "POSTAVITE VRIJEME ZA SVAKU SLIKU"
+msgid "PANEL DELAY"
+msgstr ""
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2771,16 +2865,16 @@ msgid ""
 msgstr ""
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "MNOŠTVO NOVOSTI I VIŠE ..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
+msgid "Finalizing Settings"
 msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "PRESKOČI PREZENTACIJU"
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -3478,6 +3572,46 @@ msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "LISTA"
 
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
+
 #. ....
 msgctxt "#31840"
 msgid "EVERY ONE HOUR"
@@ -4018,6 +4152,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr ""
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr ""
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr ""
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr ""
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr ""
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "SLJEDEĆA EPIZODA"
@@ -4027,8 +4177,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "EPIZODE EMITIRANE DANAS"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "PRIKAŽI NAPREDAK"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr ""
 
 msgctxt "#31983"
 msgid "Rating"

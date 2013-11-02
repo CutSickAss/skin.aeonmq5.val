@@ -6,7 +6,7 @@
 	<posx>0</posx>
 	<height>20</height>
 	<width>305</width>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<aligny>top</aligny>
 	<align>left</align>
 	<textcolor>$VAR[value_headercolor]</textcolor>
@@ -52,14 +52,24 @@
 	<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
 	</control>
 	<control type="image">
-	<posx>212</posx>
-	<posy>320</posy>
+	<posx>210</posx>
+	<posy>315</posy>
 	<width>40</width>
 	<height>40</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<aspectratio align="center" aligny="bottom">keep</aspectratio>
-	<visible>!Skin.HasSetting(nooverlays) + Control.HasFocus(54)</visible>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png) + Control.HasFocus(54)</visible>
+	</control>
+	<control type="image">
+	<posx>211</posx>
+	<posy>319</posy>
+	<width>40</width>
+	<height>40</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + Control.HasFocus(54)</visible>
 	</control>
 	</itemlayout>
 	<focusedlayout width="298" height="360">
@@ -74,17 +84,29 @@
 	<animation reversible="false" effect="zoom" end="120" center="auto" time="200">Focus</animation>
 	</control>
 	<control type="image">
-	<posx>212</posx>
-	<posy>320</posy>
+	<posx>210</posx>
+	<posy>315</posy>
 	<width>40</width>
 	<height>40</height>
-	<info>ListItem.Overlay</info>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<aspectratio align="center" aligny="bottom">keep</aspectratio>
 	<animation reversible="false" effect="slide" start="0,0" end="24,36" center="auto" time="200">Focus</animation>
 	<animation reversible="false" effect="zoom" end="120" center="auto" time="200">Focus</animation>
-	<visible>!Skin.HasSetting(nooverlays) + Control.HasFocus(54)</visible>
+	<visible>![Skin.HasSetting(nooverlays) | SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + StringCompare(ListItem.Overlay,OverlayWatched.png) + Control.HasFocus(54)</visible>
 	</control>
+	<control type="image">
+	<posx>211</posx>
+	<posy>319</posy>
+	<width>40</width>
+	<height>40</height>
+	<texture flipy="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation reversible="false" effect="slide" start="0,0" end="24,36" center="auto" time="200">Focus</animation>
+	<animation reversible="false" effect="zoom" end="120" center="auto" time="200">Focus</animation>
+	<visible>[!Skin.HasSetting(nooverlays) + StringCompare(ListItem.Overlay,OverlayWatched.png)] + [SubString(skin.string(stylewatched),2) | SubString(skin.string(stylewatched),3)] + Control.HasFocus(54)</visible>
+	</control>	
 	</focusedlayout>
 	</include>
 	<include name="ViewPoster">
@@ -102,28 +124,17 @@
 	</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<animation effect="fade" start="100" end="0" time="50">Hidden</animation>
-	<visible>!IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(nodiscart) + Window.IsActive(25) + Control.IsVisible(9923)</visible>
+	<visible>!IsEmpty(ListItem.Art(discart)) + !Skin.HasSetting(noposterdiscart) + Window.IsActive(25) + Control.IsVisible(9923)</visible>
 	<control type="image">
 	<posx>497</posx>
 	<posy>365</posy>
 	<width>280</width>
 	<height>280</height>
-	<aligny>center</aligny>
-	<texture>cdart.png</texture>
-	<aspectratio align="center">keep</aspectratio>
-	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.HasVideo + !Player.Paused">Conditional</animation>
-	</control>
-	<control type="image">
-	<posx>497</posx>
-	<posy>365</posy>
-	<width>280</width>
-	<height>280</height>
-	<aligny>center</aligny>
-	<fadetime>FanartCrossFadeTime</fadetime>
 	<texture diffuse="cdart_diffuse.png" background="true">$INFO[ListItem.Art(discart)]</texture>
-	<aspectratio align="center">keep</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
 	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
-	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.HasVideo + !Player.Paused">Conditional</animation>
+	<include>Animation_ViewsCDart</include>
 	</control>
 	</control>
 	<include>ViewBack</include><!-- Fundo -->
@@ -185,27 +196,31 @@
 	<control type="label">
 	<include>PosterLabel</include>
 	<label>$VAR[value_ground13_label]: [COLOR=FFFFFAF0]$VAR[value_ground13_value][/COLOR]</label>
+	<visible>!Container.Content(songs)</visible>
 	</control>
 	<control type="label">
 	<include>PosterLabel</include>
 	<label>$VAR[value_ground14_label]: [COLOR=FFFFFAF0]$VAR[value_ground14_value][/COLOR]</label>
+	<visible>![Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
 	</control>
 	<control type="label">
 	<include>PosterLabel</include>
 	<label>$VAR[value_ground16_label]: [COLOR=FFFFFAF0]$VAR[value_ground16_value][/COLOR]</label>
+	<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(songs)]</visible>
 	</control>
 	<control type="label">
 	<include>PosterLabel</include>
 	<label>$VAR[value_ground17_label]: [COLOR=FFFFFAF0]$VAR[value_ground17_value][/COLOR]</label>
+	<visible>![Container.Content(artists) | Container.Content(songs)]</visible>
 	</control>
 	</control>
 	<control type="textbox">
 	<posx>366</posx>
 	<posy>525</posy>
 	<width>640</width>
-	<height>110</height>
+	<height>113</height>
 	<textcolor>FFFFFAF0</textcolor>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="3000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<visible>![IsEmpty(Control.GetLabel(1008)) | Skin.HasSetting(noartpostervideo)]</visible>
@@ -214,9 +229,9 @@
 	<posx>366</posx>
 	<posy>525</posy>
 	<width>885</width>
-	<height>110</height>
+	<height>113</height>
 	<textcolor>FFFFFAF0</textcolor>
-	<font>Font_17</font>
+	<font>Font_19</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll delay="15000" time="3000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<visible>IsEmpty(Control.GetLabel(1008)) | Skin.HasSetting(noartpostervideo)</visible>

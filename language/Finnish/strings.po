@@ -93,6 +93,21 @@
 # Translators:
 # Translators:
 # Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
 # joonne <jonne.pihlanen@gmail.com>, 2013
 # hatiac <matias.gronvall@gmail.com>, 2013
 msgid ""
@@ -100,8 +115,8 @@ msgstr ""
 "Project-Id-Version: XBMC Skin Aeon MQ 5\n"
 "Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
 "POT-Creation-Date: 2012-06-22 19:08+0000\n"
-"PO-Revision-Date: 2013-10-03 14:41+0000\n"
-"Last-Translator: joonne <jonne.pihlanen@gmail.com>\n"
+"PO-Revision-Date: 2013-10-28 21:46+0000\n"
+"Last-Translator: Wanilton Campos <>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/skin-aeon-mq-5/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -111,7 +126,7 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "Aeon MQ 5, improved, more light and more powerful than ever."
-msgstr "Aeon MQ 5, kehittyneempi, kevyempi ja tehokkaampi kuin koskaan."
+msgstr "Aeon MQ 5, kehittyneempi, kevyempi ja tehokkaampi kuin koskaan aikaisemmin."
 
 msgctxt "Addon Description"
 msgid ""
@@ -210,7 +225,7 @@ msgstr "VALITSE ÄÄNILISÄOSA"
 
 msgctxt "#31020"
 msgid "CHOOSE PROGRAMS ADD-ON"
-msgstr "VALITSE OHJELMALISÄOSA"
+msgstr "VALITSE SOVELLUSLISÄOSA"
 
 msgctxt "#31021"
 msgid "CHOOSE IMAGE ADD-ON"
@@ -239,7 +254,7 @@ msgstr "KUVALISÄOSAT"
 
 msgctxt "#31027"
 msgid "PROGRAMS ADD-ONS"
-msgstr "OHJELMALISÄOSAT"
+msgstr "SOVELLUSLISÄOSAT"
 
 msgctxt "#31028"
 msgid "YEAR"
@@ -259,7 +274,7 @@ msgstr "SUOSIKIT"
 
 msgctxt "#31032"
 msgid "GENRE"
-msgstr "LAJITYYPPI"
+msgstr "TYYLILAJI"
 
 msgctxt "#31033"
 msgid "FILES"
@@ -315,7 +330,7 @@ msgstr "NÄYTTELIJÄT"
 
 msgctxt "#31046"
 msgid "DIRECTOR"
-msgstr "OHJANNUT"
+msgstr "OHJAAJA"
 
 msgctxt "#31047"
 msgid "STUDIOS"
@@ -496,7 +511,7 @@ msgstr "OHJAAJAT"
 
 msgctxt "#31091"
 msgid "GENRES"
-msgstr "LAJITYYPIT"
+msgstr "TYYLILAJIT"
 
 msgctxt "#31092"
 msgid "PLAYLISTS"
@@ -515,8 +530,8 @@ msgid "PATH"
 msgstr "POLKU"
 
 msgctxt "#31096"
-msgid "DELETE PATH - HIDE THE ITEM IN THE MAIN MENU"
-msgstr "POISTA POLKU - PIILOTA KOHDE PÄÄVALIKOSTA"
+msgid "DISC"
+msgstr "LEVY"
 
 msgctxt "#31097"
 msgid "Access to collection"
@@ -595,12 +610,12 @@ msgid "VIDEO NODE"
 msgstr ""
 
 msgctxt "#31116"
-msgid "CHESS EFFECT"
-msgstr "SHAKKIEFEKTI"
+msgid "DISC SWING SPEED"
+msgstr ""
 
 msgctxt "#31117"
 msgid "INVERT MENU COLORS"
-msgstr "KÄÄNTEISET VÄRIT VALIKOSSA"
+msgstr "KÄÄNTEISET VALIKON VÄRIT"
 
 msgctxt "#31118"
 msgid "TRANSPARENCY FOR STYLES"
@@ -656,7 +671,7 @@ msgstr "PUNERTAVA"
 
 msgctxt "#31131"
 msgid "GRAPHITE STYLE"
-msgstr "Grafiittityyli"
+msgstr "GRAFIITTITYYLI"
 
 msgctxt "#31132"
 msgid "GRAPHITE"
@@ -664,11 +679,11 @@ msgstr "GRAFIITTI"
 
 msgctxt "#31133"
 msgid "CUSTOMIZE INFO PANEL"
-msgstr "MUKAUTA TIETOPANEELIA"
+msgstr "MUOKKAA TIETOPANEELIA"
 
 msgctxt "#31134"
 msgid "VIEW OPTIONS"
-msgstr "NÄKYMÄVAIHTOEHDOT"
+msgstr "NÄKYMÄASETUKSET"
 
 msgctxt "#31135"
 msgid "CHANGE VIEW"
@@ -701,7 +716,7 @@ msgstr "+ näkymät"
 
 msgctxt "#31142"
 msgid "LOGO AS TITLE (ON TOP IF AVAILABLE)"
-msgstr "TUNNUS OTSIKKONA (PÄÄLLIMMÄISENÄ JOS SAATAVILLA)"
+msgstr "LOGO OTSIKKONA (PÄÄLLIMMÄISENÄ JOS SAATAVILLA)"
 
 msgctxt "#31143"
 msgid "SHUTDOWN OPTIONS"
@@ -737,7 +752,7 @@ msgid ""
 "new item that will occupy the site of the previous item. This option will "
 "always replace the item for a standard menu, title and custom background "
 "image will be lost."
-msgstr "KORVAUSTOIMINTO[CR]Helpoin tapa uudelleenjärjestää valikko, valitse uusi kohde joka korvaa aiemman kohteen. Tämä valinta korvaa aina perusvalikon kohteen, otsikko ja taustakuva menetetään."
+msgstr "KORVAUSTOIMINTO[CR]Helpoin tapa uudelleenjärjestää valikko. valitse uusi kohde, joka korvaa aiemman kohteen. Tämä valinta korvaa aina perusvalikon kohteen. Otsikko ja taustakuva menetetään."
 
 msgctxt "#31151"
 msgid ""
@@ -890,6 +905,74 @@ msgctxt "#31182"
 msgid "PARTIAL"
 msgstr "OSITTAINEN"
 
+msgctxt "#31183"
+msgid "COLOR FOR WATCHED FLAG"
+msgstr ""
+
+msgctxt "#31184"
+msgid "CUSTOMIZE THE WATCHED FLAG ITEM"
+msgstr ""
+
+msgctxt "#31185"
+msgid "CUSTOMIZE FLAG"
+msgstr ""
+
+msgctxt "#31186"
+msgid "4K CONTENT LABEL WILL BE SHOWN."
+msgstr "NÄYTETÄÄN 4K-SISÄLTÖMERKINTÄ"
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr ""
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr ""
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr ""
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr ""
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr ""
+
+msgctxt "#31192"
+msgid "COLOR PALETTE FOR THE WATCHED LABEL"
+msgstr ""
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "SIIRTYMÄAIKA USEILLE KUVILLE"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5 SEKUNTIA"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10 SEKUNTIA"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30 SEKUNTIA"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1 MINUUTTI"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10 MINUUTTIA"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1 TUNTI"
+
 #. ....
 msgctxt "#31200"
 msgid "MENU"
@@ -956,8 +1039,8 @@ msgid "Page"
 msgstr "Sivu"
 
 msgctxt "#31216"
-msgid "THUMBNAIL SET PLAYLIST"
-msgstr ""
+msgid "THUMBNAIL SET"
+msgstr "NÄYTEKUVASARJA"
 
 msgctxt "#31217"
 msgid "CHANGE BACKDROP - ONE IMAGE"
@@ -1079,16 +1162,16 @@ msgid "KEEP BACKGROUND'S ASPECT"
 msgstr "SÄILYTÄ TAUSTAN KUVASUHDE"
 
 msgctxt "#31246"
-msgid "SHOW WIDGETS FOR:"
-msgstr "NÄYTÄ PIENOISOHJELMAT KOHTEILLE:"
+msgid "MANAGEMENT OF WIDGETS"
+msgstr ""
 
 msgctxt "#31247"
 msgid "CLEARART:"
-msgstr ""
+msgstr "CLEARART"
 
 msgctxt "#31248"
 msgid "CLEARLOGO"
-msgstr ""
+msgstr "CLEARLOGO"
 
 msgctxt "#31249"
 msgid "WIDGETS"
@@ -1143,6 +1226,14 @@ msgid ""
 "1920x1080 JPG format and I would suggest using the program FastStone Photo "
 "Resize to obtain good quality images and low size."
 msgstr "1. Luo juurikansio millä tahansa nimellä, esimerkiksi OMA TEEMA.[CR][CR]2. Luo juurikansion sisälle seuraavat 21 kansiota: [CR]addons, aplaylist, autumn, concerts, disc, favourites, games, livetv, movies, music, mymenu, pictures, programs, settings, shutdown, spring, summer, tvshows, vnodes, vplaylist, winter.[CR][CR]3. Lisää jokaiseen kansioon haluamasi kuvat. OMA TEEMA tukee useita tiedostoja, joten jokainen kansio voi sisältää useita kuvia.[CR][CR]4. Lisää lopuksi juurikansion polku. [CR][CR]AEON MQ 5:n oletuskuvat ovat tarkkuudeltaan 72dpi, kuvakooltaan 1920x1080 pikseliä ja muodoltaan JPG. Suosittelemme FastStone Photo Resize -ohjelman käyttämistä saadaksesi kuvista hyvälaatuisia, mutta tiedostokooltaan pieniä."
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colors, panel"
+" definitions...[CR]It's recommended for instance when there is a non "
+"functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr ""
 
 #. ....
 msgctxt "#31260"
@@ -1375,7 +1466,7 @@ msgstr "ÄÄNIASETUKSET"
 
 msgctxt "#31314"
 msgid "PROGRAMS OPTIONS"
-msgstr "OHJELMA-ASETUKSET"
+msgstr "SOVELLUSASETUKSET"
 
 msgctxt "#31315"
 msgid "RANDOM ORDER"
@@ -1777,7 +1868,7 @@ msgstr "TAIDE"
 
 msgctxt "#31409"
 msgid "CONTEXTUAL ART"
-msgstr ""
+msgstr "ASIAYHTEYTEEN LIITTYVÄ TAIDE"
 
 msgctxt "#31410"
 msgid "MAIN MENU"
@@ -1893,7 +1984,7 @@ msgstr "JUURI"
 
 msgctxt "#31438"
 msgid "GET LOGO/CLEARART"
-msgstr ""
+msgstr "HAE LOGO/CLEARART"
 
 msgctxt "#31439"
 msgid "GET SOUND THEME"
@@ -1970,7 +2061,7 @@ msgstr "PAINA KAHDESTI OIKEALLE TOISTAAKSESI"
 
 msgctxt "#31458"
 msgid "TRAILER ON"
-msgstr ""
+msgstr "TRAILERI PÄÄLLÄ"
 
 msgctxt "#31459"
 msgid "PRESS ANY DIRECTION TO CANCEL"
@@ -2042,7 +2133,7 @@ msgstr "JULISTETYYLI"
 
 msgctxt "#31476"
 msgid "PLOT STYLE"
-msgstr ""
+msgstr "JUONITYYLI"
 
 msgctxt "#31477"
 msgid "EXTRA THUMBNAIL STYLE"
@@ -2077,8 +2168,8 @@ msgid "AUDIO LANGUAGES"
 msgstr "ÄÄNIRAIDAT"
 
 msgctxt "#31485"
-msgid "'WATCHED' LABEL"
-msgstr "'KATSOTTU' -MERKINTÄ"
+msgid "WATCHED LABEL"
+msgstr "KATSOTTU -MERKINTÄ"
 
 msgctxt "#31486"
 msgid "USE MEDIA CASE"
@@ -2086,7 +2177,7 @@ msgstr "KÄYTÄ LEVYKOTELOITA"
 
 msgctxt "#31487"
 msgid "USE STARS TO RATE"
-msgstr ""
+msgstr "KÄYTÄ TÄHTIÄ ARVOSTELUUN"
 
 msgctxt "#31488"
 msgid "VIDEO OPTIONS"
@@ -2114,7 +2205,7 @@ msgstr ""
 
 msgctxt "#31494"
 msgid "PREFER: CLEARART"
-msgstr ""
+msgstr "SUOSI: CLEARART"
 
 msgctxt "#31495"
 msgid "PREFER: LOGO"
@@ -2170,7 +2261,7 @@ msgstr "KÄYTÄ LANDSCAPE.JPG:TÄ"
 
 msgctxt "#31508"
 msgid "SHOW CLEARLOGO AND CLEARART"
-msgstr ""
+msgstr "NÄYTÄ CLEARLOGO JA CLEARART"
 
 msgctxt "#31509"
 msgid "ALTERNATIVE GENRE ICONS"
@@ -2206,7 +2297,7 @@ msgstr "RUUDUKKO"
 
 msgctxt "#31517"
 msgid "LANDSCAPE"
-msgstr ""
+msgstr "MAISEMA"
 
 msgctxt "#31518"
 msgid "USE ZOOM EFFECT"
@@ -2537,8 +2628,10 @@ msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
 msgstr "VAROITUS: TOIMINTOA EI VOIDA PERUUTTAA!"
 
 msgctxt "#31600"
-msgid "Move for any direction to cancel.[CR]Press Enter to proceed"
-msgstr "Paina mihin tahansa suuntaan peruutaaksesi.[CR]Paina enteriä jatkaaksesi"
+msgid ""
+"Move for any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will loose all your customizations."
+msgstr "Siirry mihin tahansa suuntaan peruuttaaksesi.[CR]Paina enteriä jatkaaksesi.[CR]Tämä valinta palauttaa ulkoasun oletusasetukset ja kaikki tekemäsi muutokset menetetään."
 
 msgctxt "#31601"
 msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
@@ -2623,8 +2716,8 @@ msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
 msgstr "NÄYTÄ LIPUT ÄÄNIRAITOJEN JA TEKSTIYSTEN KIELILLE"
 
 msgctxt "#31621"
-msgid "SET TIME FOR EACH IMAGE"
-msgstr "ASETA KUVILLE AIKA"
+msgid "PANEL DELAY"
+msgstr "PANEELIN VIIVE"
 
 msgctxt "#31622"
 msgid "EXPORT SKIN SETTINGS"
@@ -2771,16 +2864,16 @@ msgid ""
 msgstr "Eikö olisikin hienoa saada kaikki teemat, taustat, ikonit ja logot vain yhdellä klikkauksella?[CR]Aeon MQ 5:ssä tämä on mahdollista! Voit ladata yhden ainoan paketin, jonka jälkeen sinulla on kaikki lisäsisältö käytettävissäsi."
 
 msgctxt "#31656"
-msgid "MANY NEWS AND MORE..."
-msgstr "PALJON UUTISIA JA MUUTA..."
+msgid "Applying new settings..."
+msgstr ""
 
 msgctxt "#31657"
-msgid "Aeon MQ 5, a smart skin for smart people.[CR][CR]Enjoy."
-msgstr "Aeon MQ 5, fiksu ulkoasu fiksuille ihmisille.[CR][CR]Nauti."
+msgid "Finalizing Settings"
+msgstr ""
 
 msgctxt "#31658"
-msgid "SKIP PRESENTATION"
-msgstr "OHITA ESITTELY"
+msgid "-"
+msgstr ""
 
 msgctxt "#31659"
 msgid "BUILD"
@@ -2856,7 +2949,7 @@ msgstr "PIILOTA RSS"
 
 msgctxt "#31677"
 msgid "SHOW TITLES (GENRE:; STUDIO: AND ETC...)"
-msgstr "NÄYTÄ OTSIKOT (LAJI:, STUDIO: JNE...)"
+msgstr "NÄYTÄ OTSIKOT (TYYLILAJI:, STUDIO: JNE...)"
 
 msgctxt "#31678"
 msgid "SHOW FURNITURE"
@@ -3054,11 +3147,11 @@ msgstr "SANOITUSTEN LÄHDE"
 
 msgctxt "#31727"
 msgid "VIEWING"
-msgstr ""
+msgstr "KATSELU"
 
 msgctxt "#31728"
 msgid "VIEWING OPTIONS"
-msgstr ""
+msgstr "KATSELUVAIHTOEHDOT"
 
 msgctxt "#31729"
 msgid "SHOW PAUSE WORD"
@@ -3066,7 +3159,7 @@ msgstr "NÄYTÄ 'KESKEYTÄ'-SANA"
 
 msgctxt "#31730"
 msgid "SHOW POSTER/CLEARART"
-msgstr ""
+msgstr "NÄYTÄ JULISTE/CLEARART"
 
 msgctxt "#31731"
 msgid "SHOW COVER/THUMBNAIL"
@@ -3082,15 +3175,15 @@ msgstr "TILA: VAIHTOEHTOINEN"
 
 msgctxt "#31734"
 msgid "DISPLAY: CLEARART"
-msgstr ""
+msgstr "NÄYTÄ: CLEARART"
 
 msgctxt "#31735"
 msgid "DISPLAY: LOGO"
-msgstr ""
+msgstr "NÄYTÄ: LOGO"
 
 msgctxt "#31736"
 msgid "LANDSCAPE"
-msgstr ""
+msgstr "MAISEMA"
 
 msgctxt "#31737"
 msgid "PAUSE"
@@ -3122,7 +3215,7 @@ msgstr "PÄÄLLÄ"
 
 msgctxt "#31744"
 msgid "THERE IS NO BUTTON ON !"
-msgstr ""
+msgstr "NAPPULAA EI OLE PAINETTU !"
 
 msgctxt "#31745"
 msgid "FILTERS"
@@ -3416,7 +3509,7 @@ msgstr "LAAJA"
 #. 552
 msgctxt "#31814"
 msgid "LANDSCAPE"
-msgstr ""
+msgstr "MAISEMA"
 
 msgctxt "#31815"
 msgid "SQUARE"
@@ -3438,7 +3531,7 @@ msgstr "ANEELI"
 #. 572
 msgctxt "#31819"
 msgid "LANDSCAPE PANEL"
-msgstr ""
+msgstr "MAISEMAPANEELI"
 
 #. 574
 msgctxt "#31820"
@@ -3477,6 +3570,46 @@ msgstr "LASILISTA"
 msgctxt "#31828"
 msgid "RIGHT LIST"
 msgstr "OIKEA LISTA"
+
+msgctxt "#31830"
+msgid "...Defining fonts, colors and styles"
+msgstr ""
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr ""
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr ""
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr ""
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr ""
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr ""
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr ""
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr ""
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr ""
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr ""
 
 #. ....
 msgctxt "#31840"
@@ -3871,7 +4004,7 @@ msgstr "AUDIO"
 
 msgctxt "#31939"
 msgid "SEARCHING FOR DISCOGRAPHY INFORMATION..."
-msgstr ""
+msgstr "HAETAAN DISKOGRAFIAN TIETOJA..."
 
 msgctxt "#31940"
 msgid "Similar artists"
@@ -3891,7 +4024,7 @@ msgstr "NÄYTÄ VAIN CD:N KUVITUS JA KANSI"
 
 msgctxt "#31944"
 msgid "IMAGE ZOOM"
-msgstr ""
+msgstr "KUVA-ZOOMAUS"
 
 msgctxt "#31945"
 msgid "PLAY TRAILER"
@@ -4018,6 +4151,22 @@ msgid ""
 "theme of Aeon MQ 5."
 msgstr "Kuvissa punertavat sävyt yhdistettynä grafiittisävyihin.[CR]Aeon MQ 5:n oletusteema."
 
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "NÄYTÄ TAGIT"
+
+msgctxt "#31977"
+msgid "CUSTOMIZE DEFAULT DISC"
+msgstr "MUOKKAA OLETUSLEVYÄ"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "ÄÄNILEVY"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "VIDEOLEVY"
+
 msgctxt "#31980"
 msgid "NEXT EPISODE"
 msgstr "SEURAAVA JAKSO"
@@ -4027,8 +4176,8 @@ msgid "EPISODES AIRED TODAY"
 msgstr "TÄNÄÄN ESITETTÄVÄT JAKSOT"
 
 msgctxt "#31982"
-msgid "SHOW PROGRESS PANEL"
-msgstr "NÄYTÄ EDISTYMISPALKKI"
+msgid "SHOW FIRST WIDGET LIKE 'IN PROGRESS' (MOVIES, TV SHOWS AND CONCERT)"
+msgstr ""
 
 msgctxt "#31983"
 msgid "Rating"
