@@ -57,7 +57,7 @@
 	<width>852</width>
 	<height>30</height>
 	<label>31140</label>
-	<font>Font_19</font>
+	<font>Font_18A</font>
 	<textcolor>FFFFFAF0</textcolor>
 	<align>center</align>
 	<aligny>center</aligny>
@@ -187,7 +187,7 @@
 	<label>PosterLite</label>
 	<onclick>Skin.ToggleSetting(viewposterlite_video)</onclick>
 	<selected>Skin.HasSetting(viewposterlite_video)</selected>
-	<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+	<visible>![Container.Content(years) | Container.Content(genres) | Container.Content(actors)]</visible>
 	</control>
 	</control>
 	</control>

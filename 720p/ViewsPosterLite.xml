@@ -11,6 +11,7 @@
 	<onup>9900</onup>
 	<ondown>528</ondown>
 	</control>
+	<animation effect="fade" time="400">VisibleChange</animation>
 	<visible>Control.IsVisible(528)</visible>
 	<control type="image">
 	<posx>77r</posx>
@@ -18,15 +19,15 @@
 	<width>80</width>
 	<height>80</height>
 	<aspectratio>keep</aspectratio>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<texture background="true">$INFO[ListItem.Overlay]</texture>
+	<texture background="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
 	<animation effect="slide" time="400" start="0,-400" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
 	<animation effect="slide" time="400" start="0,-400" end="0,0" easing="inout" tween="cubic">Visible</animation>
 	<animation effect="slide" time="400" start="0,0" end="0,-400" easing="inout" tween="cubic">WindowClose</animation>
 	<animation effect="slide" time="400" start="0,0" end="0,-1000" easing="inout" tween="cubic" condition="Control.HasFocus(9920)">Conditional</animation>
-	<animation effect="slide" end="0,-40" time="500" tween="sine" easing="out" condition="Skin.HasSetting(nomediaflags)">Conditional</animation>
+	<animation effect="slide" end="0,-40" time="500" tween="sine" easing="out" condition="SubString(skin.string(mediaflags),off)">Conditional</animation>
 	<animation effect="slide" end="0,20" time="500" tween="sine" easing="out" condition="Skin.HasSetting(videodate)">Conditional</animation>
-	<visible>!Skin.HasSetting(nooverlays)+[StringCompare(Control.GetLabel(528707),logo)|StringCompare(Control.GetLabel(528707),clearart)|StringCompare(Control.GetLabel(528707),characterart)|StringCompare(Control.GetLabel(528707),noicon)]</visible>
+	<visible>!Skin.HasSetting(nooverlays)+StringCompare(ListItem.Overlay,OverlayWatched.png)+[StringCompare(Control.GetLabel(528707),logo)|StringCompare(Control.GetLabel(528707),clearart)|StringCompare(Control.GetLabel(528707),characterart)|StringCompare(Control.GetLabel(528707),noicon)]</visible>
 	</control>
 	<control type="group">
 	<animation effect="fade" start="100" end="0" time="160" condition="[StringCompare(Control.GetLabel(528421),infopaneloff)|[[[StringCompare(Control.GetLabel(528421),infopanelmanual)+[!Control.HasFocus(99528)|Control.IsVisible(528195)]]|[StringCompare(Control.GetLabel(528421),infopanelauto)+!Control.IsVisible(528200)]]+StringCompare(Control.GetLabel(528707),noicon)]]">Conditional</animation>
@@ -68,16 +69,16 @@
 	<!-- Movies and TV shows -->
 	<control type="textbox">
 	<posx>0</posx>
-	<posy>31</posy>
+	<posy>32</posy>
 	<width>881</width>
 	<height>105</height>
-	<font>Font_27</font>
+	<font>Font_26</font>
 	<label>$VAR[value_plot]</label>
 	<autoscroll time="6000" delay="10000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	</control>
 	<control type="fadelabel">
 	<posx>0</posx>
-	<posy>10</posy>
+	<posy>12</posy>
 	<width>430</width>
 	<height>50</height>
 	<scrollout>false</scrollout>
@@ -88,7 +89,7 @@
 	</control>
 	<control type="fadelabel">
 	<posx>828r</posx>
-	<posy>10</posy>
+	<posy>12</posy>
 	<width>430</width>
 	<height>50</height>
 	<align>right</align>
@@ -283,6 +284,7 @@
 	<scrolltime>400</scrolltime>
 	<preloaditems>3</preloaditems>
 	<pagecontrol>80</pagecontrol>
+	<visible>![Container.Content(years)|Container.Content(genres)|Container.Content(actors)]</visible>
 	<animation effect="slide" start="0,0" end="0,-20" time="300" tween="sine" easing="out" condition="Control.HasFocus(80)">Conditional</animation>
 	<itemlayout width="127" height="667" condition="StringCompare(Control.GetLabel(528707),poster)+!Control.IsVisible(528196)">
 	<control type="group">
@@ -293,7 +295,7 @@
 	<include>PLPoster</include>
 	</control>
 	</itemlayout>
-	<focusedlayout width="319" height="512" condition="StringCompare(Control.GetLabel(528707),poster)"></focusedlayout>
+	<focusedlayout width="325" height="512" condition="StringCompare(Control.GetLabel(528707),poster)"></focusedlayout>
 	<itemlayout width="280" height="667" condition="[StringCompare(Control.GetLabel(528707),noicon)|Control.IsVisible(528196)]"></itemlayout>
 	<focusedlayout width="380" height="512" condition="[StringCompare(Control.GetLabel(528707),noicon)|Control.IsVisible(528196)]"></focusedlayout>
 	<itemlayout width="280" height="109" condition="StringCompare(Control.GetLabel(528707),landscape)+!Control.IsVisible(528196)">
@@ -446,7 +448,7 @@
 	<control type="image">
 	<posx>-28</posx>
 	<posy>-75</posy>
-	<width>375</width>
+	<width>384</width>
 	<height>577</height>
 	<fadetime>FanartCrossFadeTime</fadetime>
 	<aspectratio>stretch</aspectratio>
@@ -454,7 +456,7 @@
 	<visible>!Skin.HasSetting(nowidevideocase)</visible>
 	</control>
 	<control type="image">
-	<posx>102</posx>
+	<posx>107</posx>
 	<posy>-72</posy>
 	<width>99</width>
 	<height>99</height>
@@ -465,7 +467,7 @@
 	<visible>!Skin.HasSetting(nowidevideocase)</visible>
 	</control>
 	<control type="textbox">
-	<posx>4</posx>
+	<posx>9</posx>
 	<posy>-45</posy>
 	<width>300</width>
 	<height>42</height>
@@ -477,7 +479,7 @@
 	<autoscroll time="3000" delay="5000" repeat="3000">true</autoscroll>
 	</control>
 	<control type="image">
-	<posx>253</posx>
+	<posx>260</posx>
 	<posy>-2</posy>
 	<include>PLWatchedIcon</include>
 	</control>
@@ -678,9 +680,9 @@
 	<width>50</width>
 	<height>50</height>
 	<aspectratio>keep</aspectratio>
-	<colordiffuse>$VAR[value_headercolor]</colordiffuse>
-	<texture background="true">$INFO[ListItem.Overlay]</texture>
-	<visible>!Skin.HasSetting(nooverlays)</visible>
+	<texture background="true">$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$VAR[value_watchedcolor]</colordiffuse>
+	<visible>!Skin.HasSetting(nooverlays)+StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 	</include>
 	<include name="PLcdART">
 	<control type="group">
