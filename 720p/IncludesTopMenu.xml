@@ -906,6 +906,13 @@
 	<onclick>ReloadSkin</onclick>
 	<visible>Control.IsVisible(528)</visible>
 	</control>
+	<control type="radiobutton" id="528204">
+	<include>TopMenuRadioButton</include>
+	<label>31111</label>
+	<onclick>Skin.ToggleSetting(nopldiscart)</onclick>
+	<selected>!Skin.HasSetting(nopldiscart)</selected>
+	<visible>Control.IsVisible(528) + [Container.Content(movies) | Container.Content(sets)]</visible>
+	</control>
 	<control type="label" id="528421">
 	<posx>-500</posx>
 	<posy>-500</posy>
