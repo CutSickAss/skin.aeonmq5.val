@@ -141,7 +141,7 @@
 	</control>
 	<control type="group"><!-- Rating -->
 	<width>125</width>
-	<visible>!IsEmpty(ListItem.Title) + !Container.Content(seasons)</visible>
+	<visible>!IsEmpty(ListItem.Title)</visible>
 	<control type="image">
 	<posx>5</posx>
 	<include>FlagImage</include>
@@ -162,7 +162,7 @@
 	<visible>!Substring(Skin.CurrentTheme,Greek)</visible>
 	</control>
 	<control type="label">
-	<posx>115</posx>
+	<posx>118</posx>
 	<posy>1.5</posy>
 	<width>89</width>
 	<height>50</height>
@@ -175,7 +175,7 @@
 	<visible>Substring(Skin.CurrentTheme,Greek)</visible>
 	</control>
 	<control type="image"><!-- Video Star, Greek Ratings -->
-	<posx>-18</posx>
+	<posx>-12</posx>
 	<width>100</width>
 	<height>50</height>
 	<aspectratio>keep</aspectratio>
