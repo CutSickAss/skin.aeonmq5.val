@@ -118,6 +118,7 @@
 	<colordiffuse>$VAR[value_texturecolor]</colordiffuse>
 	<texture diffuse="shadow_mask.png">shadow_spot.png</texture>
 	<animation effect="fade" end="75" condition="true">Conditional</animation>
+	<visible>!Control.IsVisible(528)</visible>
 	</control>
 	<control type="group">
 	<animation effect="slide" start="0,300" end="0,0"  time="500" tween="sine" easing="out">WindowOpen</animation>
