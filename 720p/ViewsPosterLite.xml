@@ -178,9 +178,8 @@
 	<pauseatend>2000</pauseatend>
 	<scrollspeed>10</scrollspeed>
 	<font>Font_40</font>
-	<textcolor>FFE00000</textcolor>
 	<shadowcolor>black</shadowcolor>
-	<label>[B]$INFO[ListItem.Label][/B]</label>
+	<label>[COLOR=$VAR[value_headercolor]][B]$INFO[ListItem.Label][/B][/COLOR]</label>
 	<visible>StringCompare(Control.GetLabel(528421),infopaneloff)+StringCompare(Control.GetLabel(528707),noicon)+[[StringCompare(Control.GetLabel(528708),logo)+IsEmpty(ListItem.Art(clearlogo))]|[StringCompare(Control.GetLabel(528708),clearart)+IsEmpty(ListItem.Art(clearart))+IsEmpty(ListItem.Art(clearlogo))]|[StringCompare(Control.GetLabel(528708),characterart)+IsEmpty(ListItem.Art(characterart))+IsEmpty(ListItem.Art(clearlogo))]|[StringCompare(Control.GetLabel(528708),characterart)+IsEmpty(ListItem.Art(characterart))+IsEmpty(ListItem.Art(clearlogo))]|[StringCompare(Control.GetLabel(528708),extrathumbs)+IsEmpty(Control.GetLabel(528203))]|[StringCompare(Control.GetLabel(528708),cdart)+IsEmpty(ListItem.Art(discart))]]</visible>
 	</control>
 	</control>
@@ -620,10 +619,9 @@
 	<height>50</height>
 	<align>center</align>
 	<font>Font_23</font>
-	<textcolor>FFE00000</textcolor>
 	<shadowcolor>black</shadowcolor>
 	<scroll>true</scroll>
-	<label>[B]$INFO[ListItem.Label][/B]</label>
+	<label>[COLOR=$VAR[value_headercolor]][B]$INFO[ListItem.Label][/B][/COLOR]</label>
 	<visible>IsEmpty(ListItem.Art(banner))+IsEmpty(ListItem.Art(clearlogo))</visible>
 	</control>
 	</include>
@@ -645,9 +643,8 @@
 	<height>107</height>
 	<align>center</align>
 	<font>Font_40</font>
-	<textcolor>FFE00000</textcolor>
 	<shadowcolor>black</shadowcolor>
-	<label>[B]$INFO[ListItem.Label][/B]</label>
+	<label>[COLOR=$VAR[value_headercolor]][B]$INFO[ListItem.Label][/B][/COLOR]</label>
 	<autoscroll time="2000" delay="2000" repeat="2000">true</autoscroll>
 	<visible>!Container.Content(episodes)</visible>
 	</include>
