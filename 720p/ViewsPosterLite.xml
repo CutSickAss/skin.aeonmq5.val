@@ -191,7 +191,7 @@
 	<width>790</width>
 	<height>336</height>
 	<animation effect="slide" end="66,0" time="500" reversible="true" condition="StringCompare(Control.GetLabel(528707),poster)+!Skin.HasSetting(nopldiscart)+[!IsEmpty(ListItem.Art(discart)|!IsEmpty(Window(0).Property(Set.Movie.6.Art(discart)))|!IsEmpty(Window(0).Property(Set.Movie.7.Art(discart)))|!IsEmpty(Window(0).Property(Set.Movie.8.Art(discart)))|!IsEmpty(Window(0).Property(Set.Movie.9.Art(discart)))|!IsEmpty(Window(0).Property(Set.Movie.10.Art(discart)))]">Conditional</animation>
-	<visible>Player.HasVideo+!VideoPlayer.IsFullscreen+!Skin.HasSetting(fullscreentrailer)</visible>
+	<visible>Player.HasVideo+!VideoPlayer.IsFullscreen+!Skin.HasSetting(homefullscreentrailer)</visible>
 	</control>
 	<control type="image">
 	<width>790</width>
@@ -200,7 +200,7 @@
 	<aspectratio align="center">keep</aspectratio>
 	<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
 	<bordertexture background="true" border="-2">black.png</bordertexture>
-	<visible>!Player.HasVideo+Container.Content(episodes)+Skin.HasSetting(plepthumb)</visible>
+	<visible>![Player.HasVideo+!Skin.HasSetting(homefullscreentrailer)]+Container.Content(episodes)+Skin.HasSetting(plepthumb)</visible>
 	</control>
 	</control>
 	<control type="group">

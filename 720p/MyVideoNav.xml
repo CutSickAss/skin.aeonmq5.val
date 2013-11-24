@@ -61,7 +61,7 @@
 	<texture>black.png</texture>
 	<colordiffuse>C3FFFFFF</colordiffuse>
 	<include>Animation_Fade</include>
-	<visible>!Control.HasFocus(9920) + [[Player.HasVideo + !Skin.HasSetting(fullscreentrailer)] | [Control.IsVisible(528) + Container.Content(episodes) + Skin.HasSetting(plepthumb)]]</visible>
+	<visible>!Control.HasFocus(9920) + [[Player.HasVideo + [[!Control.IsVisible(528) + !Skin.HasSetting(fullscreentrailer)] | [Control.IsVisible(528) + !Skin.HasSetting(homefullscreentrailer)]]] | [Control.IsVisible(528) + Container.Content(episodes) + Skin.HasSetting(plepthumb)]]</visible>
 	</control>
 	<control type="group"><!-- default group -->
 	<include>Animation_Window</include>
@@ -339,7 +339,7 @@
 	<texture flipy="true">shadow_mask.png</texture>
 	<colordiffuse>F9000000</colordiffuse>
 	<animation effect="fade" end="75" condition="true">Conditional</animation>
-	<visible>![Control.IsVisible(528) + [[Player.HasVideo + !VideoPlayer.IsFullscreen] | [Container.Content(episodes) + Skin.HasSetting(plepthumb)]]]</visible>
+	<visible>![Control.IsVisible(528) + [[Player.HasVideo + !Skin.HasSetting(homefullscreentrailer)] | [Container.Content(episodes) + Skin.HasSetting(plepthumb)]]]</visible>
 	</control>
 	<control type="group">
 	<visible>!IsEmpty(Window(2003).Property(AudioLanguage.1))</visible>
