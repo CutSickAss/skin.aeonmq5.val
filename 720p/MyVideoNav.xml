@@ -359,8 +359,8 @@
 	<control type="image"><!-- clearlogo -->
 	<posx>30</posx>
 	<posy>58</posy>
-	<width>300</width>
-	<height>45</height>
+	<width>600</width>
+	<height>90</height>
 	<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 	<aspectratio align="left" aligny="bottom">keep</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
@@ -377,7 +377,20 @@
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
-	<visible>!Skin.HasSetting(nomoviestagline)</visible>
+	<visible>!Skin.HasSetting(nomoviestagline) + [!Skin.HasSetting(clearlogotitle) | IsEmpty(ListItem.Art(clearlogo))]</visible>
+	</control>
+	<control type="label">
+	<posx>30</posx>
+	<posy>145</posy>
+	<width>750</width>
+	<height>25</height>
+	<font>Font_21</font>
+	<label>$INFO[ListItem.Tagline]</label>
+	<textcolor>90FFFFFF</textcolor>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	<shadowcolor>grey</shadowcolor>
+	<visible>!Skin.HasSetting(nomoviestagline) + Skin.HasSetting(clearlogotitle) + !IsEmpty(ListItem.Art(clearlogo))</visible>
 	</control>
 	<control type="label">
 	<posx>30</posx>
@@ -412,8 +425,8 @@
 	<control type="image"><!-- clearlogo -->
 	<posx>30</posx>
 	<posy>58</posy>
-	<width>300</width>
-	<height>45</height>
+	<width>600</width>
+	<height>90</height>
 	<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 	<aspectratio align="left" aligny="bottom">keep</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
@@ -430,11 +443,24 @@
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
-	<visible>!Skin.HasSetting(nomoviestagline)</visible>
+	<visible>!Skin.HasSetting(nomoviestagline) + [!Skin.HasSetting(clearlogotitle) | IsEmpty(ListItem.Art(clearlogo))]</visible>
 	</control>
 	<control type="label">
 	<posx>30</posx>
-	<posy>130</posy>
+	<posy>145</posy>
+	<width>1100</width>
+	<height>25</height>
+	<font>Font_21</font>
+	<label>$INFO[ListItem.Tagline]</label>
+	<textcolor>90FFFFFF</textcolor>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	<shadowcolor>grey</shadowcolor>
+	<visible>!Skin.HasSetting(nomoviestagline) + Skin.HasSetting(clearlogotitle) + !IsEmpty(ListItem.Art(clearlogo))</visible>
+	</control>
+	<control type="label">
+	<posx>30</posx>
+	<posy>175</posy>
 	<width>1100</width>
 	<height>25</height>
 	<font>Font_18A</font>
