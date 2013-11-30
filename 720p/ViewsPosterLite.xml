@@ -467,7 +467,7 @@
 	</control>
 	<control type="textbox">
 	<posx>9</posx>
-	<posy>-45</posy>
+	<posy>-44</posy>
 	<width>300</width>
 	<height>42</height>
 	<align>center</align>

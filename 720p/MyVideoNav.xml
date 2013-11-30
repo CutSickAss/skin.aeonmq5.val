@@ -289,7 +289,7 @@
 	</control>
 	<control type="label"><!-- Movie Set Tag -->
 	<width>500</width>
-	<height>51</height>
+	<height>52</height>
 	<align>left</align>
 	<aligny>center</aligny>
 	<font>Font_22</font>
@@ -300,7 +300,7 @@
 	</control>
 	<control type="label"><!-- Episodes: Watched/Unwatched -->
 	<width>500</width>
-	<height>51</height>
+	<height>52</height>
 	<align>left</align>
 	<aligny>center</aligny>
 	<font>Font_22</font>
