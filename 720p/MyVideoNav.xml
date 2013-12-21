@@ -509,7 +509,7 @@
 	<visible>Control.IsVisible(528194)</visible>
 	<include>PLDelAn</include>
 	</control>
-	</control>
+	</control>	
 	
 	<control type="group"><!-- Linguagem de audio e legendas -->
 	<animation effect="slide" time="400" start="0,-250" end="0,0" easing="inout" tween="cubic">WindowOpen</animation>
