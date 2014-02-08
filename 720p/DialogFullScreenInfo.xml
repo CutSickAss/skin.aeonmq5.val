@@ -201,6 +201,7 @@
 	<orientation>horizontal</orientation>
 	<itemgap>13</itemgap>
 	<control type="image"><!-- Flags -->
+	<include condition="Substring(Skin.CurrentTheme,Greek)">GreekMPAA</include>
 	<include>FlagImage</include>
 	<texture background="true">$VAR[value_mpaa_fs]</texture>
 	</control>
