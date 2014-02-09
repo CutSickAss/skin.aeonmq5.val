@@ -364,7 +364,6 @@
 	<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 	<aspectratio align="left" aligny="bottom">keep</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
-	<animation effect="zoom" end="200,200" condition="Control.IsVisible(58) | Control.IsVisible(63) | Control.IsVisible(65) | Control.IsVisible(67) | Control.IsVisible(528)">Conditional</animation>
 	<visible>Skin.HasSetting(clearlogotitle) + !IsEmpty(ListItem.Art(clearlogo))</visible>
 	</control>
 	<control type="label">
@@ -378,7 +377,6 @@
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
-	<animation effect="slide" start="0,0" end="0,45" condition="Skin.HasSetting(clearlogotitle) + !IsEmpty(ListItem.Art(clearlogo)) + [Control.IsVisible(58) | Control.IsVisible(63) | Control.IsVisible(65) | Control.IsVisible(67) | Control.IsVisible(528)]">Conditional</animation>
 	<visible>!Skin.HasSetting(nomoviestagline)</visible>
 	</control>
 	<control type="label">
@@ -419,7 +417,6 @@
 	<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 	<aspectratio align="left" aligny="bottom">keep</aspectratio>
 	<fadetime>FanartCrossFadeTime</fadetime>
-	<animation effect="zoom" end="200,200" condition="Control.IsVisible(58) | Control.IsVisible(63) | Control.IsVisible(65) | Control.IsVisible(67) | Control.IsVisible(528)">Conditional</animation>
 	<visible>Skin.HasSetting(clearlogotitle) + !IsEmpty(ListItem.Art(clearlogo))</visible>
 	</control>
 	<control type="label">
@@ -433,7 +430,6 @@
 	<scroll>true</scroll>
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
-	<animation effect="slide" start="0,0" end="0,45" condition="Skin.HasSetting(clearlogotitle) + !IsEmpty(ListItem.Art(clearlogo)) + [Control.IsVisible(58) | Control.IsVisible(63) | Control.IsVisible(65) | Control.IsVisible(67) | Control.IsVisible(528)]">Conditional</animation>
 	<visible>!Skin.HasSetting(nomoviestagline)</visible>
 	</control>
 	<control type="label">
@@ -448,7 +444,6 @@
 	<scrollout>false</scrollout>
 	<shadowcolor>grey</shadowcolor>
 	<animation effect="slide" start="0,0" end="0,-30" condition="IsEmpty(ListItem.Tagline) | Skin.HasSetting(nomoviestagline)">Conditional</animation>
-	<animation effect="slide" start="0,0" end="0,45" condition="Skin.HasSetting(clearlogotitle) + !IsEmpty(ListItem.Art(clearlogo)) + [Control.IsVisible(58) | Control.IsVisible(63) | Control.IsVisible(65) | Control.IsVisible(67) | Control.IsVisible(528)]">Conditional</animation>
 	<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + ![StringCompare(ListItem.Label,..) | Skin.HasSetting(notvshowstagline)]</visible>
 	</control>
 	</control>
